@@ -14,13 +14,13 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       The system shall make sources of static and dynamic urban and inter-urban road and traffic information accessible to users, e.g. Information Service Providers (ISPs) and Broadcasters, who can then distribute it to their end-users.
     links:
-      - "Aggregation «componentof» → F3.6.4 Manage Metadata Retrieval"  # {041C23D4-B60A-4974-BAD1-F8A38AD1FACD} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «Servedby» → F3.6.3 Manage Content Providers Metadata"  # {6BE341D5-E205-4d30-9996-3B5AF545820F} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «Servedby» → F3.6.4 Manage Metadata Retrieval"  # {041C23D4-B60A-4974-BAD1-F8A38AD1FACD} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «belongsto» → 6.5.1 National Access Point"  # {13CB980F-1B8F-4f60-8302-B7487E910A6B} → {651C1658-2A42-4bc4-BAD0-2683E2EDC5D7}
   - name: "6.5.1.2"
     guid: "{47DEE61C-A831-443c-B86A-C81B4C17C65F}"
@@ -31,14 +31,14 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       The system shall provide a discovery service of static and dynamic urban and inter-urban road and traffic information for users, e.g. Information Service Providers (ISPs) and Broadcasters.
     links:
-      - "Aggregation «componentof» → F3.6.4 Manage Metadata Retrieval"  # {05EE5B4A-15C9-4b6d-90F0-031E2BFC083A} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «Servedby» → F3.6.1 Manage NAP Metadata Repository"  # {8C117543-4FC9-46a1-A71F-357636D3409E} → {28A2C553-2939-4542-B14B-8A13B25BC494}
       - "Association «Servedby» → F3.6.3 Manage Content Providers Metadata"  # {CC21ED27-CAA7-4256-BB2A-F179DA9694B2} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «Servedby» → F3.6.4 Manage Metadata Retrieval"  # {05EE5B4A-15C9-4b6d-90F0-031E2BFC083A} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «belongsto» → 6.5.1 National Access Point"  # {9CAE1B70-8D76-4e51-B1C1-8D9BBB9953B5} → {651C1658-2A42-4bc4-BAD0-2683E2EDC5D7}
   - name: "6.5.1.3"
     guid: "{111AFCF5-580A-44a5-99FF-B96920DD3A08}"
@@ -49,13 +49,13 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       The system shall provide all the information available within to users as metadata and data or pointers (links) to where the actual data can be found.
     links:
-      - "Aggregation «componentof» → F3.6.4 Manage Metadata Retrieval"  # {C696E8A9-1323-4c64-B85A-1942193B6E7B} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «Servedby» → F3.6.3 Manage Content Providers Metadata"  # {B857F80D-B7A1-466a-BF48-B1366AE3C5BF} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «Servedby» → F3.6.4 Manage Metadata Retrieval"  # {C696E8A9-1323-4c64-B85A-1942193B6E7B} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «belongsto» → 6.5.1 National Access Point"  # {481E606B-E5D9-4a8f-9B6C-311E01A68C61} → {651C1658-2A42-4bc4-BAD0-2683E2EDC5D7}
   - name: "6.5.1.4"
     guid: "{F525B57C-D6A6-4b83-9980-0C8464668FB2}"
@@ -97,13 +97,13 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       The system shall provide a search interface in the native language of the area covered and, at least, English.
     links:
-      - "Aggregation «componentof» → F3.6.4 Manage Metadata Retrieval"  # {CBFAFF3B-A11B-437a-814F-83E2499C361A} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «Servedby» → F3.6.3 Manage Content Providers Metadata"  # {046ABBAE-7B13-4e95-8AE5-3C6282973139} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «Servedby» → F3.6.4 Manage Metadata Retrieval"  # {CBFAFF3B-A11B-437a-814F-83E2499C361A} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «belongsto» → 6.5.1 National Access Point"  # {EB82A5EF-47ED-499c-8FAA-1557277A9BCF} → {651C1658-2A42-4bc4-BAD0-2683E2EDC5D7}
   - name: "6.5.1.7"
     guid: "{1DB1233F-F72B-48f0-BAC3-6E320C8128C4}"
@@ -130,11 +130,11 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       The system shall provide information using "open" standard communication protocols.
     links:
-      - "Aggregation «componentof» → F3.6.4 Manage Metadata Retrieval"  # {3ADDD8AD-1398-46f7-B3A1-8B21B194C7AB} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «Servedby» → F3.6.3 Manage Content Providers Metadata"  # {5A0BB86A-2257-4e09-BC35-9FAA2A14283B} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «Servedby» → F3.6.4 Manage Metadata Retrieval"  # {3ADDD8AD-1398-46f7-B3A1-8B21B194C7AB} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «belongsto» → 6.5.1 National Access Point"  # {D601668C-73A7-4edf-BD5C-D64BE909AF6F} → {651C1658-2A42-4bc4-BAD0-2683E2EDC5D7}

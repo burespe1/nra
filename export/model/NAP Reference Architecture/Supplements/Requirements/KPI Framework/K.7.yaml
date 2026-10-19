@@ -40,6 +40,24 @@ elements:
       KPI 7.2 Terms and conditions for data reuse from data providers
     links:
       - "Association «fulfilled by» → Metadata Management Module"  # {76028265-E062-4a86-888B-2E0EA669A462} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.7.3.1 Operational procedure information"
+    guid: "{16AB0A17-9AC4-4aec-9EAA-7EA1F349055C}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 2
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall provide operational procedure information about the processes in the NAP.
+      e.g.: Registration of potential data provider, How issues are handled
+      
+      Source: KPI 7.3 Operational procedure information
+    links:
+      - "Association «fulfilled by» → Support (ticket) Module"  # {D7503DD9-8894-4cf1-B15B-ED357E0B3E8B} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
   - name: "K.7.5.1 Compliance assessment support by NAP"
     guid: "{1941874B-D599-4a5b-A6EA-6209F7E72127}"
     type: "Requirement"
@@ -47,7 +65,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 2
+    order: 3
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -64,7 +82,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 3
+    order: 4
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"

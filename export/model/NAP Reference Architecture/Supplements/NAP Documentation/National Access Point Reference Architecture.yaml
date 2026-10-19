@@ -12,7 +12,7 @@ tags:
   "ReportStatus": "Draft"
   "ReportSummary": ""
   "ReportTitle": "National Access Point Reference Architecture"
-  "ReportVersion": "2.1.0"
+  "ReportVersion": "2.2.0"
 elements:
   - name: "Introduction - Heading, Notes, Diagram"
     guid: "{EA0C7337-A86B-4319-8E03-8FB16FFD3049}"

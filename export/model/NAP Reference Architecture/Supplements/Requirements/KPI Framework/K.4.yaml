@@ -38,6 +38,23 @@ elements:
       Source: KPI 4.2 Link checking frequency
     links:
       - "Association «fulfilled by» → Metadata Quality Check Module"  # {7BDB02F5-5FFD-4e61-A74E-6EC7E8876A8F} → {B9BC9F94-BAF8-465c-A024-66944F4C302E}
+  - name: "K.4.4.1 Metadata maintenance frequency"
+    guid: "{56CF5FF2-7112-4bd3-9E60-B10AE222362F}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 2
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall have at least annual procedure to keep metadata maintained and updated by a content provider.
+      
+      Source: KPI 4.4 Metadata maintenance frequency
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {B203D82F-FC1C-4023-94FA-E476631167AA} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
   - name: "K.4.5.1 Data maintenance"
     guid: "{EC2AF8AF-F8E6-44b1-9189-D1ED47BA5033}"
     type: "Requirement"
@@ -45,7 +62,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 2
+    order: 3
     tags:
       "Requirement Category": ""
       "revised": "2026-10-20"

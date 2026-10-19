@@ -125,7 +125,7 @@ elements:
       	- Regulation (EU) 2019/881 (Cybersecurity Act) – Establishes the EU cybersecurity certification framework, which may apply to ICT products and services used by NAPs.
       	- ENISA Guidelines and Sectoral Guidance – While not legally binding, ENISA’s technical guidance supports implementation of NIS 2 requirements in transport and digital infrastructure sectors.
     links:
-      - "Abstraction → NAP as critical infrastructure"  # {87F23DF2-AB08-4855-B627-EBA46139F900} → {037F8E03-319D-4b87-A355-4744DCC160F7}
+      - "Abstraction → L.12.1 NAP as critical infrastructure"  # {87F23DF2-AB08-4855-B627-EBA46139F900} → {037F8E03-319D-4b87-A355-4744DCC160F7}
   - name: "L2 Regulation (EU) No 886/2013 - SRTI"
     guid: "{4B31C570-BDB3-4ccd-A917-C3680106BA2A}"
     type: "DeploymentSpecification"
@@ -379,7 +379,7 @@ elements:
       	- Commission Implementing Regulation (EU) 2020/1463 – Sets out detailed rules on the quality of information and procedures provided via the gateway, including accessibility, findability, and user-centric design—relevant for NAP interfaces.
       	- Commission Implementing Regulation (EU) 2022/1121 – Defines the technical and operational requirements for the feedback mechanism under the gateway, which may apply to NAPs if integrated into the SDG ecosystem.
     links:
-      - "Abstraction → L.9.1 Once only principle"  # {EFCE4351-ED38-4ef2-9CA3-4C125854E799} → {5EBE8828-70DD-4b25-9F5D-8F7E58A529FF}
+      - "Association → Does not yield a Requirement"  # {FB628ECA-C1E1-443f-9204-7A6E6A0A34DD} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "Regulation (EU) 2024/490 – MMTIS (Amendment)"
     guid: "{E1524B08-D6A6-42b4-8B5C-0136C4A9D6D4}"
     type: "DeploymentSpecification"

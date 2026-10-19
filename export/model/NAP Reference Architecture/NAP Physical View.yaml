@@ -1,7 +1,7 @@
 package: "NAP Reference Architecture/NAP Physical View"
 guid: "{8CFF4E9C-AC83-4250-B3E3-3C04E41FF7C3}"
 alias: "Physical View"
-version: "2.1.0"
+version: "2.2.0"
 note: |
   The Physical View Depicts the system from a system engineer’s point of view. This view is used to describe the arrangement of physical elements, such as system elements and their connections that provide the solution for a product, service, or enterprise. It is intended to satisfy logical architecture elements and system requirements.
   The View contains Subsystems with Modules. Physical data flows, grouping functional data flows passing between subsystems or modules.

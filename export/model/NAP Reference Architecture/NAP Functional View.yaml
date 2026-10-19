@@ -1,7 +1,7 @@
 package: "NAP Reference Architecture/NAP Functional View"
 guid: "{9B1B0219-664B-46db-9AB7-CC5A1BDE527F}"
 alias: "Functional View"
-version: "2.1.0"
+version: "2.2.0"
 note: |
   The Functional View focuses on the functional aspects of a system. Defines the architectural elements that deliver the system’s functionality documenting the system’s functional structure including the key functional elements their responsibilities the interfaces they expose and the interactions between them.
   The View contains a chain of Functions connected via the Functional data flows, at both ends with a Terminator. This chain represents a process of data processing in a designed system. Data stores represent the ability of a function to store and retrieve data and model real databases.

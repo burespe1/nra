@@ -30,11 +30,15 @@ elements:
   - name: "Functionality missing"
     guid: "{0E49C150-2EF4-45a2-9314-050D4465A17D}"
     type: "Issue"
-    status: "Proposed"
+    status: "Closed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
       Add this to F3.6.1 Manage NAP Metadata Repository
+      
+      Resolved in v2.2.0: K.4.4.1 added to F3.6.1 Manage NAP Metadata Repository (Metadata Management Module).
   - name: "Future work needed"
     guid: "{74E43F44-BEC6-44fd-B060-5A9524947986}"
     type: "Issue"
@@ -212,9 +216,11 @@ elements:
   - name: "Function missing in the NRA for the KPI"
     guid: "{A6EA45BA-53FF-4177-AA14-F282A8C55D0F}"
     type: "Issue"
-    status: "Proposed"
+    status: "Closed"
     version: "1.0"
     order: 7
+    tags:
+      "revised": "2026-10-20"
     note: |
       Function missing in the NRA
       
@@ -223,8 +229,5 @@ elements:
       K.2.9.1 Missing Evaluation functionality
       K.5.4.1/K.5.5.1 Missing Data aggregation for visualisation
       K.7.3.1/K.7.5.1 General Information provision
-    links:
-      - "Association → K.2.2.1 Related services monitoring functionality"  # {C95DCAE4-ED42-4976-868B-D86B022D8DB7} → {57A18050-B4C1-42f9-881F-A8C6AE3EAF1A}
-      - "Association → K.2.7.1 Mass notifications – data providers"  # {F7D02D71-43B1-4163-B38D-6E20CF492C4F} → {1F17B282-6DF7-4368-8BF9-EB565BA7D4D5}
-      - "Association → K.2.8.1 Mass notifications – data consumers"  # {4EDA6734-1B2C-4c59-840A-7C3E3C32785F} → {6069CE61-FD93-4212-A7EC-BA701EBE8A7E}
-      - "Association → K.2.9.1 Monitoring and evaluation"  # {53E39B0B-3B95-4913-8E48-4CD1F7E79965} → {1B5911BF-D7A2-4e07-A4CE-4DC33E7E5C26}
+      
+      Resolved in v2.2.0: K.2.2.1 and K.2.9.1 by the new function F3.6.11 Monitor NAP Usage and Performance; K.2.7.1/K.2.8.1 by F3.6.2 (User Management Module); K.5.4.1/K.5.5.1 by F3.6.9/F3.6.4; K.7.3.1 by F3.6.5 (Support module); K.7.5.1 was already resolved.

@@ -89,3 +89,46 @@ elements:
       Source: KPI 5.3 Quality indicators for datasets
     links:
       - "Association «fulfilled by» → Metadata Management Module"  # {EE98B216-0FC6-4df7-9D5E-73384F8A6811} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.5.4.1 Data visualization"
+    guid: "{AB431EDD-73E8-43c9-A219-2232A1745A55}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 5
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall support at least one of following data visualization:
+      
+      	- Visualization of numbers and charts derived from data records
+      	- Visualization of data on a map (may include location points, lines or areas)
+      	- Visualization can use animation of “a” or “b” options above, e.g., an animation or video for a time series of a selected period
+      
+      
+      Source: KPI 5.4 Data visualization
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {756B02EB-4FA2-4f39-9C99-5AC936B2BD62} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+  - name: "K.5.5.1 Metadata Visualization"
+    guid: "{EA7E8A92-7AF9-4f91-A12A-44E1091AC517}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 6
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall support at least one of the following metadata visualization:
+      
+      	- Visualization of numbers and charts derived from metadata records e.g. information/news about datasets
+      	- Visualization of metadata on a map (may include location points, lines or areas)
+      
+      
+      Source: KPI 5.5 Metadata visualization
+    links:
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {2410F23C-0E5E-4fe3-B3E0-EC3AD39DF863} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}

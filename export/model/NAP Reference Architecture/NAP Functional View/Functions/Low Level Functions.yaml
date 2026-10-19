@@ -13,7 +13,8 @@ elements:
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -24,6 +25,9 @@ elements:
        (4) The ability to enable Metadata to be created in advance of their publication on the NAP so it could be checked before its publication.
        (5) The ability to carry out its activities in such a way that they do not interfere with one another, and that the integrity of the data being stored and read is preserved.
        (6) This function manages all data mentioned in the mobilityDCAT-AP (https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html) and other relevant information (e.g. quality info, possible data comments etc.)
+      
+      OPTIONAL:
+       (7) The ability to request the NAP Content Providers at least annually to review and update their metadata, and to flag metadata records that have not been updated within the agreed period.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {3DA6F71C-C8DD-4e7c-B1AE-A31B504E01A5} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
       - "Association «OUT» → mt_NAP_metadata_for_data_check_and_store_response"  # {7ECA2926-BE67-40b1-9D4A-1FDB15D3A46A} → {2FD69798-3950-48ea-B7F0-F52F39470F34}
@@ -60,7 +64,8 @@ elements:
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -79,6 +84,9 @@ elements:
        (12) The ability to register the as one or both NAP Content Provider and NAP Content Consumer with different rights / responsibilities to perform tasks assigned to provider or consumer in the NAP via Functions Manage Content Providers Metadata and Manage NAP Metadata Retrieval.
        (13) Ability to provide registered NAP User data upon its successful authorization
        (14) Ability to log in events connected with NAP User Activity to the NAP User data store
+      
+      OPTIONAL:
+       (15) The ability to send mass notifications to registered NAP Content Providers and NAP Content Consumers, e.g. about updates of the Terms and Conditions or new requirements for data provision.
       
       NOTE: one physical user can be part of more NAP Users but under the different electronic identity.
     links:
@@ -127,7 +135,8 @@ elements:
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -139,6 +148,9 @@ elements:
        (5) Ability to provide metadata at the NAP including data created by the NAP, i.e. quality records.
        (6) Ability to provide all or parts of metadata stored in the NAP Metadata store in a machine-readable format for reasons of harvesting the metadata by Metadata Requesting System (machine to machine access).
        (7) The ability to provide all relevant metadata without NAP Content Consumer registration
+      
+      OPTIONAL:
+       (8) The ability to visualise metadata, e.g. numbers and charts derived from metadata records, or metadata shown on a map.
       
       NOTE: It is assumed that NAP Content Provider could perform all the task of the NAP Content Consumer.
     links:
@@ -156,7 +168,8 @@ elements:
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -165,6 +178,10 @@ elements:
        (2) The ability to respond to user support requests adequately at least in a form of first-level support.
        (3) The ability to consult other NAP roles for issues which cannot be responded with the own knowledge.
        (4) The ability to manage issues and log the issue resolution for later use by NAP Users or by an Auditing entity
+       (5) The ability to receive reports from NAP Content Consumers about inaccuracies in the data and to forward them without delay to the responsible NAP Content Provider.
+      
+      OPTIONAL:
+       (6) The ability to publish information about the operational procedures of the NAP, e.g. registration of Content Providers and handling of issues.
       
       NOTE: this could be done via a ticketing system
     links:
@@ -251,7 +268,8 @@ elements:
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -262,9 +280,35 @@ elements:
        (5) Ability to provide data retrieved from the NAP Data store to the NAP Content Consumer or Data Requesting System in a way which is requested.
        (6) Ability to record NAP User Activity into the NAP Users data store.
        (7) Requested data are either traffic or travel information or its support information stored in the NAP Data store (e.g. quality information, last update time) or both.
+      
+      OPTIONAL:
+       (8) The ability to visualise data, e.g. numbers and charts derived from data records, data shown on a map, or animations of time series.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {E1A416CD-B46B-4a5c-B1E5-EDD4ABA6BC4C} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
       - "Association «OUT» → mt_NAP_data_read_authorisation_request"  # {5A163FB1-29C8-45c4-9EAC-3B8D66CECBBA} → {D487FAFF-4F5B-4520-BC53-427580A77997}
       - "Association «OUT» → mt_NAP_data_read_request"  # {2F48239C-2C35-4844-87C8-2CB3B857B94B} → {50A2D529-AAC6-4908-919C-7838C607386A}
       - "Association «OUT» → tnap.cc-data_response"  # {1299B849-9D9B-486d-AC1D-2DC536C4CBD0} → {F7412343-95F0-4611-8149-58EA48466E80}
       - "Association «OUT» → tnap.drs-data_response"  # {C0117DD4-1105-4057-AD20-458519074FC2} → {53ED8069-70B8-44ac-85D7-ED06B5283424}
+  - name: "F3.6.11 Monitor NAP Usage and Performance"
+    guid: "{678C8981-D1F4-47ea-8F47-1E260E07F935}"
+    type: "Activity"
+    stereotype: "FRAME_Low_Level_Function"
+    keywords: "Low level function"
+    status: "Proposed"
+    order: 1
+    tags:
+      "RequirementLevel": "OPTIONAL"
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      This Function shall be capable of providing the following facilities:
+      
+       (1) The ability to collect usage statistics of the NAP, e.g. number of accesses, search requests and registered NAP Users, using the NAP User activity recorded by the functions Manage Registrations and Provide Authorisation Service and Manage NAP Data Retrieval.
+       (2) The ability to collect statistics on the consumption of datasets, e.g. downloads, subscriptions and page views, and to track the use of the data available at the NAP based on NAP User feedback or tools.
+       (3) The ability to measure the performance of the NAP, e.g. availability, downtime and response times.
+       (4) The ability to collect and evaluate qualitative feedback on the usefulness of the NAP, e.g. ratings of quality or surveys.
+       (5) The ability to provide the collected statistics to the NAP Operator for reporting to the Member State and to the Competent Authority / National Body, and statistics of data access to the NAP Content Providers.
+      
+      NOTE: The function is optional; it supports the KPIs K.2.2 Related services monitoring and K.2.9 Monitoring and evaluation of the NLKF and the reporting tasks of the NAP Operator.
+    links:
+      - "Aggregation → F3.6 Operate National Access Point"  # {3B39F186-F74C-4846-B69A-545E5BB5A192} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}

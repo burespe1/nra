@@ -63,6 +63,49 @@ elements:
       L5 Regulation (EU) 2017/1926 - MMTIS
     links:
       - "Association «fulfilled by» → Collaboration Agreement (CA/NB to NO)"  # {2C1D663C-289D-41b0-8F48-72EAC2810BEF} → {0B562BCC-408D-4b46-9039-5A275BDFDD86}
+  - name: "L.2.2 Provide up to date data"
+    guid: "{3A5AE4E8-99D6-446e-9A35-26D9A69357B2}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      Content provider shall provide up-to-date and accurate data with a desired level of quality, in the prescribed format.
+      
+      Source:
+      L2 Regulation (EU) No 886/2013 - SRTI
+      L3 Regulation (EU) No 885/2013 - SSTP
+      L4 Regulation (EU) 2022/670 - RTTI (recast)
+      L5 Regulation (EU) 2017/1926 - MMTIS
+    links:
+      - "Association «fulfilled by» → European or national law (MS to CP)"  # {FED17C9C-78D9-4dd4-9282-EF6A6C6B2EC9} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+  - name: "L.2.4 Reporting obligation"
+    guid: "{ED7D9261-5E1A-4278-93F5-1159D460C378}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 4
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall enable Content Consumer to report to the content provider (CP) any inaccuracies related to the data without delay.
+      
+      Source:
+      L2 Regulation (EU) No 886/2013 - SRTI
+      L3 Regulation (EU) No 885/2013 - SSTP
+      L4 Regulation (EU) 2022/670 - RTTI (recast)
+      L5 Regulation (EU) 2017/1926 - MMTIS
+    links:
+      - "Association «fulfilled by» → European or national law (MS to CC)"  # {E6C45E92-F6EC-44a4-99E3-3CAB7454E497} → {C7C1A638-F3DE-4b70-9BD0-F24DB573079A}
+      - "Association «fulfilled by» → Support (ticket) Module"  # {C8EC553F-7FA5-4eae-81F0-2CE004DBA1C9} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
   - name: "L.2.5 Information provision on NAP"
     guid: "{01A81D55-8849-4dc4-BCA4-0FC22836D828}"
     type: "Requirement"
@@ -70,7 +113,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 3
+    order: 5
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -92,7 +135,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 4
+    order: 6
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -114,7 +157,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 5
+    order: 7
     tags:
       "Requirement Category": ""
       "revised": "2026-10-20"
@@ -138,7 +181,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 6
+    order: 8
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -155,7 +198,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 7
+    order: 9
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -172,7 +215,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 8
+    order: 10
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -187,3 +230,21 @@ elements:
       - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {A0F99D57-B522-4204-B003-C22C84BC9417} → {832264BF-9750-421b-9BFF-C77CE32FA053}
       - "Association «fulfilled by» → Privacy agreement (CC to NO) and general terms and conditions"  # {1B18C483-110C-420d-859D-6EDDBA2D112A} → {AF555DF2-4535-42f6-993A-5BE72947BD12}
       - "Association «fulfilled by» → User Management Module"  # {A6885AEE-5DB0-4a12-847F-3B9528B85233} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "L.12.1 NAP as critical infrastructure"
+    guid: "{037F8E03-319D-4b87-A355-4744DCC160F7}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 11
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      If the Member State defines the NAP as critical infrastructure according to NIS II, the platform has to fulfill the requirements according to NIS II regulation.
+      
+      Source: L12 Directive (EU) 2022/2555 - NIS2
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {0AD4A4C9-0D8B-4637-B146-3D8FA9665FB3} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {AB779473-0809-4e31-A981-43F2E94F35DC} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}

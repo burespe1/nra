@@ -95,7 +95,7 @@ elements:
       
       Minimum acceptable value for interoperability: 1
     links:
-      - "Abstraction → K5.4.1 Data visualization"  # {4A5E077A-21B8-4e18-A6BB-D1B7BD5FADF7} → {AB431EDD-73E8-43c9-A219-2232A1745A55}
+      - "Abstraction → K.5.4.1 Data visualization"  # {4A5E077A-21B8-4e18-A6BB-D1B7BD5FADF7} → {AB431EDD-73E8-43c9-A219-2232A1745A55}
   - name: "KPI 5.5 Metadata visualization"
     guid: "{F40A299B-E3FE-45ec-BEB5-002C6A4E7FC8}"
     type: "DeploymentSpecification"

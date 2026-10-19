@@ -1,7 +1,7 @@
 package: "NAP Reference Architecture/NAP Organisational View"
 guid: "{553E5112-EC18-4bfe-9402-D55E876DA206}"
 alias: "Organisational View"
-version: "2.1.0"
+version: "2.2.0"
 note: |
   The Organisational View provides information about the Actors, their Roles and responsibilities, and relationships between roles in terms of lawful or contractual relationships. It also depicts the processes relevant to the ITS deployment (owns, plans, maintains, deploys, implements, tenders, …).
   The View consists of Actors assuming one or more Roles, the Agreements between the Roles, and their relations to the Components and Modules.
