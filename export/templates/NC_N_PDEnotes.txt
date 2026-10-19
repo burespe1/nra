@@ -1,0 +1,7 @@
+name: NC_N_PDEnotes
+id: {E7454507-727E-4c6f-B613-019383371660}
+kind: template/fragment
+sections: ['Pkg', 'Pkg_Diagram']
+options: modcreate="-1" statuslike="-1" phaselike="-1" beforeafter="-1" pkgorder="1" elemorder="1" featorder="1" dgmorder="1" pkgasc="0" elemasc="0" featasc="0" dgmasc="0" imagefmt="0" hindent="9" noteless="0" skiproot="0" statuslist="" phase="All" exdetails="" wordsubst="0" nobookmarks="0" hideanonymous="0" htmlformating="0" exconndetails="" exdiagdetails="" conndirfilter="0" childelements="0" notelessconn="0" fragment="0" fragment_type="0" script_guid="" status_clr="0" elem_as_help="0" prop_filters="0" all_diag_elems="0" packageexclude_type="1648107566" packageexclude_guid=""/
+
+Pkg_Beginpackage > 1.\*\*MERGEFIELD Pkg.Alias\Pkg.Alias\ version: \*MERGEFIELD Pkg.Version\Pkg.Version\ \*MERGEFIELD Pkg.Notes\Pkg.Notes\ diagram > \*MERGEFIELD Diagram.DiagramImg\Diagram.DiagramImg\ Figure: \*MERGEFIELD Diagram.Name\Diagram.Name\ < diagram < package

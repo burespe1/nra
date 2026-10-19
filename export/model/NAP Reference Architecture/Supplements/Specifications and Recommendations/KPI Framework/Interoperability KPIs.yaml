@@ -1,0 +1,45 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/KPI Framework/Interoperability KPIs"
+guid: "{63EF43BA-E16E-4dea-9C19-6367676030C5}"
+alias: ""
+version: "1.0"
+note: |
+  Interoperability features ensure NAPs can efficiently communicate and exchange information. This includes adopting a Coordinated Metadata Catalogue for a common approach to metadata publication and the ability to harvest and index datasets from other NAPs, though the latter is not mandatory.
+elements:
+  - name: "KPI 6.1 Metadata specification"
+    guid: "{BEE946BB-DA12-4e7b-94B2-0177BD4060AF}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      6.1 “Metadata Specification” KPI indicates whether a NAP’s metadata follows the recommended specifications set. It gets a value equal to 0 it when the NAP adopts a proprietary or non-standardized metadata scheme, a value equal to 1 for when it adopts harmonised specifications other than mobilityDCAT-AP and and a value equal to 2 when metadata are completely compliant with MobilityDCAT-AP.
+      
+      Values: 0: The NAP adopts a proprietary or non-standardized metadata scheme
+      1: The NAP adopts harmonised metadata specifications other than mobilityDCAT-AP (e.g., the EU-EIP specification – the Coordinated Metadata Catalogue) or partially adopts the Mobility DCAT-AP
+      2: Full compliance/adoption with the MobilityDCAT-AP specification
+      
+      
+      Minimum acceptable value for interoperability: 2
+    links:
+      - "Abstraction → K.6.1.1 Metadata specification"  # {9ECB332E-8F5A-401f-A78B-6A0FE939FA3E} → {808C630F-74B1-46ed-91AF-3A16E94E6616}
+  - name: "KPI 6.2 Harvesting functionalities"
+    guid: "{42A19936-0BD4-4750-977F-441851A057FE}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      6.2 “Harvesting functionalities” assesses the ability of a NAP (National Access Point) to facilitate interoperability through the integration of metadata and/or datasets with other data portals and platforms. This involves the use of harvesting protocols and interfaces that enable the automated export of its metadata or datasets to external systems, and/or the import of metadata or datasets from external systems for integration and indexing. A value equal to 0 points out the absence of any harvesting functionalities. On the other hand, a value equal to 1 indicates the support of one-way harvesting functionalities, while a value equal to 2 indicates the support of two-way harvesting functionalities.
+      
+      Values:
+      0: Absence of harvesting functionalities
+      0: Support of harvesting functionalities through dedicated protocols or Application Programming Interfaces
+      Value+1 (for each of the following options): Which kind of support is provided?
+      a. Provision of harvesting interface or protocols for exporting functionalities (e.g., RESTful API, CSW, CKAN), allowing other portals to query and index metadata
+      b. Existence of harvesting interface for integration (e.g., indexing) of data sets from other portals
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K.6.2.1 Metadata harvesting"  # {84A0203E-6398-4628-8305-DFEA67464419} → {3031B4C2-3C66-4139-BC26-B3914F8D3146}

@@ -1,0 +1,58 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/KPI Framework/Obsolete KPIs"
+guid: "{D019D6D3-204F-4501-B250-CB9A4B857C51}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "KPI 7.7 Quality indicators for datasets"
+    guid: "{6455CB4E-6526-4ec0-9975-706DBCDC70CE}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      “Quality indicators for datasets” KPI assesses the extent to which a NAP provides insight into the quality of the provided data/metadata. There are four possible values that this KPI may take. A value equal to 1 indicates that a NAP includes a description of the quality of the provided metadata (e.g., based on a pre-established metadata quality assessment scheme). A value equal to 2 indicates that a NAP provides a description of general quality definitions to support its users to self-assess the quality of utilized data or high-level quality assessment statements in the metadata of hosted publications. On the other hand, a value equal to 3 indicates that a more detailed data quality description is provided in the metadata of hosted publications; however, provided details and values do not cover the entirety of quality fields that may relate to the nature of exchanged data. Finally, a value equal to 4 indicates that there is a solid description of all fields. It is assumed that a NAP shall at least provide metadata quality descriptions for achieving a minimum acceptable level of service.
+      
+      Does the NAP provide information or descriptions for data quality?
+      
+      0: No
+      1: Yes, a metadata field where the data provider can describe the quality of the dataset.
+      2: Yes, description of general quality definitions
+      3: Yes, description of some of datasets (fields) quality
+      4: Yes, description of all datasets (fields) quality
+      
+      Minimum acceptable value for interoperability: 1
+  - name: "KPI 2.3 Related services built on the data offered at the NAP"
+    guid: "{AF6A125B-C426-4fbb-ACD3-F3BC7975E5E3}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 10
+    note: |
+      “Related projects built on the NAP data” KPI is aims to assess how many external projects, platforms, or websites are based and benefited from NAP published in/accommodate through NAPs (irrespective of the utilized monitoring method). It is assumed that at least one project should be based on NAP data for achieving a minimum acceptable level of service.
+      How many related services (applications, websites, end-user information services, etc.), were built, according to your best knowledge, using data offered by NAP within the last calendar year?
+      
+      N/A: The information is not monitored (KPI 2.2 is zero)
+      Value 0 to infinity
+      
+      Minimum acceptable value for interoperability: 1
+  - name: "KPI 2.5 NAP promotion – number of publications"
+    guid: "{186E92C7-A397-45c0-AEB4-DA23BB390019}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 12
+    note: |
+      “NAP promotion – number of publications” KPI records the number of publications made by the NAP operator or national body within the last calendar year. It is assumed that at least three publications shall be made for achieving a minimum acceptable level of service.
+      
+      How many publications were made by the NAP operator and/or national body within the last calendar year using the channels mentioned in KPI 2.4?
+      
+      Publications mean: number of conference papers with NAP as main subject + webinars with NAP as main subject + social media posts with NAP as main subject + printed publications with NAP has main subject
+      
+      Value 0 to infinity
+      
+      
+      Minimum acceptable value for interoperability: 3

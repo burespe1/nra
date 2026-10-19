@@ -1,0 +1,7 @@
+package: "NAP Reference Architecture/NAP Motivation Layer/Specifications & Requirements"
+guid: "{14E4D109-72D2-4970-84DF-3081BC31AE5A}"
+alias: "Specifications and Requirements"
+version: "1.0"
+note: |
+  Specifications and requirements affecting the implementation of the ITS Service and depicted on the diagram are described in a Specifications document.
+elements: []

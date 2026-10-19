@@ -1,0 +1,348 @@
+package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.1"
+guid: "{AB4DDAFD-0E04-418a-95AF-20518BE7F69E}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "K.1.17.1 Data transfer optimization"
+    guid: "{025CAF43-3430-4650-B487-6B6AAF7E6C50}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 1
+    tags:
+      "Requirement Category": ""
+    note: |
+      The data platform shall provide (un)compressed data per clients' request in one of the following ways:
+      
+      	- Data is (or can be) provided compressed in a transport layer as negotiated between client and server via the HTTP Accept-Encoding header or via tailored API request
+      	- Data is (or can be) provided compressed in an application layer as selected by the user when subscribing (e.g., in ZIP packages)
+      	- Data can be provided in a differential form, i.e., new data only and/or changes to the previous state where a relevant date/time/period can be set by the user
+      
+      
+      Source: KPI 1.17 Data transfer optimization
+    links:
+      - "Association «fulfilled by» → F3.6.8 Manage Data Input"  # {5CF53285-368E-4812-AC63-EEF1B517FCFC} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+      - "Association «fulfilled by» → F3.6.9 Manage NAP Data Retrieval"  # {8DF4E1CA-FCA4-4366-8A69-27D85812587D} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+  - name: "K.1.1.1 On-line availability"
+    guid: "{8BFE2113-E64D-4e68-8B54-D066BB7A0999}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 2
+    tags:
+      "Requirement Category": ""
+    note: |
+      The NAP shall be online available and with automated availability check at least every hour using some external service, such as the example mentioned in the note
+      
+      Source: KPI 1.1 - “On-line availability”
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {4B6FF8A4-10A8-4154-9CF7-8F3E4A6E99CF} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {8A8C63AF-4ED8-4293-B5E9-C890167DD3B1} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "K.1.21.1 Metadata about data modification"
+    guid: "{4456CECE-D82D-45f3-B576-2BE6BAFBE615}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 2
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide change/modification metadata about the data records in one of the following ways:
+      
+      a. NAP provides metadata about frequency of data changes
+      b. NAP provides metadata about typical dates/times
+    links:
+      - "Association «fulfilled by» → F3.6.3 Manage Content Providers Metadata"  # {FBB91586-A034-4460-A871-38C78EBF3E64} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «fulfilled by» → F3.6.4 Manage Metadata Retrieval"  # {4B2F34D8-ABB3-4aa7-8C2F-F8120B145331} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
+  - name: "K.1.2.1 Compatibility"
+    guid: "{E60C5591-AB99-4a20-B975-9734FE18899F}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 4
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall be compatible with the last versions of at least 4 web browsers (Mozilla Firefox, Google Chrome, Microsoft Edge and Apple Safari)
+      
+      Source: KPI 1.2 “Compatibility with web browsers”
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {1396B603-DC72-4300-9C61-6C03457F708F} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {10A856A0-E041-4d50-A47A-FFABA900D368} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "K.1.3.1 Load time website"
+    guid: "{A1BA8118-FD66-4705-9494-A432A308D211}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 6
+    tags:
+      "Requirement Category": ""
+    note: |
+      The load time shall be lower than 1 sec on average, max. 2 sec.
+      
+      Source: KPI 1.3 Web performance - homepage load time
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {7939683E-C1C0-4ef9-90C5-3EE1C7AB80CC} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {B9899FAE-CE51-4846-B1D6-A116C7D619AD} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "K.1.4.1 Responsiveness"
+    guid: "{A619225B-8550-4dca-B6EE-0505006A4749}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 7
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall support responsive web design for different screen sizes on desktops/laptops
+      
+      Source: KPI 1.4 “Responsiveness”
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {36EA20EC-F99D-49c4-A93C-FF74BEDE910A} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {D8846E4E-BEEB-4c0d-B142-828F4679F335} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "K.1.5.1 Simplicity / Usability"
+    guid: "{19537BDF-1852-45b1-A148-C47A90792691}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 8
+    tags:
+      "Requirement Category": ""
+    note: |
+      The data set/metadata information shall be accessible in average with less then 10 operations (e.g., key presses, mouse wheel movements, mouse/screen clicks).
+      
+      KPI 1.5 Web performance – simplicity / usability
+    links:
+      - "Association «fulfilled by» → Content Consumer Metadata Access"  # {72265119-993D-43f3-8008-125AC8913760} → {ECF5445C-50A8-4ca3-8C86-50DB480DBD8C}
+  - name: "K.1.7.1 Consistency and Navigability"
+    guid: "{4B3700B3-CF65-470c-83D9-B0FB0A7D7E69}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 9
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall follow at least 3 of the below defined usability rules:
+      a. Menus are in the same position
+      b. Use of same fonts and colours throughout the site
+      c. Availability of a search box on the main page (search means for navigation along the webpage and no data discovery)
+      d. Logo links back to the home page
+      e. Existence of a hierarchical arrangement of web subpages (“breadcrumbs” type also means hierarchical arrangement)
+      f. Existence of a “sitemap” page easing navigation (e.g., a tree structure with links to individual pages)
+      
+      Source: KPI 1.7 Web performance – Consistency and navigability
+    links:
+      - "Association «fulfilled by» → Content Consumer Data Access"  # {C60D42D3-5A87-45ac-9831-B0AB6E9078D2} → {46EF7C20-D17A-4964-9EEC-CFC8A2161BB1}
+      - "Association «fulfilled by» → Content Consumer Management"  # {8477B3FD-5607-43b0-8369-1B0917A3C9EB} → {572A0DDD-F3CD-426f-B920-5E8E986DFC0C}
+      - "Association «fulfilled by» → Content Consumer Metadata Access"  # {489CA953-EBE7-45a6-89F1-FF0C7BE030BD} → {ECF5445C-50A8-4ca3-8C86-50DB480DBD8C}
+      - "Association «fulfilled by» → Content Consumer Support"  # {6A0DC5A9-2B58-465b-A995-8818B1D3C249} → {9D010BE5-6592-4e26-86F6-6D16140A0A39}
+      - "Association «fulfilled by» → Content Provider Data Provision"  # {9A9657A5-26D1-4a5b-9167-1D8BA475F134} → {C03CF47C-96E7-4733-B905-CB836A908BB7}
+      - "Association «fulfilled by» → Content Provider Management"  # {3E5C8C9B-499E-44cd-91A7-D9216B287EE9} → {D137DB55-A2D0-4a62-9A98-6144AC1C5404}
+      - "Association «fulfilled by» → Content Provider Metadata Provision"  # {D3B742BB-471F-403d-AB4B-993A26F45A30} → {DAA1010E-3FD1-49b7-AC66-2080DB101A8E}
+      - "Association «fulfilled by» → Content Provider Support"  # {15E4547E-E5F8-4d02-884D-DF75FB2451A7} → {2B49F77B-92D8-4494-B75B-7482740303ED}
+  - name: "K.1.8.1 Used Languages"
+    guid: "{69E72527-738E-4f0d-AB71-879AF126CC0A}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 10
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall support the national language and English on platform-level and names of the datasets.
+      
+      Source: KPI 1.8 Support of commonly used languages
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {9792F813-8145-42d2-9B99-0D150DD5D08E} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+      - "Association «fulfilled by» → Support (ticket) Module"  # {BD14686E-A1C2-4ffa-962A-17855E7D2CBF} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
+  - name: "K.1.9.1 Security – Technical"
+    guid: "{F1AE9278-2AB5-4ade-9476-7518D07969C2}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 11
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall use up-to-date security certificates in the entirety of the NAP platform’s elements.
+      
+      Source: KPI 1.9 Security – Technical
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {036A0346-1589-4b69-8FF8-20E91C8FE4C2} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {9C4CB140-70F9-46eb-8BA5-D4A24AF70DAC} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "K1.10.1 providers verification"
+    guid: "{3F00CF71-2F41-413b-BAA8-CAF56CF80F39}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 12
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall support the self-authentication of data providers (e.g., via e-mail) and at least one of the following authentication methods:
+      a. Authentication of data providers is double checked, i.e., by the data provider and by the NAP operator (e.g., via checking a state registry of legal bodies)
+      b. Usage of two-factor authentication and/or ID certificate (e.g., self-logging with secure national ID)
+      
+      
+      Source: KPI 1.10 Security – providers verification
+    links:
+      - "Association «fulfilled by» → User Management Module"  # {895B8C3B-11E0-4187-86ED-F05BE8F625DE} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "K.1.11.1 Personal data protection"
+    guid: "{98803393-08B6-41af-BF7A-64B27C0FB955}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 13
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall be compliant with GDPR.
+      
+      Source: KPI 1.11 Personal data protection
+    links:
+      - "Association «fulfilled by» → Data Management Module"  # {C71BC60D-A787-4bfd-84E4-1FA6D3EF10FA} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
+      - "Association «fulfilled by» → User Management Module"  # {310B7CF9-87E1-4b5d-AEEB-1AF41BD552D6} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "K.1.12.1 providing metadata or data"
+    guid: "{CC4B272E-7DCA-4084-AF3B-71E934E4BF43}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 14
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide an interface for content providers to provide data and/or metadata into the platform via user interface.
+      
+      Source: KPI 1.12 Procedure for input of metadata or data to the NAP
+    links:
+      - "Association «fulfilled by» → Data Management Module"  # {5C3A7361-389A-41b3-8F6A-7D84A5B97518} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
+      - "Association «fulfilled by» → Metadata Management Module"  # {AB0B54BD-D974-4ade-A44F-98332B1E57B9} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.1.13.1 Metadata output and access restrictions"
+    guid: "{5E6E9B2A-B90D-4b97-81D1-ECE9E45EDF5B}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 15
+    tags:
+      "Requirement Category": ""
+    note: |
+      Consumers shall have to publicly available datasets. Consumers need to register to get access to specific metadata only for non-publicly available datasets.
+      
+      Source: KPI 1.13 Metadata output and access restrictions
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {02C6C2AB-41A9-4459-9C39-0EEC813D6C04} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+      - "Association «fulfilled by» → User Management Module"  # {65C918A2-D367-413c-A6EA-8D474DD17F4B} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "K.1.14.1 Authentication and security mechanisms for data upload"
+    guid: "{28E122D6-8DA1-4746-BA9B-01CEDB73BF9C}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 16
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall support security and/or authentication mechanisms for data uploading (e.g., to ensure the trust in the data or restrict the access to the NAP)
+      At least 2 security mechanisms shall be in place to ensure the trust in the data or restrict the access for your platform:
+      a. Transport security (HTTPS)
+      b. Authentication by IP filter (access based on IP address of the provider)
+      c. Basic authentication according to RFC 7617 (https://tools.ietf.org/html/rfc7617)
+      d. Digest authentication according to RFC 7616 (https://tools.ietf.org/html/rfc7616)
+      e. Authentication by URL parameters
+      f. Authentication by client certificates (private keys, API-keys, certificates, incl. EU-wide common user authentication mechanism)
+      g. Authentication by tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0)
+      
+      
+      Source: KPI 1.14 Authentication and security mechanisms for data upload
+    links:
+      - "Association «fulfilled by» → Data Management Module"  # {BFFA3A27-6DCB-4514-A5CB-D80062A8758A} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
+      - "Association «fulfilled by» → User Management Module"  # {107A40A4-C19B-4446-B221-F94C880A16E4} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "K.1.15.1 Data security and access restrictions for data downloading"
+    guid: "{FF1FD326-276A-49ad-A615-783A959D7C6B}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 17
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall support security and/or authentication mechanisms for data downloading (e.g., to ensure the trust in the data or restrict the access to the NAP)
+      At least 2 security mechanisms shall be in place to ensure the trust in the data or restrict the access for your platform:
+      a. Transport security (HTTPS)
+      b. Authentication by IP filter (access based on IP address of the provider)
+      c. Basic authentication according to RFC 7617 (https://tools.ietf.org/html/rfc7617)
+      d. Digest authentication according to RFC 7616 (https://tools.ietf.org/html/rfc7616)
+      e. Authentication by URL parameters
+      f. Authentication by client certificates (private keys, API-keys, certificates, incl. EU-wide common user authentication mechanism)
+      g. Authentication by tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0)
+      
+      
+      Source: KPI 1.14 Authentication and security mechanisms for data upload
+    links:
+      - "Association «fulfilled by» → Data Management Module"  # {12C11923-F39B-4da5-B381-F90380D5DF3C} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
+      - "Association «fulfilled by» → User Management Module"  # {2A812791-E104-48ac-8F64-7726B3F550EF} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "K.1.16.1 Indication of data modification"
+    guid: "{0D51A185-39DD-41c0-AFC9-4FFC32EE8D97}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 18
+    tags:
+      "Requirement Category": ""
+    note: |
+      At least one change/modification information about the data shall be provided:
+      a. Webserver uses “Last updated date and/or time” information (e.g., the DATEX XML includes the “publication time” which shows when the dataset has been updated)
+      b. NAP data interface uses If-Modified-Since header in conditional HTTP requests or timestamp parameters in API requests
+      c. NAP data interface uses If-None-Match (etag) header in conditional HTTP requests or custom tokens parameters in API requests
+      d. Webserver uses some other method for data modification indication (please specify the method used in the “Suggestions” box)
+      
+      Source: KPI 1.16 Indication of provided data modification
+  - name: "K.1.18.1 API usage for data transfer"
+    guid: "{37F65E8F-2DCF-410e-BC8B-09B70FE6C162}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 19
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide an API in a data platform NAP type:
+      Value+1 (for each of the following options): Which Application Programming Interfaces for automated data exchange are used for your NAP? You can select more options:
+      a. API for upload (data producers)
+      b. API for download (data consumers)
+      
+      Source: KPI 1.18 API usage for data transfer
+    links:
+      - "Association «fulfilled by» → F3.6.8 Manage Data Input"  # {5CA1BD49-78EC-4fd3-A434-13F9BDA3B1D7} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+      - "Association «fulfilled by» → F3.6.9 Manage NAP Data Retrieval"  # {9F0EF45A-1C3D-4bc5-A615-5B3666CBD3FB} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+  - name: "K.1.19.1 (meta)data load time"
+    guid: "{EFB0DAD6-19D9-481f-A839-5EBA8899F661}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 20
+    tags:
+      "Requirement Category": ""
+    note: |
+      The load time for (meta)data shall be higher than 1 sec, max. 2 sec.
+      
+      Source: KPI 1.19 Web performance - (meta)data load time

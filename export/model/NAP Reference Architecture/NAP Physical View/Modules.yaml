@@ -1,0 +1,121 @@
+package: "NAP Reference Architecture/NAP Physical View/Modules"
+guid: "{3CBB065E-D74A-434c-80E2-A44A373E5525}"
+alias: "Modules"
+version: "1.0"
+note: |
+  This chapter defines modules for both NAP types, Metadata Directory and Data Platform.
+elements:
+  - name: "Data Management Module"
+    guid: "{919C23BB-5FFF-4300-A416-F084AB9FE538}"
+    type: "Object"
+    stereotype: "FRAME_Application"
+    keywords: "Module"
+    status: "Proposed"
+    order: 0
+    tags:
+      "App_Environment": ""
+    note: |
+      This Module handles traffic and transport data input (upload, update, or deletion) from NAP content providers and its retrieval by NAP content users. It uses the NAP Data store to store all data and related information.
+    links:
+      - "Association «hosted by» → Data Platform NAP"  # {6336CA9F-A401-4211-AFF3-5E3120B19194} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Dependency → F3.6.7 Manage NAP Data Repository"  # {FEB91BF0-A7A7-46eb-81E4-B8245ADCFE47} → {57AEF510-D710-4920-9CCE-96BE708F6AAC}
+      - "Usage → D3.18 NAP Data"  # {37EE73A8-DFC7-4f4a-A30A-6DFD9C1042BE} → {B1156E38-B7ED-4dcd-BD87-C003C660A85A}
+      - "Usage → Data Quality Check"  # {624A62D5-8E64-4104-9EB8-3F7B6EA7DAD4} → {1587F034-1363-447d-8BFA-2234BA04649C}
+      - "Usage → Data from Data Provision System"  # {A7F4AB85-00B1-48bd-BD6B-21CA2C549BE3} → {1DE55835-B3EB-461f-BAF4-61B9F635EDBD}
+      - "Usage → Data to Content Consumer"  # {0FBF8F93-7EF3-4c6c-8DDE-A108AB54BC48} → {B82B3A07-B464-4905-B517-04B74942E5AA}
+      - "Usage → Data to Data Requesting System"  # {573DE6CB-540E-4bda-8D08-22034CC2E22B} → {F785EA75-B3BD-4be6-9374-06DC89A98B73}
+      - "Usage → F3.6.8 Manage Data Input"  # {DA2CF2E0-091F-428f-965E-9D86ACC90EAA} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+      - "Usage → F3.6.9 Manage NAP Data Retrieval"  # {C475F6BF-D311-4ef2-8AFB-3ED6E70639FB} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+      - "Usage → Metadata and Data Management"  # {7DDDB849-BB86-466f-A33A-377E50C717B3} → {8DE1FAAE-FC95-48f3-B1BD-F0F67A00B135}
+      - "Usage → User and Data Management"  # {E0B7047B-B828-4e29-937A-1E28866B0297} → {5C212D22-87C8-423c-A4EE-D4FACC7598C7}
+  - name: "Data Quality Checks Module"
+    guid: "{2E455170-A8C4-4ffc-BF75-1D058FC191B2}"
+    type: "Object"
+    stereotype: "FRAME_Application"
+    keywords: "Module"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "App_Environment": ""
+    note: |
+      This Module enables and supports the periodical and initial checking of published data quality. Main tests performed are schema validation and availability of provided data against the metadata information. The results of the check are stored in NAP Data store.
+    links:
+      - "Association «hosted by» → Data Platform NAP"  # {72221C55-A545-4b0a-93E4-DD8009068962} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Dependency → F3.6.10 Provide Data Quality Checks"  # {015D840E-FA1C-4ebc-88B1-CA2C9C1558A7} → {D01EFD87-A3E1-4216-81D9-855530ECE1B9}
+      - "Usage → Data Quality Check"  # {AF22BB21-456A-46c8-96A2-3190367D83E9} → {1587F034-1363-447d-8BFA-2234BA04649C}
+  - name: "Metadata Management Module"
+    guid: "{4C1A7740-ADB9-4654-9703-57AC92DD6D54}"
+    type: "Object"
+    stereotype: "FRAME_Application"
+    keywords: "Module"
+    status: "Proposed"
+    order: 0
+    tags:
+      "App_Environment": ""
+      "status": "copy"
+    note: |
+      This Module handles metadata input (upload, update, or deletion) from NAP content providers and its retrieval by NAP content users. It uses the NAP Metadata store to store all metadata and related information.
+    links:
+      - "Association «hosted by» → Data Platform NAP"  # {2A3E7F99-F306-4d78-9A72-BA154ED6B039} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «hosted by» → Metadata Directory NAP"  # {8D6FB262-E98B-4bb7-A0A2-3601AAEECF11} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+      - "Dependency → F3.6.1 Manage NAP Metadata Repository"  # {5F48F681-BF93-4602-ACE8-70FC164010C6} → {28A2C553-2939-4542-B14B-8A13B25BC494}
+      - "Usage → D3.15 NAP Metadata"  # {27331105-A997-46dc-A869-897F4AB661AC} → {107C58F6-DF90-4243-BEBB-A50AAACE3DF0}
+      - "Usage → F3.6.3 Manage Content Providers Metadata"  # {1F65E237-8F47-4591-9F75-A4480B7DDA7D} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Usage → F3.6.4 Manage Metadata Retrieval"  # {84A7F259-88DD-4ad4-BE61-7753FEA7C8E4} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
+      - "Usage → Metadata Quality Check"  # {E8880749-7907-4749-8C6D-686A3A48095F} → {4FB08435-DE36-46a7-B970-3E2B0A3CD452}
+      - "Usage → Metadata and Data Management"  # {82463592-E64D-487e-ADC0-9ACF3111F82D} → {8DE1FAAE-FC95-48f3-B1BD-F0F67A00B135}
+      - "Usage → Metadata and User Management"  # {B30EA342-76F4-44b9-B64E-9F331856C463} → {252899F7-3651-40d5-A2A6-1A59A8185657}
+      - "Usage → Metadata from Metadata Provision System"  # {C25E8004-A2F3-4012-B247-EDD881B12242} → {A75E9CBB-5B13-4249-B1EE-F51C9EC0BD9D}
+      - "Usage → Metadata to Content Consumer"  # {9A8232EE-7155-429b-A2E6-8BA03CB94BB8} → {C25F8BCA-DCD4-4894-956E-40D0218D3ACA}
+      - "Usage → Metadata to Requesting System"  # {9CD51C62-D9CE-4aff-B93B-0D3BF3D494CB} → {5681386B-AB60-4a6c-B51B-4BD4F745FDD5}
+  - name: "Metadata Quality Check Module"
+    guid: "{B9BC9F94-BAF8-465c-A024-66944F4C302E}"
+    type: "Object"
+    stereotype: "FRAME_Application"
+    keywords: "Module"
+    status: "Proposed"
+    order: 0
+    tags:
+      "App_Environment": ""
+    note: |
+      This Module periodically and initially checks the quality of provided metadata. The main tests performed are the availability of provided links and structural and contextual soundness based on predefined criteria. The results of the check are stored in the NAP Metadata store.
+    links:
+      - "Association «hosted by» → Data Platform NAP"  # {BE40330C-2C6F-4db7-B2ED-FEC4AB78AC8D} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «hosted by» → Metadata Directory NAP"  # {9E8AEB69-DAFA-413e-8F2F-6BB7109988F9} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+      - "Dependency → F3.6.6 Provide Metadata Quality Checks"  # {40223287-0ED4-414e-ADCD-8D839C852875} → {15BFF38A-05D9-4775-84C9-6604B0EEA3C6}
+      - "Usage → Metadata Quality Check"  # {C1F310BF-7AA6-4d95-B9F0-060476AC2EB9} → {4FB08435-DE36-46a7-B970-3E2B0A3CD452}
+  - name: "Support (ticket) Module"
+    guid: "{02101F2C-788B-49ea-8C0D-AD3B498E1E53}"
+    type: "Object"
+    stereotype: "FRAME_Application"
+    keywords: "Module"
+    status: "Proposed"
+    order: 0
+    tags:
+      "App_Environment": ""
+    note: |
+      This Module handles and allows the processing of requests for support and reported issues by NAP Users, (Content Providers and Content Consumers).
+    links:
+      - "Association «hosted by» → Data Platform NAP"  # {CF965519-0916-4df5-948C-8BCD019EAAD3} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Usage → F3.6.5 Provide NAP User Support"  # {ABF8BD93-EFE3-4674-9907-BE858125FB87} → {E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}
+      - "Usage → Support of Content Consumer"  # {50697546-2CAF-4c32-8B0E-37180AF7B764} → {0B43348A-F713-49fe-A684-A88D53A58D67}
+      - "Usage → Support of Content Provider"  # {C74E00EA-C251-42d2-9DAF-48318F30F244} → {BA985F0C-2C6F-4329-BABC-91890CC23954}
+  - name: "User Management Module"
+    guid: "{83B61A0E-1086-4216-B72F-38DA9E185D9B}"
+    type: "Object"
+    stereotype: "FRAME_Application"
+    keywords: "Module"
+    status: "Proposed"
+    order: 0
+    tags:
+      "App_Environment": ""
+    note: |
+      This Module handles user (NAP Content Providers and NAP Content Consumers) registrations and authorizations. It stores all relevant user information along with credentials in NAP Users data store.
+    links:
+      - "Association «hosted by» → Data Platform NAP"  # {072C83B5-6776-4126-B287-BDDD1C1FF415} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Usage → Content Consumer Authorization and Registration"  # {07A5648E-F71C-4f77-9227-766B72AA8E2F} → {96C4145B-D427-423c-8272-54CE77DBDE7F}
+      - "Usage → D3.17 NAP Users"  # {ADB46F04-9D19-412c-8A43-0CB064A09F9C} → {6EFCE4AC-8716-4e03-A229-875C0AA05392}
+      - "Usage → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {94BDCDE6-EC32-4b30-952C-389CD04322C1} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}
+      - "Usage → Metadata and User Management"  # {96870B7B-1478-4825-AF26-5D6D23533ECD} → {252899F7-3651-40d5-A2A6-1A59A8185657}
+      - "Usage → User and Data Management"  # {4ACFE57D-A3C5-491e-BFC7-46770233BC05} → {5C212D22-87C8-423c-A4EE-D4FACC7598C7}

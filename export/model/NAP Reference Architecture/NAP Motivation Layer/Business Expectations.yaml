@@ -1,0 +1,79 @@
+package: "NAP Reference Architecture/NAP Motivation Layer/Business Expectations"
+guid: "{2D034B97-F528-4d60-A51D-ED727D8A4F0F}"
+alias: "Business Expectations"
+version: "1.0"
+note: |
+  In this chapter are definitions of Stakeholders of Business Expectations of the ITS Service.
+elements:
+  - name: "Access to the content providers and their services"
+    guid: "{BEEC92A0-2D8F-4223-80CC-93C134836DD3}"
+    type: "Artifact"
+    stereotype: "FRAME_Business_Expectation"
+    keywords: "Expectation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The National Body expects better and easier access to the content providers and their services (with their description and (observed) qualitative parameters) as they are being promoted through NAP, instead of finding and reaching out to the content consumer separately.
+    links:
+      - "Realisation → National Access Point mission statement"  # {FA838D35-1CBC-4abe-8876-BA9487463CB8} → {27C3C5F4-664F-4d48-A554-AF601321B267}
+  - name: "Better data visibility and usability"
+    guid: "{A74A1B0F-B29F-4ef3-B785-89BF9BED3ACC}"
+    type: "Artifact"
+    stereotype: "FRAME_Business_Expectation"
+    keywords: "Expectation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Content Providers expect to fulfil obligations stipulated by the ITS Directive and related Delegated Regulations and as side effects increase the visibility of their data by publishing them (or respective metadata) at the NAP and increase the usability of their data by adopting EU-wide recommended standards and profiles.
+    links:
+      - "Realisation → National Access Point mission statement"  # {6B0F8045-5F8C-4b09-8D80-A221CA6ECBFE} → {27C3C5F4-664F-4d48-A554-AF601321B267}
+  - name: "Better mobility services for citizens"
+    guid: "{B1BC2597-7347-4c5e-AD8F-54DD1CD5430C}"
+    type: "Artifact"
+    stereotype: "FRAME_Business_Expectation"
+    keywords: "Expectation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Member State is the main protagonist in creating and implementing European Policy through the European Parliament and legislature development process. It has similar expectations to the European Commission e.g. more efficient transport and fewer accidents. It also has expectations targeted to increased use of governmental data as well as data from private parties. Better cross-border traffic management and increased MS cooperation.
+    links:
+      - "Realisation → National Access Point mission statement"  # {CB0DE30C-8E17-446c-BFE4-25BCEEACDA49} → {27C3C5F4-664F-4d48-A554-AF601321B267}
+  - name: "Clear set of requirements"
+    guid: "{C5BF4F37-E65D-4998-BC18-CF0C0F8F8AF9}"
+    type: "Artifact"
+    stereotype: "FRAME_Business_Expectation"
+    keywords: "Expectation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The NAP Operator is the main facilitator of the data and service exchange between provider and consumer. They expect an easy / defined operational and legislative environment laid out by Member States.
+    links:
+      - "Realisation → National Access Point mission statement"  # {47AC6C75-5C94-46ba-9FBF-4851D0C0131E} → {27C3C5F4-664F-4d48-A554-AF601321B267}
+  - name: "EU-wide coverage and harmonized delivery of ITS services"
+    guid: "{40E6AD55-91B5-46d0-97FB-DAD263613E62}"
+    type: "Artifact"
+    stereotype: "FRAME_Business_Expectation"
+    keywords: "Expectation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The European Commission is the main policy facilitator, it proposes and implements legislation. The EC expectations are stipulated within the EU mobility strategy documents and are ultimately focused, regardless of age, health, and gender, on reducing the environmental impact of European transport and reducing fatalities and accidents on European roads through the facilitation of easy-to-access-EU-wide harmonized traffic and travel data exchange. The European Commission establishes a common framework for EU harmonisation legislation for placing services on the market at the EU level to ensure that EU-wide ITS information service is provided following the EU specifications.
+    links:
+      - "Realisation → National Access Point mission statement"  # {5D16C412-51B0-4b70-8C85-6AC905C0266A} → {27C3C5F4-664F-4d48-A554-AF601321B267}
+  - name: "Easy access to harmonized services"
+    guid: "{BC8FFFD0-5AB4-49dc-B949-BEB69CF1D447}"
+    type: "Artifact"
+    stereotype: "FRAME_Business_Expectation"
+    keywords: "Expectation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The Content Consumer expects all mobility data or services accessible online at one place (NAP), uniformly described, accessible to all, and with content aligned by recommended standards and/or relevant profiles.
+    links:
+      - "Realisation → National Access Point mission statement"  # {C067FDFF-20B3-44e5-9F7D-7E4E9567AE20} → {27C3C5F4-664F-4d48-A554-AF601321B267}

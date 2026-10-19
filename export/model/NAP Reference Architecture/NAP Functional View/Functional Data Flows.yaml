@@ -1,0 +1,7 @@
+package: "NAP Reference Architecture/NAP Functional View/Functional Data Flows"
+guid: "{AEE1A8E2-AF85-4280-A409-C5805A36EEB0}"
+alias: "Functional Data Flows"
+version: "1.0"
+note: |
+  This chapter defines functional data flows for both NAP types, Metadata Directory and Data Platform.
+elements: []

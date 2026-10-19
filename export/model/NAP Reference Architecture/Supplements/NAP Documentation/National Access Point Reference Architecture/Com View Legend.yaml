@@ -1,0 +1,14 @@
+package: "NAP Reference Architecture/Supplements/NAP Documentation/National Access Point Reference Architecture/Com View Legend"
+guid: "{845E7628-94E0-E155-B380-FD52760CC7D7}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Legend"
+    guid: "{9C96152B-8156-9C73-A646-5C24ABA075E1}"
+    type: "Artifact"
+    stereotype: "Document"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""

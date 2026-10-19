@@ -1,0 +1,156 @@
+package: "NAP Reference Architecture/NAP Functional View/Terminators"
+guid: "{AFF7C293-88E9-49fb-BAAC-1A142E4AA9AD}"
+alias: "Terminators"
+version: "1.0"
+note: |
+  This chapter defines terminators for both NAP types, Metadata Directory and Data Platform.
+elements:
+  - name: "Data Provision System"
+    guid: "{13412496-2C40-428c-B961-F0F374D991C8}"
+    type: "Actor"
+    stereotype: "FRAME_Terminator"
+    keywords: "Terminator"
+    status: "Proposed"
+    order: 0
+    note: |
+      The generic terminator role Data Provision System represents any interested entity in traffic, travel data storage. The Data Provision System can request storing traffic and travel data in the NAP Data store. Therefore, Function F3.6.8 Manage Data Input offers an access interface for machine-to-machine data upload. Authorisation is necessary, the Data Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.
+      
+      Key issue: Request to store data at NAP.
+      Area of responsibility: Be compliant with the agreement with content provider
+      Tasks: Upload content
+      Mnemonic: nap.dps
+    links:
+      - "Association «IN» → fnap.dps-data_&_authorisation_credentials"  # {D3794913-14F7-42bd-A380-0435A43689FD} → {8EC048EF-B06E-497b-A29E-EFB18412560E}
+      - "Usage → Data from Data Provision System"  # {B1A95FFA-0D99-4a31-B303-AECD7D9D2CF0} → {1DE55835-B3EB-461f-BAF4-61B9F635EDBD}
+  - name: "Data Requesting System"
+    guid: "{6CBF0F02-2909-4086-A608-C5EA1E42A9F6}"
+    type: "Actor"
+    stereotype: "FRAME_Terminator"
+    keywords: "Terminator"
+    status: "Proposed"
+    order: 0
+    note: |
+      The generic terminator role Data Requesting System represents any interested entity in traffic, travel data. The Data Requesting System can request traffic and travel data available in the NAP Data store. Therefore, Function F3.6.9 Manage NAP Data Retrieval offers a data distribution interface for machine-to-machine data retrieval.
+      In some cases, especially when the data are pushed to the Content Consumer systems and / or authorisation is necessary the Data Requesting System must use credentials obtained by Content Consumer. When registering the Content Consumer will obtain credentials and / or to set up a machine account to which data are pushed.
+      
+      Key issue: Request data stored at NAP.
+      Area of responsibility: Be compliant with the agreement with content provider
+      Tasks: Receive content
+      Mnemonic: nap.drs
+    links:
+      - "Association «IN» → fnap.drs-data_request"  # {9C30B785-03D6-450c-8050-85B0D468ECBE} → {A57EDCA4-5B76-4808-9C68-5DDF06E70C93}
+      - "Usage → Data to Data Requesting System"  # {BB3B5C7B-484F-410e-9F7B-1E621FEFBD8C} → {F785EA75-B3BD-4be6-9374-06DC89A98B73}
+  - name: "Metadata Provision System"
+    guid: "{0DEEF50F-C3BA-4005-A27B-57A30C4C009C}"
+    type: "Actor"
+    stereotype: "FRAME_Terminator"
+    keywords: "Terminator"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The generic terminator role Metadata Provision System represents any compatible entity in metadata storage.
+      The Metadata Provision System can request storing metadata in the NAP Metadata store. Therefore, Function Metadata Management Module offers an access interface for machine-to-machine data upload. Authorisation is necessary, the Metadata Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.
+      
+      Key issue: Request to store metadata at NAP.
+      Area of responsibility: Be compliant with the agreement with content provider
+      Tasks: Upload metadata
+      Mnemonic: nap.mdps
+    links:
+      - "Association «IN» → ps_metadata & data source"  # {3DEA5F32-429E-4959-A9D1-4BE9D3BC6E5A} → {36B4BBF5-5B68-4d38-AF28-7669EFF35137}
+      - "Usage → Metadata from Metadata Provision System"  # {F9F3EF83-D101-4772-BEA5-D749FBE6652A} → {A75E9CBB-5B13-4249-B1EE-F51C9EC0BD9D}
+  - name: "Metadata Requesting System"
+    guid: "{DEB4AC48-7332-4f57-99D5-79169FCA6F1F}"
+    type: "Actor"
+    stereotype: "FRAME_Terminator"
+    keywords: "Terminator"
+    status: "Proposed"
+    order: 0
+    note: |
+      The generic terminator role Metadata Requesting System represents any interested entity in traffic and transport metadata dissemination. The Metadata Requesting System can request information stored in the NAP Metadata store in a standardized format (mobilityDCAT-AP) to incorporate said data into its information services (i.e. metadata harvesting). Therefore, Function F3.6.4 Manage NAP Metadata Retrieval offers a data distribution interface for machine-to-machine data retrieval.
+      
+      Key issue: Request metadata stored at NAP.
+      Area of responsibility: Be compliant with the agreement with the NAP operator
+      Tasks: Receive information about the content in a standardized manner, i.e. metadata
+      Mnemonic: nap.mdrs
+    links:
+      - "Association «IN» → fnap.mdrs-metadata_request"  # {0DE4E9BC-F952-4f2e-BF6D-9800A6BD46B9} → {1F8479D1-6CEC-42fd-8CD2-79F9AD3334A4}
+      - "Usage → Metadata to Requesting System"  # {083FB2AB-4B93-40e3-9A01-61F9FCDC0A9B} → {5681386B-AB60-4a6c-B51B-4BD4F745FDD5}
+  - name: "NAP Content Consumer"
+    guid: "{6713B765-606E-4208-8FE8-99B0D50851A5}"
+    type: "Actor"
+    stereotype: "FRAME_Terminator"
+    keywords: "Terminator"
+    status: "Proposed"
+    order: 0
+    tags:
+      "status": "copy"
+    note: |
+      The generic terminator role of the NAP Content Consumer represents any interested entity in traffic and transport data. The Content Consumer can find available data via the NAP. Therefore, Function F3.6.4 Provide Access for NAP Meta-Data Retrieval offers an interface (typically a graphical user interface freely accessible via the Internet) to search the meta-data in D3.15 NAP Meta-Data
+      
+      Key issue: Request high-quality services; provide feedback about relevant content
+      Area of responsibility: Be compliant with the agreement with the NAP content provider
+      Tasks: Receive content
+      Mnemonic: nap.cc
+    links:
+      - "Aggregation «component of» → NAP Actors"  # {C315C920-21DC-4a44-99FA-FB029F697E0F} → {E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}
+      - "Association «IN» → fnap.cc-metadata_search_request"  # {BE7AD80D-B732-4d10-B4CC-0E4C6725F9FB} → {CE5CAFBE-137B-4743-AB12-5EA3827B901A}
+      - "Association «IN» → fnap.cc-registration_request"  # {92DA8F6B-1001-48b9-837A-33A0CAAECA83} → {7777AD14-8D53-466c-9949-22CFAB635676}
+      - "Association «IN» → fnap.cc-support_request"  # {572D1BA3-8128-476c-AE45-D678F1DA2A1B} → {1309E545-2913-41f6-920A-68A496630817}
+      - "Association «OUT» → fnap.cc-data_request"  # {A9C29A51-6961-4d68-9FEE-FF1FDA197CD4} → {AFB3FDE3-5682-463a-A966-CEF77741C6A9}
+      - "Dependency → Privacy agreement (CC to NO) and general terms and conditions"  # {EAF4EAC0-257D-4aa5-BE60-B3D801141DA6} → {AF555DF2-4535-42f6-993A-5BE72947BD12}
+      - "Usage → Data to Content Consumer"  # {31AF9124-F69F-4487-9088-36D912DF380D} → {B82B3A07-B464-4905-B517-04B74942E5AA}
+      - "Usage → Metadata to Content Consumer"  # {F96A7DCC-CD24-4a8d-BB10-E2BA7E92C2F4} → {C25F8BCA-DCD4-4894-956E-40D0218D3ACA}
+      - "Usage → Support of Content Consumer"  # {892D855E-FA9A-490c-9AB5-F1F939885A6C} → {0B43348A-F713-49fe-A684-A88D53A58D67}
+  - name: "NAP Content Provider"
+    guid: "{7F7723C2-1334-495d-8C3F-1CA486951DD2}"
+    type: "Actor"
+    stereotype: "FRAME_Terminator"
+    keywords: "Terminator"
+    status: "Proposed"
+    order: 0
+    tags:
+      "status": "copy"
+    note: |
+      The generic terminator role of the NAP Content Provider represents any provider of traffic and transport data.
+      The NAP Content Provider describes traffic and transport data with meta-data on the NAP (stored in D3.15 NAP Meta-Data). Information about the Content Provider, such as contact details, kept in D3.17 NAP Content Providers.
+      Content Providers are public and private road operators, road authorities, service providers, transport authorities, transport operators, infrastructure managers, and transport on-demand service providers. The obligations to make traffic and transport data accessible via the NAP depend on the type of data according to the ITS Directive and its respective delegated regulations (see Content Provider Actor)
+      
+      Key issue: Provide and publish content (which the content provider has the legal rights to publish); collect content.
+      Area of responsibility: Provide timely and accurate traffic and transport data.
+      Tasks: Provide content relevant to the ITS domain and according to contracts with the NAP and content consumers
+      Mnemonic: nap.cp
+    links:
+      - "Aggregation «component of» → NAP Actors"  # {76C6E1CB-C2D4-497d-9F52-2528B02B06E6} → {E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}
+      - "Association «IN» → fnap.cp-data_&_authorisation_credentials"  # {6EA16D14-D878-4ead-88A4-8F2BA81B96C4} → {60297FF0-CD09-4e8d-8221-0B0FF35E3239}
+      - "Association «IN» → fnap.cp-metadata_&_authorisation_credentials"  # {CF2EA95A-F1FD-4971-81BD-1D347BDDE645} → {8D75B934-0C29-40d6-9C80-4963B533B29D}
+      - "Association «IN» → fnap.cp-registration_request"  # {DCCA7AC8-F140-4289-8791-97625EDD8792} → {2165053D-3E67-4324-90F7-172FAA37E259}
+      - "Association «IN» → fnap.cp-support_request"  # {83721649-22C0-4582-87EE-49480D33DE1F} → {1ED4DEC1-3019-4933-A419-5FE60CC29FF4}
+      - "Dependency → Metadata provision contract (NO to CP)"  # {E9650C33-6974-4c67-90B2-D8B8E009579B} → {BEED600A-C5D2-4829-9BF5-6E6649CB3D14}
+      - "Usage → Data from Content Provider"  # {DBBF9565-99B8-4285-BE82-559428C0B562} → {1F6F7D4C-BAFE-43db-AF7B-C8043CC6E31F}
+      - "Usage → Metadata from Content Provider"  # {DD83F61E-D062-4d94-B902-D5F8B054107C} → {48F2D92D-8E82-4032-B932-CD8D2CB855B0}
+      - "Usage → Support of Content Provider"  # {4A754CEB-E5A2-4d50-B203-94FA91733F34} → {BA985F0C-2C6F-4329-BABC-91890CC23954}
+      - "Usage → User Management of Content Provider"  # {2076F5E8-4744-4848-AB93-7DA41C848451} → {C5A68539-7FA7-4245-9B3A-F55B6668B579}
+  - name: "NAP Actors"
+    guid: "{E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}"
+    type: "Class"
+    stereotype: "FRAME_Terminator"
+    alias: "nap"
+    keywords: "Terminator"
+    status: "Proposed"
+    version: "5.0"
+    order: 12
+    tags:
+      "status": "copy"
+    note: |
+      This Terminator shall represent the actors that participate in the National Access Point (NAP) ITS Service. This ITS Service provides a mechanism that enables organisations to access data available from other ITS Services. It shall consist of the following Terminators.
+      
+      	- NAP Content Provider
+      	- NAP Content Consumer
+      
+      
+      Mnemonic: nap
+    links:
+      - "Association «IN» → From NAP Actors"  # {DDE06F1A-06DE-4fc4-A146-E4EAC1F72585} → {C6FE2F39-008F-4811-AE0F-95EB671FFFD2}
+      - "Association «IN» → fnap-mt_inputs"  # {F706807F-CB0D-4f07-93F6-3CF2D3E1F6FA} → {90829C59-D7DB-4ff9-8AB7-F4BBCEA7422B}
+      - "Association «OUT» → tnap-mt_outputs"  # {C2F4596C-E792-4e22-B285-1AFACCBB514D} → {B767384A-BAB2-4802-A07C-DA9BA8B1132A}

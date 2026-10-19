@@ -1,0 +1,6 @@
+*.ldb
+*.qea-journal
+*.qea-wal
+~$*
+__pycache__/
+report*.md

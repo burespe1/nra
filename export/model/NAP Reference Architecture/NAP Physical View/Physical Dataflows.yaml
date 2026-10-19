@@ -1,0 +1,189 @@
+package: "NAP Reference Architecture/NAP Physical View/Physical Dataflows"
+guid: "{CF940D4F-85A8-4354-B961-3000D08D453E}"
+alias: "Physical Data Flows"
+version: "1.0"
+note: |
+  This chapter defines physical data flows for both NAP types, Metadata Directory and Data Platform.
+elements:
+  - name: "Content Consumer Authorization and Registration"
+    guid: "{96C4145B-D427-423c-8272-54CE77DBDE7F}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between NAP Content Consumer and User Management Module. This exchange concerns Content Consumers data objects for registration requests and credentials for data retrieval upon authorization. The registration request contains entity information, license terms approval, and organization details. Outputs include responses to registration requests and credentials for accessing NAP functionality.
+    links:
+      - "Association «use» → Content Consumer Management"  # {1AA4DE24-084C-4d88-8946-72F0EBDC7AC6} → {572A0DDD-F3CD-426f-B920-5E8E986DFC0C}
+      - "Usage → NAP Content Consumer"  # {222EA4B4-80EB-4149-A45C-CADBCABF1C65} → {6713B765-606E-4208-8FE8-99B0D50851A5}
+  - name: "Data Quality Check"
+    guid: "{1587F034-1363-447d-8BFA-2234BA04649C}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Data Quality Check and Data Management modules. This exchange concerns data retrieved from the NAP Data store after scheduled or triggered events. The data object includes updated quality information, time stamps, success or failure status, error counts, service levels, and an aggregated summary.
+  - name: "Data from Content Provider"
+    guid: "{1F6F7D4C-BAFE-43db-AF7B-C8043CC6E31F}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Data Management Module and Content Provider. This exchange concerns inputs from the NAP Content Provider with new or updated data objects, requiring authorisation credentials.
+    links:
+      - "Association «use» → Content Provider Data Provision"  # {5D5ECCD2-6B89-476d-BE32-0C799DD2FC6F} → {C03CF47C-96E7-4733-B905-CB836A908BB7}
+      - "Usage → Data Management Module"  # {C9CE165B-5416-4c86-9175-A9C1EEE41A02} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
+  - name: "Data from Data Provision System"
+    guid: "{1DE55835-B3EB-461f-BAF4-61B9F635EDBD}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Data Management Module and Data Provision System. This exchange concerns inputs from the Data Provision System with new or updated data objects, requiring authorisation credentials.
+    links:
+      - "Association «use» → Machine Data Provision"  # {DD491029-0A53-4fe5-ABB9-7E8C9D8AF0B4} → {EBF272EF-DE4F-4939-83C4-C3924574983A}
+  - name: "Data to Content Consumer"
+    guid: "{B82B3A07-B464-4905-B517-04B74942E5AA}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Data Management Module and Content Consumer. This exchange concerns requests from the NAP Content Consumer for data content and responses with data if the authorisation is successful.
+    links:
+      - "Association «use» → Content Consumer Data Access"  # {D06C949D-7B82-4792-8604-D035F9ED7F4E} → {46EF7C20-D17A-4964-9EEC-CFC8A2161BB1}
+  - name: "Data to Data Requesting System"
+    guid: "{F785EA75-B3BD-4be6-9374-06DC89A98B73}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Data Requesting System and NAP Data Management Module. This exchange concerns requests from the Data Requesting System for data content and responses with data if the authorisation is successful.
+    links:
+      - "Association «use» → Machine Data Access"  # {E96D3160-8C73-484f-877E-35A4209AC4BE} → {B5381D32-D813-436f-8E09-B87BD10B5F64}
+  - name: "Metadata Quality Check"
+    guid: "{4FB08435-DE36-46a7-B970-3E2B0A3CD452}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Metadata Quality Check and Metadata Management modules. This exchange concerns metadata retrieved from the NAP Metadata store after scheduled or triggered events. The data object includes updated quality information, time stamps, success or failure status, error counts, service levels, and an aggregated summary.
+  - name: "Metadata and Data Management"
+    guid: "{8DE1FAAE-FC95-48f3-B1BD-F0F67A00B135}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Metadata Management and Data Management modules. This exchange concerns metadata retrieval/check/update with regards data stored in the Data Store.
+  - name: "Metadata and User Management"
+    guid: "{252899F7-3651-40d5-A2A6-1A59A8185657}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Metadata Management and User Management modules. This exchange concerns request for authorisation of Content Provider to access and change data in Metadata Management Module.
+  - name: "Metadata from Content Provider"
+    guid: "{48F2D92D-8E82-4032-B932-CD8D2CB855B0}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Metadata Management Module and Content Provider. This exchange concerns inputs from the NAP Content Provider with new or updated metadata objects, requiring authorisation credentials.
+    links:
+      - "Association «use» → Content Provider Metadata Provision"  # {6079A08F-B185-4a92-A51E-CB0308C73C4D} → {DAA1010E-3FD1-49b7-AC66-2080DB101A8E}
+      - "Usage → Metadata Management Module"  # {1F84610B-F2BD-418c-B36C-11068ED252B3} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "Metadata from Metadata Provision System"
+    guid: "{A75E9CBB-5B13-4249-B1EE-F51C9EC0BD9D}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates metadata exchange between Metadata Management Module and metadata Provision System. This exchange concerns inputs from the Metadata Provision System with new or updated data objects, requiring authorisation credentials.
+    links:
+      - "Association «use» → Machine Metadata Provision"  # {A882EB72-EB69-4e54-B517-9192FEBEFB02} → {70F2112F-B845-4d29-AECD-17CD9D7B4B7D}
+  - name: "Metadata to Content Consumer"
+    guid: "{C25F8BCA-DCD4-4894-956E-40D0218D3ACA}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between NAP Content Consumer and NAP Metadata Management Module. This exchange concerns search requests sent by the NAP Content Consumer and search results returned by the NAP Metadata Management Module.
+    links:
+      - "Association «use» → Content Consumer Metadata Access"  # {43DDC7B5-F1E7-4970-85D5-289B915EA998} → {ECF5445C-50A8-4ca3-8C86-50DB480DBD8C}
+  - name: "Metadata to Requesting System"
+    guid: "{5681386B-AB60-4a6c-B51B-4BD4F745FDD5}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Metadata Requesting System and NAP Metadata Management Module. This exchange concerns search requests sent by the Metadata Requesting System and search results returned by the NAP Metadata Management Module.
+    links:
+      - "Association «use» → Machine Metadata Access"  # {70951161-14B0-4d80-B37F-C971B307A2D3} → {373128AD-1078-42bc-A0B2-F5E56522B7B8}
+  - name: "Support of Content Consumer"
+    guid: "{0B43348A-F713-49fe-A684-A88D53A58D67}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Support (ticket) Module and Content Consumer. This exchange concerns support requests sent by the Content Consumer and handled by the Support (ticket) Module.
+    links:
+      - "Association «use» → Content Consumer Support"  # {14898744-5376-41b9-A924-61FD910DDFFA} → {9D010BE5-6592-4e26-86F6-6D16140A0A39}
+  - name: "Support of Content Provider"
+    guid: "{BA985F0C-2C6F-4329-BABC-91890CC23954}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Support (ticket) Module and Content Provider. This exchange concerns support requests sent by the Content Provider and handled by the Support (ticket) Module.
+    links:
+      - "Association «use» → Content Provider Support"  # {A792BB90-9FC7-4f1d-8C6B-9D56AEA6351E} → {2B49F77B-92D8-4494-B75B-7482740303ED}
+  - name: "User Management of Content Provider"
+    guid: "{C5A68539-7FA7-4245-9B3A-F55B6668B579}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between Content Provider and User Management Module. This exchange concerns user registration requests.
+    links:
+      - "Association «use» → Content Provider Management"  # {4FA1CE67-8DBC-47e7-A002-065873A1C146} → {D137DB55-A2D0-4a62-9A98-6144AC1C5404}
+      - "Usage → User Management Module"  # {7E9FF617-F7D6-43b5-977D-B0DFA5B3571E} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "User and Data Management"
+    guid: "{5C212D22-87C8-423c-A4EE-D4FACC7598C7}"
+    type: "Interface"
+    stereotype: "FRAME_Physical_Data_Flow"
+    keywords: "Physical Data flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      This Physical Data Flow facilitates information exchange between User Management and Data Management modules. This exchange concerns credentials of a NAP Content Provider or Data Providing System, which are checked against the NAP Users data store to authorize the claimant to insert or modify data records in the NAP Data store. They also provide information about the validity of these authorization credentials.

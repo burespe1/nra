@@ -1,0 +1,149 @@
+package: "NAP Reference Architecture/NAP Functional View/Data Stores"
+guid: "{B90234AC-0801-49e7-BC10-6B9C0794B41D}"
+alias: "Data Stores"
+version: "1.0"
+note: |
+  This chapter defines data stores for both NAP types, Metadata Directory and Data Platform.
+elements:
+  - name: "D3.18 NAP Data"
+    guid: "{B1156E38-B7ED-4dcd-BD87-C003C660A85A}"
+    type: "Object"
+    stereotype: "FRAME_Datastore"
+    keywords: "Data Store"
+    status: "Proposed"
+    order: 0
+    tags:
+      "DataStore_SecurityLevel": "None"
+      "Defined level of archive parameters": ""
+      "Maximum acceptable request times per application and/or service": "1000"
+      "Number of Users supported": "1"
+      "Other specific requirements of DataStores e.g. MTBF": ""
+      "Physical Capacity": "1 Byte"
+      "Planned Service level per application and partner": "None"
+      "Planned backup and mirroring procedures": ""
+      "Planned data storage duration over time": "1 Year"
+      "Planned numbers of applications on the data storage or processing unit": ""
+      "Planned numbers of partners or system modules operationg in parallel in shared data storages": ""
+      "auditing": ""
+      "capacity": ""
+      "categoryValue": ""
+      "dataState": ""
+      "dataStoreRef": ""
+      "documentation": ""
+      "isUnlimited": "false"
+      "itemKind": "Information"
+      "itemSubjectRef": ""
+      "monitoring": ""
+      "transaction numbers over time": "10"
+    note: |
+      This Data Store shall be used within the Manage Traffic Functional Area. It shall contain information objects that provide traffic and travel data.
+      
+      Each information object in the Store shall contain the following data objects:
+      
+       (1) actual stored traffic or travel related data that is considered as a compact and comprehensive data content
+       (2) data quality information
+       (3) relation of the data content to the metadata elements, allowing to identify data distribution
+       (4) access credentials to stored content identifying the information object creator and updater and its readers
+       (5) last update time information
+       (6) size of the object
+      
+      Data content to be stored in the data store is given mainly by the obligations to make certain data content accessible via the NAP. The obligation together with a list of data is stipulated in the ITS Directive 2010/40/EU and its revised version (EU) 2023/2661 and complementary Delegated Regulations 885/2013, 886/2013, 2015/962, 2017/1926, 2022/670 and 2023/1804.
+    links:
+      - "Association «IN» → mt_read_NAP_data"  # {59ED6201-712C-46ed-918F-7E1B1C06A126} → {30332204-58C2-432d-A2FE-1801EA8E123F}
+      - "Dependency «trace» → D3.18"  # {A4129CC6-13E5-4199-A570-5A45F4817988} → {DBD21D65-D422-4cd4-A498-46680C395327}
+  - name: "D3.15 NAP Metadata"
+    guid: "{107C58F6-DF90-4243-BEBB-A50AAACE3DF0}"
+    type: "Object"
+    stereotype: "FRAME_Datastore"
+    keywords: "Data Store"
+    status: "Proposed"
+    order: 17
+    tags:
+      "DataStore_SecurityLevel": "None"
+      "Defined level of archive parameters": ""
+      "Maximum acceptable request times per application and/or service": "1000"
+      "Number of Users supported": "1"
+      "Other specific requirements of DataStores e.g. MTBF": ""
+      "Physical Capacity": "1 Byte"
+      "Planned Service level per application and partner": "None"
+      "Planned backup and mirroring procedures": ""
+      "Planned data storage duration over time": "1 Year"
+      "Planned numbers of applications on the data storage or processing unit": ""
+      "Planned numbers of partners or system modules operationg in parallel in shared data storages": ""
+      "auditing": ""
+      "capacity": ""
+      "categoryValue": ""
+      "dataState": ""
+      "dataStoreRef": ""
+      "documentation": ""
+      "isUnlimited": "false"
+      "itemKind": "Information"
+      "itemSubjectRef": ""
+      "monitoring": ""
+      "status": "copy"
+      "transaction numbers over time": "10"
+    note: |
+      This Data Store shall be used within the Manage Traffic Functional Area. It shall contain information objects that provide metadata about traffic, travel data and any other relevant information. The required and optional elements of metadata have been harmonised and can be found in a metadata catalogue: https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html.
+      
+      Metadata is structured in the data store to:
+       (1) describe data provider, where each data provider may list multiple of
+       (2) data sets or services and each of such can be provided by more than one way by specifying its
+       (3) distribution parameters.
+      
+      The content and the structure are governed by the mobilityDCAT-AP.
+      Further on the data store also contains:
+       (4) log of events with respect of metadata creation, update and
+       (5) quality information per data set.
+    links:
+      - "Association «IN» → mt_read_NAP_metadata"  # {EC19AC71-5ABB-4cf4-AECE-9B50176C689C} → {1E6C064E-67D4-4638-9588-0E0DCF2813ED}
+      - "Dependency «trace» → D3.15"  # {16CC2CBC-0E51-40af-82E9-5DA554BAA9BF} → {447B6290-8720-44f5-8F7D-1424DC510DAD}
+  - name: "D3.17 NAP Users"
+    guid: "{6EFCE4AC-8716-4e03-A229-875C0AA05392}"
+    type: "Object"
+    stereotype: "FRAME_Datastore"
+    keywords: "Data Store"
+    status: "Proposed"
+    order: 18
+    tags:
+      "DataStore_SecurityLevel": "None"
+      "Defined level of archive parameters": ""
+      "Maximum acceptable request times per application and/or service": "1000"
+      "Number of Users supported": "1"
+      "Other specific requirements of DataStores e.g. MTBF": ""
+      "Physical Capacity": "1 Byte"
+      "Planned Service level per application and partner": "None"
+      "Planned backup and mirroring procedures": ""
+      "Planned data storage duration over time": "1 Year"
+      "Planned numbers of applications on the data storage or processing unit": ""
+      "Planned numbers of partners or system modules operationg in parallel in shared data storages": ""
+      "auditing": ""
+      "capacity": ""
+      "categoryValue": ""
+      "dataState": ""
+      "dataStoreRef": ""
+      "documentation": ""
+      "isUnlimited": "false"
+      "itemKind": "Information"
+      "itemSubjectRef": ""
+      "monitoring": ""
+      "status": "copy"
+      "transaction numbers over time": "10"
+    note: |
+      This Data Store shall be used within the Manage Traffic Functional Area. It shall contain information objects that provide details of NAP Users, i.e. NAP Content Providers and NAP Content Consumers (for Data Platform NAP type) . The Data Store contains private information used by NAP Users to access the NAP, to provide agreement on terms and conditions. Public metadata about traffic and travel information and other related information are stored in NAP Metadata store (D3.15).
+      
+      For Content Providers the data store contains following data objects:
+       (1) organization with name (1.1), postal address (1.2), website (1.3), agreement on licence terms (1.4), unique identifier assigned to organization (1.5), name and contact details of a responsible person to act as a contact (1.6).
+       (2) user account(s) with name (2.1), email (2.2), credentials (2.3), user type (2.4).
+      *(3) machine account with url (3.1), connection type (3.2), credentials (3.3).
+      
+      For Content Consumers the data store contains following data objects:
+      *(1) organization with name (1.1), postal address (1.2), website (1.3), agreement on licence terms (1.4), unique identifier assigned to organization (1.5), name and contact details of a responsible person to act as a contact (1.6).
+      *(2) user account(s) with name (2.1), email (2.2), credentials (2.3), user type (2.4).
+      *(3) machine account with url (3.1), connection type (3.2), credentials (3.3).
+      * Optional data object for Data Platform NAP type and even there it is optional provided the data is not openly accessible.
+      
+      Additionally, for both:
+       (4) Event information (log in, log out, change of data)
+    links:
+      - "Association «OUT» → mt_read_NAP_user_data"  # {7A6BE8B7-DF1B-40eb-9629-E47A6474DC83} → {6D08A3DC-FB6E-47d7-B1BF-B68208337A4F}
+      - "Dependency «trace» → D3.17"  # {1887585B-6287-4fc0-828A-816FD0174819} → {142A28E6-5024-4128-B476-D7904940C0AA}

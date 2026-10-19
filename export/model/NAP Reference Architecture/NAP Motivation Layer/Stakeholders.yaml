@@ -1,0 +1,96 @@
+package: "NAP Reference Architecture/NAP Motivation Layer/Stakeholders"
+guid: "{7DF58D1A-CA40-4b3d-8F20-EF9DCD9E40BD}"
+alias: "Stakeholders"
+version: "1.0"
+note: |
+  In this chapter is the definition of Stakeholders involved in the ITS Service.
+elements:
+  - name: "Competent Authority / National Body"
+    guid: "{60AC1314-7147-4d43-89C6-2CD3B26BDEBE}"
+    type: "Actor"
+    stereotype: "FRAME_Stakeholder"
+    keywords: "Stakeholder"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      A National Body (NB) typically refers to an organization, institution, or entity that operates at a national level. These bodies are established by the government or recognized by authorities to oversee, manage, regulate, or represent various aspects of national affairs. In this context, the main task of an NB is to support the quality of mobility data and services through an assessment process.
+      In line with the legal framework of the ITS Directive 2010/40 amended by Directive (EU) 2023/2661 and related Delegated Regulations NB operates in the field of mobility. A NB is designated by a government and has to be impartial and independent from data providers and service providers.
+    links:
+      - "Association «has» → Access to the content providers and their services"  # {9F6D9C2B-E8A2-448c-89F9-7CB12266AD49} → {BEEC92A0-2D8F-4223-80CC-93C134836DD3}
+  - name: "Content Consumer"
+    guid: "{77E9CEBA-B991-4860-A6D3-952CAD1B776E}"
+    type: "Actor"
+    stereotype: "FRAME_Stakeholder"
+    keywords: "Stakeholder"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Content consumers are national and international organizations using NAP-promoted data for added value services to their customers or parties using NAP-promoted data for enhancing their operational capabilities. Content Consumer includes the Data User term as it is specified in MMTIS and RTTI Regulations.
+      Content Consumers based on the perceived benefit could be grouped as follows:
+      
+      	- Service providers: These companies expect to utilize high-quality and verified information provided by NAP to provide traffic information services to its customers and update the road map information to make their journey more efficient.
+      	- Companies engaged in providing transport services and entities ensuring transport services: These companies expect to utilize high-quality and verified information provided by NAP to ensure the availability of up-to-date information at transfer or multimodal public transport terminals as well as at parking areas along the network under ITS Directive. NAP data are intended by transport providers in the field of improving the organisational transport processes, managing access to the provided transport service through relevant information systems, and enhancing the overall attractiveness of services from the perspectives of passengers or drivers of freight vehicles - end users.
+      	- Vehicle manufacturers and their suppliers: Infotainment, driving assistance systems, communication equipment, and cooperative ITS systems are now part of vehicle equipment. From the manufacturers' perspective, information services enhance the product's attractiveness to customers and fulfil specific operational needs (such as fleet management). Manufacturers and suppliers have a keen interest in both static and dynamic traffic information across the entire transportation system accessible via open data sources. Based on NAP data manufacturers can show the value of a vehicle to their customers because information, navigation, driving, reservation, or logistics systems can operate when receive proper NAP data.
+      	- Public Administration: Public administration is the provider of public services, managing public affairs at both local and central levels, and ensuring matters in the public interest. These activities include the care for the development and operation of the transportation system, which is a key sector of the economy. NAP data can be used for planning the development of the road network or for optimizing the maintenance or reconstruction of individual sections of this network.
+      	- Scientific and Research institutions: They are primarily established to create professional expertise, address research tasks, and acquire knowledge. The transport system, management models, and transport process organisation are natural interests of these institutions, as is the creation and development of European-wide information services related to transport and mobility. These organisations are interested in utilizing all provided NAP data, both for studies and analytical background on the transportation system in general, as well as for the verification of functionality and assessment of the transport system quality.
+      	- End Users: The drivers and travellers (natural persons) that receive traffic or travel information via a third party. The end users are not direct users of NAP, but they are the primary beneficiaries.
+    links:
+      - "Association «has» → Easy access to harmonized services"  # {3174BFF7-9C79-4e81-8868-E196441AAC1A} → {BC8FFFD0-5AB4-49dc-B949-BEB69CF1D447}
+  - name: "Content Provider"
+    guid: "{4D7E0B7A-7D34-400b-AE00-68E04F93B7BA}"
+    type: "Actor"
+    stereotype: "FRAME_Stakeholder"
+    keywords: "Stakeholder"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Content Providers are national and international organizations, data holders, data, and service providers who are required by the Delegated Regulations of the ITS Directive to make data and/or service accessible via the National Access Point. Content Provider includes the Data Holder term as it is specified in MMTIS and RTTI Regulations.
+      According to the obligation to the Delegated Regulations Content providers are represented by:
+      
+      	- Public and private road operators, service providers, and broadcasters dedicated to traffic information [886/2013 (SRTI)]
+      	- public and private service providers, parking operators, and road operators [887/2013 (SSTP)]
+      	- road authorities, road operators, digital map producers, and public or private service providers, where ‘service provider’ means any public or private provider of a real-time traffic information service, excluding a mere conveyer of information, to users and end-users [2015/962 (RTTI)]
+      	- transport authorities, passenger transport operators, infrastructure managers, transport-on-demand service providers, and travel information service providers. [2017/1926 (MMTIS)]
+    links:
+      - "Association «has» → Better data visibility and usability"  # {266F66AE-7E31-4a1e-A564-64AA50BDF6E3} → {A74A1B0F-B29F-4ef3-B785-89BF9BED3ACC}
+  - name: "European Commission"
+    guid: "{26DD1383-1637-4356-B2EF-7671DCA5C5BC}"
+    type: "Actor"
+    stereotype: "FRAME_Stakeholder"
+    keywords: "Stakeholder"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The European Commission (EC) is part of the executive branch of the European Union (EU) responsible for proposing new European legislation, implementing the decisions of the European Parliament and the Council of the EU, and managing EU policies and budget.
+    links:
+      - "Association «has» → EU-wide coverage and harmonized delivery of ITS services"  # {E004E606-C9FC-4b8e-BC44-CDD73D703C9E} → {40E6AD55-91B5-46d0-97FB-DAD263613E62}
+      - "Usage «Instantiate» → Seamless EU-wide provision of data and services"  # {86E03E7F-4B78-4118-A8BB-5853FCDD2272} → {BFC9524E-A1D0-415a-9CAA-50D01DACE293}
+  - name: "Member State"
+    guid: "{2DC22194-A127-42ba-9AEA-E8CBDD2EC795}"
+    type: "Actor"
+    stereotype: "FRAME_Stakeholder"
+    keywords: "Stakeholder"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      A Member State of the European Union is a sovereign country that is a member of the European Union (EU), a political and economic union. There are 27 member states as of 2023. These states are party to the EU’s founding treaties and are subject to the rights and obligations of membership, including access to the EU single market. They have agreed to share their sovereignty through the institutions of the EU in certain aspects of government.
+    links:
+      - "Association «has» → Better mobility services for citizens"  # {7FE3E091-1329-4d84-8635-F262E70A8CE2} → {B1BC2597-7347-4c5e-AD8F-54DD1CD5430C}
+  - name: "NAP Operator"
+    guid: "{4B4D9772-CCE6-459c-B5E0-80E3C5C32674}"
+    type: "Actor"
+    stereotype: "FRAME_Stakeholder"
+    keywords: "Stakeholder"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      A NAP is a mechanism set up by Member States to facilitate access, exchange, and reuse of transport-related data. The NAP Operator ensures that these points function efficiently and effectively, maintaining the robustness and resilience of the transport data infrastructure.
+    links:
+      - "Association «fulfilled by» → K.2.6.1 Contact details"  # {D89401BD-D002-4d87-BDE9-9D7EE34EFC0C} → {B16F5B80-17AC-48ed-9C43-CADE9CDCF62A}
+      - "Association «has» → Clear set of requirements"  # {BBA040FF-A5FA-43db-97CC-CA2926D11942} → {C5BF4F37-E65D-4998-BC18-CF0C0F8F8AF9}

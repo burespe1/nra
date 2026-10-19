@@ -1,0 +1,7 @@
+package: "NAP Reference Architecture/Supplements/Issues"
+guid: "{22CF4A0C-6ED8-4e3b-BF96-3C9D48E75381}"
+alias: ""
+version: "1.0"
+note: |
+  This chapter holds all identified issues to be dealt with in the NRA development
+elements: []

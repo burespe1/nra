@@ -1,0 +1,7 @@
+name: NAPCORE
+id: {4CBE6B9C-0BF7-4c48-A698-9240E7C39938}
+kind: template/fragment
+sections: []
+options: modcreate="-1" statuslike="-1" phaselike="-1" beforeafter="-1" pkgorder="1" elemorder="1" featorder="1" dgmorder="1" pkgasc="0" elemasc="0" featasc="0" dgmasc="0" imagefmt="0" hindent="9" noteless="0" skiproot="0" statuslist="" phase="All" exdetails="" wordsubst="0" nobookmarks="0" hideanonymous="0" htmlformating="0" exconndetails="" exdiagdetails="" conndirfilter="0" childelements="0" notelessconn="0" fragment="0" fragment_type="0" script_guid="" status_clr="0" elem_as_help="0" prop_filters="0" all_diag_elems="0" packageexclude_type="0" packageexclude_guid=""/
+
+plainItems (It is intended that list styles be applied on top of this style, via the toolbar.) \*Items Items Diagram Image Figure 1: \*Diagram Label Table Heading Table Heading Light Table Title 0 Table Title 2 Table Text Normal Table Text Normal Table Text Code Select Style from table_text_code where Name = 'Table Text Code' Table Title 1 Table Text Normal Table Text Light Table Text Bold Table Field Label: Value Table 1: \*Table Label

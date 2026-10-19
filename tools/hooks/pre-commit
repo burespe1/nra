@@ -1,0 +1,11 @@
+#!/bin/sh
+# Re-export the model to text whenever model/NRA.qea is part of the commit,
+# so that every commit carries a readable diff of the model.
+if git diff --cached --name-only | grep -q '^model/NRA.qea$'; then
+  for py in python3 python py; do
+    if command -v $py >/dev/null 2>&1 && $py -c "import sqlite3" >/dev/null 2>&1; then PY=$py; break; fi
+  done
+  if [ -z "$PY" ]; then echo "pre-commit: Python not found, export/ not updated" >&2; exit 0; fi
+  $PY tools/export.py model/NRA.qea export || exit 1
+  git add -A export
+fi

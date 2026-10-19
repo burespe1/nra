@@ -1,0 +1,81 @@
+package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.5"
+guid: "{6D7EE707-C90A-49e6-AF9E-FDFC4F986BE4}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "K.5.1.2 Supporting documentation of datasets"
+    guid: "{DE8AB201-E709-40fe-A6A2-9892B270EF1A}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall have a provision for adding or linking of XML schemas and samples of data being made accessible.
+      
+      Source: KPI 5.1 Documentation & description of datasets
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {4813B2B3-E0E5-42c7-8767-E9076E8886A5} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.5.3.2 Reference field for used quality guidline or framework"
+    guid: "{1CDE79DF-156A-4d61-8DFD-C16F5D60B752}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide a reference to applicable quality frameworks (e.g. EU-EIP and or NAPCORE) to support the data provider in quality assessment of the dataset.
+      
+      Source: KPI 5.3 Quality indicators for datasets
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {EE98B216-0FC6-4df7-9D5E-73384F8A6811} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.5.1.1 Description of datasets"
+    guid: "{DEAE1C7A-1D84-41ec-8301-E4726F387B6F}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 1
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall have a provision for high-level description of datasets including metadata element for indicating the used data standard/model.
+      
+      Source: KPI 5.1 Documentation & description of datasets
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {4E09E0E5-83C4-4a96-AF53-E93EDADCCEC3} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.5.2.1 Classification of datasets"
+    guid: "{83214B25-55CB-415c-B142-439C41EEF164}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 2
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide a classification of datasets based at least on formal terminology/keywords (vocabulary of the mobility-DCAT-AP) or coordinated metadata catalogues.
+      
+      Source: KPI 5.2 Classification of datasets
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {407DBB2A-BE5B-4b19-A5DC-B9AEBE83B466} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.5.3.1 Metadata field for Quality description"
+    guid: "{E96E06AA-18A0-425d-8F5C-761F449E798C}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide a metadata field where the data provider can describe the quality of the dataset.
+      
+      Source: KPI 5.3 Quality indicators for datasets
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {1EA2364E-6FE8-4641-A5A1-A5649345F16C} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}

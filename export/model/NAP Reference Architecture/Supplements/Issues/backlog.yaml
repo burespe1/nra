@@ -1,0 +1,344 @@
+package: "NAP Reference Architecture/Supplements/Issues/backlog"
+guid: "{B1050C29-63B0-4f5f-84B8-0186AE6D7CFF}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "D3.15"
+    guid: "{447B6290-8720-44f5-8F7D-1424DC510DAD}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - decide what detail of mobilityDCAT-AP to include
+      	- IMPORTANT: investigate where to log in data and user events, where to hold information about active subscription
+      	- IMPORTANT: decide how to connect metadata data base and data database
+  - name: "D3.17"
+    guid: "{142A28E6-5024-4128-B476-D7904940C0AA}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - check what is in data flows and if it is covered by the DS
+      	- IMPORTANT: decide how to deal with optional nap.cc logging in.
+  - name: "D3.18"
+    guid: "{DBD21D65-D422-4cd4-A498-46680C395327}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - check if information object is complete
+  - name: "DF CP>-F3.6.3."
+    guid: "{13413676-3958-47e4-B2E8-83FFD7981F5E}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - Should the authorization credentials be really done by this data flow? I assume yes, BUT then what if just log in to change data in NAP Users? Then it gets complicated, also what about the Provide Interface function should not it be also part of manage registrations? There shall also be an interface.
+  - name: "DF D3.17 -> F3.6.2"
+    guid: "{582F0581-C920-4f82-B077-49C3E971BD27}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - decide where the credential is passed
+      - NAP User must be specified
+      - IMPORTANT: check what this dataflow should do and what it provides to the function F3.6.2
+      - IMPORTANT: populate datastore with information about users to be stored there (also logs)
+  - name: "DF F3.6.2 -> CP"
+    guid: "{8BEFD98E-F081-4c85-8AD4-32FB98186FFE}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - investigate sequence diagram and how credentials are passed, it also shall contain CP data
+      	- how do I log in as CP to change data already there? And also, how do I display them?
+  - name: "DF F3.6.2->CC"
+    guid: "{1226EA52-7C7B-44cd-B0DE-CC4669033395}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - investigate sequence diagram and how credentials are passed, it also shall contain CC data
+      	- how do I log in as CC to change data already there? And also how do I display them?
+  - name: "DF F3.6.2->D3.17"
+    guid: "{E9FF7F22-0673-4a62-BD78-0AD0B7121D7C}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - decide where the credential is passed
+      	- NAP User has to be specified
+  - name: "DF F3.6.3 -> MPS"
+    guid: "{C546D374-B0B8-409e-86B4-A8A3F97C8268}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - Error handling?
+  - name: "DF F3.6.3->CP"
+    guid: "{75F60E2D-5213-41de-B8A5-DA6021EA79C5}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - IMPORTANT check naming conventions for this double functionality (either update data or get back data objects of the CP) and harmonize among the DFs
+  - name: "DF F3.6.4 -> cc"
+    guid: "{1F1F226A-7D1D-4b34-BDA6-B180E9B056E0}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - investigate if the data objects should refer to web objects (data are presented to the user as a web page)
+  - name: "DF F3.6.5 -> CP"
+    guid: "{86AB54E4-96DF-4b84-A541-44B7FA7B1010}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - to be replaced by dataflow to generic terminator (apply for all DFs from F3.6.5 function = DF reduction of 4:2)
+  - name: "DF F3.6.6 -> F3.6.1"
+    guid: "{951B2EF4-AFFC-4d82-B5B7-8C1B38694805}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - add details of the checks to be performed
+  - name: "DF cc->F3.6.5"
+    guid: "{5D2CD23B-D6BE-4171-804A-7D4980CC5795}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      -  NAP User and NAP Operator are not mentioned anywhere, they shall be created as new terminators in NAP Actors
+  - name: "F3.6.10 #1"
+    guid: "{9916583F-5243-458c-8402-6085B70A329A}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - check where reporting of the monitoring is done.
+  - name: "F3.6.2 #1"
+    guid: "{D5880A35-90B7-4cb5-B51C-671E3E03E154}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - Split F3.6.2 functionality into 3 functions: provide authorisation and identity service, provide registration management and manage NAP Users datastore, this will simplify former F3.6.2 function
+      	- Check if NOTE is OK with everybody.
+      	- IMPORTANT: check for simplification of the functionality!!
+  - name: "F3.6.4. #1"
+    guid: "{7345AE52-1483-4bcd-B68D-8C3A0BA6C66B}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - IMPORTANT: a functionality to contact NAP User to provide basic info and for NAP User to provide feedback is needed NOT part of the minimum functionality, resolve by adding functionality to 3.6.2 that the NAP operator could retrieve NAP user contact data to be able to contact them.
+  - name: "F3.6.5 #1"
+    guid: "{715F81A2-41BA-434f-9FA9-0677C93682D0}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      - managing and ticketing call for the data store an Issue data store shall be created
+      	- the Auditing entity, i.e. NB is not mentioned anywhere, they shall be created as new terminator in NAP Actors
+      	- NAP Roles are mentioned in the text of the function, it must be clear who this is.
+      	- IMPORTANT: reduce number of dataflows by just addressing all NAP users at once by their higher-level terminator
+      	- IMPORTANT: who is the NAP User? Where do we have it specified? Different for NAP Actor?
+  - name: "FV: Functionality to be processed into NRA - FROM 2023"
+    guid: "{631D9702-F36C-495f-9D8B-8B778A056921}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      *************************************************************
+      ** This is a list of proposed functionalities to be incorporated into NRA ***
+      **************************************************************
+      NOTE: when checked / incorporated => delete.
+      ===========
+      
+      **Should have contact form for NAP operator and data provider**
+      Element type: High level function
+      Source: KPI2.1 & NAP functionalities survey – Provide NAP User Support FAQ, Questions & Answers – Q2
+      *Description*
+      This is the ability to provide a contact form specifically designed for NAP operators and data service providers. This can be achieved by incorporating a dedicated contact form feature into the NAP which will serve as a communication channel between the NAP actors. This functionality promotes the efficient and direct interaction as well as operates as a valuable feedback mechanism since data and service providers can provide suggestions, recommendations, or feedback.
+      *Requirement List*
+      
+      	- A user-friendly contact form interface shall be provided through the NAP.
+      	- The contact form shall include a dropdown menu to categorize the subject of the communication (e.g., technical issue, data updates).
+      	- The contact form shall allow data providers to attach files, documents, or supporting materials.
+      	- Neither data and service providers nor NAP operators shall not be able to submit a form in case that all required fields are populated
+      
+      
+      **Provide online platform.**
+      Element type: High level function
+      *Description*
+      The first element of the function view relates to the property of a technical interface to be online accessible by means of a website. This website shall be compatible with the latest and widely used web browsing technologies that are supported by the latest and widely used operating systems. Beyond that, the website shall provide a satisfactory user experience in terms of simplicity & usability, visual hierarchy & navigability, as well as consistency. Simplicity & usability, in the NAP context, can be addressed as the number of actions that shall be performed by a user to access information about an accommodated data resource (i.e., metadata of this data resource). Visual hierarchy and navigability, in general but also in the NAP context, expresses the necessity for the structure of the website to follow a hierarchical pattern as well as the existence of a control page easing user navigation. Lastly, consistency implies the need for the platform’s website to provide menus in the same position, use the same or at least compatible fonts and colours, and provide shortcuts for commonly used functions. Moreover, there are two additional good practices that shall be respected. Firstly, the website shall be responsive irrespective of the device that is utilized for gaining access. Secondly, the content of the website shall be provided in both the national and a universally used language (English) to mitigate any cross-border accessibility barriers.
+      *References*
+      
+      	- WG2.1 - NAP Levels of Service computation using KPI Framework – KPI 1.1
+      	- M2.1_Typology of NAPs based on the description of levels of service and assessment of associated costs and benefits 1.4.docx
+      
+      *List of requirements*
+      
+      	- https://rupprechtconsultde.sharepoint.com/:w:/r/sites/NAPCOREallpartners/_layouts/15/Doc.aspx?sourcedoc={5FD2C477-C0FC-45DF-BB7B-3031A024CA73}&file=M2.1_Typology of NAPs based on the description of levels of service and assessment of associated costs and benefits 1.4.docx&_DSL=1&action=default&mobileredirect=trueStandards
+      	- W3C standards on “Web Design and Applications”
+      	- W3C standards on “Web of Devices”
+      	- W3C standards on “Web of Devices”
+      	- W3C standards on “Browsers and Authoring Tools”
+      
+      
+      **Provide metadata to consumer.**
+      Source: KPI1.13
+      Element type: High level function
+      *Description*
+      The ability to provide information about data to the potential subscriber. i.e. type, name, description, purpose, geographical relevance, format, type of protocol, licence, contact to data provider, etc. With this information the user shall be able to fully assess the relevancy of the data for his/her purpose and prepare the systems for the data consumption.
+      Metadata provided in a human readable form vie standard web portal interface.
+      *References*
+      MD-DCAT-AP – Standardized and harmonized DCAT Profile for mobility data provided by SWG4.4
+      *List of requirements*
+      
+      	- Metadata shall include change history of Metadate (KPI 1.16) obligatory.
+      	- Include Links to external resources even static or dynamic.
+      	- Shall be machine readable (KPI 3.3)
+      	- Shall include a high-level description (KPI 5,1)
+      	- Shall include supporting materials [e.g. schema] (KPI 5,1)
+      	- Meta Data description shall provide specific terms and conditions for reuse (KPI 7.2)
+      	- Meta Data description shall provide indication of related Delegated Regulation (KPI 7.6)
+      	- Meta Data description shall provide a description of data quality (KPI 7.7)
+      
+      
+      **Provide access management for data consumer.**
+      Source: KPI1.13
+      Element type: High level function
+      *Description*
+      The ability to provide possibility for the user to log in, create his username and password and to store personal information. Manage access to different resources STORED on the platform based on the user rights. Provide possibility to the platform admin to change this data, provide possibility to communicate with the user through the platform.
+      
+      **Store Meta Data**
+      Element type: High level function
+      Source: NAP functionalities survey – Provide storage – Q1
+      *Description*
+      The ability to store metadata (data descriptions), at least based on the mobility-DCAT-AP (result of SWG 4.4), online in a machine-readable format. This can be achieved by using an appropriate metadata storage system, such as a meta-database. NAP meta-database is fed through a data and service providers’ interface. Meta-data records should comply to certain quality criteria and be accessible and retrievable by querying and searching services. By that means, NAP users can narrow down their search to specific datasets or links that conform to specified criteria. Moreover, NAP content becomes discoverable and accessible in an efficient manner by allowing users to focus on the relevant subset of data, rather than searching through large volumes of unorganized information.
+      *List of requirements*
+      
+      	- Metadata shall be stored in a database.
+      	- Metadata records shall be provided through a data and service providers’ interface.
+      	- Metadata records shall be accessible and retrievable by querying and searching services.
+      	- Metadata versioning: Metadata shall be versioned, allowing data and service providers to track changes and updates made to the metadata over time.
+      	- Metadata formats: Metadata shall be stored in standardized machine-readable formats to ensure interoperability and compatibility.
+      	- Access restrictions: Metadata shall be publicly accessible without a necessary registration.
+      	- Editing rights: Only authorized data and service providers should have access to modify metadata.
+      
+      *References*
+      
+      	- mobility-DCAT-AP – Standardized and harmonized DCAT Profile for mobility data provided by SWG4.4
+      
+      *Standards*
+      
+      	- Actual: Coordinated Meta Data catalogue
+      	- Future: mobility-DCAT-AP
+      
+      
+      **NAPs should have publisher registration**
+      Element type: High level function
+      Source: NAP functionalities survey – Publisher Management – Q1
+      *Description*
+      The obligation of data and service providers to register, in order to be able to publish datasets. Data and service providers can register through a dedicated interface. Provided information and active credentials are stored in a database. This functionality facilitates authentication processes and implies a controlled access approach. Through that approach, the trustworthiness of published datasets is safeguarded.
+      *Requirement list*
+      
+      	- The publications of datasets shall be possible only by registered users.
+      	- A dedicated interface shall enable the registration of data and service providers (publishers).
+      	- Guidelines shall be provided to NAP users as regards (a) how to get registered and (b) how to publish a dataset.
+      
+      
+      **Automated basic quality checks**
+      Element type: High level function
+      Source: NAP functionalities survey – Metadata quality checks – Q1
+      *Description*
+      The ability to check the completeness of provided metadata. This can be achieved through an automated process by setting as mandatory metadata fields that are defined as such within the mobility-DCAT-AP specification. By that means, inconsistencies affecting the understandability of published datasets can be avoided. It may be beneficial from an accuracy point of view if the metadata provision interface provides where possible prespecified values (e.g., if a metadata field is related to relevant DR, it is preferable to enable service and data providers to choose the relevant DR from a dropdown list).
+      *Requirement List*
+      
+      	- Metadata shall include mandatory fields.
+      	- Data and service providers shall not be able to publish a dataset in case that all required metadata fields are populated.
+      
+      *References*
+      
+      	- mobility-DCAT-AP – Standardized and harmonized DCAT Profile for mobility data provided by SWG4.4
+      
+      
+      
+      **Should have contact form for NAP operator and data provider**
+      Element type: High level function
+      Source: KPI2.1 & NAP functionalities survey – Provide NAP User Support FAQ, Questions & Answers – Q2
+      *Description*
+      This is the ability to provide a contact form specifically designed for NAP operators and data service providers. This can be achieved by incorporating a dedicated contact form feature into the NAP which will serve as a communication channel between the NAP actors. This functionality promotes the efficient and direct interaction as well as operates as a valuable feedback mechanism since data and service providers can provide suggestions, recommendations, or feedback.
+      *Requirement List*
+      
+      	- A user-friendly contact form interface shall be provided through the NAP.
+      	- The contact form shall include a dropdown menu to categorize the subject of the communication (e.g., technical issue, data updates).
+      	- The contact form shall allow data providers to attach files, documents, or supporting materials.
+      	- Neither data and service providers nor NAP operators shall not be able to submit a form in case that all required fields are populated.
+      
+      
+      **Provider Registration**
+      Element type: High level function
+      Source: KPI1.10 & FRAME F3.6.2 – Provide NAP User Support FAQ, Questions & Answers – Q2
+      *Description*
+      This is the ability to provide a registration form specifically designed for NAP operators and data providers. This can be achieved by incorporating a dedicated contact form feature into the NAP which will serve as a communication channel between the NAP actors. This functionality promotes the efficient and direct interaction as well as operates as a valuable feedback mechanism since data and service providers can provide suggestions, recommendations, or feedback.
+      *Requirement List*
+      
+      	- A provider authenticity has to be verified.
+      	- A provider identify shall be GDPR compliant.
+      	- The contact form shall allow data providers to attach files, documents, or supporting materials.
+      
+      Neither data and service providers nor NAP operators shall not be able to submit a form in case that all required fields are populated
+  - name: "Rethink Agreement setup"
+    guid: "{42102251-3ABE-4686-B487-890153AF6C69}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Move obligations coming from law to the agreements between affected parties
+  - name: "Rework needed"
+    guid: "{77EE8AD6-661F-45d4-8964-30533600682E}"
+    type: "Issue"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    note: |
+      data should be provided by pull protocol (minimum functionality)
+      rework of data flows and functionality needed
+    links:
+      - "Abstraction → F3.6.8 Manage Data Input"  # {C5113611-3C19-4c71-B7D0-C224BC2AE98F} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+      - "Abstraction → tnap.cp-data_upload_result_report"  # {D18F2EFA-3E6F-438d-9295-DB156FAAF62F} → {A6E68B7A-7C94-474f-B168-C2A98537BC37}
+      - "Abstraction → tnap.dps-data_upload_result_report"  # {F78CEB9E-8D72-4a99-B661-4EC6B5DD83A4} → {FBD65825-894B-415a-AE17-8AD14FDF8F08}

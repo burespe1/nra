@@ -1,0 +1,14 @@
+package: "NAP Reference Architecture/Supplements/NAP Documentation/National Access Point Reference Architecture/Motivation Layer Legend"
+guid: "{6528C14F-4F8B-4784-BB41-F1EAA66752C4}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Legend"
+    guid: "{9050A100-582E-4602-8B8D-8976E2A4A123}"
+    type: "Artifact"
+    stereotype: "Document"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""

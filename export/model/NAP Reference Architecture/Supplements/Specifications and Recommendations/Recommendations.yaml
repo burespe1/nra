@@ -1,0 +1,68 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/Recommendations"
+guid: "{F21CB3B2-95A3-414b-A3A7-7AE4E898B797}"
+alias: "Recommendations"
+version: "1.0"
+note: |
+  Recommendation: Provide guidelines or best practices that are not mandatory but are suggested to achieve optimal performance, compliance, or quality. These can include industry standards, advisory notes, or expert recommendations.
+elements:
+  - name: "Assistance"
+    guid: "{0D28759C-0D39-4657-95CF-58C45787B5DC}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      NAPs shall assist in publishing (meta)data to the NAP
+  - name: "Metadata insufficiency"
+    guid: "{BC945A8B-01D0-4f70-9484-586F0F7F9325}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      NAPs shall communicate to content provider any provided metadata insufficiency, that, as a consequence, results in not publishing or removing published datasets.
+  - name: "Notification"
+    guid: "{8DE95B47-D58D-4339-BE76-DBACC7909669}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      If subscribed: to notify CC about any outages and, optionally, additions to the NAP. NO must ensure that personal data is not misused, General Data Protection Regulation (GDPR) and to whom can it be disclosed. NO must provide the CC the right to delete the account on the NAP.
+  - name: "Reuse metadata"
+    guid: "{D01BC616-BDA0-4444-9C0E-AE363B819E22}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      NAPs shall provide the right to reuse the metadata including consensually provided personal information.
+      To provide accurate, timely, and complete metadata.
+  - name: "not tampered by the NAP"
+    guid: "{C1EA86E6-A64D-41b8-9E07-E71ACD5F9088}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      NAP shall ensure content provider that the provided metadata, data/services are not tampered by the NAP in any manner.

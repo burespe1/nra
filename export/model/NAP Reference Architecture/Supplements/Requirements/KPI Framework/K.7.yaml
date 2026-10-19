@@ -1,0 +1,68 @@
+package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.7"
+guid: "{246631BC-F949-463d-8410-E0936F42D21B}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "K.7.1.1 Terms and conditions for reuse of metadata and NAP website content"
+    guid: "{D72070D6-9ECF-411a-8281-534019823FD6}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall  provide terms and conditions and/or standardized licenses framework such as “CC (Creative Commons) License” for reuse of metadata and NAP website content.
+      
+      Source: KPI 7.1 Terms and conditions for reuse of metadata and NAP website content
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {42DF0224-4B0C-453c-BA7D-4DCE4DBA1FBC} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {3197B12C-A13B-4bcd-9D06-5B4A6A02EA45} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "K.7.2.1 Data reuse – data provider"
+    guid: "{8A1CF06F-F5C9-4f65-B5F6-84DA47139132}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall encourage use of standardized license framework  for all published datasets.
+      
+      Source:
+      KPI 7.2 Terms and conditions for data reuse from data providers
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {76028265-E062-4a86-888B-2E0EA669A462} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.7.5.1 Compliance assessment support by NAP"
+    guid: "{1941874B-D599-4a5b-A6EA-6209F7E72127}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide self-declaration forms/templates without any additional involvement in process.
+      
+      Source KPI 7.5 Compliance assessment support by NAP
+    links:
+      - "Association → Function missing in the NRA for the KPI"  # {46A7C62A-E5B5-44c1-8F2E-EBBB98959726} → {A6EA45BA-53FF-4177-AA14-F282A8C55D0F}
+  - name: "K.7.6.1 Association of published datasets with Delegated Regulations"
+    guid: "{747DB3C3-C956-4030-9637-30756698054B}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall associate dataset with Delegated Regulations using the vocabulary of the mobiltyDCAT-AP.
+      
+      Source KPI 7.6 Association of published datasets with Delegated Regulations.
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {D4329767-DF4B-404c-9AB2-E54ED09F5D6E} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}

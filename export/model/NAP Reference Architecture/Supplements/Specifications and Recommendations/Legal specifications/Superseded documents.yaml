@@ -1,0 +1,57 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/Legal specifications/Superseded documents"
+guid: "{2ED70ECE-20BC-4b3e-A8B7-FF055586989F}"
+alias: "Superseded Legal Acts"
+version: "1.0"
+note: |
+  In this folder are placed obsolete legislative documents that have been cancelled or replaced by another legal act.
+elements:
+  - name: "Directive 2010/EU/40 - ITS"
+    guid: "{16A6F191-FEAD-43db-A673-B04711F39783}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Legal Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Type: Legal
+      Full Name: Directive 2010/40/EU of the European Parliament and of the Council of 7 July 2010 on the framework for the deployment of Intelligent Transport Systems in the field of road transport and for interfaces with other modes of transport
+      Link: https://eur-lex.europa.eu/eli/dir/2010/40/oj
+      Description: This directive establishes the legal framework for coordinated deployment of Intelligent Transport Systems (ITS) in road transport and its interfaces with other modes. It defines priority areas and empowers the Commission to adopt delegated acts specifying functional, technical, and organisational requirements. It was amended by Directive (EU) 2023/2661 to reflect developments in connected and automated mobility, digital infrastructure, and multimodal services. The amendment expands the scope of data availability obligations and strengthens requirements for interoperability, continuity, and digital access to transport-related information.
+      Additional details: Member States must designate National Access Points (NAPs) to enable access, exchange, and reuse of transport data. NAPs are required to support delegated acts adopted under this directive (e.g. RTTI, SRTI, SSTP, MMTIS) by providing harmonised, machine-readable, and quality-assured datasets. NAP operators must ensure compliance with the technical specifications of each delegated regulation and maintain cross-border interoperability.
+      Related Documents:
+      
+      	- ITS Directive and Action Plan – European Commission – Overview of the directive, its amendments, and implementation priorities.
+      	- Directive (EU) 2023/2661– Amending Act – Extends the scope of Directive 2010/40/EU to cover new mobility services and digital data availability.
+      	- Evaluation of the ITS Directive – SWD(2019) 368 final – Commission staff working document assessing effectiveness and implementation gaps.
+      	- NAPCORE Statement on the ITS Directive Revision (PDF) – Position paper outlining harmonisation priorities and legal coordination under the revised directive.
+      	- Commission Delegated Regulation (EU) No 885/2013 – On the provision of information services for safe and secure parking places for trucks and commercial vehicles.
+      	- Commission Delegated Regulation (EU) No 886/2013 – On the provision of road safety-related minimum universal traffic information.
+      	- Commission Delegated Regulation (EU) 2015/962 – On the provision of EU-wide real-time traffic information services. Partially superseded by 2022/670 but still relevant for transitional provisions.
+      	- Commission Delegated Regulation (EU) 2017/1926 – On the provision of EU-wide multimodal travel information services.
+      	- Commission Delegated Regulation (EU) 2022/670 – Updates and replaces parts of 2015/962; sets new specifications for real-time traffic information services.
+      	- Delegated Regulation (EU) 2024/490 – Amends and updates the original 2017/1926 regulation, refining data categories, deadlines, and technical specifications for MMTIS implementation.
+    links:
+      - "Usage «Instantiate» → Fulfilling National Access Point obligations according to ITS directive"  # {93989FAA-FF7D-4971-8CD8-6E170C53960E} → {5BC72E89-BADD-4468-8CF6-53736DE6B090}
+  - name: "Regulation (EU) 2015/962 - RTTI"
+    guid: "{E17DBCA6-2A0E-44f6-9672-EC178E2081F6}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Legal Specification"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      Type: Legal
+      Full Name: Commission Delegated Regulation (EU) 2015/962 of 18 December 2014 supplementing Directive 2010/40/EU with regard to the provision of EU-wide real-time traffic information services
+      Link: https://eur-lex.europa.eu/eli/reg_del/2015/962/oj
+      Description: This regulation defined the initial technical specifications for the provision of EU-wide real-time traffic information (RTTI) services under Directive 2010/40/EU. It established requirements for the availability, accessibility, exchange, and re-use of static and dynamic road traffic data. It introduced the concept of a minimum level of service and required Member States to designate National Access Points (NAPs) for data publication. The regulation was repealed with effect from 31 December 2024 and replaced by Regulation (EU) 2022/670, which introduced updated data categories, performance requirements, and alignment with current ITS deployment practices.
+      Additional details: NAPs were required to provide machine-readable access to RTTI-relevant datasets, including road network attributes, traffic regulations, and real-time traffic status. The regulation mandated metadata publication, data quality assurance, and use of harmonised formats to support cross-border interoperability. It served as the legal foundation for early RTTI deployments and was superseded to reflect evolving data models and service expectations.
+      Related Documents:
+      
+      	- Regulation (EU) 2022/670 – Successor regulation introducing revised RTTI specifications.
+      	- European Commission RTTI Guidance – Implementation context and technical interpretation.
+      	- DATEX II Reference Profile for RTTI – Defines the harmonised data model for compliant RTTI data exchange.
+      	- NAPCORE RTTI Workstream Summary (PDF) – Overview of Member State alignment and implementation under the updated regulation.
+    links:
+      - "Realisation → L8 Directive (EU) 2023/2661 - ITS (recast)"  # {63FD3C57-BAA9-4674-9048-4B7451F62831} → {4FEB9792-F5AB-4f30-A299-4A2EB59732D5}

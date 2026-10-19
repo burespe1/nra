@@ -1,0 +1,14 @@
+package: "NAP Reference Architecture/Supplements/NAP Documentation/National Access Point Reference Architecture/Org View Legend"
+guid: "{76A112F7-0207-4749-A94E-AB566BE9B43F}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Legend"
+    guid: "{899D3043-4C7D-34FC-BF25-42B740C0C05A}"
+    type: "Artifact"
+    stereotype: "Document"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""

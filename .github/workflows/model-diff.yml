@@ -1,0 +1,47 @@
+name: Model diff
+
+on:
+  pull_request:
+    paths: ['model/NRA.qea']
+  push:
+    tags: ['v*']
+
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check that export/ matches the model
+        run: |
+          python tools/export.py model/NRA.qea export
+          git diff --stat --exit-code export || (echo "::warning::export/ is not up to date – run tools/export.py or install the pre-commit hook" )
+      - name: Change report (pull request)
+        if: github.event_name == 'pull_request'
+        run: |
+          git lfs fetch origin ${{ github.base_ref }}
+          python tools/diff.py --git origin/${{ github.base_ref }} HEAD report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Change report (release tag)
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          PREV=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || echo "")
+          if [ -n "$PREV" ]; then git lfs fetch origin "$PREV"; python tools/diff.py --git "$PREV" HEAD report.md; else echo "# First release" > report.md; fi
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: model-change-report
+          path: report.md
+      - name: Comment on pull request
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: report.md

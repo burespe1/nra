@@ -1,0 +1,95 @@
+package: "NAP Reference Architecture/NAP Functional View/Functional Data Flows/High Level FDFs"
+guid: "{8C254588-1E71-4453-A652-902E31A451C2}"
+alias: "High Level Data Flows"
+version: "1.0"
+note: |
+  High Level Functional Data Flows carry a specific data between two High Level Functions. They always have component Low Level Functional Data Flows.
+elements:
+  - name: "From NAP Actors"
+    guid: "{C6FE2F39-008F-4811-AE0F-95EB671FFFD2}"
+    type: "Interface"
+    stereotype: "FRAME_High_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    version: "5.0"
+    order: 0
+    tags:
+      "status": "copy"
+    note: |
+      This data flow only appears in the Context Diagram and contains input from the NAP Actors Terminator. It contains data objects containing either the Internet address from which other data objects about ITS Services are available, or a request for access to these data objects.
+  - name: "To NAP Actors"
+    guid: "{98E4FDFE-8123-4b37-B03A-5DCCED4FE24B}"
+    type: "Interface"
+    stereotype: "FRAME_High_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    version: "5.0"
+    order: 0
+    tags:
+      "status": "copy"
+    note: |
+      This data flow only appears in the Context Diagram and contains output to the NAP Actors Terminator. It contains data objects containing either confirmation that the Internet address from which other data objects about ITS Services are available has been recorded, or the result of aa request for access to these data objects.
+    links:
+      - "Association «OUT» → NAP Actors"  # {B4070CF4-6E83-4e47-A645-25C19414E25C} → {E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}
+  - name: "To NAP Actors"
+    guid: "{ADFABE98-0117-47ee-946B-6FFF3043F214}"
+    type: "Interface"
+    stereotype: "FRAME_High_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    version: "5.0"
+    order: 0
+    note: |
+      This data flow only appears in the Context Diagram and contains output to the NAP Actors Terminator. It contains data objects containing either confirmation that the Internet address from which other data objects about ITS Services are available has been recorded, or the result of aa request for access to these data objects.
+    links:
+      - "Association «OUT» → NAP Actors"  # {B9B39BA9-71E1-459c-A45D-FE9D07E77085} → {E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}
+  - name: "fnap-mt_inputs"
+    guid: "{90829C59-D7DB-4ff9-8AB7-F4BBCEA7422B}"
+    type: "Interface"
+    stereotype: "FRAME_High_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    version: "5.0"
+    order: 0
+    tags:
+      "status": "copy"
+    note: |
+      It consists of data objects received from the NAP Actors that contain either Internet addresses from which data objects provided by ITS Services can be obtained, or requests for the Internet addresses.
+    links:
+      - "Aggregation «Componentof» → From NAP Actors"  # {56E06AD9-3158-48cf-8522-ED317A04E3F0} → {C6FE2F39-008F-4811-AE0F-95EB671FFFD2}
+      - "Aggregation «Componentof» → fnap.cc-metadata_search_request"  # {235A8BC2-90AF-4137-B574-E296A987DAB5} → {CE5CAFBE-137B-4743-AB12-5EA3827B901A}
+      - "Aggregation «Componentof» → fnap.cc-support_request"  # {59554B2E-D2A1-4646-9D63-63E774105B42} → {1309E545-2913-41f6-920A-68A496630817}
+      - "Aggregation «Componentof» → fnap.cp-metadata_&_authorisation_credentials"  # {C9560383-87D9-4ce1-9FC6-95985BF755E6} → {8D75B934-0C29-40d6-9C80-4963B533B29D}
+      - "Aggregation «Componentof» → fnap.cp-registration_request"  # {D30296CF-3A98-48e3-9F8B-6FB9150573B7} → {2165053D-3E67-4324-90F7-172FAA37E259}
+      - "Aggregation «Componentof» → fnap.cp-support_request"  # {86D8690D-3A5D-4886-8C24-03639B3E48A1} → {1ED4DEC1-3019-4933-A419-5FE60CC29FF4}
+      - "Aggregation «Componentof» → fnap.cp-support_request"  # {964D72F5-233F-40a9-9854-9FCFC9AC755E} → {1ED4DEC1-3019-4933-A419-5FE60CC29FF4}
+  - name: "tnap-mt_outputs"
+    guid: "{B767384A-BAB2-4802-A07C-DA9BA8B1132A}"
+    type: "Interface"
+    stereotype: "FRAME_High_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    version: "5.0"
+    order: 0
+    note: |
+      It contains outputs to the NAP Actors that have been created from data objects provided by functionality in the Manage Traffic Functional Area and includes either confirmation of acceptance of inputs, or the Internet addresses from which access to data objects provided by ITS Services can be obtained.
+    links:
+      - "Aggregation «Componentof» → To NAP Actors"  # {42AF7F23-3FE0-4294-9137-97CC3BC4A784} → {ADFABE98-0117-47ee-946B-6FFF3043F214}
+      - "Aggregation «Componentof» → tnap.cc-support_response"  # {B3727561-99C7-499b-82AF-357824ACE10E} → {27BFFD1B-0E50-4c8b-8CDF-8F958078802C}
+      - "Aggregation «Componentof» → tnap.cp-support_response"  # {0809F101-0F3B-409a-88E7-72503613ED5A} → {997937B5-775D-4297-8297-D9ABB198ACF2}
+  - name: "tnap-mt_outputs"
+    guid: "{EACAFE4C-395F-4a01-B251-D6ED49DAFC30}"
+    type: "Interface"
+    stereotype: "FRAME_High_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    version: "5.0"
+    order: 0
+    tags:
+      "status": "copy"
+    note: |
+      It contains outputs to the NAP Actors that have been created from data objects provided by functionality in the Manage Traffic Functional Area and includes either confirmation of acceptance of inputs, or the Internet addresses from which access to data objects provided by ITS Services can be obtained.
+    links:
+      - "Aggregation «Componentof» → To NAP Actors"  # {C8D968F2-9D04-4947-A71A-C2D79F711018} → {98E4FDFE-8123-4b37-B03A-5DCCED4FE24B}
+      - "Aggregation «Componentof» → tnap.cc-support_response"  # {94CCE29A-55C0-474a-9578-3A7D16746A02} → {27BFFD1B-0E50-4c8b-8CDF-8F958078802C}
+      - "Aggregation «Componentof» → tnap.cp-support_response"  # {3E3CA6F9-8EFB-40e8-BE56-BC378E7D9D88} → {997937B5-775D-4297-8297-D9ABB198ACF2}

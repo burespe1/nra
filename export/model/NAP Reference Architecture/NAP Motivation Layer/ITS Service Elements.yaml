@@ -1,0 +1,75 @@
+package: "NAP Reference Architecture/NAP Motivation Layer/ITS Service Elements"
+guid: "{40D387B9-C89F-43bf-96BA-1D047EB3AD2F}"
+alias: "ITS Service Elements"
+version: "1.0"
+note: |
+  In this chapter are definitions Vision and Mission of ITS Service the former two lead to and of ITS Domain in which the ITS Service operates.
+elements:
+  - name: "Seamless EU-wide provision of data and services"
+    guid: "{BFC9524E-A1D0-415a-9CAA-50D01DACE293}"
+    type: "Class"
+    stereotype: "FRAME_Vision"
+    keywords: "Vision"
+    status: "Proposed"
+    version: "1.0"
+    order: 1
+    note: |
+      To create a Single European Transport Area, underpinned by a digital layer that interlinks all elements of transport. This digital architecture, built on open and common standards and interfaces, will foster an efficient and secure data ecosystem.
+    links:
+      - "Association → National Access Point mission statement"  # {54811E2A-AE2F-4828-BC51-FBAF17CA382B} → {27C3C5F4-664F-4d48-A554-AF601321B267}
+  - name: "National Access Point mission statement"
+    guid: "{27C3C5F4-664F-4d48-A554-AF601321B267}"
+    type: "Class"
+    stereotype: "FRAME_Mission_Statement"
+    keywords: "Mission Statement"
+    status: "Proposed"
+    version: "1.0"
+    order: 2
+    note: |
+      National Access Points (NAPs) will be established across Europe, facilitating access, easy exchange, and reuse of transport-related data, thereby supporting the provision of EU-wide interoperable travel and traffic services to end users.
+    links:
+      - "Association «defines» → Fulfilling National Access Point obligations according to ITS directive"  # {55CDA3B9-811E-47e4-931D-D17AB678E6B5} → {5BC72E89-BADD-4468-8CF6-53736DE6B090}
+  - name: "Fulfilling National Access Point obligations according to ITS directive"
+    guid: "{5BC72E89-BADD-4468-8CF6-53736DE6B090}"
+    type: "Class"
+    stereotype: "FRAME_ITS_Service"
+    keywords: "ITS Service"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Field of Application": ""
+    note: |
+      The National Access Point of a Member State has specific tasks related to the Delegated Regulations of the ITS Directive 2010/40/EU, which are requested by the European Commission.
+      The main task is to provide non-discriminatory central access information to data listed in Delegated Regulations.
+      
+      	- NAP features shall be language-independent (English + local language)
+      	- NAP supports the discovery of metadata and data samples without user registration
+      	- NAP supports data exchange based on standards
+      	- NAP fosters EU-wide interoperable ITS services for travellers
+      	- NAP makes standardized (in prescribed formats) data accessible
+      	- NAP data content is extendable to all ITS Directive domains
+      	- NAP does not infringe the rights of the data owner for the use of data but can support the exchange (e.g. by a standardized license, agreed terms and conditions, technical support with a machine-readable interface definition.)
+  - name: "Traffic and traveller information"
+    guid: "{8B164E93-51CD-4297-9892-68CF32915834}"
+    type: "Artifact"
+    stereotype: "FRAME_ITS_Domain"
+    keywords: "ITS Domain"
+    status: "Proposed"
+    version: "1.0"
+    order: 4
+    note: |
+      Transport Network
+      European road and railroad, tram and underground and ferry transport networks and extensible to Public Transport and Interfaces of other modes e.g. air and waterways.
+      ITS Service
+      EU-wide ITS services coverage with seamless handover between different member states for easier and consistent ITS service building at neighbouring regions, states, and at the EU level.
+      ITS Service Type
+      static, dynamic data and information sets as well as services of public and private stakeholders including parking, safety-related traffic information, real-time traffic information, and multimodal travel information.
+      Level of detail
+      Organizational view of NAP stakeholders and their cooperation, including a functional definition of the ITS service at the meta-level and including their data content coverage/contribution in the defined ITS domain.
+      Perspective
+      Policy perspective, with contribution from public and private stakeholders in the service development and delivery.
+      Focus
+      Cooperation between roles and Information systems, interfaces, and standards to foster regular data exchange.
+    links:
+      - "Usage «Instantiate» → Fulfilling National Access Point obligations according to ITS directive"  # {B3DB16B7-F14A-4b8e-8A41-FD0AE12F7882} → {5BC72E89-BADD-4468-8CF6-53736DE6B090}

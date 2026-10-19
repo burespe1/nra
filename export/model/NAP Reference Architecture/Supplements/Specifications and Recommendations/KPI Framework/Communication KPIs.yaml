@@ -1,0 +1,156 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/KPI Framework/Communication KPIs"
+guid: "{28D604A4-D281-4348-96DA-5456D3910514}"
+alias: ""
+version: "1.0"
+note: |
+  NAPs should offer help desks, email support, and messaging services to assist data publishers, preventing misunderstandings during data uploads. Promoting NAPs at national and international events is crucial for attracting more data providers and consumers. Direct communication between data consumers and providers is essential for resolving issues and building trust. Additionally, NAPs should send mass notifications about changes in content, functionality, procedures, and data exchange policies to keep users informed.
+elements:
+  - name: "KPI 2.1 Support to users to register or add data/metadata"
+    guid: "{770CE787-3FCE-49dd-95B4-0A73605469E5}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 8
+    note: |
+      “Support to users to register and add data/metadata” KPI assesses whether a NAP provides information to support NAP users how to register and (more importantly) how to add data, metadata, or both (depending on the type of NAP under evaluation). It is assumed that a NAP shall at minimum provide written support information in the local language (on the website or downloadable). This condition is indicated by a value equal to 1. The availability of such information in English language is indicated by a value equal to 2. The value of this KPI is increased by 1, either when additional support can be provided text-based via contact form, e-mail, text messenger; or when such support can be provided via telephone or web calls which can be booked; or when such support can be provided via chatbot.
+      
+      Values
+      0: No support or telephone number only is available
+      1: Instructions or support information is available on the site but not in English
+      2: Instructions or support information is available in English
+      Value+1 (for the following option): Are there other types of support to register and add data/metadata?:
+      
+      a. contact form or E-mail
+      b. phone or web call (e.g., booking system for Teams call)
+      c. chat or chatbot
+      d. FAQ in national and English language
+      e. user forum
+      
+      Minimum acceptable value for interoperability: 3
+    links:
+      - "Abstraction → K.2.1.1 Support to users to register or add data/metadata"  # {EDD81E4C-A0D3-4abe-8C39-09332310DB5C} → {57015FD8-66C2-45e3-8AB9-93A0EAFB1656}
+  - name: "KPI 2.2 Related services monitoring functionality"
+    guid: "{908FC14A-B863-404a-B25B-181CE863E7FF}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 9
+    note: |
+      “Related services monitoring process” KPI assesses whether there is an implemented process that monitors the external relations of a NAP to indicate its influence on the development and operation of ITS services.
+      
+      Is there any monitoring process in place which tracks the use of the data available at the NAP? This would normally be based on feedback from data users on which applications are using the data (e.g. end-user information services like website/web service or smartphone apps; but also applications/services to ease operations of any transport infrastructure or mobility service)
+      0: No
+      1: Yes
+      
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K.2.2.1 Related services monitoring functionality"  # {59E5B526-5D48-4270-9C55-6EECB2BD701F} → {57A18050-B4C1-42f9-881F-A8C6AE3EAF1A}
+  - name: "KPI 2.4 NAP promotion channels"
+    guid: "{18E9D69C-15A2-438b-ADA4-0095C6581C5A}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 11
+    note: |
+      “NAP promotion channels” KPI records the different official channels, such as conferences, webinars, and social networking, that are used by the NAP operator within the last calendar year for promoting NAP. The possible values range from 0 to 5. The value is increased by 1, if either the NAP was promoted on a conference or trade fair, e.g. with a paper, a presentation, a special booth, flyers on the booth of the NAP operator; or if the NAP operator has organised one or more webinars to promote or inform about the NAP; or if the NAP was promoted on LinkedIn with an own account and at least two news items (or comparable on other social networks); or if the NAP was promoted with a dedicated paper in a journal. Any other channel which can be specified, can also increase the value by 1. It is assumed that at least three different channels shall be utilized for achieving a minimum acceptable level of service.
+      
+      Values: 0: No
+      
+      Value+1: Yes,
+      a: NAP was promoted on a conference or trade fair (apart from NAPCORE MDD)
+      b: NAP was promoted with webinars
+      c: NAP was promoted on LinkedIn (or other social networks) with an own account and at least two news items
+      d: NAP was promoted with a dedicated paper in a journal
+      e: NAP was promoted through another channel (please specify in the “Suggestions” box)
+      
+      
+      Minimum acceptable value for interoperability: 3
+    links:
+      - "Abstraction → K.2.4.1 NAP promotion – number of channels"  # {3F3711F4-83B3-4a53-973F-14E68CF257E3} → {1942245D-8D8A-425c-8364-D8364B8407EA}
+  - name: "KPI 2.6 Contact details"
+    guid: "{C2EFBDFC-046A-4c77-A9A9-45BC37032D73}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 13
+    note: |
+      2.6 “Contact details” KPI aims to assess whether a NAP provides contact information (at least email address or telephone number) of the data providers to data consumers. The possible values of this KPI range from 0 to 2 with a value equal to 0 indicating that there are no provided contact details, a value equal to 1 indicating that the contact details of some data providers are made available through the NAP web page, a value equal to 2 indicating that contact details of all data providers are published. It is assumed that a NAP shall provide contact information of all data providers for achieving a minimum acceptable level of service.
+      
+      Values:
+      0: No contact details are available
+      1: Contact details of some data providers are published
+      2: Contact details of all data providers are published
+      
+      Minimum acceptable value for interoperability: 2
+    links:
+      - "Abstraction → K.2.6.1 Contact details"  # {AF155635-1EFE-4c91-8B3A-B80D072D73DC} → {B16F5B80-17AC-48ed-9C43-CADE9CDCF62A}
+  - name: "KPI 2.7 Mass notifications – data providers"
+    guid: "{748F8C79-FC1E-4ad6-8023-E2D467E4DFA4}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 14
+    note: |
+      2.7 and 2.8 “Mass notifications – data providers” and “Mass notification – data consumers” KPIs assess whether a NAP can massively notify registered data providers and data consumers, respectively, about the latest updates and changes. Its value ranges from 0 to 3. A value equal to 0 expresses that no mass notification functionality or procedure is in place. A value equal to 1 expresses mass notifications encompassing only legal updates (e.g., changes in terms and conditions of data reuse). The value is increased by 1 if mass notifications are tailored to the needs of data providers or consumers respectively, e.g. (for data providers) new requirements for data provision like a new data profile or (for data consumers) substantial changes in already published datasets. It is assumed that this KPI does not relate to the minimum acceptable level of service of a NAP but expresses an advanced level of service when notifications encompass both legal and content updates.
+      
+      Values:
+      N/A: No data providers accounts / no registrations
+      0: Mass notifications are not available to registered providers
+      0: Mass notifications are available to registered providers
+      Value+1
+      a: Mass notifications are possible for legal (T&C) updates
+      b: Mass notifications are tailored according to the data provider's needs, e.g. new requirements for data provision like data profile
+      c: Mass notifications are available on the NAP website to the registered data providers, e.g., pop-up information after logging in
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K.2.7.1 Mass notifications – data providers"  # {DBAB8D80-AA94-458f-B529-4ACA91BDA37A} → {1F17B282-6DF7-4368-8BF9-EB565BA7D4D5}
+  - name: "KPI 2.8 Mass notifications – data consumers"
+    guid: "{E224C8FD-F129-4f78-A3C3-0BB45266A95C}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 15
+    note: |
+      2.7 and 2.8 “Mass notifications – data providers” and “Mass notification – data consumers” KPIs assess whether a NAP can massively notify registered data providers and data consumers, respectively, about the latest updates and changes. Its value ranges from 0 to 3. A value equal to 0 expresses that no mass notification functionality or procedure is in place. A value equal to 1 expresses mass notifications encompassing only legal updates (e.g., changes in terms and conditions of data reuse). The value is increased by 1 if mass notifications are tailored to the needs of data providers or consumers respectively, e.g. (for data providers) new requirements for data provision like a new data profile or (for data consumers) substantial changes in already published datasets. It is assumed that this KPI does not relate to the minimum acceptable level of service of a NAP but expresses an advanced level of service when notifications encompass both legal and content updates.
+      
+      N/A: No data consumers user accounts / no registrations
+      0: Mass notifications are not available to registered users
+      0: Mass notifications are available to registered providers
+      Value+1
+      a: Mass notifications are possible for legal (T&C) updates
+      b: Mass notifications are tailored according to the data consumer's needs, e.g., content updates or change in the way the consumed data is provided
+      c: Mass notifications are available on the NAP website to the registered data consumers, e.g., pop-up information after logging in
+      
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K.2.8.1 Mass notifications – data consumers"  # {22D09F73-767D-4533-9C6E-01ACEDA8A6BC} → {6069CE61-FD93-4212-A7EC-BA701EBE8A7E}
+  - name: "KPI 2.9 Monitoring and evaluation"
+    guid: "{DF0026B0-043F-4952-A0C2-CAF90AA32B98}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 16
+    note: |
+      “Monitoring and evaluation” KPI assesses whether a NAP has implemented technical procedures for monitoring and evaluating its content. The value of this KPI is increased by 1, when a NAP complies with one of the following parameters. The first parameter involves the monitoring of the visibility of a NAP with counting the access, counting the number of search requests and/or the number of registered users. The second one involves the collection of statistics regarding the consumption of the datasets at a data platform NAP. The third one involves the measurement of the performance of the system (e.g., downtime, consequences for other systems, etc.), while the final one involves the assessment of the usefulness of a NAP (e.g., qualitative feedback on the re-use of the provided data, rating of quality, surveys, etc.). It is assumed that the current KPI is not related to the minimum acceptable level of service of a NAP.
+      
+      0: No
+      0: Yes
+      Value+1 (for each of the following options): Which technical procedures are established to monitor and evaluate the success and impact of the NAP? You can select multiple options:
+      a. Counting the access to the NAP, the number of search requests and/or the number of registered users
+      b. Collecting statistics on the consumption of datasets (e.g., downloads, subscriptions, page views)
+      c. Measuring performance of the system (e.g., downtime, consequences for other systems, etc.)
+      d. Measuring usefulness of the NAP (e.g., qualitative feedback on re-use, rating of quality, surveys, etc.)
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K.2.9.1 Monitoring and evaluation"  # {A278CE05-C33E-466a-AB7A-B11A6FA76E9A} → {1B5911BF-D7A2-4e07-A4CE-4DC33E7E5C26}

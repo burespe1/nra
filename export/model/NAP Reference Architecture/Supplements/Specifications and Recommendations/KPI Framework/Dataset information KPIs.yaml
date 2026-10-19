@@ -1,0 +1,113 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/KPI Framework/Dataset information KPIs"
+guid: "{47DE9210-1486-4ea0-B2F8-482CBB5052BB}"
+alias: ""
+version: "1.0"
+note: |
+  Datasets should be described in detail to help data consumers understand and assess their relevance. This includes using standard vocabularies or dictionaries (e.g., DCAT-AP) to reduce ambiguity and enhance machine readability.
+elements:
+  - name: "KPI 5.1 Documentation & description of datasets"
+    guid: "{0C85EE9E-FEEA-4e4c-A559-92D10421902A}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 6
+    note: |
+      5.1 “Documentation & description of datasets” KPI assesses whether the datasets of a NAP are accompanied by supporting material, such as documentation, high-level descriptions (included in a metadata filed), XML schemas or samples, or even further detailed documentation. The minimum level of service is associated with the provision of XML schemas or samples. In case there are available links with additional information about datasets, an advanced level of service is assumed.
+      
+      Values:
+      0: Lack of dataset documentation and description
+      1: High-level description of datasets including standard metadata elements
+      2: High level description of datasets including availability of links and supporting material in the form of XML schemas and samples, where necessary
+      3: High level description of datasets including standard metadata elements, XML schemas and samples, and further supporting material such as detailed documentation and protocol documentation
+      
+      Minimum acceptable value for interoperability: 2
+    links:
+      - "Abstraction → K.5.1.1 Description of datasets"  # {26A45A15-3A4E-45bc-8439-EB03CD2FFACC} → {DEAE1C7A-1D84-41ec-8301-E4726F387B6F}
+      - "Abstraction → K.5.1.2 Supporting documentation of datasets"  # {173A84A6-F0E4-413c-9DAA-22DC37C356B4} → {DE8AB201-E709-40fe-A6A2-9892B270EF1A}
+  - name: "KPI 5.2 Classification of datasets"
+    guid: "{9857E39A-0D5D-4216-97B2-1F7D709865D9}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 7
+    note: |
+      5.2 “Classification of datasets” is the second KPI grouped into this category. Dataset classification can be based either on custom parameters such as parameters indicating the type of network or on formal terminology and coordinated metadata. A classification based on the former parameters is associated with a minimum acceptable level of service, while a classification based on the latter parameters is associated with a REQ required level of service.
+      
+      Values:
+      0: Lack of dataset classification
+      1: Classification of datasets based on custom parameters only (e.g., transport mode/network covered)
+      2: Classification of datasets based at least on formal terminology/keywords (vocabulary of the mobility-DCAT-AP) or coordinated metadata catalogues
+      
+      
+      Minimum acceptable value for interoperability: 2
+    links:
+      - "Abstraction → K.5.2.1 Classification of datasets"  # {D44E003E-140A-47f7-AB24-85CFE0CD900A} → {83214B25-55CB-415c-B142-439C41EEF164}
+  - name: "KPI 5.3 Quality indicators for datasets"
+    guid: "{A7375E0A-1CD4-4b46-B339-1C5DF44EDE52}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 8
+    note: |
+      5.3 “Quality indicators for datasets” KPI assesses the extent to which a NAP provides insight into the quality of the provided data/metadata. There are four possible values that this KPI may take. A value equal to 1 indicates that a NAP includes a description of the quality of the provided metadata (e.g., based on a pre-established metadata quality assessment scheme, or using the field available in the mobiltyDCAT-AP profile for the data provider to indicate the quality of the data). A value equal to 2 indicates that a NAP provides a description of general quality definitions to support its users to self-assess the quality of utilized data or high-level quality assessment statements in the metadata of hosted publications. On the other hand, a value equal to 3 indicates that a more detailed data quality description is provided in the metadata of hosted publications; however, provided details and values do not cover the entirety of quality fields that may relate to the nature of exchanged data. Finally, a value equal to 4 indicates that there is a solid description of all fields. It is assumed that a NAP shall at least provide metadata quality descriptions for achieving a minimum acceptable level of service.
+      
+      Values:
+      0: No
+      1: Yes, the NAP provides a metadata field where the data provider can describe the quality of the dataset
+      2: Yes, in addition to the metadata field the NAP provides reference to applicable quality frameworks (e.g. EU-EIP and or NAPCORE) to support the data provider in quality assessment of the dataset
+      3: Yes, all datasets at the NAP have quality information indicated through the metadata field, using the reference quality frameworks provided by the NAP
+      
+      Minimum acceptable value for interoperability: 2
+    links:
+      - "Abstraction → K.5.3.1 Metadata field for Quality description"  # {552F3F4C-D7EB-4a6a-8140-EC2C38F92B64} → {E96E06AA-18A0-425d-8F5C-761F449E798C}
+      - "Abstraction → K.5.3.2 Reference field for used quality guidline or framework"  # {196EEC72-BF3F-491a-9585-26465893432D} → {1CDE79DF-156A-4d61-8DFD-C16F5D60B752}
+  - name: "KPI 5.4 Data visualization"
+    guid: "{8F6DC276-FEB9-42a5-A18C-8DEDFC5EFD21}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 9
+    note: |
+      Data visualization: This KPI assess the extent to which a NAP can support the visualization of its exchanged content. This means extended view on dataset information. Visualization options are divided according to the form of visualization, namely numbers and graphs, map outputs, or animations (that are typically relevant for time series of data).
+      
+      Note 1: Data visualization means that NAP is providing visual information about data, e.g., showing the traffic flow, speed or congestions along the time or along the road network, map visualization with location of truck parking locations etc.
+      Note 2: Even if no data is provided via NAP interface (like in metadata directories), it is still possible to have visualization available, e.g., through WMS.
+      
+      Values:
+      0: No visualization of data
+      0: Visualization is available
+      Value+1 (for each of the following options): What types of data visualization functionalities are available? You can select multiple options:
+      a. Visualization of numbers and charts derived from data records
+      b. Visualization of data on a map (may include location points, lines or areas)
+      c. Visualization can use animation of “a” or “b” options above, e.g., an animation or video for a time series of a selected period
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K5.4.1 Data visualization"  # {4A5E077A-21B8-4e18-A6BB-D1B7BD5FADF7} → {AB431EDD-73E8-43c9-A219-2232A1745A55}
+  - name: "KPI 5.5 Metadata visualization"
+    guid: "{F40A299B-E3FE-45ec-BEB5-002C6A4E7FC8}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 10
+    note: |
+      Metadata visualization: This KPI assess the extent to which a NAP can support the visualization of metadata. This means extended view of aggregated dataset meta information.
+      Visualization options are divided according to the form of visualization, namely numbers and graphs, map outputs.
+      
+      Note: Metadata visualization means that NAP is providing visual information about metadata, e.g., showing the positions or areas in the map of the data coverage (and their attributes) or bar chart with “how many organisations provide data to the NAP per year”.
+      
+      Values:
+      0: No visualization of metadata
+      0: Visualization is available
+      Value+1 (for each of the following options): What types of metadata visualization functionalities are available? You can select multiple options:
+      a. Visualization of numbers and charts derived from metadata records resp. information/news about datasets
+      b. Visualization of metadata on a map (may include location points, lines or areas)
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K.5.5.1 Metadata Visualization"  # {47BECC57-205E-416c-ADD6-405FDF5CA582} → {EA7E8A92-7AF9-4f91-A12A-44E1091AC517}

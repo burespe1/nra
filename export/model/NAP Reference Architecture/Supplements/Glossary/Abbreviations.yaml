@@ -1,0 +1,80 @@
+package: "NAP Reference Architecture/Supplements/Glossary/Abbreviations"
+guid: "{D7346BB1-36A3-4f9a-A435-6C2749E110DF}"
+alias: ""
+version: "1.0"
+note: ""
+tags:
+  "isEnabled": "true"
+elements:
+  - name: "EA GUID"
+    guid: "{B68771F9-6E74-493c-AB7D-53D33ACCA883}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Enterprise Architect unique identifier, uniquely identifying the object within the model
+  - name: "HLF"
+    guid: "{30B9592E-7723-4443-947B-0B99779DD18E}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      High Level Function
+  - name: "ITS"
+    guid: "{FAE0C0D9-97E1-4a04-93D9-B4D5436D8B14}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Intelligent Transportation Systems
+  - name: "KPI"
+    guid: "{26B0CF58-6CE5-4649-B4CF-1042A11D37D2}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Key Performance Indicator
+  - name: "LLF"
+    guid: "{899E3DE7-463E-42a3-BD69-5F6FF8CC1975}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Low Level Function
+  - name: "NAP"
+    guid: "{1D986FAB-AD16-43aa-B5F4-AFB5A7C85151}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      National Access Point
+  - name: "NLKF"
+    guid: "{78BC68B5-54A6-432a-86EE-2AB9CBDB9ABD}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      NAP LoS KPI Framework tool
+  - name: "NRA"
+    guid: "{5C13F53C-B882-4a8f-856E-26DDAFEBD460}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      National Access Point Reference Architecture

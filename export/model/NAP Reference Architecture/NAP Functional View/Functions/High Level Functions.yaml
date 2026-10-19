@@ -1,0 +1,25 @@
+package: "NAP Reference Architecture/NAP Functional View/Functions/High Level Functions"
+guid: "{4D622D16-3225-4931-98C5-84A605D8ECF5}"
+alias: ""
+version: "1.0"
+note: |
+  High Level Functions contain a group of functions concerned with a specific part of data processing and always have component Low Level Functions.
+elements:
+  - name: "F3.6 Operate National Access Point"
+    guid: "{7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}"
+    type: "Activity"
+    stereotype: "FRAME_High_Level_Function"
+    keywords: "High level function"
+    status: "Proposed"
+    version: "5.0"
+    order: 0
+    tags:
+      "status": "copy"
+    note: |
+      This High-level function shall provide the facilities needed to enable a National Access Point (NAP) to operate. It shall include functionality that enables information objects containing NAP data to be provided and stored. These information objects shall consist of meta-data describing the data that is available and pointers to the Internet address from which data may be obtained. NAP Content Consumers shall be able to discover, search for and obtain some or all the NAP information objects. These information objects will be provided to and entered for the first time by the NAP Content Provider once they have been approved as Content Providers.
+    links:
+      - "Association «OUT» → tnap.cc-metadata_search_result"  # {F8472CF7-AE3D-4640-BE00-9B73345E0BFE} → {DDCEDB1B-C3C2-4d88-AAF0-8371D10BF745}
+      - "Association «OUT» → tnap.cc-support_response"  # {F55DB2D5-BA1A-4ed5-BB5B-FD377E4E9357} → {27BFFD1B-0E50-4c8b-8CDF-8F958078802C}
+      - "Association «OUT» → tnap.cp-metadata_&_success_report"  # {5842B98E-9BDB-4b2b-B669-4784120226C9} → {169488F2-0C7D-4eef-8B43-C324785B730D}
+      - "Association «OUT» → tnap.cp-registration_response"  # {7030953D-F995-4b08-8051-51F2DBCCE872} → {AFD11DEB-11FE-4692-8BEB-B81835B7A4AD}
+      - "Association «OUT» → tnap.cp-support_response"  # {7BAE006D-9B77-4dd0-9E15-A9365EC5F942} → {997937B5-775D-4297-8297-D9ABB198ACF2}

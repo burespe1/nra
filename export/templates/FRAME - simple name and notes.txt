@@ -1,0 +1,7 @@
+name: FRAME - simple name and notes
+id: {4977A37B-9739-4971-98AC-B69E94BF104A}
+kind: template/fragment
+sections: ['Pkg', 'Pkg_Diagram', 'Pkg_Element', 'Pkg_Element_ElemModelDoc', 'Pkg_Element_Element', 'Pkg_Pkg']
+options: modcreate="-1" statuslike="-1" phaselike="-1" beforeafter="-1" pkgorder="1" elemorder="0" featorder="1" dgmorder="1" pkgasc="0" elemasc="0" featasc="0" dgmasc="0" imagefmt="0" hindent="9" noteless="0" skiproot="0" statuslist="" phase="All" exdetails="" wordsubst="0" nobookmarks="0" hideanonymous="0" htmlformating="0" exconndetails="" exdiagdetails="" conndirfilter="0" childelements="0" notelessconn="0" fragment="0" fragment_type="0" script_guid="" status_clr="0" elem_as_help="0" prop_filters="0" all_diag_elems="0" packageexclude_type="0" packageexclude_guid="ArchiMate3:{7FB787B0-AE59-4471-86D3-962706830572}"/
+
+Pkg_Beginpackage > 1\*\*MERGEFIELD Pkg.Name\Pkg.Name\ \*MERGEFIELD Pkg.Notes\Pkg.Notes\ diagram > \*MERGEFIELD Diagram.DiagramImg\Diagram.DiagramImg\ Figure: \*MERGEFIELD Diagram.Name\Diagram.Name\ < diagram element > 1.1\*\*MERGEFIELD Element.Name\Element.Name\ Date Modified: \*MERGEFIELD Element.DateModified\Element.DateModified\, GUID: \*MERGEFIELD Element.GUID \Element.GUID\ \*MERGEFIELD Element.Notes\Element.Notes\ linked document > < linked document child elements > < child elements < element child packages > < child packages < package

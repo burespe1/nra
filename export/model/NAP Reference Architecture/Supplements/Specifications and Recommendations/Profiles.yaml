@@ -1,0 +1,103 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/Profiles"
+guid: "{A8806412-9C1B-4ff5-9A78-25DC4D58E680}"
+alias: "Profiles"
+version: "1.0"
+note: |
+  Datex II provides a set of Recommended Reference Profiles (RRPs) and Recommended Service Profiles (RSPs). While the RRPs establish minimum set of data-elements required to provide the information meant by the specific data categories in the specific delegated regulation (SRTI, RRTI and MMTIS), the RSPs support harmonised uses cases for the provision of data from the road operator’s point of view.
+  NeTEx, also a recommended profile – European Passenger Information Profile (EPIP), which is part of the CENT/TNS 16614 Standard and used for the following use cases:
+  
+  	- Provision of data for journey planners
+  	- Provision of data to a path mapping software tool on an (interactive) map
+  	- Provision of timetable printout data
+  	- Provision of station information
+  
+  In addition to these general profiles (RRPs and RSPs for Datex II and the EPIP for NeTEx), some MS build their own national profiles related those 2 Standards and SIRI as well.
+elements:
+  - name: "DATEX II Recommended Reference Profiles"
+    guid: "{0284859D-C83B-423b-909A-05291C3F0B08}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Profile"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      STUB: Recommended Reference Profiles (RRP's) give a harmonised interpretation of the data categories in the Delegated Regulations A, B, C and E of the EU ITS-Directive 2010/40.
+      This concerns the following Delegated Regulations:
+      
+      	- Delegated Regulation 886/2013 (SRTI, Action C)
+      	- Delegated Regulation 962/2015 (RTTI, Action B)
+      	- Delegated Regulation 1926/2017 (MTIS, action A)
+    links:
+      - "Usage → DATEX II"  # {B8339D22-9828-4437-9258-626D2E1FB6DB} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+  - name: "EIP Recommended Service Profiles"
+    guid: "{3D7BA083-1874-45c0-9B49-E81F3F261DF9}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Profile"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      STUB: The EIP Recommended Service Profiles aim to update and harmonize service descriptions for Intelligent Transport Systems (ITS) in Europe. This effort incorporates the latest advancements in digitalization and Cooperative Intelligent Transport Systems (C-ITS), as well as insights from best practices and EU EIP activities.
+      Key goals include:
+      
+      	- Modernizing service descriptions to reflect current technologies and regulatory contexts.
+      	- Simplifying information to make it more accessible and understandable.
+      	- Eliminating redundancies by merging separate documents into a comprehensive guide.
+      
+      The profiles, developed jointly by the EU EIP and DATEX II PSA, are available for free and provide guidance on data sharing for ITS services. They describe interfaces for communication between systems and vehicles, ensuring compliance with European regulations and standards like DATEX II.
+      You can get the Recommended Service Profiles at the DATEX II webtool.
+      
+      	- Forecast and Realtime Event Information
+      	- Traffic Condition and Travel Time Information
+      	- Speed Limit Information
+      	- Road Weather Information
+      	- Multi-Modal Traveller Information
+      	- Dynamic Lane Management
+      	- Variable Speed Limits
+      	- Ramp Metering
+      	- Hardshoulder Running
+      	- Incident Warning and Management
+      	- HGV Overtaking Ban
+      	- Traffic Management for Corridors and Networks
+      	- Intelligent and Secure Truck Parking
+    links:
+      - "Usage → DATEX II"  # {1864F58A-A564-4627-A18C-0F468D025CA3} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+  - name: "EPIP Profile"
+    guid: "{483C3636-0B3E-4cf4-BCA0-788C9923AF24}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Profile"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      STUB: The profile contains information such as details of used services, details of the objects used in an exchange, details on the options proposed by the standard, details on optional elements. NeTEx profiles are available to facilitate the implementation of the standard and to improve interoperability by focusing only on the elements that are needed and to fill small gaps voluntarily left by the standard to enable customisation. The European Passenger information profile (EPIP – NeTEx Part 4)6 is a profile focusing on minimum information required to be exchanged to feed passenger information systems (stop displays, mobile applications, journey planners etc.) based on DR MMTIS 2017/1926. The European Passenger Information Accessibility Profile (EPIAP- NeTEx Part 6)7 focuses on the accessibility facilities in stops, stations, vehicles (e.g., ramps, lifts, escalators etc.) for static data, according to MMTIS DR requirements. The respective real time data for both profiles are included in SIRI. The European profiles aim to facilitate the implementation of NeTEx but also to be the basis for the specification of national or local profiles, ensuring interoperability between countries and regions. The EU profiles consider also the existing national profiles, whenever exist, to focus on the common needs between countries and to adopt best approaches.
+  - name: "IDACS Recommended Service Profiles"
+    guid: "{87698942-37BC-4e11-ABA4-EA4038A0791C}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Profile"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      In the course of the Programme Support Action (PSA) “Data collection related to recharging/refuelling points for alternative fuels and the unique identification codes related to e-Mobility actors” that was subsequently given the name IDACS, or “ID and Data Collection for Sustainable fuels in Europe”, the 15 member states of the consortium mandatorily have to collect data related to alternative fuels infrastructures, namely electric charging points and hydrogen refuelling stations (HRS) as part of activity 2. Other alternative fuels, such as CNG, LNG, LPG and highly-blended biofuels can be covered optionally.
+      As data collection mandatorily has to take place via the National Access Points (NAP) as defined in directive 2010/40/EU on the framework for the deployment of Intelligent Transport Systems in the field of road transport and for interfaces with other modes of transport, it is the aim of these profiles to give guidance on how this can be achieved.
+    links:
+      - "Usage → DATEX II"  # {B0BD5ECB-E47F-4070-8CDA-1598E82E9AD9} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+  - name: "UVARBox"
+    guid: "{C5FEBBBE-152B-47a6-8892-5C453997CEBA}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Profile"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      STUB: UVARBox digitized five types of UVARs for which five profiles are available as RSP in the . The five UVAR types are: - low emission zones - limited traffic zones - pedestrian zones - congestion charging - parking zones
+      As these profiles are based on un unstable version of DATEX II Traffic Regulations users have to be aware of non-interoperable changes are expected in a stable future v3 release of TrafficRegulation and ControlledZone.
+      UVARBox website
+    links:
+      - "Usage → DATEX II"  # {F7C076D9-310F-46bf-A4EA-3D2CCDDBF66E} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}

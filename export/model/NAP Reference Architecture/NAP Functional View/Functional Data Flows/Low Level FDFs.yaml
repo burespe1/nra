@@ -1,0 +1,722 @@
+package: "NAP Reference Architecture/NAP Functional View/Functional Data Flows/Low Level FDFs"
+guid: "{EFE16E45-75B8-44cb-B28B-7C9D80C71CB8}"
+alias: "Low Level Data Flows"
+version: "1.0"
+note: |
+  Low Level Functional Data Flows carry a specific data between two Low Level Functions.
+elements:
+  - name: "fnap.cc-data_request"
+    guid: "{AFB3FDE3-5682-463a-A966-CEF77741C6A9}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cc-data request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It consists of inputs from the NAP Content Consumer containing data objects that provide request for retrieval of traffic or travel data stored in NAP Data store. Besides the identification of data to be retrieved the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity with right to access the data.
+      
+      NOTE: authorisation credentials might be void if the data to be retrieved are freely available (i.e. open data)
+    links:
+      - "Association «OUT» → F3.6.9 Manage NAP Data Retrieval"  # {4E9669C2-3441-4011-8A80-6D5A9D94EACD} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+      - "Association «served by» → Data to Content Consumer"  # {055EEE55-75FF-4ea9-B254-A079A4EAB380} → {B82B3A07-B464-4905-B517-04B74942E5AA}
+  - name: "fnap.cc-registration_request"
+    guid: "{7777AD14-8D53-466c-9949-22CFAB635676}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cc-registration request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It consists of inputs from the NAP Content Consumer containing data objects that provide a registration request of and information about a potential NAP Content Consumer which wants to register or a request with credentials of registered NAP Content Consumer for retrieval of its data upon a successful authorisation. (Details of the information about the NAP Content Consumer will be found in the description of the store of NAP Users).
+      The registration request contains relevant information about the entity to be registered under NAP Content Consumer account, including identity information, licence terms approval, users, machines, and organization information.
+    links:
+      - "Association «OUT» → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {DF01CF2E-45D8-4ece-AEB0-76AF75A9DC6B} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}
+      - "Association «served by» → Content Consumer Authorization and Registration"  # {7F0250BE-F47B-4294-916F-E2E203845F16} → {96C4145B-D427-423c-8272-54CE77DBDE7F}
+  - name: "fnap.cp-data_&_authorisation_credentials"
+    guid: "{60297FF0-CD09-4e8d-8221-0B0FF35E3239}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cp-data & authorisation credentials"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It consists of inputs from the NAP Content Provider containing data objects that provide new or updated traffic or travel data to be loaded into the store of NAP Data store.
+      Besides the data itself the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity.
+    links:
+      - "Association «OUT» → F3.6.8 Manage Data Input"  # {FFA9A4AC-2EBE-4ac9-AB73-C95308EFA02E} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+      - "Association «served by» → Data from Content Provider"  # {B6E132A0-10E9-4903-B305-DA89BA508C1D} → {1F6F7D4C-BAFE-43db-AF7B-C8043CC6E31F}
+  - name: "fnap.dps-data_&_authorisation_credentials"
+    guid: "{8EC048EF-B06E-497b-A29E-EFB18412560E}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.dps-data & authorisation credentials"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It consists of inputs from the Data Provision System containing data objects that provide new or updated traffic or travel data to be loaded into the store of NAP Data store.
+      Besides the data itself the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity.
+    links:
+      - "Association «OUT» → F3.6.8 Manage Data Input"  # {80DFF1D8-EB15-475c-BABF-F1D938F42430} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+      - "Association «served by» → Data from Data Provision System"  # {04183198-439C-4e6f-9768-652A05C4EAAB} → {1DE55835-B3EB-461f-BAF4-61B9F635EDBD}
+  - name: "fnap.drs-data_request"
+    guid: "{A57EDCA4-5B76-4808-9C68-5DDF06E70C93}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.drs-data request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It consists of inputs from the Data Requesting System containing data objects that provide request for retrieval of traffic or travel data stored in NAP Data store. Besides the identification of data to be retrieved the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity with right to access the data.
+      
+      NOTE: authorisation credentials might be void if the data to be retrieved are freely available (i.e. open data)
+    links:
+      - "Association «OUT» → F3.6.9 Manage NAP Data Retrieval"  # {DDDCE02D-3683-48c9-9D43-3810BDC6E1AA} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+      - "Association «served by» → Data to Data Requesting System"  # {685B00D7-24B0-4b23-B56D-37D05BE31717} → {F785EA75-B3BD-4be6-9374-06DC89A98B73}
+  - name: "fnap.mdrs-metadata_request"
+    guid: "{1F8479D1-6CEC-42fd-8CD2-79F9AD3334A4}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.mdrs-metadata request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It consists of inputs from the Metadata Requesting System containing data objects that provide request for retrieval of information stored in NAP Metadata store as DCAT-AP records. The request shall contain keywords or any refining demand in at least one metadata element.
+    links:
+      - "Association «OUT» → F3.6.4 Manage Metadata Retrieval"  # {386CE389-A02F-44f0-B381-8E7194523F72} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
+      - "Association «served by» → Metadata to Requesting System"  # {0464C26F-B2C4-4768-B79F-DCF33AF90028} → {5681386B-AB60-4a6c-B51B-4BD4F745FDD5}
+  - name: "mt_NAP_data_for_quality_check"
+    guid: "{12DD5935-707F-445e-B70C-4401AE81022C}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data for quality check"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects with the traffic or travel information that has been retrieved from the store of NAP Data following a scheduled or triggered event. The data object also contains quality information that is to be updated after the quality check of the retrieved data content.
+    links:
+      - "Association «OUT» → F3.6.10 Provide Data Quality Checks"  # {D3C1BB19-1F57-496b-AB0B-EDC3C2CF52D9} → {D01EFD87-A3E1-4216-81D9-855530ECE1B9}
+      - "Association «served by» → Data Quality Check"  # {10355195-A44C-4cc9-BF2E-83203A799B27} → {1587F034-1363-447d-8BFA-2234BA04649C}
+  - name: "mt_NAP_data_mod_authorisation_request"
+    guid: "{E20BF73E-7630-4235-9E13-54B7C5C78E46}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data mod authorisation request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide credentials of a NAP Content Provider or Data Providing System to be checked against the data stored in NAP Users data store to authorize the claimant to insert data records in the store of NAP Data.
+    links:
+      - "Association «OUT» → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {E3A8F66A-780D-4102-BA0D-0C93F12A75C7} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}
+      - "Association «served by» → User and Data Management"  # {171765D4-D4D0-4258-B268-45C0C2D21570} → {5C212D22-87C8-423c-A4EE-D4FACC7598C7}
+  - name: "mt_NAP_data_mod_authorisation_response"
+    guid: "{310CD8FD-F1FA-4b44-A502-9A7D061FD2BE}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data mod authorisation response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide information about the validity of the authorisation credentials of a NAP Content Provider or Data Providing System that authorize the claimant to modify / insert data records in the store of NAP Data.
+    links:
+      - "Association «OUT» → F3.6.8 Manage Data Input"  # {8716D73F-ED24-4476-92F3-EE5C580E1C31} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+      - "Association «served by» → User and Data Management"  # {DFECA0E8-65DB-4c69-9475-E66C0BD6338C} → {5C212D22-87C8-423c-A4EE-D4FACC7598C7}
+  - name: "mt_NAP_data_mod_request"
+    guid: "{B7FC7C2F-C1AA-4bf8-82D4-0EA2370C6BC9}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data mod request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide either new data or updates to data that has been previously loaded into the store of NAP Data or a request for data objects to be retrieved. The updated data objects that are to be loaded into the store includes traffic or travel data objects and supporting metadata allowing linking the data object to information stored in NAP Metadata store and accessibility information by the NAP Content Consumers.
+    links:
+      - "Association «OUT» → F3.6.7 Manage NAP Data Repository"  # {AC24873C-E91B-4bb0-85B5-7B3E00BC7670} → {57AEF510-D710-4920-9CCE-96BE708F6AAC}
+  - name: "mt_NAP_data_mod_response"
+    guid: "{E340D2D2-B614-4c5f-BA76-FBD43E68CF5E}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data mod response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide information about the success of loading the newly provided or updated NAP Content Provider data into the store of NAP Data or provide data objects containing the NAP Data metadata (e.g. events associated with data access, quality information).
+    links:
+      - "Association «OUT» → F3.6.8 Manage Data Input"  # {74B3870A-C474-4b8f-9826-9EDA9679FFDF} → {5B4F357F-A164-4a3f-8909-C370F4C0615F}
+  - name: "mt_NAP_data_quality_check_result"
+    guid: "{8AE74C5A-125D-4ce5-ABD4-89818AAE054B}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data quality check result"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects created by Provide Data Quality Checks after checking quality of data that has been retrieved from the store of NAP Data following a scheduled or triggered event. The data is timestamp and success of failure (with number of errors found) of the checks and aggregated information i.e. average of the characteristic per time period.
+    links:
+      - "Association «OUT» → F3.6.7 Manage NAP Data Repository"  # {55650126-E0DB-4ac5-B876-DB7A98C1ACE4} → {57AEF510-D710-4920-9CCE-96BE708F6AAC}
+      - "Association «served by» → Data Quality Check"  # {413E6097-09E7-47e0-961C-B710559B1E21} → {1587F034-1363-447d-8BFA-2234BA04649C}
+  - name: "mt_NAP_data_read_authorisation_request"
+    guid: "{D487FAFF-4F5B-4520-BC53-427580A77997}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data read authorisation request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide credentials of a NAP Content Consumer or Data Requesting System to be checked against the data stored in NAP Users data store to authorize the claimant to read data records from the store of NAP Data.
+    links:
+      - "Association «OUT» → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {0E43ADCB-61C6-47bd-BA46-5656056AF66A} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}
+      - "Association «served by» → User and Data Management"  # {F4B34441-6B3C-4f41-9643-FCE3D49E9F5F} → {5C212D22-87C8-423c-A4EE-D4FACC7598C7}
+  - name: "mt_NAP_data_read_authorisation_response"
+    guid: "{C050FEDE-4276-4730-8B5C-0F605084BE69}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data read authorisation response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide information about the validity of the authorisation credentials of a NAP Content Consumer or Data Requesting System that authorize the claimant to read data records from the store of NAP Data.
+    links:
+      - "Association «OUT» → F3.6.9 Manage NAP Data Retrieval"  # {BCBBC565-46F2-4206-B505-E07592289844} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+      - "Association «served by» → User and Data Management"  # {EE80C841-C4CC-43fc-BFC1-9BCBD963DD9C} → {5C212D22-87C8-423c-A4EE-D4FACC7598C7}
+  - name: "mt_NAP_data_read_request"
+    guid: "{50A2D529-AAC6-4908-919C-7838C607386A}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data read request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains a request for identified data objects to be retrieved from the NAP Data store together with requestor identification. The data objects that are to be retrieved include traffic or travel data objects and supporting metadata information related to the identified data including last update timestamp and quality information.
+    links:
+      - "Association «OUT» → F3.6.7 Manage NAP Data Repository"  # {C96359DD-E655-4972-8768-DE2BBEE2027A} → {57AEF510-D710-4920-9CCE-96BE708F6AAC}
+  - name: "mt_NAP_data_read_response"
+    guid: "{3D6B17A5-0D0F-4944-9E8F-FB446B82FF2F}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP data read response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects with traffic or travel information from the store of NAP Data following a previous request to retrieve data and last update timestamp and quality information.
+    links:
+      - "Association «OUT» → F3.6.9 Manage NAP Data Retrieval"  # {7B3316E7-CAFF-4b0a-A2B5-7FCE033F03ED} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+  - name: "mt_NAP_metadata_for_data_check_and_store_request"
+    guid: "{A65597A1-4E9A-40cc-9665-4640823B199F}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata for data check and store request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide a request from Manage NAP Data Repository functionality for set of metadata related to NAP Data to be checked/stored/updated. The request shall contain keywords or any refining demand in at least one metadata element together with a request identifier.
+    links:
+      - "Association «OUT» → F3.6.1 Manage NAP Metadata Repository"  # {1BF7491B-4901-4b00-94E0-E6C69F2F33D6} → {28A2C553-2939-4542-B14B-8A13B25BC494}
+      - "Association «served by» → Metadata and Data Management"  # {3775FAA1-F8AF-4a6d-8EAA-CC247098C0F2} → {8DE1FAAE-FC95-48f3-B1BD-F0F67A00B135}
+  - name: "mt_NAP_metadata_for_data_check_and_store_response"
+    guid: "{2FD69798-3950-48ea-B7F0-F52F39470F34}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata for data check and store response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      It contains data objects that provide items of NAP metadata which have been retrieved from the store of NAP Metadata following a previous request.
+    links:
+      - "Association «OUT» → F3.6.7 Manage NAP Data Repository"  # {A04DF5BC-9E29-4283-A9D5-D1D5B16FFF89} → {57AEF510-D710-4920-9CCE-96BE708F6AAC}
+      - "Association «served by» → Metadata and Data Management"  # {0DA13C98-8147-4913-A23A-57B8FC743E16} → {8DE1FAAE-FC95-48f3-B1BD-F0F67A00B135}
+  - name: "mt_NAP_metadata_for_quality_check"
+    guid: "{EB72DA4A-A638-4946-B10F-21C536686F6C}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata for quality check"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects with the metadata information that has been retrieved from the store of NAP Metadata following a scheduled or triggered event. The data object also contains quality information that is to be updated after the quality check of the retrieved metadata content.
+    links:
+      - "Association «OUT» → F3.6.6 Provide Metadata Quality Checks"  # {DF9A2717-EDF1-4dd6-9377-66EBBB6FC069} → {15BFF38A-05D9-4775-84C9-6604B0EEA3C6}
+      - "Association «served by» → Metadata Quality Check"  # {AC0EAD90-F7E7-43b0-BAEB-ACE4507C2D01} → {4FB08435-DE36-46a7-B970-3E2B0A3CD452}
+  - name: "mt_NAP_metadata_quality_check_result"
+    guid: "{01233765-5DC4-4cf9-879E-4DC6961C9611}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata quality check result"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects created by Provide Metadata Quality Checks after checking quality of metadata that has been retrieved from the store of NAP Metadata following a scheduled or triggered event. The data is timestamp and success of failure (with number of errors found, level of service achieved) of the checks and overall aggregated summary. The checks follow the MQA and InQMS methodology, at minimum it is an availability of the urls provided in metadata.
+    links:
+      - "Association «OUT» → F3.6.1 Manage NAP Metadata Repository"  # {8C037344-6951-46d6-A395-8DC60B5CACE0} → {28A2C553-2939-4542-B14B-8A13B25BC494}
+      - "Association «served by» → Metadata Quality Check"  # {07F09651-5EF2-4880-A07D-0876716BD997} → {4FB08435-DE36-46a7-B970-3E2B0A3CD452}
+      - "Dependency «trace» → DF F3.6.6 -> F3.6.1"  # {55D4D71A-20F9-4d94-A771-EA7B7D32A49E} → {951B2EF4-AFFC-4d82-B5B7-8C1B38694805}
+  - name: "mt_load_NAP_data"
+    guid: "{38D2C47E-7C5D-4d8d-B7B5-05AFC34DF3CA}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_load NAP data"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide either new data to be loaded into the store of NAP Data, or a request for data to be retrieved. The data that is to be loaded into the store consist of traffic of travel information (static or dynamic) which are made accessible by the NAP Content Provider. The required data objects are further elaborated in NAP Data store.
+      Apart from real data content the information object loaded to data store shall contain data quality records and NAP Data event logs, Identification of the data and access information.
+    links:
+      - "Association «OUT» → D3.18 NAP Data"  # {49C39680-E7C7-4e18-9521-A7E634756BFF} → {B1156E38-B7ED-4dcd-BD87-C003C660A85A}
+  - name: "mt_read_NAP_data"
+    guid: "{30332204-58C2-432d-A2FE-1801EA8E123F}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_read NAP data"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains data objects that provide data that has been retrieved from the store of NAP Data following a request. The data that has been read from the store contains the traffic or travel information content together with its metadata which are made accessible to authorised NAP Functionality.
+      The required data objects are further elaborated in NAP Data store.
+      Apart from real data content the information object retrieved from data store may contain data quality records and NAP Data event logs, Identification of the data and access information.
+    links:
+      - "Association «OUT» → F3.6.7 Manage NAP Data Repository"  # {B949B726-3979-4a11-A63E-319E677CC929} → {57AEF510-D710-4920-9CCE-96BE708F6AAC}
+  - name: "ps_metadata & data source"
+    guid: "{36B4BBF5-5B68-4d38-AF28-7669EFF35137}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      It consists of inputs from the Metadata Provision System containing data objects that provide updated metadata of a catalogue record to be loaded into the store of NAP metadata. The required and optional elements of metadata can be found in a metadata catalogue: https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html. The API for metadata provision must allow for insert, modification and delete of any metadata of the Content Provider.
+      Besides the metadata itself the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity.
+    links:
+      - "Association «OUT» → F3.6.3 Manage Content Providers Metadata"  # {9333A692-6200-4c81-9F2F-CAD1B8971F45} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «served by» → Metadata from Metadata Provision System"  # {3AF8FEF1-FCE5-4fef-94BD-18BBBC28F205} → {A75E9CBB-5B13-4249-B1EE-F51C9EC0BD9D}
+      - "Dependency «trace» → DF F3.6.3 -> MPS"  # {D2A379B7-220F-45b5-B914-7E23A0E75179} → {C546D374-B0B8-409e-86B4-A8A3F97C8268}
+  - name: "ps_metadata & success report"
+    guid: "{1B63FEAE-619D-4b2e-B48D-663FEAC9BE9D}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    note: |
+      It contains outputs to the Metadata Provision System that informs about the status of the requested action (metadata inset, modification or deletion). The response can be either “successful” or “failed”, which must be accompanied by a reason for the “failure”.
+    links:
+      - "Association «OUT» → Metadata Provision System"  # {C1AA605C-F3DD-489f-9E45-4D297E9F0852} → {0DEEF50F-C3BA-4005-A27B-57A30C4C009C}
+      - "Association «served by» → Metadata from Metadata Provision System"  # {41889A05-15F1-44f0-A4CD-E8954C02B139} → {A75E9CBB-5B13-4249-B1EE-F51C9EC0BD9D}
+  - name: "tnap.cc-data_response"
+    guid: "{F7412343-95F0-4611-8149-58EA48466E80}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cc-data response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains outputs to the NAP Content Consumer that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the response to a previous request to retrieve data. The response can be either “successful” or “failed”, which must be accompanied by a reason for the “failure” i.e. invalid authorisation credentials. Also based on the successful request it contains data objects representing traffic or travel data from the NAP Data store related to that request and last update timestamp and quality information.
+    links:
+      - "Association «IN» → NAP Content Consumer"  # {1496CED3-DCE0-44cb-9168-A2641D2CEF59} → {6713B765-606E-4208-8FE8-99B0D50851A5}
+      - "Association «served by» → Data to Content Consumer"  # {56030D42-24AB-46e7-8C41-BC12D416E65A} → {B82B3A07-B464-4905-B517-04B74942E5AA}
+  - name: "tnap.cc-registration_response"
+    guid: "{60E6A67C-C9D0-464b-900F-9F28DC71E886}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cc-registration response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains outputs to the NAP Content Consumer that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the response (“acceptance” or “rejection”) to a previous registration request from a NAP Content Consumer. In case of a successful registration, it includes credentials for the Content Consumer to prove its authorisation to access NAP functionality that needs authorisation. Also based on the successful request it contains data of the registered NAP Content Consumer.
+    links:
+      - "Association «OUT» → NAP Content Consumer"  # {12860BC6-16D5-47d1-916B-F65BD14A1F87} → {6713B765-606E-4208-8FE8-99B0D50851A5}
+      - "Association «served by» → Content Consumer Authorization and Registration"  # {8F0A7E40-5266-4251-B5FC-D9A49D148EFC} → {96C4145B-D427-423c-8272-54CE77DBDE7F}
+      - "Dependency «trace» → DF F3.6.2->CC"  # {707C2DA7-4656-4902-B921-36A7A176300F} → {1226EA52-7C7B-44cd-B0DE-CC4669033395}
+  - name: "tnap.cp-data_upload_result_report"
+    guid: "{A6E68B7A-7C94-474f-B168-C2A98537BC37}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cp-data upload result report"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains outputs to the NAP Content Provider that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the response to a previous request for newly provided or updated traffic or travel data to be loaded into the store of NAP Data. The response can be either “successful” or “failed”, which must be accompanied by a reason for the “failure”. In case of invalid authorisation credentials, the Content Provider should be invited to (newly) register through the Manage NAP User Registrations and Provide Authorisation Service function.
+    links:
+      - "Association «OUT» → NAP Content Provider"  # {5105E966-3DC1-4b90-AC90-8ABF1A941760} → {7F7723C2-1334-495d-8C3F-1CA486951DD2}
+      - "Association «served by» → Data from Content Provider"  # {814580ED-E682-4bdd-8EF3-3F30270C181D} → {1F6F7D4C-BAFE-43db-AF7B-C8043CC6E31F}
+  - name: "tnap.dps-data_upload_result_report"
+    guid: "{FBD65825-894B-415a-AE17-8AD14FDF8F08}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.dps-data upload result report"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains outputs to the Data Provision System that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the response to a previous request to upload data. The response can be either “successful” or “failed”, which must be accompanied by a reason for the “failure” i.e. invalid authorisation credentials.
+    links:
+      - "Association «OUT» → Data Provision System"  # {1D5E6915-FC60-436e-966B-708735760743} → {13412496-2C40-428c-B961-F0F374D991C8}
+      - "Association «served by» → Data from Data Provision System"  # {5D36E3C3-FACF-477e-B3CD-02FDE0975E1F} → {1DE55835-B3EB-461f-BAF4-61B9F635EDBD}
+  - name: "tnap.drs-data_response"
+    guid: "{53ED8069-70B8-44ac-85D7-ED06B5283424}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.drs-data response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains outputs to the Data Requesting System that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the response to a previous request to retrieve data. The response can be either “successful” or “failed”, which must be accompanied by a reason for the “failure” i.e. invalid authorisation credentials. Also based on the successful request it contains data objects representing traffic or travel data from the NAP Data store related to that request.
+    links:
+      - "Association «OUT» → Data Requesting System"  # {7EEB89BC-C3F0-4394-A9D3-CC99B872A25D} → {6CBF0F02-2909-4086-A608-C5EA1E42A9F6}
+      - "Association «served by» → Data to Data Requesting System"  # {793837CC-18F2-4105-ABD1-4538AFABBE3A} → {F785EA75-B3BD-4be6-9374-06DC89A98B73}
+  - name: "tnap.mdrs-metadata_response"
+    guid: "{CA529868-7C49-48f9-AD5E-F796011DFDF5}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.mdrs-metadata response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 0
+    note: |
+      It contains outputs to the Metadata Requesting System that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are items of NAP Metadata which have been retrieved from the store of NAP Metadata following a previous request. Data are formatted as DCAT-AP records compliant with mobilityDCAT-AP.
+    links:
+      - "Association «OUT» → Metadata Requesting System"  # {4876839A-093A-48fc-B3C6-1302C3B35C21} → {DEB4AC48-7332-4f57-99D5-79169FCA6F1F}
+      - "Association «served by» → Metadata to Requesting System"  # {BC3CEA16-31AB-4656-B9B2-64C033FCA84F} → {5681386B-AB60-4a6c-B51B-4BD4F745FDD5}
+  - name: "fnap.cc-metadata_search_request"
+    guid: "{CE5CAFBE-137B-4743-AB12-5EA3827B901A}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cc-metadata search request"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    order: 190
+    tags:
+      "status": "copy"
+    note: |
+      It consists of inputs from the NAP Content Consumer containing data objects that provide a request for information about accessible traffic, travel data and any other relevant information which are described with metadata in the store of NAP Metadata. The request shall contain keywords or any refining demand in at least one metadata element.
+    links:
+      - "Association «IN» → F3.6 Operate National Access Point"  # {08E37D68-18B8-4107-AE07-8A03AE8532D8} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
+      - "Association «OUT» → F3.6.4 Manage Metadata Retrieval"  # {BD1D94B8-CF0A-4b46-A050-B1EE2E79CF10} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
+      - "Association «served by» → Metadata to Content Consumer"  # {8E23A8F8-BE1B-47c4-AF0D-8982438D84BD} → {C25F8BCA-DCD4-4894-956E-40D0218D3ACA}
+  - name: "fnap.cc-support_request"
+    guid: "{1309E545-2913-41f6-920A-68A496630817}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cc-support request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 191
+    tags:
+      "status": "copy"
+    note: |
+      It consists of inputs from the NAP Content Consumer containing data objects that provide a request for support describing an issue the NAP User have and to which the NAP Operator shall respond. The data objects are used by functionality in the Manage Traffic Functional Area.
+    links:
+      - "Association «IN» → F3.6 Operate National Access Point"  # {5707AA49-29EA-41f2-9D67-6F4BA67DF751} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
+      - "Association «IN» → F3.6.5 Provide NAP User Support"  # {0D816A1C-CBF8-4e4e-A237-A9D5E6FA8AB6} → {E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}
+      - "Association «served by» → Support of Content Consumer"  # {BEC7B4E4-8960-4b85-9E8E-EDE9219059EE} → {0B43348A-F713-49fe-A684-A88D53A58D67}
+      - "Dependency «trace» → DF cc->F3.6.5"  # {C2A636C0-8D21-4c5b-B20D-BC6FE011125F} → {5D2CD23B-D6BE-4171-804A-7D4980CC5795}
+  - name: "fnap.cp-metadata_&_authorisation_credentials"
+    guid: "{8D75B934-0C29-40d6-9C80-4963B533B29D}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cp-metadata & authorisation credentials"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 192
+    tags:
+      "status": "copy"
+    note: |
+      It consists of inputs from the NAP Content Provider containing data objects that provide new or updated metadata to be loaded into the store of NAP metadata. The required and optional elements of metadata can be found in a metadata catalogue: https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html .
+      Besides the metadata itself the request must contain the authorisation credentials of the entity that is providing it, so that this can be checked to ensure that it is a registered entity.
+    links:
+      - "Association «IN» → F3.6 Operate National Access Point"  # {A9E975BF-0523-44fc-9A71-5374B7CEE5C6} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
+      - "Association «IN» → F3.6.3 Manage Content Providers Metadata"  # {19CCF105-8EDD-40cf-AA7A-85F98232F147} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «served by» → Metadata from Content Provider"  # {21E24BE3-79FC-41cc-84EA-C8587F7F8F46} → {48F2D92D-8E82-4032-B932-CD8D2CB855B0}
+      - "Dependency «trace» → DF CP>-F3.6.3."  # {1ECCEF43-E46F-4bf4-A393-12C2501FD340} → {13413676-3958-47e4-B2E8-83FFD7981F5E}
+  - name: "fnap.cp-registration_request"
+    guid: "{2165053D-3E67-4324-90F7-172FAA37E259}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cp-registration request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 193
+    tags:
+      "status": "copy"
+    note: |
+      It consists of inputs from the NAP Content Provider containing data objects that provide a registration request of and information about a potential NAP Content Provider which wants to register or a request with credentials of registered NAP Content Provider for retrieval of its data upon a successful authorisation. (Details of the information about the NAP Content Provider will be found in the description of the store of NAP Users).
+      The registration request contains relevant information about the entity to be registered under NAP Content Provider account, including identity information, licence terms approval, users, machines, and organization information.
+    links:
+      - "Association «IN» → F3.6 Operate National Access Point"  # {C5939786-F611-497d-BDC7-3556FCA9A119} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
+      - "Association «IN» → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {ABFB167B-1A9F-45d9-9B5E-98FE8A090F95} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}
+      - "Association «served by» → User Management of Content Provider"  # {E04F8C8F-EA60-4f85-8462-E01326EF8DC4} → {C5A68539-7FA7-4245-9B3A-F55B6668B579}
+  - name: "fnap.cp-support_request"
+    guid: "{1ED4DEC1-3019-4933-A419-5FE60CC29FF4}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "fnap.cp-support request"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    order: 194
+    note: |
+      It consists of inputs from the NAP Content Provider containing data objects that provide a request for support describing an issue the NAP User have and to which the NAP Operator shall respond. The data objects are used by functionality in the Manage Traffic Functional Area.
+    links:
+      - "Association «IN» → F3.6 Operate National Access Point"  # {5223F8C5-CD44-4a8a-B547-A57B3EA07B65} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
+      - "Association «IN» → F3.6.5 Provide NAP User Support"  # {B9AD334A-0476-4802-A3F3-860FA59E618A} → {E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}
+      - "Association «served by» → Support of Content Provider"  # {6A93FF77-84E6-45d4-B038-023F74CA63C8} → {BA985F0C-2C6F-4329-BABC-91890CC23954}
+  - name: "mt_NAP_metadata_mod_authorisation_request"
+    guid: "{D4D31515-ABC4-468d-964E-F6D5D4F77136}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata mod authorisation request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 863
+    note: |
+      It contains data objects that provide credentials of a NAP Content Provider to be checked against the data stored in NAP Users data store to authorize the claimant to modify metadata records in the store of NAP Metadata.
+    links:
+      - "Association «OUT» → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {42527A12-2C5E-4a9e-9E66-D2BDD4B6B67A} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}
+      - "Association «served by» → Metadata and User Management"  # {34607097-F382-4a69-8446-E84224630AEC} → {252899F7-3651-40d5-A2A6-1A59A8185657}
+  - name: "mt_NAP_metadata_mod_authorisation_result"
+    guid: "{C526D3EC-9CD9-465e-B6AB-D13F6308EBB3}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata mod authorisation result"
+    keywords: "Functional Data Flow"
+    status: "Validated"
+    order: 864
+    note: |
+      It contains data objects that provide information about the validity of the authorisation credentials of a NAP Content Provider that authorize the claimant to modify metadata records in the store of NAP Metadata.
+    links:
+      - "Association «OUT» → F3.6.3 Manage Content Providers Metadata"  # {AF6F9265-AA52-4a68-BFCD-9137A8F99858} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «served by» → Metadata and User Management"  # {A4EDAE10-F1FF-4fbd-B2B3-3C54CEBC1875} → {252899F7-3651-40d5-A2A6-1A59A8185657}
+  - name: "mt_load_NAP_metadata"
+    guid: "{B475FFED-C26D-4c49-A824-6030645EFB86}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_load NAP metadata"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1005
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide either new metadata to be loaded into the store of NAP Metadata, or a request for metadata to be retrieved. The metadata that is to be loaded into the store shall give information about the contents which are made accessible by the NAP Content Provider. The required and optional elements of metadata can be found in a mobilityDCAT-AP https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html.
+      
+      Apart from data specified by the above said catalogue other data are managed by the load function these are data quality records and NAP User event log.
+    links:
+      - "Association «OUT» → D3.15 NAP Metadata"  # {3ED4FB70-CE4B-4b9e-8B1B-D3C073892748} → {107C58F6-DF90-4243-BEBB-A50AAACE3DF0}
+  - name: "mt_load_NAP_user_data"
+    guid: "{EFA11DF3-9ABC-46b9-8E31-B15D7F357F69}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_load NAP user data"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1006
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide either new data to be loaded into the store of NAP Users, or a request for data objects to be retrieved. The data objects that are to be loaded into the store will include information about a previously unregistered NAP User or modifying, extending, deleting previously registered NAP User.
+    links:
+      - "Association «IN» → D3.17 NAP Users"  # {8B92061E-3D10-4833-8A25-986922B6CE6B} → {6EFCE4AC-8716-4e03-A229-875C0AA05392}
+      - "Dependency «trace» → DF F3.6.2->D3.17"  # {683CE09D-48BA-4806-9264-6738AE439661} → {E9FF7F22-0673-4a62-BD78-0AD0B7121D7C}
+  - name: "mt_NAP_metadata_search_result"
+    guid: "{F378C3C8-88CC-48f5-8713-7E685951CC86}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata search result"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1014
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide metadata items which have been retrieved from the store of NAP Metadata following a previous search request. A request identifier must be included so that it can be related to a particular request (there may be multiple requests being made from the same source) and returned to the requestor.
+    links:
+      - "Association «OUT» → F3.6.4 Manage Metadata Retrieval"  # {F324940A-DCE1-42a1-B100-333830BC9369} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
+  - name: "mt_NAP_metadata_mod_request"
+    guid: "{E5EE6235-7DA8-4f7c-B007-A5F039A31397}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata mod request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1015
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide either new metadata or updates to data that has been previously loaded into the store of NAP Metadata or a request for data objects to be retrieved. The updated data objects that are to be loaded into the store includes information that is being made accessible by the NAP Content Provider. The required and optional elements of metadata can be found in a metadata catalogue: https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html
+    links:
+      - "Association «OUT» → F3.6.1 Manage NAP Metadata Repository"  # {5BED620F-1294-41fd-AC09-2EB841EA8F48} → {28A2C553-2939-4542-B14B-8A13B25BC494}
+  - name: "mt_NAP_metadata_search_request"
+    guid: "{F2F9B90C-BD35-4b2a-8DCB-4B8F834C419A}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata search request"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1016
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide a request from the NAP Content Consumer for information about traffic, travel data and any other relevant information which are described with metadata in the store of NAP Metadata. The request shall contain keywords or any refining demand in at least one metadata element together with a request identifier.
+    links:
+      - "Association «OUT» → F3.6.1 Manage NAP Metadata Repository"  # {B4FDF6A4-3AC1-4bd3-B057-193D326B7806} → {28A2C553-2939-4542-B14B-8A13B25BC494}
+  - name: "mt_read_NAP_metadata"
+    guid: "{1E6C064E-67D4-4638-9588-0E0DCF2813ED}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_read NAP metadata"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1057
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide metadata that has been retrieved from the store of NAP Metadata following a request. The metadata that has been read from the store gives information about the contents which are made accessible by the NAP Content Provider. The required and optional elements of metadata can be found in a metadata catalogue: https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html
+      
+      Apart from data specified by the above said catalogue other data are managed by the read function these are data quality records and NAP User event log.
+    links:
+      - "Association «OUT» → F3.6.1 Manage NAP Metadata Repository"  # {6366670E-0E56-410f-8F25-C99F3BA98BEC} → {28A2C553-2939-4542-B14B-8A13B25BC494}
+  - name: "mt_read_NAP_user_data"
+    guid: "{6D08A3DC-FB6E-47d7-B1BF-B68208337A4F}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_read NAP user data"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1086
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide data that has been read from the store of NAP Users, following a previous request for data to be retrieved. The data that is to be read from the store will be information about a registered NAP User, or a "no data" found response. (Details of the type of information about the NAP Users that is available will be found in the description of the store of their data).
+    links:
+      - "Association «OUT» → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {9C30215E-6A5D-4066-B174-0D93AFD08A5D} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}
+      - "Dependency «trace» → DF D3.17 -> F3.6.2"  # {7DC35415-A252-4be7-B50F-135F0D602B20} → {582F0581-C920-4f82-B077-49C3E971BD27}
+  - name: "mt_NAP_metadata_mod_result"
+    guid: "{3947BAD7-63D3-4efd-9308-DDBCD8C288F9}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "mt_NAP metadata mod result"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1115
+    tags:
+      "status": "copy"
+    note: |
+      It contains data objects that provide information about the success of loading the newly provided or updated NAP Content Provider metadata into the store of NAP Metadata or provide data objects containing the NAP Content Provider metadata All information stored in the NAP Metadata store about the authorised NAP Content Provider may be retrieved this way.
+    links:
+      - "Association «OUT» → F3.6.3 Manage Content Providers Metadata"  # {B9065030-70B7-4c6f-B98B-C1C6BEC589B1} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+  - name: "tnap.cc-metadata_search_result"
+    guid: "{DDCEDB1B-C3C2-4d88-AAF0-8371D10BF745}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cc-metadata search result"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1948
+    tags:
+      "status": "copy"
+    note: |
+      It contains outputs to the NAP Content Consumer that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are items of NAP metadata which have been retrieved from the store of NAP metadata following a previous search request.
+    links:
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {52E2AD93-8E9F-4ee0-AA16-3F7E0A563C02} → {B767384A-BAB2-4802-A07C-DA9BA8B1132A}
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {EFF9D3D1-8FA0-475e-A704-4BF73F9E198E} → {EACAFE4C-395F-4a01-B251-D6ED49DAFC30}
+      - "Association «OUT» → NAP Content Consumer"  # {F08CDB85-EFD4-48ff-ACBC-8DBFE9A541E7} → {6713B765-606E-4208-8FE8-99B0D50851A5}
+      - "Association «served by» → Metadata to Content Consumer"  # {E66BC4EF-8CBC-4dd5-BA9E-FF4EE8AE3332} → {C25F8BCA-DCD4-4894-956E-40D0218D3ACA}
+      - "Dependency «trace» → DF F3.6.4 -> cc"  # {DDBAC92C-4C94-4031-AA69-84189035ED79} → {1F1F226A-7D1D-4b34-BDA6-B180E9B056E0}
+  - name: "tnap.cc-support_response"
+    guid: "{27BFFD1B-0E50-4c8b-8CDF-8F958078802C}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cc-support response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1949
+    tags:
+      "status": "copy"
+    note: |
+      It contains outputs to the NAP Content Consumer that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the responses to previous requests for support, i.e. information about handling and resolving the issue.
+    links:
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {24F7CD44-EA81-4ce4-A6E4-295B2861D826} → {B767384A-BAB2-4802-A07C-DA9BA8B1132A}
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {829D03F0-099E-414c-B719-519C04663AD3} → {EACAFE4C-395F-4a01-B251-D6ED49DAFC30}
+      - "Association «OUT» → NAP Content Consumer"  # {0B44BB14-200C-4769-9992-03DE2FC00941} → {6713B765-606E-4208-8FE8-99B0D50851A5}
+      - "Association «served by» → Support of Content Consumer"  # {8A641892-A544-40bd-80C0-501DB32FB937} → {0B43348A-F713-49fe-A684-A88D53A58D67}
+  - name: "tnap.cp-registration_response"
+    guid: "{AFD11DEB-11FE-4692-8BEB-B81835B7A4AD}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cp-registration response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1950
+    tags:
+      "status": "copy"
+    note: |
+      It contains outputs to the NAP Content Provider that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the response (“acceptance” or “rejection”) to a previous registration request from a NAP Content Provider. In case of a successful registration, it includes credentials for the Content Provider to prove its authorisation to access NAP functionality that needs authorisation. Also based on the successful request it contains data of the registered NAP Content Provider
+    links:
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {15A2DBA4-80CC-437e-AAF6-73F5C362C544} → {B767384A-BAB2-4802-A07C-DA9BA8B1132A}
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {18CA8AFC-51B4-4629-9B61-38D0DB1F4A8B} → {EACAFE4C-395F-4a01-B251-D6ED49DAFC30}
+      - "Association «OUT» → NAP Content Provider"  # {1E95D748-07D6-4063-942E-AD02E69CBDF7} → {7F7723C2-1334-495d-8C3F-1CA486951DD2}
+      - "Association «served by» → User Management of Content Provider"  # {19878AF3-D172-4fd2-BE2C-F8846DB03D0A} → {C5A68539-7FA7-4245-9B3A-F55B6668B579}
+      - "Dependency «trace» → DF F3.6.2 -> CP"  # {71F0E645-E56B-4984-8210-2ACFDF10B543} → {8BEFD98E-F081-4c85-8AD4-32FB98186FFE}
+  - name: "tnap.cp-metadata_&_success_report"
+    guid: "{169488F2-0C7D-4eef-8B43-C324785B730D}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cp-metadata & success report"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1951
+    tags:
+      "diagram": "metadata, data platform"
+      "status": "copy"
+    note: |
+      It contains outputs to the NAP Content Provider that have been as the response to a previous request to create, update or delete Content Provider related metadata in the store of NAP Metadata. The response can be either “successful” or “failed”, which must be accompanied by a reason for the “failure”. In case of invalid authorisation credentials, the Content Provider should be invited to (newly) register through the Manage NAP User Registrations function. Also based on the successful request it contains data objects from the NAP Metadata store related to that NAP Content Provider.
+    links:
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {2D963F40-C71B-4c1d-8E3F-D2CA1109CF84} → {B767384A-BAB2-4802-A07C-DA9BA8B1132A}
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {9F257B2E-D35B-4710-8FF8-DD8F55BA652C} → {EACAFE4C-395F-4a01-B251-D6ED49DAFC30}
+      - "Association «OUT» → NAP Content Provider"  # {625531D6-210C-4be8-85B8-5F08DF926494} → {7F7723C2-1334-495d-8C3F-1CA486951DD2}
+      - "Association «served by» → Metadata from Content Provider"  # {7E0AC81A-44B6-421f-B75D-D2255C45D8A2} → {48F2D92D-8E82-4032-B932-CD8D2CB855B0}
+      - "Dependency «trace» → DF F3.6.3->CP"  # {E250C03F-D934-4c68-8568-A6E2EC91DE00} → {75F60E2D-5213-41de-B8A5-DA6021EA79C5}
+  - name: "tnap.cp-support_response"
+    guid: "{997937B5-775D-4297-8297-D9ABB198ACF2}"
+    type: "Interface"
+    stereotype: "FRAME_Low_Level_Data_Flow"
+    alias: "tnap.cp-support response"
+    keywords: "Functional Data Flow"
+    status: "Proposed"
+    order: 1952
+    tags:
+      "status": "copy"
+    note: |
+      It contains outputs to the NAP Content Provider that have been created from data objects provided by functionality in the Manage Traffic Functional Area that are the responses to previous requests for support. i.e. information about handling and resolving the issue.
+    links:
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {21BECF7C-D136-4717-AE69-F0EC34CEC220} → {B767384A-BAB2-4802-A07C-DA9BA8B1132A}
+      - "Aggregation «Componentof» → tnap-mt_outputs"  # {C5844525-AEE3-49f9-B1BF-E5C26B1402B8} → {EACAFE4C-395F-4a01-B251-D6ED49DAFC30}
+      - "Association «OUT» → NAP Content Provider"  # {AE0E7ADE-F518-4bda-9934-148CD084C534} → {7F7723C2-1334-495d-8C3F-1CA486951DD2}
+      - "Association «served by» → Support of Content Provider"  # {C7689EA7-F77B-4ebd-BB9B-8AC3E6F11FF6} → {BA985F0C-2C6F-4329-BABC-91890CC23954}
+      - "Dependency «trace» → DF F3.6.5 -> CP"  # {57558A58-C106-4a1a-B455-F31B0094B00D} → {86AB54E4-96DF-4b84-A541-44B7FA7B1010}

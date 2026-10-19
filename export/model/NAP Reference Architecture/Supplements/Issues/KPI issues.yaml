@@ -1,0 +1,230 @@
+package: "NAP Reference Architecture/Supplements/Issues/KPI issues"
+guid: "{8C07C709-967C-4fec-A596-3649F300787C}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Affect different layers of the architecture"
+    guid: "{E43CC346-E670-4e75-BE7E-0F0D56DB0522}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The third and the second options are content provider responsibility and not NAP.
+      
+      The third option imply the NAP shall be capable of push protocol.
+    links:
+      - "Association → KPI 1.17 Data transfer optimization"  # {62160593-53D9-4d8f-A89C-5E12A7FD4A72} → {099A9E7D-BCE9-44c6-93E8-523C40BF9ADE}
+  - name: "Discussion needed"
+    guid: "{2F28DE8E-59FE-4751-980D-E3AE6101CA87}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The connection of the KPI is unclear:
+      Does this need a functionality?
+    links:
+      - "Association → K.2.4.1 NAP promotion – number of channels"  # {EA5073F3-80C9-4f50-985A-47D927923B43} → {1942245D-8D8A-425c-8364-D8364B8407EA}
+  - name: "Functionality missing"
+    guid: "{0E49C150-2EF4-45a2-9314-050D4465A17D}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Add this to F3.6.1 Manage NAP Metadata Repository
+  - name: "Future work needed"
+    guid: "{74E43F44-BEC6-44fd-B060-5A9524947986}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Should be expand with specific quality checks to be performed
+      check against schema
+      check against ....
+      
+      Discussion: Relevant for data platform and metadata platform
+    links:
+      - "Association → KPI 4.5 Data (content) maintenance"  # {A57F02EB-F914-4839-9DD8-282597D4E117} → {F98855F9-85A4-43be-A46D-33FB708EDE53}
+  - name: "Issue"
+    guid: "{81C8CDC3-4F00-4d6d-AFDC-32A8EE9C3A79}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      No standard vocabulary exiting in mobility DCAT-AP
+      Need clarification!
+    links:
+      - "Association → KPI 7.6 Association of published datasets with Delegated Regulations"  # {9EAC3BFC-670B-4d86-B421-070217B05FEC} → {5744CC34-C7ED-4155-82D4-66460FA3F507}
+  - name: "Issue: Value b not mandatory"
+    guid: "{1B592F48-C821-4867-9539-86B37ADD8F3E}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Option a is mandatory according to AFIR.
+      Option b is nice to have.
+    links:
+      - "Association → KPI 6.2 Harvesting functionalities"  # {8F54C300-F51A-4c9f-A6F7-07E62193F8FA} → {42A19936-0BD4-4750-977F-441851A057FE}
+  - name: "No requirement for the platform"
+    guid: "{EC670059-EF71-4e2a-B47E-5DFE83B2E046}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""
+    links:
+      - "Association → KPI 3.4 Map-based search"  # {16DDC25D-38C9-4e74-AA64-6B68684EE1D8} → {DB4A4825-A22D-49af-804A-54E7A0CC948E}
+  - name: "Request"
+    guid: "{D23C70E9-F3C0-4918-8EEC-537A8CB6F503}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The coordinated metadata catalogue is a subset of mobility DCAT-AP therefore it could be deleted or divided into two options.
+    links:
+      - "Association → KPI 5.2 Classification of datasets"  # {4FC40A13-310F-4346-A2E9-B891190F3705} → {9857E39A-0D5D-4216-97B2-1F7D709865D9}
+  - name: "Rework needed"
+    guid: "{0615612E-9C1D-4da0-AFDA-14B083275D3E}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Valid for both NAP types
+      
+      N/A Option should be deleted
+      
+      Option c is already covered i another KPI (using mobility DCAT-AP)
+    links:
+      - "Association → KPI 1.21 Metadata about data modification"  # {EBA78B7C-8BE2-4bb8-95F2-96A1590E86BE} → {0A1F8DA3-FE63-4a23-9FAB-30DE897B4B22}
+  - name: "Rework needed"
+    guid: "{0DF03845-C160-4a35-A8A4-7CB3ED8BEB5C}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Terms and condition should be deleted because they are in KPI 7.2
+      
+      Textbox or text indication is not usable within the architecture.
+      "Yes (please specify in the “Suggestions” box)"
+      
+      Examples are describing non technical processes
+    links:
+      - "Association → KPI 7.3 Operational procedure information"  # {7B575761-3311-4514-B53A-A8DF5F7B111D} → {89B81099-FD89-4ebf-8572-DE630976006A}
+  - name: "Rework needed"
+    guid: "{30ACF513-04AD-490a-BC53-4DAAEA6502BF}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The description and option 1 makes no sense according to NB processes and tasks.
+      
+      No requirement could be created, because it's unclear.
+    links:
+      - "Association → KPI 7.4 Dataset compliance assessment indicator"  # {BE76D1C6-5625-4545-956A-9C7200263FA3} → {A551D4D5-ECBC-44b6-B0BB-F40CF0A9A395}
+  - name: "Rework needed"
+    guid: "{B0820172-D0AC-4bb2-BF1E-6C5FA8B73AE3}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The check of the organization (relationship between user-person and organization) is unclear.
+      
+      Option B suggest repetitive use [change Usage to use]
+    links:
+      - "Association → KPI 1.10 Security – providers verification"  # {34EDAAAC-B202-41fe-BE86-E236E3DEDCB6} → {94E8C3ED-218D-4df3-988C-AFB64008FBEA}
+  - name: "Text needs rework"
+    guid: "{B665A5AB-6A12-40de-B060-40B16707B857}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      information is mixing content and delivery of the message
+      second option is unclear
+    links:
+      - "Association → KPI 2.7 Mass notifications – data providers"  # {28912041-47F0-43e0-A87D-41825C3D1756} → {748F8C79-FC1E-4ad6-8023-E2D467E4DFA4}
+      - "Association → KPI 2.8 Mass notifications – data consumers"  # {7572AFFF-8492-477c-8517-B97132B3D176} → {E224C8FD-F129-4f78-A3C3-0BB45266A95C}
+  - name: "Textual rework needed"
+    guid: "{4549BA9F-8082-4638-A1CE-AF9993FB9B7D}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      The KPI description contains the values. Double text.
+    links:
+      - "Association → KPI 2.1 Support to users to register or add data/metadata"  # {DD74FDE2-D1AE-42aa-B5E2-775DC9A7A923} → {770CE787-3FCE-49dd-95B4-0A73605469E5}
+      - "Association → KPI 2.2 Related services monitoring functionality"  # {8FC1D333-13CC-4cc0-A94E-2EC4CD83B2C1} → {908FC14A-B863-404a-B25B-181CE863E7FF}
+      - "Association → KPI 2.7 Mass notifications – data providers"  # {FE0920A8-D302-4838-AE09-51306B5C1883} → {748F8C79-FC1E-4ad6-8023-E2D467E4DFA4}
+      - "Association → KPI 2.8 Mass notifications – data consumers"  # {9CB634A3-D591-4eb1-B188-174C1B7A8666} → {E224C8FD-F129-4f78-A3C3-0BB45266A95C}
+      - "Association → KPI 2.9 Monitoring and evaluation"  # {6975A023-12D2-43a2-AAEA-D3CA57938EF3} → {DF0026B0-043F-4952-A0C2-CAF90AA32B98}
+      - "Association → KPI 5.3 Quality indicators for datasets"  # {2263757E-BEB9-46ac-B60C-CC2BD55C6C09} → {A7375E0A-1CD4-4b46-B339-1C5DF44EDE52}
+      - "Association → KPI 6.1 Metadata specification"  # {340707B2-BE27-4989-80D5-8EEFD1A6083C} → {BEE946BB-DA12-4e7b-94B2-0177BD4060AF}
+      - "Association → KPI 7.1 Terms and conditions for reuse of metadata and NAP website content"  # {1E4637C9-CBB6-46dd-83C2-5DE62A5FCFFD} → {C561632C-13DB-4e0c-A36F-A0513DBA378A}
+  - name: "need rework"
+    guid: "{5F23CEEF-AC73-49ea-9247-228CF11E7736}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Answers aren't reflecting the description of the KPI
+      Mixing general statement (without benefit) with responsibilities.
+      Remove the external Company, because the SLA can also be in house
+      
+      proposal value 1: The responsibilities for the maintenance and update are established
+    links:
+      - "Association → KPI 4.1 IT services"  # {BE920AAB-F179-46e9-8486-F27C997A4F53} → {0F3E274F-3549-4ef1-AE75-3552EDAA93AC}
+  - name: "rephrase is needed"
+    guid: "{4977DA2A-8BFF-41aa-92F5-583B98A0BBD2}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Proposal: The platform shall check if the links provided within a metadata record exist at least when the metadata record is generated or updated.
+      
+      KPI need to be changed
+    links:
+      - "Association → KPI 4.2 Link checking frequency"  # {DDDC93E8-81A4-42f1-8F32-BA4968BDB02D} → {0DDE3DD2-34FD-479a-B17F-18E67611EEA9}
+  - name: "rework needed"
+    guid: "{B929E687-1055-4117-BBBC-8C828DC07FF2}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Proposal Value 2:
+      The NAP shall have a provision for adding or linking of XML schemas and samples of data being made accessible.
+    links:
+      - "Association → KPI 5.1 Documentation & description of datasets"  # {7F24ACBC-2334-4831-BB94-8FA935345F33} → {0C85EE9E-FEEA-4e4c-A559-92D10421902A}
+  - name: "Function missing in the NRA for the KPI"
+    guid: "{A6EA45BA-53FF-4177-AA14-F282A8C55D0F}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 7
+    note: |
+      Function missing in the NRA
+      
+      K.2.2.1 Track availability of data on the NAP
+      K.2.7.1 and K.2.8.1 Mass notification for content provider and content consumer
+      K.2.9.1 Missing Evaluation functionality
+      K.5.4.1/K.5.5.1 Missing Data aggregation for visualisation
+      K.7.3.1/K.7.5.1 General Information provision
+    links:
+      - "Association → K.2.2.1 Related services monitoring functionality"  # {C95DCAE4-ED42-4976-868B-D86B022D8DB7} → {57A18050-B4C1-42f9-881F-A8C6AE3EAF1A}
+      - "Association → K.2.7.1 Mass notifications – data providers"  # {F7D02D71-43B1-4163-B38D-6E20CF492C4F} → {1F17B282-6DF7-4368-8BF9-EB565BA7D4D5}
+      - "Association → K.2.8.1 Mass notifications – data consumers"  # {4EDA6734-1B2C-4c59-840A-7C3E3C32785F} → {6069CE61-FD93-4212-A7EC-BA701EBE8A7E}
+      - "Association → K.2.9.1 Monitoring and evaluation"  # {53E39B0B-3B95-4913-8E48-4CD1F7E79965} → {1B5911BF-D7A2-4e07-A4CE-4DC33E7E5C26}

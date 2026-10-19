@@ -1,0 +1,222 @@
+package: "NAP Reference Architecture/Supplements/Glossary/Definitions"
+guid: "{AF43B953-7CE0-0D09-AD06-6AB5DDDFC7DF}"
+alias: "GlossaryCategory"
+version: "1.0"
+note: ""
+elements:
+  - name: "Business Expectation"
+    guid: "{B54A29C8-F5BB-C41A-942C-339F464DA829}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      is what the ITS Stakeholders aim to achieve by the implementation / operation of the ITS Service. Business Expectations could be the political, economic, social, socio-economic, socio-political, operational, organisational, safety, and efficiency-related added values that are associated with an ITS service and are formulated as goals. These expectations are used together with the ITS Mission Statement to define the ITS Service
+  - name: "Content Consumer"
+    guid: "{AFF2ED18-FA47-49d5-971D-F468BCFF349A}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      any stakeholder that is specified by the delegated regulations explicitly as the user of the data/services made available by Content Providers via NAP. It includes the Data User term as it is specified in MMTIS and RTTI regulations.
+  - name: "Content Provider"
+    guid: "{EBDF5B24-DFEF-4b07-9807-5B6803EB3157}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      any stakeholder that is required by the delegated regulations to provide data/information or services to the Content Consumers via NAP. It includes the Data Holder term as it is defined in MMTIS and RTTI regulations.
+  - name: "Data Flow"
+    guid: "{B48FA4B9-CC17-452f-BAA5-5BC0592927B2}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      the movement of data within the system, occurring between LLFs, between LLFs and Data Stores, or between LLFs and external entities
+  - name: "Data Store"
+    guid: "{BB8C05A6-ECD4-4078-ABC1-0C8DCD413FC4}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a repository for data, often managed by LLFs, that serves multiple other LLFs, linking to Functional Areas or HLFs.
+  - name: "Data platform"
+    guid: "{E5844CBC-6A89-445f-8651-B9059A0EDB4A}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a data portal that contains descriptions of the data and services important for their identification, assessment, and subscription by consumer, i.e., metadata, together with the data and/or services themselves. It provides facilities to authenticate data provider, and optionally, data consumer and functionality to insert a data and metadata records to NAP internal database. The NAP provides search and discovery services of the hosted records to end users and via machine readable content to other portals and distribution interfaces for data dissemination. The NAP is an intermediary between data provider and consumer; the data however remain in the ownership of the data provider.
+  - name: "ITS Actor"
+    guid: "{E09DEFF9-177B-414a-BBF4-9D6058D56569}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      part of an ITS value-added chain/network and is directly involved in value creation. It contributes to the added value of ITS benefits by using its ITS capabilities as part of its activities. It usually also represents the interests of ITS stakeholders who are not directly involved in the ITS value chain but have strong associated interests. The ITS end-user is also considered a special ITS actor.
+  - name: "ITS Agreement"
+    guid: "{3D7D617E-5466-4b0d-BDBD-78EE45B9B6C6}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Contractual or lawful relationship between two roles, that defines obligations/responsibilities of the roles to each other and also the obligations/responsibilities of the roles in this relationship to other roles. The Agreement could take the form of a European or national legislative document, memorandum of understanding, contract, license, or terms and conditions.
+  - name: "ITS Domain"
+    guid: "{501FAC2C-C4E9-47d6-96A8-D4F8EE1B0934}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a concept that categorizes the diverse applications of ITS into specific fields of application. It applies sector-specific knowledge and additional architectural knowledge to ITS. The domain also defines the boundaries of the ITS system or service at the start of an ITS architecture project, distinguishing it from similar or adjacent systems or services.
+  - name: "ITS Interface"
+    guid: "{CB8AD0C3-5820-4438-902F-69A13CAE6587}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Facilitates information exchange between systems, defined by a protocol and data model, and utilized by ITS applications
+  - name: "ITS Mission Statement"
+    guid: "{BD01C2CA-6BA0-47ff-A802-4CE1D304D60A}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a short statement that highlights what is needed to be done by the ITS Stakeholders in the present to achieve the ITS Vision. It summarizes the purpose of the existence of the ITS Services and guides their use by the ITS Actors and/or the end users. It formulates a clearly structured, overarching policy objective of the defined ITS service deployment, considering the interests of stakeholders and end-users.
+  - name: "ITS Role"
+    guid: "{3602CAC4-8842-4d69-A9AF-89251092CDFF}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Defines and describes responsibilities, tasks, and capabilities that are typical and necessary for the value creation of ITS services. Is taken by ITS actors and stakeholders depending on the requirements of the ITS service to be implemented. A single ITS actor or stakeholder can occupy one or more ITS roles.
+  - name: "ITS Service"
+    guid: "{9B74FDF4-3678-4118-857D-DE9132700BB4}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a formal description of an ITS service. It describes a value-added service provided by ITS actors to the end-users. The added value is created by combining technologies, organizations, processes, and people. The service can be delivered by a single actor or in cooperation with others, and it creates added value that may consist of individual benefits for end users, collective benefits for end-user groups or society, or a mixture of both. It describes the idea and functional elements of the ITS service as well as framework conditions.
+  - name: "ITS Service Added Value"
+    guid: "{6D12E3E6-A730-4640-8999-D2C41CCE96B8}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      represents monetary and nonmonetary benefits that are gained by the implementation of the ITS Service. Each individual ITS Service Added Value outlines a particular, impact/benefit of implementing the ITS Service affecting one or more stakeholders.
+  - name: "ITS Vision"
+    guid: "{0DBE4528-0651-4e52-B851-691EC99DFC57}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      the long-term objective and the aspirational goal for the future. The ITS Vision is shared by all ITS Stakeholders. It is a source of inspiration for the ITS Services and provides a clear goal to be adhered to by the ITS Services.
+  - name: "Metadata directory"
+    guid: "{CC514946-AC74-4e50-B556-D4BD998DB76B}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a data portal that contains descriptions of the data and services important for their identification, assessment, and subscription by consumer, i.e., metadata. It provides facilities to authenticate data provider and functionality to insert a metadata records. The NAP provides search and discovery services of the hosted records to end users and via machine readable content to other portals. The NAP is not directly involved in the data exchange between data providers and data consumers.
+  - name: "Mobility data"
+    guid: "{7F780BFF-D945-43ae-8926-0E57D7E89D9D}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Mobility data includes all data types that are directly related to a person or good movement via motorized or non-motorized, individual or public transport, or new transport modes. It includes general real-time and statistical information.
+  - name: "Module"
+    guid: "{27DE7B27-CDE5-4a1d-95B9-8225822565E3}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a computer programs within Sub-systems that perform ITS functions and communicate via ITS interfaces. They can be replicated wholly or partly across locations.
+  - name: "Physical Data Flow"
+    guid: "{7A13AE8C-94D4-4d1e-87EF-8CAB5441A938}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a communication channel in ITS, either Internal (linking Sub-systems/Modules) or External (connecting to Terminators/Actors). They're based on a pre-checked Functional View.
+  - name: "Specification"
+    guid: "{7A4CC527-7915-4be0-808E-DDBB5DFBBBFA}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      detailed, precise description of the requirements, design, behaviour, or characteristics of a system, component, or process. Specifications are used to ensure that everyone involved in a project understands what is expected and to provide a basis for verifying that the final product meets the required standards.
+  - name: "Stakeholder"
+    guid: "{DCAC8B20-4C74-4371-B94E-857D5835FABD}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      any organization or individual interested in the deployment, operation, or outcomes of ITS services. They can be directly or indirectly affected by the decisions made during the entire lifecycle of ITS Services. They are usually decision-makers such as politicians, high-level managers, and others e.g., the general public or user groups, who typically have little or no knowledge of systems design and implementation beyond what they have acquired as end users.
+  - name: "Sub-system"
+    guid: "{8205CD7A-10B8-4b37-A15B-A85032746EFA}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a high-level unit that may include multiple Modules but can also have none if simple. Each geographic location has its own Sub-system.
+  - name: "Terminator"
+    guid: "{91B62320-D780-4602-B166-19B899648639}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      an external entity not modelled within the FRAME Architecture, such as different vehicle types or traveller roles.
+  - name: "User Needs"
+    guid: "{1625F3E9-970B-4faa-9CA5-3F1BDC6B71C5}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      a set of standardised high-level requirements that, in combination, describe all the ITS Services supported by FRAME.

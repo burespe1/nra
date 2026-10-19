@@ -1,0 +1,128 @@
+- term: "Business Expectation"
+  type: "Definition"
+  meaning: |
+    is what the ITS Stakeholders aim to achieve by the implementation / operation of the ITS Service. Business Expectations could be the political, economic, social, socio-economic, socio-political, operational, organisational, safety, and efficiency-related added values that are associated with an ITS service and are formulated as goals. These expectations are used together with the ITS Mission Statement to define the ITS Service
+- term: "Content Consumer"
+  type: "Definition"
+  meaning: |
+    any stakeholder that is specified by the delegated regulations explicitly as the user of the data/services made available by Content Providers via NAP. It includes the Data User term as it is specified in MMTIS and RTTI regulations.
+- term: "Content Provider"
+  type: "Definition"
+  meaning: |
+    any stakeholder that is required by the delegated regulations to provide data/information or services to the Content Consumers via NAP. It includes the Data Holder term as it is defined in MMTIS and RTTI regulations.
+- term: "Data Flow"
+  type: "Definition"
+  meaning: |
+    the movement of data within the system, occurring between LLFs, between LLFs and Data Stores, or between LLFs and external entities.
+- term: "Data platform"
+  type: "Definition"
+  meaning: |
+    a data portal that contains descriptions of the data and services important for their identification, assessment, and subscription by consumer, i.e., metadata, together with the data and/or services themselves. It provides facilities to authenticate data provider, and optionally, data consumer and functionality to insert a data and metadata records to NAP internal database. The NAP provides search and discovery services of the hosted records to end users and via machine readable content to other portals and distribution interfaces for data dissemination. The NAP is an intermediary between data provider and consumer, the data however remain in the ownership of the data provider.
+- term: "Data Store"
+  type: "Definition"
+  meaning: |
+    a repository for data, often managed by LLFs, that serves multiple other LLFs, linking to Functional Areas or HLFs.
+- term: "EA GUID"
+  type: "Abbreviation"
+  meaning: |
+    Enterprise Architect unique identifier, uniquely identifying the object within the model
+- term: "HLF"
+  type: "Abbreviation"
+  meaning: |
+    High Level Function
+- term: "ITS"
+  type: "Abbreviation"
+  meaning: |
+    Intelligent Transportation Systems
+- term: "ITS Actor"
+  type: "Definition"
+  meaning: |
+    part of an ITS value-added chain/network and is directly involved in value creation. It contributes to the added value of ITS benefits by using its ITS capabilities as part of its activities. It usually also represents the interests of ITS stakeholders who are not directly involved in the ITS value chain but have strong associated interests. The ITS end-user is also considered a special ITS actor.
+- term: "ITS Agreement"
+  type: "Definition"
+  meaning: |
+    Contractual or lawful relationship between two roles, that defines obligations/responsibilities of the roles to each other and also the obligations/responsibilities of the roles in this relationship to other roles. The Agreement could take the form of a European or national legislative document, memorandum of understanding, contract, license, or terms and conditions.
+- term: "ITS Domain"
+  type: "Definition"
+  meaning: |
+    a concept that categorizes the diverse applications of ITS into specific fields of application. It applies sector-specific knowledge and additional architectural knowledge to ITS. The domain also defines the boundaries of the ITS system or service at the start of an ITS architecture project, distinguishing it from similar or adjacent systems or services.
+- term: "ITS Interface"
+  type: "Definition"
+  meaning: |
+    Facilitates information exchange between systems, defined by a protocol and data model, and utilized by ITS applications.
+- term: "ITS Mission Statement"
+  type: "Definition"
+  meaning: |
+    a short statement that highlights what is needed to be done by the ITS Stakeholders in the present to achieve the ITS Vision. It summarizes the purpose of the existence of the ITS Services and guides their use by the ITS Actors and/or the end users. It formulates a clearly structured, overarching policy objective of the defined ITS service deployment, considering the interests of stakeholders and end-users.
+- term: "ITS Role"
+  type: "Definition"
+  meaning: |
+    Defines and describes responsibilities, tasks, and capabilities that are typical and necessary for the value creation of ITS services. Is taken by ITS actors and stakeholders depending on the requirements of the ITS service to be implemented. A single ITS actor or stakeholder can occupy one or more ITS roles.
+- term: "ITS Service"
+  type: "Definition"
+  meaning: |
+    a formal description of an ITS service. It describes a value-added service provided by ITS actors to the end-users. The added value is created by combining technologies, organizations, processes, and people. The service can be delivered by a single actor or in cooperation with others, and it creates added value that may consist of individual benefits for end users, collective benefits for end-user groups or society, or a mixture of both. It describes the idea and functional elements of the ITS service as well as framework conditions.
+- term: "ITS Service Added Value"
+  type: "Definition"
+  meaning: |
+    represents monetary and nonmonetary benefits that are gained by the implementation of the ITS Service. Each individual ITS Service Added Value outlines a particular, impact/benefit of implementing the ITS Service affecting one or more stakeholders.
+- term: "ITS Vision"
+  type: "Definition"
+  meaning: |
+    the long-term objective and the aspirational goal for the future. The ITS Vision is shared by all ITS Stakeholders. It is a source of inspiration for the ITS Services and provides a clear goal to be adhered to by the ITS Services.
+- term: "KPI"
+  type: "Abbreviation"
+  meaning: |
+    Key Performance Indicator
+- term: "LLF"
+  type: "Abbreviation"
+  meaning: |
+    Low Level Function
+- term: "Metadata directory"
+  type: "Definition"
+  meaning: |
+    a data portal that contains descriptions of the data and services important for their identification, assessment, and subscription by consumer, i.e., metadata. It provides facilities to authenticate data provider and functionality to insert a metadata records. The NAP provides search and discovery services of the hosted records to end users and via machine readable content to other portals. The NAP is not directly involved in the data exchange between data providers and data consumers.
+- term: "Mobility data"
+  type: "Definition"
+  meaning: |
+    Mobility data includes all data types that are directly related to a person or good movement via motorized or non-motorized, individual or public transport, or new transport modes. It includes general real-time and statistical information.
+- term: "Module"
+  type: "Definition"
+  meaning: |
+    a computer programs within Sub-systems that perform ITS functions and communicate via ITS interfaces. They can be replicated wholly or partly across locations.
+- term: "NAP"
+  type: "Abbreviation"
+  meaning: |
+    National Access Point
+- term: "NLKF"
+  type: "Abbreviation"
+  meaning: |
+    NAP LoS KPI Framework tool
+- term: "NRA"
+  type: "Abbreviation"
+  meaning: |
+    National Access Point Reference Architecture
+- term: "Physical Data Flow"
+  type: "Definition"
+  meaning: |
+    a communication channel in ITS, either Internal (linking Sub-systems/Modules) or External (connecting to Terminators/Actors). They're based on a pre-checked Functional View.
+- term: "Specification"
+  type: "Definition"
+  meaning: |
+    detailed, precise description of the requirements, design, behaviour, or characteristics of a system, component, or process. Specifications are used to ensure that everyone involved in a project understands what is expected and to provide a basis for verifying that the final product meets the required standards.
+- term: "Stakeholder"
+  type: "Definition"
+  meaning: |
+    any organization or individual interested in the deployment, operation, or outcomes of ITS services. They can be directly or indirectly affected by the decisions made during the entire lifecycle of ITS Services. They are usually decision-makers such as politicians, high-level managers, and others e.g., the general public or user groups, who typically have little or no knowledge of systems design and implementation beyond what they have acquired as end users.
+- term: "Sub-system"
+  type: "Definition"
+  meaning: |
+    a high-level unit that may include multiple Modules, but can also have none if simple. Each geographic location has its own Sub-system.
+- term: "Terminator"
+  type: "Definition"
+  meaning: |
+    an external entity not modelled within the FRAME Architecture, such as different vehicle types or traveller roles.
+- term: "User Needs"
+  type: "Definition"
+  meaning: |
+    a set of standardised high-level requirements that, in combination, describe all the ITS Services supported by FRAME.

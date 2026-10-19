@@ -1,0 +1,14 @@
+package: "NAP Reference Architecture/Supplements/NAP Documentation/National Access Point Reference Architecture/Functional View Legend"
+guid: "{A7C28F3A-AA2F-4126-BE8E-510CBB22D7EF}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Legend"
+    guid: "{60272230-DC45-429a-899D-30434C7D34FC}"
+    type: "Artifact"
+    stereotype: "Document"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""

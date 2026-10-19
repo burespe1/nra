@@ -1,0 +1,20 @@
+package: "NAP Reference Architecture/NAP User Needs/User Needs Topics"
+guid: "{5EBA916C-7265-4030-819F-C29530FA2C63}"
+alias: "User Needs Topic"
+version: "1.0"
+note: |
+  This chapter contains definitions of high-level User Needs created by groupings singular User needs per topic. Used only for presentation purposes.
+elements:
+  - name: "6.5.1 National Access Point"
+    guid: "{651C1658-2A42-4bc4-BAD0-2683E2EDC5D7}"
+    type: "Requirement"
+    stereotype: "FRAME_User_Need_Topic"
+    alias: "6.5.1"
+    keywords: "Topic"
+    version: "7.0.7"
+    order: 0
+    tags:
+      "origin_guid": "tbd"
+      "status": "copy"
+    note: |
+      The user needs associated with managing the operation of a National Access Point (NAP)

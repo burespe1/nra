@@ -1,0 +1,394 @@
+package: "NAP Reference Architecture/Supplements/Information Object"
+guid: "{BFAF35A1-D914-474b-8E8E-E735E4FC9624}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Multimodal information services"
+    guid: "{2A8B20BF-9837-49dd-8F20-F44BB092D197}"
+    type: "Object"
+    stereotype: "FRAME_Information_Object"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Size": "1 Byte"
+      "Source": "Standard"
+      "Structure": "Data table"
+      "Subtype": "List of formats"
+      "Type": "Data"
+      "Validity period": "insert period e.g. 1.1.2000"
+      "auditing": ""
+      "categoryValue": ""
+      "dataInOut": "None"
+      "dataObjectRef": ""
+      "dataState": ""
+      "documentation": ""
+      "isCollection": "false"
+      "itemSubjectRef": ""
+      "monitoring": ""
+      "structure": ""
+      "structureRef": ""
+    note: |
+      Subject matter and scope
+      1. This Regulation establishes the necessary specifications in order to ensure that EU-wide multimodal travel information services are accurate and available across borders to ITS users.
+      2. This Regulation applies to the entire transport network of the Union.
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.
+      
+      Accessibility, exchange and reuse of static travel and traffic data
+      1. Transport authorities, transport operators, infrastructure managers or transport on demand service providers shall provide the static travel and traffic data and historic traffic data listed in point 1 of the Annex, of the different transport modes by using:
+       (a) for the road transport, the standards defined in Article 4 of Delegated Regulation (EU) 2015/962;
+       (b) for other transport modes, the use of one of the following standards and technical specifications: NeTEx CEN/TS 16614 and subsequent versions, technical documents defined in Regulation (EU) No 454/2011 and subsequent versions, technical documents elaborated by IATA or any machine-readable format fully compatible and interoperable with those standards and technical specifications;
+       (c) for the spatial network the requirements defined in Article 7 of Directive 2007/2/EC.
+      2. The relevant static travel and traffic data listed in point 1 of the Annex that are applicable to NeTEx and DATEX II
+      shall be represented through minimum national profiles.
+      3. Transport authorities, transport operators, infrastructure managers or transport on demand service providers shall provide the static travel and traffic data through the national access point in the required formats in line with the following timetable:
+       (a) for the travel and traffic data set out in point 1.1 of the Annex for the comprehensive TEN-T network, by 1 December 2019 at the latest;
+       (b) for the travel and traffic data set out in point 1.2 of the Annex for the comprehensive TEN-T network, by 1 December 2020 at the latest;
+       (c) for the travel and traffic data set out in point 1.3 of the Annex for the comprehensive TEN-T network, by 1 December 2021 the latest;
+       (d) for the travel and traffic data set out in points 1.1, 1.2 and 1.3 of the Annex for the other parts of the Union transport network, by 1 December 2023 at the latest.
+      4. APIs that provide access to static travel and traffic data listed in the Annex via the national access point shall be publicly accessible allowing users and end-users to register to obtain access.
+      
+      Accessibility, exchange and reuse of dynamic travel and traffic data
+      1. Where the Member States decide to provide the dynamic travel and traffic data of different transport modes listed in point 2 of the Annex through the national access point, transport authorities, transport operators, infrastructure managers or transport on demand service providers shall use:
+       (a) for the road transport the standards defined in Articles 5 and 6 of Delegated Regulation (EU) 2015/962;
+       (b) for the other transport modes: SIRI CEN/TS 15531 and subsequent versions, technical documents defined in Regulation (EU) No 454/2011 or any machine-readable format fully compatible and interoperable with those standards or technical documents.
+      2. The relevant travel and traffic data referred to in point 2 of the Annex applicable to SIRI and DATEX II shall be represented through minimum national profiles determined by Member States accessible through the national access point.
+      3. APIs that provide access to dynamic travel and traffic data listed in the Annex via the national access point shall be publicly accessible allowing users and end-users to register to obtain access.
+      
+      Data updates
+      1. Travel information services shall be based on updates of static and dynamic travel and traffic data.
+      2. When changes occur, the relevant static and dynamic travel and traffic data listed in the Annex shall be updated by transport authorities, transport operators, infrastructure managers or transport on demand service providers through the national access point in a timely manner. They shall in a timely manner correct any inaccuracies detected by them in their data or signalled to them by any user or end user.
+      
+      Linking travel information services
+      1. Upon request, travel information service providers shall provide to another information service provider routing results based on static, and where possible, dynamic information.
+      2. Routing results shall be based on:
+       (a) the enquirers start and end points of a journey along with the specific time and date of departure or arrival, or both;
+       (b) possible travel options along with the specific time and date of departure or arrival, or both, including any possible connections;
+       (c) the handover point between travel information services;
+       (d) in case of disturbances, alternative possible travel options along with the specific time and date of departure or arrival, or both, and any connections, where available.
+      
+      Requirements for service provisions reuse of travel and traffic data and linking of travel information services
+      1. The travel and traffic data listed in the Annex and the corresponding metadata including information on the quality thereof shall be accessible for exchange and reuse within the Union on a non-discriminatory basis, through the national or common access point and within a time-frame that ensures the timely provision of travel information services. They shall be accurate and up to date.
+      2. The data referred to in paragraph 1 shall be reused in a neutral manner and without discrimination or bias. Criteria used for ranking travel options of different transport modes or combinations thereof, or both, shall be transparent and not be based on any factor directly or indirectly relating to the user identity or, if any, the commercial consideration related to the reuse of the data and shall be applied on a non-discriminatory basis to all participating users. The first principle travel itinerary presentation shall not mislead the end-user.
+      3. Where reusing the static and dynamic travel or traffic data, the source of those data shall be indicated. The date and time of the last update of the static data shall also be indicated.
+      4. The terms and conditions for the use of the traffic and travel data provided through the national access point may be determined through a licence agreement. Those conditions shall not unnecessarily restrict possibilities for reuse or be used to restrict competition. Licence agreements, whenever used, shall in any event impose as few restrictions on reuse as possible. Any financial compensation shall be reasonable and proportionate to the legitimate costs incurred of providing and disseminating the relevant travel and traffic data.
+      5. Terms and conditions of linking travel information services shall be defined in contractual agreements between the travel information service providers. Any financial compensation of the expenses of linking travel information services incurred shall be reasonable and proportionate.
+      
+      
+      DATA CATEGORIES
+      (as referred to in Articles 3, 4, 5, 6, 8 and 10)
+      Partition of transport modes by type, such as:
+      Scheduled
+      Air, rail including high speed rail, conventional rail, light rail, long-distance coach, maritime including ferry, metro, tram, bus, trolley-bus.
+      Demand-responsive
+      Shuttle bus, shuttle ferry, taxi, car-sharing, car-pooling, car-hire, bike-sharing, bike-hire.
+      Personal
+      Car, motorcycle, cycle.
+      1. The types of the static travel data
+      1.1. Level of service 1
+       (a) Location search (origin/destination):
+       (i) Address identifiers (building number, street name, postcode)
+       (ii) Topographic places (city, town, village, suburb, administrative unit)
+       (iii) Points of interest (related to transport information) to which people may wish to travel
+       (b) Trip plans:
+      Operational Calendar, mapping day types to calendar dates
+       (c) Location search (access nodes):
+       (i) Identified access nodes (all scheduled modes)
+       (ii) Geometry/map layout structure of access nodes (all scheduled modes)
+       (d) Trip plan computation — scheduled modes transport:
+       (i) Connection links where interchanges may be made, default transfer times between modes at interchanges
+       (ii) Network topology and routes/lines (topology)
+       (iii) Transport operators
+       (iv) Timetables
+       (v) Planned interchanges between guaranteed scheduled services
+       (vi) Hours of operation
+       (vii) Stop facilities access nodes (including platform information, help desks/information points, ticket booths, lifts/stairs, entrances and exit locations)
+       (viii) Vehicles (low floor; wheelchair accessible.)
+       (ix) Accessibility of access nodes, and paths within an interchange (such as existence of lifts, escalators)
+       (x) Existence of assistance services (such as existence of on-site assistance)
+       (e) Trip plan computation — road transport (for personal modes):
+       (i) Road network
+       (ii) Cycle network (segregated cycle lanes, on-road shared with vehicles, on-path shared with pedestrians)
+       (iii) Pedestrian network and accessibility facilities
+      1.2. Level of service 2
+       (a) Location search (demand-responsive modes):
+       (i) Park & Ride stops
+       (ii) Bike sharing stations
+       (iii) Car-sharing stations
+       (iv) Publicly accessible refuelling stations for petrol, diesel, CNG/LNG, hydrogen powered vehicles, charging stations for electric vehicles
+       (v) Secure bike parking (such as locked bike garages)
+       (b) Information service:
+      Where and how to buy tickets for scheduled modes, demand responsive modes and car parking (all scheduled modes and demand-responsive incl. retail channels, fulfilment methods, payment methods)
+       (c) Trip plans, auxiliary information, availability check:
+       (i) Basic common standard fares (all scheduled modes):
+      — Fare network data (fare zones/stops and fare stages)
+      — Standard fare structures (point to point including daily and weekly fares, zonal fares, flat fares)
+       (ii) Vehicle facilities such as classes of carriage, on-board Wi-Fi.
+      1.3. Level of service 3
+       (a) Detailed common standard and special fare query (all scheduled modes):
+       (i) Passenger classes (classes of user such as adult, child, student, veteran, impaired access and qualifying conditions and classes of travel such as 1st, 2nd.)
+       (ii) Common fare products (access rights such as zone/point-to-point including daily and weekly tickets/single/return, eligibility of access, basic usage conditions such as validity period/operator/time of travel/interchanging, standard point to point fares prices for different point to point pairs including daily and weekly fares/zonal fare prices/flat fare prices)
+       (iii) Special Fare Products: offers with additional special conditions such as promotional fares, group fares, season passes, aggregated products combining different products and add on products such as parking and travel, minimum stay
+       (iv) Basic commercial conditions such as refunding/replacing/exchanging/transferring and basic booking conditions such as purchase windows, validity periods, routing restrictions zonal sequence fares, minimum stay.
+       (b) Information service (all modes):
+       (i) How to pay tolls (incl. retail channels, fulfilment methods, payment methods)
+       (ii) How to book car sharing, taxis, cycle hire etc. (incl. retail channels, fulfilment methods, payment methods)
+       (iii) Where how to pay for car parking, public charging stations for electric vehicles and refuelling points for CNG/LNG, hydrogen, petrol and diesel powered vehicles (incl. retail channels, fulfilment methods, payment methods)
+      c) Trip plans:
+       (i) Detailed cycle network attributes (surface quality, side-by-side cycling, shared surface, on/off road, scenic
+      route, ‘walk only’, turn or access restrictions (e.g. against flow of traffic)
+       (ii) Parameters needed to calculate an environmental factor such as carbon per vehicle type or passenger mile
+      or per distance walked
+       (iii) Parameters such as fuel consumption needed to calculate cost
+       (d) Trip plan computation:
+      Estimated travel times by day type and time-band by transport mode/combination of transport modes
+      2. Types of the dynamic travel and traffic data
+      2.1. Level of service 1
+      Passing times, trip plans and auxiliary information:
+       (i) Disruptions (all modes)
+       (ii) Real-time status information — delays, cancellations, guaranteed connections monitoring (all modes)
+       (iii) Status of access node features (including dynamic platform information, operational lifts/escalators, closed entrances and exit locations — all scheduled modes)
+      2.2. Level of service 2
+       (a) Passing times, trip plans and auxiliary information (all modes):
+       (i) Estimated departure and arrival times of services
+       (ii) Current road link travel times
+       (iii) Cycling network closures/diversions
+       (b) Information service:
+      Availability of publicly accessible charging stations for electric vehicles and refuelling points for CNG/LNG, hydrogen, petrol and diesel powered vehicles
+       (c) Availability check:
+       (i) Car-sharing availability, bike sharing availability
+       (ii) Car parking spaces available (on and off-street), parking tariffs, road toll tariffs
+      2.3. Level of service 3
+      Trip plans:
+      Future predicted road link travel times
+      
+      
+      
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.
+      1. This Regulation establishes the necessary specifications in order to ensure that EU-wide multimodal travel information services are accurate and available across borders to ITS users.
+      2. This Regulation applies to the entire transport network of the Union.
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.2. This Regulation applies to the entire transport network of the Union.
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.2. This Regulation applies to the entire transport network of the Union.
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.2. This Regulation applies to the entire transport network of the Union.
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.2. This Regulation applies to the entire transport network of the Union.
+      3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.
+      
+      https://eur-lex.europa.eu/eli/reg_del/2017/1926/oj
+    links:
+      - "Association «adheres to» → DATEX II"  # {5F2FF9D5-4652-42ea-B142-511B4E0179A6} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+      - "Association «adheres to» → IATA SSIM"  # {1BD92DD4-5AA5-43bf-8118-C7E6EE95C238} → {EEC79522-E329-4da9-89B6-82617E53E335}
+      - "Association «adheres to» → INSPIRE"  # {D2CD6164-AF7F-4b6d-8B3D-8D4B100CABC3} → {5A823122-0DEE-44ec-A7CC-E8C8B7ED8F8D}
+      - "Association «adheres to» → NeTEx"  # {FBB9A249-CBBD-4f19-B2E6-A14E4832045B} → {477B7D19-AF4F-483d-BF7D-70FEBB8AE8BB}
+      - "Association «adheres to» → SIRI"  # {79976084-7CCB-4d8b-BC40-4892F7A29431} → {E14C46B0-7A08-4284-BF7D-294B3FD4373B}
+      - "Association «adheres to» → TAP-TSI"  # {E443BF98-8810-4385-8A54-58932F70F1B0} → {682395F9-50B7-41f0-A637-3327735690CE}
+  - name: "Real-time traffic information"
+    guid: "{26DA86A3-8E64-4517-9A5D-8D52040CDAB8}"
+    type: "Object"
+    stereotype: "FRAME_Information_Object"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Size": "1 Byte"
+      "Source": "Standard"
+      "Structure": "Data table"
+      "Subtype": "List of formats"
+      "Type": "Data"
+      "Validity period": "insert period e.g. 1.1.2000"
+      "auditing": ""
+      "categoryValue": ""
+      "dataInOut": "None"
+      "dataObjectRef": ""
+      "dataState": ""
+      "documentation": ""
+      "isCollection": "false"
+      "itemSubjectRef": ""
+      "monitoring": ""
+      "structure": ""
+      "structureRef": ""
+    note: |
+      Subject matter and scope
+      This Regulation establishes the specifications necessary in order to ensure the accessibility, exchange, re-use and update of road and traffic data by road authorities, road operators and service providers for the provision of EU-wide real-time traffic information services.
+      It shall apply to the comprehensive trans-European road network, as well as motorways not included in this network, and priority zones identified by national authorities where they consider this to be relevant.
+      It shall apply in accordance with Article 5 of Directive 2010/40/EU.
+      
+      Accessibility, exchange and re-use of static road data
+      1. For the purpose of facilitating the provision of compatible, interoperable, and continuous real-time traffic information services across the Union, road authorities and road operators shall provide the static road data they collect and update pursuant to Article 8 in a standardised format, if available, or in any other machine readable format.
+      2. The data referred to in paragraph 1 and the corresponding metadata including information on the quality thereof shall be accessible for exchange and re-use by any digital map producer or service provider within the Union:
+       (a) on a non-discriminatory basis;
+       (b) within a time-frame that ensures the timely provision of the real-time traffic information service;
+       (c) through the national or common access point referred to in Article 3;
+       (d) Road authorities, road operators, digital map producers and service providers using the static road data referred to in paragraph 1 shall collaborate in order to ensure that any inaccuracies related to static road data are signalled without delay to the road authorities and road operators from which the data originates.
+      3. When service providers use static road data referred to in paragraph 1 provided by road authorities and road operators, they shall take into account, as far as possible, any traffic circulation plans developed by the competent authorities.
+      
+      Accessibility, exchange and re-use of dynamic road status data
+      1. For the purpose of facilitating the provision of compatible, interoperable, and continuous real-time traffic information services across the Union, road authorities and road operators shall provide the dynamic road status data they collect and update pursuant to Article 9 in DATEX II (CEN/TS 16157 and subsequently upgraded versions) format or any machine-readable format fully compatible and interoperable with DATEX II.
+      2. The data referred to in paragraph 1 and the corresponding metadata including information on the quality thereof shall be accessible for exchange and re-use by any service provider within the Union:
+       (a) on a non-discriminatory basis;
+       (b) within a time-frame that ensures the timely provision of the real-time traffic information service;
+       (c) through the national or common access point referred to in Article 3.
+      3. When service providers use dynamic road status data referred to in paragraph 1 provided by road authorities and road operators, they shall take into account, as far as possible, any temporary traffic management measures taken by the competent authorities.
+      
+      Accessibility, exchange and re-use of traffic data
+      1. For the purpose of facilitating the provision of compatible, interoperable, and continuous real-time traffic information services across the Union, road authorities and road operators shall provide the traffic data they collect and update pursuant to Article 10 in DATEX II (CEN/TS 16157 and subsequently upgraded versions) format or any machine-readable format fully compatible and interoperable with DATEX II.
+      2. The data referred to in paragraph 1 and the corresponding metadata including information on the quality thereof shall be accessible for exchange and re-use by any service provider within the Union:
+       (a) on a non-discriminatory basis;
+       (b) within a time-frame that ensures the timely provision of the real-time traffic information service;
+       (c) through the national or common access point referred to in Article 3. 23.6.2015 L 157/26 Official Journal of the European Union EN
+      3. For the purpose of optimising traffic management, road authorities and road operators may request service providers to provide the traffic data they collect and update pursuant to Article 10. Such data shall be provided in DATEX II (CEN/TS 16157 and subsequently upgraded versions) format or any machine-readable format fully compatible and interoperable with DATEX II, through the access point referred to in Article 3 and accompanied by the corresponding metadata including information on the quality thereof.
+      
+      https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32015R0962
+    links:
+      - "Association «adheres to» → DATEX II"  # {C81CD6D7-17AC-496a-AADD-2DFA002B7643} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+  - name: "Road safety-related traffic information"
+    guid: "{40CA1E89-95A1-4382-8F88-A78C115A61C8}"
+    type: "Object"
+    stereotype: "FRAME_Information_Object"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Size": "1 Byte"
+      "Source": "Standard"
+      "Structure": "Data table"
+      "Subtype": "List of formats"
+      "Type": "Data"
+      "Validity period": "insert period e.g. 1.1.2000"
+      "auditing": ""
+      "categoryValue": ""
+      "dataInOut": "None"
+      "dataObjectRef": ""
+      "dataState": ""
+      "documentation": ""
+      "isCollection": "false"
+      "itemSubjectRef": ""
+      "monitoring": ""
+      "structure": ""
+      "structureRef": ""
+    note: |
+      Subject matter and scope
+      This Regulation establishes the specifications necessary to ensure compatibility, interoperability and continuity for the deployment and operational use of data and procedures for the provision, where possible, of road safety-related minimum universal traffic information free of charge to users on a Union level in accordance with Directive 2010/40/EU.
+      It shall apply to the provision of road safety-related minimum universal traffic information services on the trans-European road network.
+      
+      List of road safety-related events or conditions
+      The events or conditions covered by the road safety-related minimum universal traffic information service shall consist of at least one of the following categories:
+       (a) temporary slippery road;
+       (b) animal, people, obstacles, debris on the road;
+       (c) unprotected accident area;
+       (d) short-term road works;
+       (e) reduced visibility;
+       (f) wrong-way driver;
+       (g) unmanaged blockage of a road;
+       (h) exceptional weather conditions.
+      
+      Information content
+      1. The information provided on the road safety-related events or conditions shall include the following items:
+       (a) location of the event or the condition;
+       (b) the category of event or condition as referred to in Article 3 and, where appropriate, short description of it;
+       (c) driving behaviour advice, where appropriate.
+      2. The information shall be withdrawn if the event or condition cease to subsist, or shall be modified if there is a change in the event or condition.
+      
+      Detection of events or conditions and collection of data
+      For the sole purposes of providing the information service, public and private road operators and/or service providers shall set up or use the means to detect events or identify conditions, and shall collect the relevant road safety-related traffic data.
+      The deployment of these means shall comply with the conditions and requirements set out in national law.
+      
+      Availability, exchange and reuse of data
+      1. Public and/or private road operators and/or service providers shall share and exchange the data they collect pursuant to Article 6. For that purpose, they shall make these data available in the DATEX II (CEN/TS 16157) format or any fully compatible and interoperable with DATEX II machine-readable format through an access point.
+      2. Member States shall manage a national access point to the data referred to in paragraph 1, which regroups the access points established by public and/or private road operators and/or service providers operating on their territory.
+      3. These data shall be accessible for exchange and reuse by any user of road safety-related minimum universal traffic information:
+       (a) on a non-discriminatory basis;
+       (b) within the Union irrespective of the Member State of establishment;
+       (c) in accordance with access rights and procedures defined in Directive 2003/98/EC;
+       (d) within a timeframe that ensures the timely provision of the information service;
+       (e) through the national access point.
+      4. Public and private road operators and service providers shall ensure the timely renewal and quality of data made available through their access point.
+      
+      Dissemination of information
+      1. Public road operators, service providers and broadcasters dedicated to traffic information shall provide road safety-related minimum universal traffic information to end users prior to the provision of any other non-safety-related traffic information.
+      2. The information service shall fulfil the following conditions:
+       (a) it shall be provided in such a way as to ensure the widest reach of end users concerned by the given event or condition referred to in Article 3;
+       (b) it shall be made available by public and/or private road operators and/or service providers and/or broadcasters dedicated to traffic information, where possible free of charge to end users.
+      3. Public and private road operators and service providers shall collaborate to harmonise the presentation of the content of the information provided to end users.
+      They shall inform end users of the existence of the information service and its coverage.
+      
+      https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32013R0886
+    links:
+      - "Association «adheres to» → DATEX II"  # {C831877B-0B2D-4acf-9F80-F01B3A6853F5} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+  - name: "Safe and secure truck parking"
+    guid: "{C0AED25D-ABFB-4eaf-87F6-757E7462E6D7}"
+    type: "Object"
+    stereotype: "FRAME_Information_Object"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Size": "1 Byte"
+      "Source": "Standard"
+      "Structure": "Data table"
+      "Subtype": "List of formats"
+      "Type": "Data"
+      "Validity period": "insert period e.g. 1.1.2000"
+      "auditing": ""
+      "categoryValue": ""
+      "dataInOut": "None"
+      "dataObjectRef": ""
+      "dataState": ""
+      "documentation": ""
+      "isCollection": "false"
+      "itemSubjectRef": ""
+      "monitoring": ""
+      "structure": ""
+      "structureRef": ""
+    note: |
+      Subject matter and scope
+      This Regulation establishes the specifications necessary to ensure compatibility, interoperability and continuity for the deployment and operational use of information services for safe and secure parking places for trucks and commercial vehicles on a Union level in accordance with Directive 2010/40/EU.
+      It shall apply to the provision of information services situated on the trans-European road network (TERN).
+      
+      Requirements for the provision of information services
+      1. Member States shall designate areas where traffic and security conditions require the deployment of information services on the safe and secure parking places.
+      They shall also define priority zones where dynamic information will be provided.
+      2. The provision of information services shall fulfil the requirements set out in Articles 4 to 7.
+      
+      Data collection
+      Data on safe and secure public and private parking areas describing the parking facility, to be provided to the users, shall be collected and supplied by public or private parking operators and service providers. The data to be collected shall be easy to provide, including remotely, by any relevant means, in order to facilitate a distant collection by all parking operators. Public or private parking operators and service providers shall use DATEX II ( 1 ) profiles or other internationally compatible formats in order to ensure interoperability of the information services across the Union.
+      The data to be collected shall be the following:
+      1. Static data related to the parking areas, including (where
+      applicable)
+      — Identification information of parking area (name and address of the truck parking area (limited to 200 characters))
+      — Location information of the entry point in the parking area (latitude/longitude) (20 + 20 characters)
+      — Primary road identifier1/direction (20 characters/20 characters), and Primary road identifier2/direction (20 characters/20 characters) if same parking accessible from two different roads
+      — If needed, the indication of the Exit to be taken (limited to 100 characters)/Distance from primary road (integer 3) km or miles
+      — Total number of free parking places for trucks (integer 3)
+      — Price and currency of parking places (300 characters)
+      2. Information on safety and equipment of the parking area
+      — Description of security, safety and service equipment of the parking including national classification if one is applied (500 characters)
+      — Number of parking places for refrigerated goods vehicles (numerical 4 digits)
+      — Information on specific equipment or services for specific goods vehicles and other (300 characters)
+      Contact information of the parking operator:
+      — Name and surname (up to 100 characters)
+      — Telephone number (up to 20 characters)
+      — E-mail address (up to 50 characters)
+      — Consent of the operator to make his contact information public (Yes/No)
+      3. Dynamic data on availability of parking places including whether a parking is: full, closed or number of free places which are available.
+      
+      Sharing and exchange of data
+      1. Public or private parking operators and service providers shall share and exchange data referred to in paragraph 1 of Article 4. For these purposes they shall use DATEX II (CEN/TS 16157) format or any DATEX II compatible international machine-readable format. Data shall be accessible for exchange and reuse by any public or private information service provider and/or parking operator on a non-discriminatory basis, and in accordance with access rights and procedures defined in Directive 2003/98/EC.
+      2. The static data shall be accessible through a national or international access point.
+      3. For dynamic data, Member States (or national authorities) shall be responsible for setting up and managing a central national or international point of access referencing all individual single points of access of each truck parking operator and/or service provider on their territory in the interests of users.
+      4. Member States may contribute to an international access point by providing data and ensuring that its quality is in conformity with the requirements in Article 7.
+      5. Charges for access to, exchange of, and reuse of public or private dynamic data shall remain reasonable as referred to in the PSI Directive.
+      6. Public and private parking operators and/or service providers shall periodically send their static collected data to the national or international access point through appropriate electronic means no less than once a year for static data referred to in Article 4(1).
+      For dynamic data public and private operators and/or services providers shall update their information referred to in Article 4(3) no less than once every 15 minutes.
+      
+      Dissemination of information
+      Service providers collecting information at a specific location shall display:
+      — at least the next two safe and secure parking places along a corridor within approximately 100 kilometres,
+      — the availability of parking places in a priority zone in at least the next two parking areas within approximately 100 kilometres.
+      The dissemination of information shall be consistent with the Vienna convention where a Member State has signed it. In-vehicle application should have a robust human machine interface in order to avoid driver distraction and fatigue. Parking operators and/or service providers shall inform the users about the launch of any new information service for safe and secure parking by any communication means they find appropriate.
+      
+      
+      https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32013R0885
+    links:
+      - "Association «adheres to» → DATEX II"  # {40972D3C-EB0F-4500-A7E4-B0A0FCD2DC40} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}

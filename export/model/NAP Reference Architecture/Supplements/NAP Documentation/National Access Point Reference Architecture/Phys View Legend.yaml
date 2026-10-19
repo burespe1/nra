@@ -1,0 +1,14 @@
+package: "NAP Reference Architecture/Supplements/NAP Documentation/National Access Point Reference Architecture/Phys View Legend"
+guid: "{201BF874-A3EA-4b1d-845E-762894E0E155}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Legend"
+    guid: "{901E5BC0-88ED-4e45-9C96-152B81569C73}"
+    type: "Artifact"
+    stereotype: "Document"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""

@@ -1,0 +1,74 @@
+package: "NAP Reference Architecture/Supplements/Issues/Legal issues"
+guid: "{7145F27C-42E4-44d7-85D5-1D9CA93255B9}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "Draft - Planed for 12.2025"
+    guid: "{2B0D3CC8-A31F-4546-95C0-CC8534984F4E}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""
+  - name: "Element missing"
+    guid: "{3EDC5D6D-FB7D-4d3b-8B5D-30879024C53B}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Agreement for data provision missing
+    links:
+      - "Association → L.2.2 Provide up to date data"  # {853D4CD8-2F59-4137-A144-F31B9FBF9095} → {3A5AE4E8-99D6-446e-9A35-26D9A69357B2}
+  - name: "Functionality Missing"
+    guid: "{0FDDF4FC-1D13-4013-B1B4-51667FE8F776}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Feedback loop from Content Consumer to Content Provider
+      
+      Functionality for granting NB/CA access to information
+      
+      Discussion with KPI-Team needed!!
+    links:
+      - "Association → L.2.4 Reporting obligation"  # {E925600F-6C99-4944-B5CA-6E808CBEA56F} → {ED7D9261-5E1A-4278-93F5-1159D460C378}
+      - "Association → L.2.9 NB/CA access"  # {558F42CC-8DC6-46b6-9CF4-FF0500A5615E} → {6F3CFCE8-0D04-4436-A95E-1FE1EE9AAA3A}
+  - name: "Issue: Agreement Missing"
+    guid: "{CE7A9755-57B2-4f08-8288-D04B0A5D68A2}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Agreement for data provision and data brokering needed
+    links:
+      - "Abstraction → Metadata provision contract (NO to CP)"  # {B87A7923-49E6-4e29-A4F3-7A8DEC5C15D2} → {BEED600A-C5D2-4829-9BF5-6E6649CB3D14}
+  - name: "Missing Obligation MS-CP"
+    guid: "{8805FF3C-3A28-4e3d-999A-FFDF903C8E19}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      SRTI provision free of charge
+      AFIR related obligations like registration at IDRO and ++
+      How to ensure single digital gateway between NAP and other state owned (open) data portals
+    links:
+      - "Abstraction → European or national law (MS to CP)"  # {E3BB747F-CF5A-45b2-9D60-607F2DF5E695} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+  - name: "Revision after new TAP TSI is published"
+    guid: "{88B469C2-A3CF-47ab-8972-7EB0E96665D6}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""
+  - name: "Revision needed in NAPCORE"
+    guid: "{9227DA58-B8A6-419f-BB56-A90F3950CF28}"
+    type: "Issue"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""

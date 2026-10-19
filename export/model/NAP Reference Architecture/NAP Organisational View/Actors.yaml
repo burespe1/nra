@@ -1,0 +1,155 @@
+package: "NAP Reference Architecture/NAP Organisational View/Actors"
+guid: "{6A10582A-DB0D-4ec1-91B4-48C9FD9D7F5B}"
+alias: "Actors"
+version: "1.0"
+note: |
+  This chapter defines Actors interacting with the NAP in Organizational View, irrespective of the NAP type.
+elements:
+  - name: "Content Consumer"
+    guid: "{0E811D0A-2C79-462f-B560-DD0A48A6E545}"
+    type: "Actor"
+    stereotype: "FRAME_Actor"
+    keywords: "Actor"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Public and private organizations that are using static or dynamic traffic and travel information or any other relevant content, made accessible, under the Delegated Regulations obligations, via NAP, to create multimodal or traffic and travel or mobility information or were provided by the terms and conditions using the data for other related purposes. They are one or a group of actors who get added value by using data promoted by NAP.
+      
+      NOTE1: We do not create objects for each Content Consumer actor type.
+      NOTE2: Content Consumer includes the Data User term as it is specified in MMTIS and RTTI regulations.
+      
+      Content Consumer actor represents and fulfils the interests of the Content Consumer Stakeholder.
+      
+      Represented by:
+      
+      	- road authorities
+      	- public or private road operator/s
+      	- traffic managers
+      	- tolling operators
+      	- service providers*
+      	- broadcasters dedicated to traffic information
+      	- transport authorities,
+      	- transport operators,
+      	- travel information service providers,
+      	- digital map producers,
+      	- transport on-demand service providers
+      	- infrastructure managers
+      	- data users, any public or private entity or any other entity using data listed in the Delegated Regulations
+    links:
+      - "Abstraction «is Type of» → Content Consumer"  # {CE250A94-50C3-4082-A073-5ADA4F4062DA} → {77E9CEBA-B991-4860-A6D3-952CAD1B776E}
+  - name: "Content Provider"
+    guid: "{3F2BCF06-A0E6-4aac-BD7A-3395E43C395B}"
+    type: "Actor"
+    stereotype: "FRAME_Actor"
+    keywords: "Actor"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Any legal person, data subject, or public or private entity/organization who has the right to grant access to or to share the data under its control. The subject in question shall hold the data that are required to be made accessible via NAP by or more of the Delegated Regulations.
+      
+      NOTE1: We do not create objects for each Content Provider actor type.
+      NOTE2: Content Provider includes the Data Holder term as it is specified in MMTIS and RTTI regulations.
+      
+      Content Provider actor represents and fulfils the interests of the Content Provider Stakeholders.
+      
+      Represented by:
+      
+      For the RTTI (2022/670) concerning:
+      
+      	- data on infrastructure: road authorities, public or private road operator/s, tolling operators, recharging and refuelling-related stakeholders
+      	- data on regulations and restrictions: road authorities, public or private road operator/s, tolling operators
+      	- data on the state of the network: road authorities, public or private road operator/s, holders of in-vehicle generated data, service providers*
+      	- data on the real-time use of the network: road authorities, public or private road operator/s, holders of in-vehicle generated data, service providers*, recharging and refuelling-related stakeholders
+      
+      
+      * ‘service provider’ means any public or private provider of a real-time traffic information service, excluding a mere conveyer of data to data users;
+      
+      For the SRTI (886/2013) concerning:
+      
+      	- road safety-related traffic data: Service providers, public and/or private road operators, broadcasters dedicated to traffic information, and automotive industries (as service providers when processing vehicle data) [886/2013, art. 7]
+      
+      
+      For the SSTP (885/2013) concerning:
+      
+      	- static and dynamic information related to safe and secure parking: public or private parking operators and service providers (any public or private body that provides the information service to users) [885/2013 art. 5]
+      
+      
+      For the AFIR (2023/1804) concerning:
+      
+      	- static and dynamic information related to alternative fuel infrastructure: operators of publicly accessible recharging points and refuelling points for alternative fuels, or, under the arrangements between them, the owners
+      
+      
+      For the MMTIS (2017/1926 amended by 2024/490) concerning:
+      
+      	- static, historic and observed travel and traffic data: transport authorities, transport operators, infrastructure managers, transport on demand service providers
+      	- dynamic travel and traffic data: see above
+      	- linking travel information services: travel information service provider
+    links:
+      - "Abstraction «is Type of» → Content Provider"  # {6713994B-EE24-4267-951F-331B46283827} → {4D7E0B7A-7D34-400b-AE00-68E04F93B7BA}
+  - name: "European Commission"
+    guid: "{142DFBFF-40C1-4f03-A7A7-E5125A5DE9FE}"
+    type: "Actor"
+    stereotype: "FRAME_Actor"
+    keywords: "Actor"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      European Union responsible entity for the creation of the law and its publication.
+      European Commission actor represents and fulfils the interests of the European Commission Stakeholder.
+      
+      Represented by:
+      The European Commission.
+    links:
+      - "Abstraction «is Type of» → European Commission"  # {D25C0173-B953-4d03-9869-C45A656FC8AB} → {26DD1383-1637-4356-B2EF-7671DCA5C5BC}
+  - name: "Member State"
+    guid: "{28852F78-1BF6-4858-8E67-E45CF403D4E7}"
+    type: "Actor"
+    stereotype: "FRAME_Actor"
+    keywords: "Actor"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      European Union Member State is the responsible entity for the application and transposition of ITS-related EU laws and the creation of the national legal framework for the operation of the NAP and its surrounding entities.
+      Member State actor represents and fulfils the interests of the Member State Stakeholder.
+      
+      Represented by:
+      Usually, the MS through the Ministry responsible for the transport area.
+    links:
+      - "Abstraction «is Type of» → Member State"  # {BDED0935-D7D2-4ea3-A61B-2C699E88A9C5} → {2DC22194-A127-42ba-9AEA-E8CBDD2EC795}
+  - name: "NAP Operator"
+    guid: "{B0B3260D-C376-4e8f-A620-72BC71353D5D}"
+    type: "Actor"
+    stereotype: "FRAME_Actor"
+    keywords: "Actor"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Any public or private organization responsible for collecting and publishing information about content generated by Content Providers (metadata) under the Delegated Regulations obligations, to any interested party (Content Consumers) without prejudice.
+      
+      The NAP (National Access Point) Actor represents and fulfils the interests of the NAP (National Access Point) Stakeholder.
+      
+      Represented by:
+      Usually, a department of the MS relevant Ministry (responsible for Transport matters), a state-owned organization, or a research organization. Usually, based on the explicit stating of the entity in the national law.
+    links:
+      - "Abstraction «is Type of» → NAP Operator"  # {1DF4BB96-2848-4dee-AF41-9340F2D054B0} → {4B4D9772-CCE6-459c-B5E0-80E3C5C32674}
+  - name: "National Body / Competent Authority"
+    guid: "{B4E9C168-C4F3-4026-B334-9511627C14AC}"
+    type: "Actor"
+    stereotype: "FRAME_Actor"
+    keywords: "Actor"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      Independent entity performing compliance assessment of the Content Providers, their specific content, the NAP operation, and reporting its findings to the MS.
+      The NB/CA (National Body / Competent Authority) actor represents and fulfils the interests of the National Body / Competent Authority Stakeholder.
+      
+      Represented by:
+      Usually, a department of the MS Ministry of Transport and an independent body. Based on the explicit naming of the entity in the national law. The NB/CA shall be independent of CPs and NOs since it checks its compliance.
+    links:
+      - "Abstraction «is Type of» → Competent Authority / National Body"  # {B77330A7-30F9-4348-AD41-1C78FB74E173} → {60AC1314-7147-4d43-89C6-2CD3B26BDEBE}

@@ -1,0 +1,63 @@
+package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.2"
+guid: "{E3DBACF9-4E44-4d7c-A8A7-93D6B314784B}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "K.2.1.1 Support to users to register or add data/metadata"
+    guid: "{57015FD8-66C2-45e3-8AB9-93A0EAFB1656}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide support information in local language and English and shall provide at least one of following support functionalities:
+      
+      	- contact form or E-mail
+      	- phone or web call (e.g., booking system for Teams call)
+      	- chat or chatbot
+      	- FAQ in national and English language
+      	- User forum
+      
+      
+      Source: KPI 2.1 Support to users to register or add data/metadata
+    links:
+      - "Association «fulfilled by» → F3.6.5 Provide NAP User Support"  # {CCCB809C-E3EB-4f08-91F0-CCDF7B9BD7C6} → {E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}
+  - name: "K.2.4.1 NAP promotion – number of channels"
+    guid: "{1942245D-8D8A-425c-8364-D8364B8407EA}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 2
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall be promoted at least on 3 of the following communication channels within the last calendar year:
+      
+      	- NAP was promoted on a conference or trade fair (apart from NAPCORE MDD)
+      	- NAP was promoted with webinars
+      	- NAP was promoted on LinkedIn (or other social networks) with an own account and at least two news items
+      	- NAP was promoted with a dedicated paper in a journal
+      	- NAP was promoted through another channel (please specify in the “Suggestions” box)
+    links:
+      - "Association «fulfilled by» → NAP Operator (NO)"  # {42BD7915-C620-4476-A443-1E447D7B1C56} → {234C8914-6D8F-43fd-B3A7-34118A92FBA3}
+  - name: "K.2.6.1 Contact details"
+    guid: "{B16F5B80-17AC-48ed-9C43-CADE9CDCF62A}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide contact details of all data providers.
+      
+      Source: KPI 2.6 Contact details
+    links:
+      - "Association «fulfilled by» → F3.6.3 Manage Content Providers Metadata"  # {3EF9E3D9-9D4C-4d40-898C-95FA8BA454DC} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
+      - "Association «fulfilled by» → F3.6.4 Manage Metadata Retrieval"  # {C33E95FF-3C3A-4f8e-B7D3-9F48FB0280EA} → {2F2393E9-9A59-4344-A2C0-207945E7F438}

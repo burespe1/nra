@@ -1,0 +1,11 @@
+package: "NAP Reference Architecture/NAP Organisational View"
+guid: "{553E5112-EC18-4bfe-9402-D55E876DA206}"
+alias: "Organisational View"
+version: "2.0"
+note: |
+  The Organizational View provides information about the actors, their roles and responsibilities, and relationships between roles in terms of lawful or contractual relationships. It also depicts desired business results and business processes for the ITS deployment which are related to the sub-set ITS architecture (owns, plans, maintains, deploys, implements, tender, …).
+  The View consists of Actors performing one or more Roles, Agreements between the Roles, and relations to the Components and Modules.
+  In the NAP Reference Architecture, the main Actors are the NAP Operator, the NAP Content Provider, the NAP Content Consumer, the National Body, the Member State, the European Commission, and the NAP Technical Operator. The Organizational View describes their responsibilities/obligations and identifies typical representatives of those roles. It also describes what lawful obligations these roles have (modelled as the relationship between the law-making roles and other roles) and what shall be the content of a contractual relationship between the roles.
+  
+  IMPORTANT: All lawful obligations come from the policy maker roles towards other roles, i.e., contracts between two non-policy-making roles do not contain what is already given, for the relationship of those roles, by the law.
+elements: []

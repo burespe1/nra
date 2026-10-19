@@ -1,0 +1,51 @@
+package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.4"
+guid: "{35A27180-9411-4c9d-BE37-860CA7BC2508}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "K.4.1.1 IT services"
+    guid: "{074C6AF9-ECAC-4279-AFF2-82CE9E415FE6}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform operator shall have assigned responsibility for maintenance and update procedures
+      
+      Source KPI 4.1 IT Services
+    links:
+      - "Association «fulfilled by» → IT-operation contract (NO to NIT)"  # {9700B0E7-262B-4dca-958F-BA4D41088107} → {A4F1EAAE-9BC4-407b-BD46-63A87F19C315}
+  - name: "K.4.2.1 Link checking frequency"
+    guid: "{0C2EEA46-1380-4551-AA7C-0AADCB4E42ED}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall check if the links provided within a metadata record exist at least when the metadata record is generated or updated.
+      
+      Source: KPI 4.2 Link checking frequency
+    links:
+      - "Association «fulfilled by» → Metadata Quality Check Module"  # {7BDB02F5-5FFD-4e61-A74E-6EC7E8876A8F} → {B9BC9F94-BAF8-465c-A024-66944F4C302E}
+  - name: "K4.5.1 Data maintenance"
+    guid: "{EC2AF8AF-F8E6-44b1-9189-D1ED47BA5033}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide shall check the structural quality and integrity of the data provided or made available by content provider.
+      
+      Source: KPI 4.5 Data (content) maintenance
+    links:
+      - "Association «fulfilled by» → F3.6.10 Provide Data Quality Checks"  # {4828CBC1-30D4-4c20-B2BE-F5BD82B418BC} → {D01EFD87-A3E1-4216-81D9-855530ECE1B9}

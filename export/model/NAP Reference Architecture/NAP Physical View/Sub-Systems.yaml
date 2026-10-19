@@ -1,0 +1,33 @@
+package: "NAP Reference Architecture/NAP Physical View/Sub-Systems"
+guid: "{40F134DC-B19C-431d-B1D7-9AE23428CF50}"
+alias: "Sub-Systems"
+version: "1.0"
+note: |
+  This chapter defines Subsystems for both NAP types, Metadata Directory and Data Platform.
+elements:
+  - name: "Data Platform NAP"
+    guid: "{E5881292-2F25-4bc1-8840-23C9D1CC23A4}"
+    type: "Component"
+    stereotype: "FRAME_Component"
+    keywords: "Subsystem"
+    status: "Proposed"
+    order: 0
+    tags:
+      "LocationDescription": ""
+      "Standrdization": ""
+    note: |
+      The Data Platform NAP sub system represents the hardware/software implementation of the ITS Service. It consists of modules performing data and metadata quality checks, hosting data and metadata, user data, and credentials, allowing the creation and retrieval of metadata records as well as real data from the internal database and user support.
+    links:
+      - "Usage → Metadata Management Module"  # {4711E1DB-BF45-4a73-BB6A-40B13785B952} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "Metadata Directory NAP"
+    guid: "{1B971F1C-E2FC-46e2-97A3-CCB248436727}"
+    type: "Component"
+    stereotype: "FRAME_Component"
+    keywords: "Subsystem"
+    status: "Proposed"
+    order: 0
+    tags:
+      "LocationDescription": ""
+      "Standrdization": ""
+    note: |
+      The Metadata Directory NAP sub system represents the hardware/software implementation of the ITS Service. It consists of modules performing metadata quality checks, hosting metadata, user data, and credentials, allowing the creation and retrieval of metadata records from the internal database as well as user support.

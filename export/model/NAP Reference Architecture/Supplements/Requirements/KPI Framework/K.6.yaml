@@ -1,0 +1,36 @@
+package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.6"
+guid: "{0DE00589-00C6-4eda-813F-15F539ED8FA1}"
+alias: ""
+version: "1.0"
+note: ""
+elements:
+  - name: "K.6.1.1 Metadata specification"
+    guid: "{808C630F-74B1-46ed-91AF-3A16E94E6616}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall be full compliance/adopted with the MobilityDCAT-AP specification
+      
+      Source: KPI 6.1 Metadata specification
+    links:
+      - "Association «fulfilled by» → Metadata Management Module"  # {F8E99E35-DCF8-481e-B350-443A77F4AAD1} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
+  - name: "K.6.2.1 Metadata harvesting"
+    guid: "{3031B4C2-3C66-4139-BC26-B3914F8D3146}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+    note: |
+      The platform shall provide harvesting interface or protocols for exporting/querying metadata (e.g., RESTful API, CSW, CKAN), allowing other portals to retrieve metadata.
+      
+      Source: KPI 6.2 Harvesting functionalities
+    links:
+      - "Association «fulfilled by» → Machine Metadata Access"  # {86CF7CCA-8DF4-4ab1-A609-0E938658EB40} → {373128AD-1078-42bc-A0B2-F5E56522B7B8}

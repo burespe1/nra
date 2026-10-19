@@ -1,0 +1,90 @@
+package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/KPI Framework/Data Discovery KPIs"
+guid: "{9D5AF0F4-16D8-472d-A6B3-DFE30BD585A7}"
+alias: ""
+version: "1.0"
+note: |
+  NAPs should ensure the traceability of data through discovery services and search functionalities, such as engines and search masks for querying and filtering. Providing appropriate metadata is crucial for the reusability and discoverability of data resources, helping users understand data structure, usage rights, and license terms. Machine-readable metadata, exportable in formats like XML and RDF DCAT-AP, enhances discoverability for both humans and machines. Additionally, supporting map-based searches allows users to find data at national, regional, and local levels.
+elements:
+  - name: "KPI 3.1 Free-text search"
+    guid: "{D5638BED-BC35-4427-86D6-838B5E3ECE40}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      “Free-text search” For data discovery, a free-text search is a common option to find relevant datasets. A NAP is expected to offer such a functionality which is related with a KPI value of 1. The value can be increased by 1 with three different options. The first option is smart processing of the search query which sorts the results according to how well they match the search query. This is probably often the case as some logic has to be implemented how the results are displayed. A second option for an increase of the KPI value is the free-text search of organisations as data providers. This becomes more relevant, the more data providers there are at a NAP. Further free-text search options can be described in the comments an can also raise the value by 1, e.g. the search for data profiles or delegated regulations, but also maybe AI-supported functionality to find the most suitable dataset. The best value of this KPI is already reached with a value of 3.
+      
+      Values:
+      0: No available free-text search
+      1: Yes, free-text search can be used to find datasets (e.g. considering text in title, description or in other metadata elements)
+      Value+1 (for each of the following options):
+      a. Smart processing of search query to sort the results according to how well the match the search query
+      b. Data providers (organisations) can be searched with free-text
+      c. Other search options with free text (e.g. search for data profiles or delegated regulations, but also maybe AI-supported functionality to find the most suitable datasets; please specify in the ”Suggestions” box)
+      
+      
+      Minimum acceptable value for interoperability: 1
+    links:
+      - "Abstraction → K.3.1.1 Free-text search"  # {AF3D868D-4648-4ba3-8B54-AC80A2C77CE1} → {4CE86A2C-C410-439b-AFFD-9793CCF8B41E}
+  - name: "KPI 3.2 filtering options"
+    guid: "{4BD42434-CDDD-427d-99D2-721245A7EFA2}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      3.2 “Filtering options” Filtering datasets can be used for discovering datasets (i.e. metadata descriptions of available content data) from the start, but also to narrow down results from a free-text search query. There are many possibilities according to which properties of a dataset can be filtered. The most important properties increase the value of this KPI by 1: Delegated Regulation (according to which regulation the data was provided), transport mode / category, data provider (organisation), data format or data model, data profile, type of interface or access option, licence type. One more option which can be described in the comments can increase the value again by 1. It is expected that at least two filtering properties are implemented. The maximum value is reached with 7.
+      
+      0: Displayed datasets cannot be filtered
+      Value+1 (for each of the following options):
+      a. Delegated Regulation
+      b. Transport mode / category
+      c. Data provider (organisation)
+      d. data format, data model
+      e. data profile
+      f. type of interface or access option
+      g. license type
+      h. temporal validity
+      i. other (please specify in the “Suggestions” box)
+      
+      
+      Minimum acceptable value for interoperability: 2
+    links:
+      - "Abstraction → K.3.2.1 filtering options"  # {66BC402A-6BC6-42cb-8C89-66A4A410F9FF} → {3EDFD1C1-DFC2-44f5-B31C-F85FBB99684A}
+  - name: "KPI 3.3 Provision of machine – readable metadata"
+    guid: "{78E9F008-05E0-438e-959D-FF82698CBB6E}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      3.3 “Provision of machine – readable metadata” KPI aims to assess the machine readability of a NAP’s metadata. A value equal to 1 indicates that machine-readable metadata of any description of data provided via the NAP (i.e. any metadata set represented in a common structured format (e.g., JSON, XML)) can be generated or downloaded , while a value equal to 2 indicates that metadata comply to a harmonized application profile and can be represented in a common format using the concept of Linked Data (e.g., RDF). A value equal to 3 indicates that the machine-readable metadata is provided as Linked Data using mobilityDCAT-AP.
+      
+      0: No availability of machine-readable metadata
+      1: Provision of machine-readable metadata in a structured format (JSON, XML, …)
+      2: Provision of machine-readable metadata as Linked Data (“RDF” that also can be expressed in JSON-LD, ...) in a self-describing format
+      3: Provision of machine-readable metadata as Linked Data compliant to mobilityDCAT-AP
+      
+      Minimum acceptable value for interoperability: 3
+    links:
+      - "Abstraction → K.3.3.1 Provision of machine – readable metadata"  # {C9B6507D-F2F9-4012-B738-D45E5ADC3469} → {9BD4B8DE-4CA0-4a91-95F8-F0A7FD7CE558}
+  - name: "KPI 3.4 Map-based search"
+    guid: "{DB4A4825-A22D-49af-804A-54E7A0CC948E}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: |
+      As mobility data is always also geospatial data, a map-based search could be of use for some datasets offered at the NAP. This can be done either by displaying all available data on a map in order to find relevant data or by displaying the results from an earlier free-text search or filtering selection.
+      
+      Values:
+      0: No
+      Value+1 (for each of the following options):
+      a. Datasets are displayed on the map
+      b. A map or map section can be used to filter displayed search results
+      
+      Minimum acceptable value for interoperability: 0
