@@ -14,6 +14,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall make sources of static and dynamic urban and inter-urban road and traffic information accessible to users, e.g. Information Service Providers (ISPs) and Broadcasters, who can then distribute it to their end-users.
@@ -30,6 +31,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall provide a discovery service of static and dynamic urban and inter-urban road and traffic information for users, e.g. Information Service Providers (ISPs) and Broadcasters.
@@ -47,6 +49,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall provide all the information available within to users as metadata and data or pointers (links) to where the actual data can be found.
@@ -63,6 +66,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall be able to validate the identity of a Content Provider for a National Access Point (NAP).
@@ -78,6 +82,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall be able to permit a validated Content Provider to update metadata and data or links where the actual data can be found directly.
@@ -92,6 +97,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall provide a search interface in the native language of the area covered and, at least, English.
@@ -108,6 +114,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall provide Information Management tools for the NAP Operator.
@@ -123,6 +130,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The system shall provide information using "open" standard communication protocols.

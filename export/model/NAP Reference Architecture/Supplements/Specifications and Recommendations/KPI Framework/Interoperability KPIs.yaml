@@ -12,6 +12,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       6.1 “Metadata Specification” KPI indicates whether a NAP’s metadata follows the recommended specifications set. It gets a value equal to 0 it when the NAP adopts a proprietary or non-standardized metadata scheme, a value equal to 1 for when it adopts harmonised specifications other than mobilityDCAT-AP and and a value equal to 2 when metadata are completely compliant with MobilityDCAT-AP.
       
@@ -30,6 +32,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       6.2 “Harvesting functionalities” assesses the ability of a NAP (National Access Point) to facilitate interoperability through the integration of metadata and/or datasets with other data portals and platforms. This involves the use of harvesting protocols and interfaces that enable the automated export of its metadata or datasets to external systems, and/or the import of metadata or datasets from external systems for integration and indexing. A value equal to 0 points out the absence of any harvesting functionalities. On the other hand, a value equal to 1 indicates the support of one-way harvesting functionalities, while a value equal to 2 indicates the support of two-way harvesting functionalities.
       

@@ -14,6 +14,7 @@ elements:
     order: 0
     tags:
       "App_Environment": ""
+      "revised": "2025-07-04"
     note: |
       This Module handles traffic and transport data input (upload, update, or deletion) from NAP content providers and its retrieval by NAP content users. It uses the NAP Data store to store all data and related information.
     links:
@@ -38,6 +39,7 @@ elements:
     order: 0
     tags:
       "App_Environment": ""
+      "revised": "2025-07-04"
     note: |
       This Module enables and supports the periodical and initial checking of published data quality. Main tests performed are schema validation and availability of provided data against the metadata information. The results of the check are stored in NAP Data store.
     links:
@@ -53,6 +55,7 @@ elements:
     order: 0
     tags:
       "App_Environment": ""
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       This Module handles metadata input (upload, update, or deletion) from NAP content providers and its retrieval by NAP content users. It uses the NAP Metadata store to store all metadata and related information.
@@ -78,6 +81,7 @@ elements:
     order: 0
     tags:
       "App_Environment": ""
+      "revised": "2025-07-04"
     note: |
       This Module periodically and initially checks the quality of provided metadata. The main tests performed are the availability of provided links and structural and contextual soundness based on predefined criteria. The results of the check are stored in the NAP Metadata store.
     links:
@@ -94,6 +98,7 @@ elements:
     order: 0
     tags:
       "App_Environment": ""
+      "revised": "2025-07-04"
     note: |
       This Module handles and allows the processing of requests for support and reported issues by NAP Users, (Content Providers and Content Consumers).
     links:
@@ -110,6 +115,7 @@ elements:
     order: 0
     tags:
       "App_Environment": ""
+      "revised": "2025-07-04"
     note: |
       This Module handles user (NAP Content Providers and NAP Content Consumers) registrations and authorizations. It stores all relevant user information along with credentials in NAP Users data store.
     links:

@@ -15,6 +15,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By sharing data with neighbouring countries, state planning services could increase the level of cooperation across borders. Enhance cooperation between public and private stakeholders in ITS.
     links:
@@ -29,6 +30,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By introducing a legal and operational framework by the Member State when implementing the ITS Directive the nominated NAP Operator gets a clear set of requirements and obligations and practices to operate NAP as set up by the legal framework.
     links:
@@ -43,6 +45,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By establishing one NAP, per member state, concentrating mobility data from all obligated content producers (see Content Provider stakeholder) the EC has easier access to evaluating how are stipulations of the delegated regulations being fulfilled in the member states and MS has an easier way to report about these obligations to the EC.
     links:
@@ -58,6 +61,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By aligning to required formats and data specifications, the data or services get better usability by content consumers.
     links:
@@ -73,6 +77,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       Companies engaged in providing transport services and entities ensuring transport services benefit. Public transport dispatchers from traffic controller stations can better manage the PT fleet operations and ensure guaranteed transfers at terminals due to NAP up-to-date data/information about incidents and congestions that are currently causing delays of public transport vehicles. In this context, NAP information makes public transport more attractive and reliable. Also, truck dispatchers could better manage and organise freight transport based on information received from the NAP, in particular limitations for commercial vehicles on roads, bridges, and in tunnels.
     links:
@@ -87,6 +92,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By having all relevant data and services listed at NAP including the contact information of the data and services providers, the National Body can easily select the data to evaluate and reach out to their owner/provider.
     links:
@@ -101,6 +107,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By having all information about the data and services of the content providers at NAP the National Body can perform compliance assessment easier.
     links:
@@ -115,6 +122,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By having all mobility data provided via the NAP the content consumers (Service providers) may use them to increase the value of their services to increase road safety and travel efficiency. Easier and more regular data exchange (e.g. ID verification of content providers once). Distribution of high-quality traffic data to a larger share of travellers.
     links:
@@ -129,6 +137,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       European Commission benefit. NAP data can be used to identify specific problems in transport networks and to propose EU-wide policy solutions, notably to define needs for major project spending, e.g. relevance and eligibility.
     links:
@@ -143,6 +152,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By fulfilling the obligations of the ITS Directive, the data and services shared via NAP are provided concerning a set of standards which makes it easier to integrate them into pan-European service. Better quality of ITS services for end users.
     links:
@@ -157,6 +167,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By having all modes of mobility data provided via the NAP, the multimodal service provider could provide better services to travellers, advising them of better, more convenient, travel options (accessibility and time) and thus increasing their comfort.
     links:
@@ -172,6 +183,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By having all relevant public mobility data listed at NAP and in a harmonized format, the data gets more value. It is easier to access and use by service providers in the end user-oriented services. Generating higher reuse of data created by public authorities. Enhance cooperation between public and private stakeholders in ITS.
     links:
@@ -186,6 +198,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By observing other data published at NAP, the content provider could analyse features of best practices to adopt them in their data. Also, the potential of content consumer feedback creates an opportunity to better the data. Regular quality management of ITS services and data content feedback procedures. Enhance experience with data exchange and improve the awareness of data value in the traffic domain.
     links:
@@ -200,6 +213,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       By making public and private data available via NAP and by increasing their visibility, the service provider could provide services based on more information, ultimately providing a better service to customers. This better service could result in a reduction of accidents, shorter travel time, and lower emissions.
       More public and private stakeholders are involved in many EU MS with regular data exchange between them and used for creating high-quality ITS services. Enhanced road safety, traffic efficiency and reduced environmental impacts of transport by the extension to more public and private stakeholders in the distribution of traffic information and related ITS Services.
@@ -216,6 +230,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       Member State benefit. NAP data bring a wide range of information, resources, and decision-making approaches that lead to better outcomes. These data enable to perform analyses and predict the development of traffic. NAP data are also appropriate for transport organization planning and development of conceptual changes.
     links:
@@ -230,6 +245,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       Public (end users) benefit. Due to the availability and timely delivery of appropriate and technically harmonized static or dynamic NAP information/data users can have an insight into the current traffic situation or travel conditions and/or can use such information while driving or travelling, without being burdened with redundant information.
     links:
@@ -244,6 +260,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       Public Administration benefit. Data from NAP may be used and more efficiently interconnected with other public administration information systems. These data are made available to other parties both from the public and the private sector, which strengthens the development of new services with added value.
     links:
@@ -258,6 +275,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       Scientific and Research institutions benefit. Access to NAP data enables scientific and research teams to develop models of the traffic flow behaviour, assessment (based on historical data) of impacts of individual restrictions and their combinations on the level of provided services in the transport network, furthermore, prediction of traffic development, planning the transport of people and goods. These teams can produce a policy and scenario by estimating the impact of a transport policy scenario or a change in forecasting assumptions.
     links:
@@ -272,6 +290,7 @@ elements:
     order: 0
     tags:
       "ITS Added Value Type": ""
+      "revised": "2025-07-04"
     note: |
       Vehicle manufacturers and their suppliers benefit. Concerning the competition in the automobile market vehicle/equipment manufacturers can offer their customers new advanced applications and systems using NAP data, which brings considerable added value to the producers and in particular consumers.
     links:

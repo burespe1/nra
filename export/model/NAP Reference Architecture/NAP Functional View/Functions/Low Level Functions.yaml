@@ -13,6 +13,7 @@ elements:
     status: "Proposed"
     order: 0
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -25,11 +26,11 @@ elements:
        (6) This function manages all data mentioned in the mobilityDCAT-AP (https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html) and other relevant information (e.g. quality info, possible data comments etc.)
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {3DA6F71C-C8DD-4e7c-B1AE-A31B504E01A5} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_metadata_for_data_check_and_store_response"  # {7ECA2926-BE67-40b1-9D4A-1FDB15D3A46A} → {2FD69798-3950-48ea-B7F0-F52F39470F34}
-      - "Association «IN» → mt_NAP_metadata_for_quality_check"  # {5FE66C32-7D0D-4989-8528-DE73C33E02AE} → {EB72DA4A-A638-4946-B10F-21C536686F6C}
-      - "Association «IN» → mt_NAP_metadata_mod_result"  # {7416B140-A34B-4973-9305-4353CDF8AFDA} → {3947BAD7-63D3-4efd-9308-DDBCD8C288F9}
-      - "Association «IN» → mt_NAP_metadata_search_result"  # {EABB9DC5-AEA6-4cde-9825-BBA582A4F19B} → {F378C3C8-88CC-48f5-8713-7E685951CC86}
-      - "Association «IN» → mt_load_NAP_metadata"  # {710EF4F8-135D-4d21-AB64-9BC2D9CD74BA} → {B475FFED-C26D-4c49-A824-6030645EFB86}
+      - "Association «OUT» → mt_NAP_metadata_for_data_check_and_store_response"  # {7ECA2926-BE67-40b1-9D4A-1FDB15D3A46A} → {2FD69798-3950-48ea-B7F0-F52F39470F34}
+      - "Association «OUT» → mt_NAP_metadata_for_quality_check"  # {5FE66C32-7D0D-4989-8528-DE73C33E02AE} → {EB72DA4A-A638-4946-B10F-21C536686F6C}
+      - "Association «OUT» → mt_NAP_metadata_mod_result"  # {7416B140-A34B-4973-9305-4353CDF8AFDA} → {3947BAD7-63D3-4efd-9308-DDBCD8C288F9}
+      - "Association «OUT» → mt_NAP_metadata_search_result"  # {EABB9DC5-AEA6-4cde-9825-BBA582A4F19B} → {F378C3C8-88CC-48f5-8713-7E685951CC86}
+      - "Association «OUT» → mt_load_NAP_metadata"  # {710EF4F8-135D-4d21-AB64-9BC2D9CD74BA} → {B475FFED-C26D-4c49-A824-6030645EFB86}
   - name: "F3.6.10 Provide Data Quality Checks"
     guid: "{D01EFD87-A3E1-4216-81D9-855530ECE1B9}"
     type: "Activity"
@@ -37,6 +38,8 @@ elements:
     keywords: "Low level function"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -47,7 +50,7 @@ elements:
        (5) Ability to perform the checks based on data events (data insert, data update) in the NAP Data store
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {89604E47-18E4-452f-A2FB-2C0095013558} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_data_quality_check_result"  # {CA09EDAA-E793-4e7a-9358-D4E6D8EB2333} → {8AE74C5A-125D-4ce5-ABD4-89818AAE054B}
+      - "Association «OUT» → mt_NAP_data_quality_check_result"  # {CA09EDAA-E793-4e7a-9358-D4E6D8EB2333} → {8AE74C5A-125D-4ce5-ABD4-89818AAE054B}
       - "Dependency «trace» → F3.6.10 #1"  # {27FC9150-F635-48bd-BD59-2D7923965F03} → {9916583F-5243-458c-8402-6085B70A329A}
   - name: "F3.6.2 Manage Registrations and Provide Authorisation Service"
     guid: "{15D991EA-63BC-40ac-936A-A0B8D3CBC28A}"
@@ -57,6 +60,7 @@ elements:
     status: "Proposed"
     order: 0
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -79,11 +83,11 @@ elements:
       NOTE: one physical user can be part of more NAP Users but under the different electronic identity.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {7FF5F978-8BB0-47b7-A057-68D6794762B0} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_data_mod_authorisation_response"  # {9C1C3B83-C2B6-4342-ABF1-2A3E0160C6E4} → {310CD8FD-F1FA-4b44-A502-9A7D061FD2BE}
-      - "Association «IN» → mt_NAP_data_read_authorisation_response"  # {190BB9DB-3DD7-4715-8E44-BBC442EF5E93} → {C050FEDE-4276-4730-8B5C-0F605084BE69}
-      - "Association «IN» → mt_NAP_metadata_mod_authorisation_result"  # {98DCDD4A-1C5E-4308-BEF7-37EEBCB1D983} → {C526D3EC-9CD9-465e-B6AB-D13F6308EBB3}
-      - "Association «IN» → mt_load_NAP_user_data"  # {6672E2DD-6A24-4d7e-963F-BDC4AEEE9486} → {EFA11DF3-9ABC-46b9-8E31-B15D7F357F69}
-      - "Association «IN» → tnap.cc-registration_response"  # {6F9EF2C2-A656-4717-9064-1E23CC73DEF0} → {60E6A67C-C9D0-464b-900F-9F28DC71E886}
+      - "Association «OUT» → mt_NAP_data_mod_authorisation_response"  # {9C1C3B83-C2B6-4342-ABF1-2A3E0160C6E4} → {310CD8FD-F1FA-4b44-A502-9A7D061FD2BE}
+      - "Association «OUT» → mt_NAP_data_read_authorisation_response"  # {190BB9DB-3DD7-4715-8E44-BBC442EF5E93} → {C050FEDE-4276-4730-8B5C-0F605084BE69}
+      - "Association «OUT» → mt_NAP_metadata_mod_authorisation_result"  # {98DCDD4A-1C5E-4308-BEF7-37EEBCB1D983} → {C526D3EC-9CD9-465e-B6AB-D13F6308EBB3}
+      - "Association «OUT» → mt_load_NAP_user_data"  # {6672E2DD-6A24-4d7e-963F-BDC4AEEE9486} → {EFA11DF3-9ABC-46b9-8E31-B15D7F357F69}
+      - "Association «OUT» → tnap.cc-registration_response"  # {6F9EF2C2-A656-4717-9064-1E23CC73DEF0} → {60E6A67C-C9D0-464b-900F-9F28DC71E886}
       - "Association «OUT» → tnap.cp-registration_response"  # {B2ACEE10-1E33-40e2-A652-E4D2233705A5} → {AFD11DEB-11FE-4692-8BEB-B81835B7A4AD}
       - "Dependency «trace» → F3.6.2 #1"  # {B2E0B53D-026F-4a2e-BD72-2BA87C4B2B83} → {D5880A35-90B7-4cb5-B51C-671E3E03E154}
   - name: "F3.6.3 Manage Content Providers Metadata"
@@ -94,6 +98,7 @@ elements:
     status: "Proposed"
     order: 0
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -110,9 +115,9 @@ elements:
       NOTE: the ability to browse, search and view metadata is in the functionality F3.6.4 Manage Metadata Retrieval. It is assumed that NAP Content Provider is also logged in as NAP Content Consumer.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {F63996E9-A89E-4fc1-84A1-424D2EFA9DBD} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_metadata_mod_authorisation_request"  # {68CFD374-F51B-4dca-A8A8-A38300E155CA} → {D4D31515-ABC4-468d-964E-F6D5D4F77136}
-      - "Association «IN» → mt_NAP_metadata_mod_request"  # {A81759EF-4A39-4e23-9E3E-B81903552870} → {E5EE6235-7DA8-4f7c-B007-A5F039A31397}
-      - "Association «IN» → ps_metadata & success report"  # {16FD4581-1C47-489c-9902-FAA81957F65F} → {1B63FEAE-619D-4b2e-B48D-663FEAC9BE9D}
+      - "Association «OUT» → mt_NAP_metadata_mod_authorisation_request"  # {68CFD374-F51B-4dca-A8A8-A38300E155CA} → {D4D31515-ABC4-468d-964E-F6D5D4F77136}
+      - "Association «OUT» → mt_NAP_metadata_mod_request"  # {A81759EF-4A39-4e23-9E3E-B81903552870} → {E5EE6235-7DA8-4f7c-B007-A5F039A31397}
+      - "Association «OUT» → ps_metadata & success report"  # {16FD4581-1C47-489c-9902-FAA81957F65F} → {1B63FEAE-619D-4b2e-B48D-663FEAC9BE9D}
       - "Association «OUT» → tnap.cp-metadata_&_success_report"  # {E05457AD-E5D7-4cdc-AD20-225CEE3A2544} → {169488F2-0C7D-4eef-8B43-C324785B730D}
   - name: "F3.6.4 Manage Metadata Retrieval"
     guid: "{2F2393E9-9A59-4344-A2C0-207945E7F438}"
@@ -122,6 +127,7 @@ elements:
     status: "Proposed"
     order: 0
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -137,9 +143,9 @@ elements:
       NOTE: It is assumed that NAP Content Provider could perform all the task of the NAP Content Consumer.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {B3249F69-B9F1-44a4-A3C5-6B53050CE915} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_metadata_search_request"  # {EF8E0FB1-EC04-45dc-AE32-EC204F67A4FC} → {F2F9B90C-BD35-4b2a-8DCB-4B8F834C419A}
-      - "Association «IN» → tnap.cc-metadata_search_result"  # {83900E74-1744-4ace-B205-8A130BB3C6DE} → {DDCEDB1B-C3C2-4d88-AAF0-8371D10BF745}
-      - "Association «IN» → tnap.mdrs-metadata_response"  # {F970BAA2-E34A-4127-B8C0-F660B2D4F767} → {CA529868-7C49-48f9-AD5E-F796011DFDF5}
+      - "Association «OUT» → mt_NAP_metadata_search_request"  # {EF8E0FB1-EC04-45dc-AE32-EC204F67A4FC} → {F2F9B90C-BD35-4b2a-8DCB-4B8F834C419A}
+      - "Association «OUT» → tnap.cc-metadata_search_result"  # {83900E74-1744-4ace-B205-8A130BB3C6DE} → {DDCEDB1B-C3C2-4d88-AAF0-8371D10BF745}
+      - "Association «OUT» → tnap.mdrs-metadata_response"  # {F970BAA2-E34A-4127-B8C0-F660B2D4F767} → {CA529868-7C49-48f9-AD5E-F796011DFDF5}
       - "Dependency → NAP IT Provider (NIT)"  # {FE22C329-43D9-450d-8DC4-096292CC0002} → {273E7961-AD50-416e-AC9A-92FA926DD4A7}
       - "Dependency «trace» → F3.6.4. #1"  # {5D81474C-D7D1-4686-AD2B-009928A3F8DB} → {7345AE52-1483-4bcd-B68D-8C3A0BA6C66B}
   - name: "F3.6.5 Provide NAP User Support"
@@ -150,6 +156,7 @@ elements:
     status: "Proposed"
     order: 0
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -172,6 +179,8 @@ elements:
     keywords: "Low level function"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This function shall be capable of providing the following facilities:
       
@@ -181,7 +190,7 @@ elements:
        (4) Ability to perform the checks based on metadata events (data insert, data update) in the NAP Metadata store
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {8BDB8B77-823D-42b3-B30A-4BDCA0A885C7} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_metadata_quality_check_result"  # {0C3520EB-CA58-4de4-BA7E-A70D2F7DB6D2} → {01233765-5DC4-4cf9-879E-4DC6961C9611}
+      - "Association «OUT» → mt_NAP_metadata_quality_check_result"  # {0C3520EB-CA58-4de4-BA7E-A70D2F7DB6D2} → {01233765-5DC4-4cf9-879E-4DC6961C9611}
   - name: "F3.6.7 Manage NAP Data Repository"
     guid: "{57AEF510-D710-4920-9CCE-96BE708F6AAC}"
     type: "Activity"
@@ -189,6 +198,8 @@ elements:
     keywords: "Low level function"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -201,11 +212,11 @@ elements:
        (7) Ability to store data event logs
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {5BACDF52-213C-4c57-9725-E6C3776C3DA0} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_data_for_quality_check"  # {CD7EB28C-F8C9-4c7b-828E-462B066D7A4B} → {12DD5935-707F-445e-B70C-4401AE81022C}
-      - "Association «IN» → mt_NAP_data_mod_response"  # {1E537827-C07F-4416-A9AA-342BCE677B55} → {E340D2D2-B614-4c5f-BA76-FBD43E68CF5E}
-      - "Association «IN» → mt_NAP_data_read_response"  # {7B34DF9B-17B9-4472-A427-E3446096618F} → {3D6B17A5-0D0F-4944-9E8F-FB446B82FF2F}
-      - "Association «IN» → mt_NAP_metadata_for_data_check_and_store_request"  # {88878DB4-7932-4c7f-904A-B7E76439B09D} → {A65597A1-4E9A-40cc-9665-4640823B199F}
-      - "Association «IN» → mt_load_NAP_data"  # {F40EA05D-387F-4607-BF61-932AC84AEE00} → {38D2C47E-7C5D-4d8d-B7B5-05AFC34DF3CA}
+      - "Association «OUT» → mt_NAP_data_for_quality_check"  # {CD7EB28C-F8C9-4c7b-828E-462B066D7A4B} → {12DD5935-707F-445e-B70C-4401AE81022C}
+      - "Association «OUT» → mt_NAP_data_mod_response"  # {1E537827-C07F-4416-A9AA-342BCE677B55} → {E340D2D2-B614-4c5f-BA76-FBD43E68CF5E}
+      - "Association «OUT» → mt_NAP_data_read_response"  # {7B34DF9B-17B9-4472-A427-E3446096618F} → {3D6B17A5-0D0F-4944-9E8F-FB446B82FF2F}
+      - "Association «OUT» → mt_NAP_metadata_for_data_check_and_store_request"  # {88878DB4-7932-4c7f-904A-B7E76439B09D} → {A65597A1-4E9A-40cc-9665-4640823B199F}
+      - "Association «OUT» → mt_load_NAP_data"  # {F40EA05D-387F-4607-BF61-932AC84AEE00} → {38D2C47E-7C5D-4d8d-B7B5-05AFC34DF3CA}
   - name: "F3.6.8 Manage Data Input"
     guid: "{5B4F357F-A164-4a3f-8909-C370F4C0615F}"
     type: "Activity"
@@ -213,6 +224,8 @@ elements:
     keywords: "Low level function"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -225,10 +238,10 @@ elements:
        (7) Ability to record NAP Content Provider activity into the NAP Data store.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {0FDC7499-2D1E-4c46-A004-C86019AADBE9} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_data_mod_authorisation_request"  # {241C04E8-7F4D-46f6-9AAA-C5C4AE92753E} → {E20BF73E-7630-4235-9E13-54B7C5C78E46}
-      - "Association «IN» → mt_NAP_data_mod_request"  # {1FEC81F9-A14A-478f-955F-6431A651FB7A} → {B7FC7C2F-C1AA-4bf8-82D4-0EA2370C6BC9}
-      - "Association «IN» → tnap.cp-data_upload_result_report"  # {D23A0177-082E-4c2f-A119-9278166E477A} → {A6E68B7A-7C94-474f-B168-C2A98537BC37}
-      - "Association «IN» → tnap.dps-data_upload_result_report"  # {FC1EAC08-2188-41a8-96DD-29D765650423} → {FBD65825-894B-415a-AE17-8AD14FDF8F08}
+      - "Association «OUT» → mt_NAP_data_mod_authorisation_request"  # {241C04E8-7F4D-46f6-9AAA-C5C4AE92753E} → {E20BF73E-7630-4235-9E13-54B7C5C78E46}
+      - "Association «OUT» → mt_NAP_data_mod_request"  # {1FEC81F9-A14A-478f-955F-6431A651FB7A} → {B7FC7C2F-C1AA-4bf8-82D4-0EA2370C6BC9}
+      - "Association «OUT» → tnap.cp-data_upload_result_report"  # {D23A0177-082E-4c2f-A119-9278166E477A} → {A6E68B7A-7C94-474f-B168-C2A98537BC37}
+      - "Association «OUT» → tnap.dps-data_upload_result_report"  # {FC1EAC08-2188-41a8-96DD-29D765650423} → {FBD65825-894B-415a-AE17-8AD14FDF8F08}
       - "Association «adheres to» → DATEX II Recommended Reference Profiles"  # {2EFB0378-AB78-477f-8D9A-62977211CCE7} → {0284859D-C83B-423b-909A-05291C3F0B08}
   - name: "F3.6.9 Manage NAP Data Retrieval"
     guid: "{A3764B72-97E2-400c-81B8-C945964F9E0D}"
@@ -237,6 +250,8 @@ elements:
     keywords: "Low level function"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -249,7 +264,7 @@ elements:
        (7) Requested data are either traffic or travel information or its support information stored in the NAP Data store (e.g. quality information, last update time) or both.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {E1A416CD-B46B-4a5c-B1E5-EDD4ABA6BC4C} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
-      - "Association «IN» → mt_NAP_data_read_authorisation_request"  # {5A163FB1-29C8-45c4-9EAC-3B8D66CECBBA} → {D487FAFF-4F5B-4520-BC53-427580A77997}
-      - "Association «IN» → mt_NAP_data_read_request"  # {2F48239C-2C35-4844-87C8-2CB3B857B94B} → {50A2D529-AAC6-4908-919C-7838C607386A}
-      - "Association «IN» → tnap.cc-data_response"  # {1299B849-9D9B-486d-AC1D-2DC536C4CBD0} → {F7412343-95F0-4611-8149-58EA48466E80}
-      - "Association «IN» → tnap.drs-data_response"  # {C0117DD4-1105-4057-AD20-458519074FC2} → {53ED8069-70B8-44ac-85D7-ED06B5283424}
+      - "Association «OUT» → mt_NAP_data_read_authorisation_request"  # {5A163FB1-29C8-45c4-9EAC-3B8D66CECBBA} → {D487FAFF-4F5B-4520-BC53-427580A77997}
+      - "Association «OUT» → mt_NAP_data_read_request"  # {2F48239C-2C35-4844-87C8-2CB3B857B94B} → {50A2D529-AAC6-4908-919C-7838C607386A}
+      - "Association «OUT» → tnap.cc-data_response"  # {1299B849-9D9B-486d-AC1D-2DC536C4CBD0} → {F7412343-95F0-4611-8149-58EA48466E80}
+      - "Association «OUT» → tnap.drs-data_response"  # {C0117DD4-1105-4057-AD20-458519074FC2} → {53ED8069-70B8-44ac-85D7-ED06B5283424}

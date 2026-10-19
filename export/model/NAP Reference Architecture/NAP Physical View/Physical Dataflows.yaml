@@ -12,6 +12,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between NAP Content Consumer and User Management Module. This exchange concerns Content Consumers data objects for registration requests and credentials for data retrieval upon authorization. The registration request contains entity information, license terms approval, and organization details. Outputs include responses to registration requests and credentials for accessing NAP functionality.
     links:
@@ -24,6 +26,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Data Quality Check and Data Management modules. This exchange concerns data retrieved from the NAP Data store after scheduled or triggered events. The data object includes updated quality information, time stamps, success or failure status, error counts, service levels, and an aggregated summary.
   - name: "Data from Content Provider"
@@ -33,6 +37,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Data Management Module and Content Provider. This exchange concerns inputs from the NAP Content Provider with new or updated data objects, requiring authorisation credentials.
     links:
@@ -45,6 +51,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Data Management Module and Data Provision System. This exchange concerns inputs from the Data Provision System with new or updated data objects, requiring authorisation credentials.
     links:
@@ -56,6 +64,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Data Management Module and Content Consumer. This exchange concerns requests from the NAP Content Consumer for data content and responses with data if the authorisation is successful.
     links:
@@ -67,6 +77,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Data Requesting System and NAP Data Management Module. This exchange concerns requests from the Data Requesting System for data content and responses with data if the authorisation is successful.
     links:
@@ -78,6 +90,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Metadata Quality Check and Metadata Management modules. This exchange concerns metadata retrieved from the NAP Metadata store after scheduled or triggered events. The data object includes updated quality information, time stamps, success or failure status, error counts, service levels, and an aggregated summary.
   - name: "Metadata and Data Management"
@@ -87,6 +101,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Metadata Management and Data Management modules. This exchange concerns metadata retrieval/check/update with regards data stored in the Data Store.
   - name: "Metadata and User Management"
@@ -96,6 +112,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Metadata Management and User Management modules. This exchange concerns request for authorisation of Content Provider to access and change data in Metadata Management Module.
   - name: "Metadata from Content Provider"
@@ -105,6 +123,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Metadata Management Module and Content Provider. This exchange concerns inputs from the NAP Content Provider with new or updated metadata objects, requiring authorisation credentials.
     links:
@@ -118,6 +138,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates metadata exchange between Metadata Management Module and metadata Provision System. This exchange concerns inputs from the Metadata Provision System with new or updated data objects, requiring authorisation credentials.
     links:
@@ -129,6 +151,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between NAP Content Consumer and NAP Metadata Management Module. This exchange concerns search requests sent by the NAP Content Consumer and search results returned by the NAP Metadata Management Module.
     links:
@@ -140,6 +164,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Metadata Requesting System and NAP Metadata Management Module. This exchange concerns search requests sent by the Metadata Requesting System and search results returned by the NAP Metadata Management Module.
     links:
@@ -151,6 +177,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Support (ticket) Module and Content Consumer. This exchange concerns support requests sent by the Content Consumer and handled by the Support (ticket) Module.
     links:
@@ -162,6 +190,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Support (ticket) Module and Content Provider. This exchange concerns support requests sent by the Content Provider and handled by the Support (ticket) Module.
     links:
@@ -173,6 +203,8 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between Content Provider and User Management Module. This exchange concerns user registration requests.
     links:
@@ -185,5 +217,7 @@ elements:
     keywords: "Physical Data flow"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       This Physical Data Flow facilitates information exchange between User Management and Data Management modules. This exchange concerns credentials of a NAP Content Provider or Data Providing System, which are checked against the NAP Users data store to authorize the claimant to insert or modify data records in the NAP Data store. They also provide information about the validity of these authorization credentials.

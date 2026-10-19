@@ -11,8 +11,22 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       is what the ITS Stakeholders aim to achieve by the implementation / operation of the ITS Service. Business Expectations could be the political, economic, social, socio-economic, socio-political, operational, organisational, safety, and efficiency-related added values that are associated with an ITS service and are formulated as goals. These expectations are used together with the ITS Mission Statement to define the ITS Service
+  - name: "Competent Authority / National Body"
+    guid: "{DD5AB22A-9C2C-4998-B629-36E45B26FD9B}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      impartial and independent public or private entity designated by a Member State to monitor the operation of the National Access Point and to verify compliance of Content Providers with the requirements established by the ITS Directive and its Delegated Regulations. The term National Body can be used interchangeably with Competent Authority, but it carries an additional requirement of impartiality and independence; the term remains valid in current legislation.
   - name: "Content Consumer"
     guid: "{AFF2ED18-FA47-49d5-971D-F468BCFF349A}"
     type: "Class"
@@ -20,8 +34,10 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      any stakeholder that is specified by the delegated regulations explicitly as the user of the data/services made available by Content Providers via NAP. It includes the Data User term as it is specified in MMTIS and RTTI regulations.
+      public or private entity that accesses, retrieves or uses data or information made accessible through the National Access Point for the purpose of developing services, applications or analyses. It includes the Data User, Data Consumer and Data Recipient terms as specified in EU legal acts.
   - name: "Content Provider"
     guid: "{EBDF5B24-DFEF-4b07-9807-5B6803EB3157}"
     type: "Class"
@@ -29,8 +45,10 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      any stakeholder that is required by the delegated regulations to provide data/information or services to the Content Consumers via NAP. It includes the Data Holder term as it is defined in MMTIS and RTTI regulations.
+      public or private entity that supplies content (e.g., data, metadata, documents) to the National Access Point, making it available for reuse in accordance with the requirements of EU legal acts and national laws. It includes the Data Holder, Data Provider and Service Provider terms as specified in EU legal acts.
   - name: "Data Flow"
     guid: "{B48FA4B9-CC17-452f-BAA5-5BC0592927B2}"
     type: "Class"
@@ -38,6 +56,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       the movement of data within the system, occurring between LLFs, between LLFs and Data Stores, or between LLFs and external entities
   - name: "Data Store"
@@ -47,6 +67,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a repository for data, often managed by LLFs, that serves multiple other LLFs, linking to Functional Areas or HLFs.
   - name: "Data platform"
@@ -56,6 +78,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a data portal that contains descriptions of the data and services important for their identification, assessment, and subscription by consumer, i.e., metadata, together with the data and/or services themselves. It provides facilities to authenticate data provider, and optionally, data consumer and functionality to insert a data and metadata records to NAP internal database. The NAP provides search and discovery services of the hosted records to end users and via machine readable content to other portals and distribution interfaces for data dissemination. The NAP is an intermediary between data provider and consumer; the data however remain in the ownership of the data provider.
   - name: "ITS Actor"
@@ -65,6 +89,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       part of an ITS value-added chain/network and is directly involved in value creation. It contributes to the added value of ITS benefits by using its ITS capabilities as part of its activities. It usually also represents the interests of ITS stakeholders who are not directly involved in the ITS value chain but have strong associated interests. The ITS end-user is also considered a special ITS actor.
   - name: "ITS Agreement"
@@ -74,6 +100,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Contractual or lawful relationship between two roles, that defines obligations/responsibilities of the roles to each other and also the obligations/responsibilities of the roles in this relationship to other roles. The Agreement could take the form of a European or national legislative document, memorandum of understanding, contract, license, or terms and conditions.
   - name: "ITS Domain"
@@ -83,6 +111,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a concept that categorizes the diverse applications of ITS into specific fields of application. It applies sector-specific knowledge and additional architectural knowledge to ITS. The domain also defines the boundaries of the ITS system or service at the start of an ITS architecture project, distinguishing it from similar or adjacent systems or services.
   - name: "ITS Interface"
@@ -92,6 +122,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Facilitates information exchange between systems, defined by a protocol and data model, and utilized by ITS applications
   - name: "ITS Mission Statement"
@@ -101,6 +133,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a short statement that highlights what is needed to be done by the ITS Stakeholders in the present to achieve the ITS Vision. It summarizes the purpose of the existence of the ITS Services and guides their use by the ITS Actors and/or the end users. It formulates a clearly structured, overarching policy objective of the defined ITS service deployment, considering the interests of stakeholders and end-users.
   - name: "ITS Role"
@@ -110,6 +144,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Defines and describes responsibilities, tasks, and capabilities that are typical and necessary for the value creation of ITS services. Is taken by ITS actors and stakeholders depending on the requirements of the ITS service to be implemented. A single ITS actor or stakeholder can occupy one or more ITS roles.
   - name: "ITS Service"
@@ -119,6 +155,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a formal description of an ITS service. It describes a value-added service provided by ITS actors to the end-users. The added value is created by combining technologies, organizations, processes, and people. The service can be delivered by a single actor or in cooperation with others, and it creates added value that may consist of individual benefits for end users, collective benefits for end-user groups or society, or a mixture of both. It describes the idea and functional elements of the ITS service as well as framework conditions.
   - name: "ITS Service Added Value"
@@ -128,6 +166,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       represents monetary and nonmonetary benefits that are gained by the implementation of the ITS Service. Each individual ITS Service Added Value outlines a particular, impact/benefit of implementing the ITS Service affecting one or more stakeholders.
   - name: "ITS Vision"
@@ -137,6 +177,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       the long-term objective and the aspirational goal for the future. The ITS Vision is shared by all ITS Stakeholders. It is a source of inspiration for the ITS Services and provides a clear goal to be adhered to by the ITS Services.
   - name: "Metadata directory"
@@ -146,6 +188,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a data portal that contains descriptions of the data and services important for their identification, assessment, and subscription by consumer, i.e., metadata. It provides facilities to authenticate data provider and functionality to insert a metadata records. The NAP provides search and discovery services of the hosted records to end users and via machine readable content to other portals. The NAP is not directly involved in the data exchange between data providers and data consumers.
   - name: "Mobility data"
@@ -155,8 +199,10 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      Mobility data includes all data types that are directly related to a person or good movement via motorized or non-motorized, individual or public transport, or new transport modes. It includes general real-time and statistical information.
+      Mobility data includes all data types that are directly related to the movement of persons or goods via motorized or non-motorized, individual or public transport, or new transport modes. It includes general real-time and statistical information.
   - name: "Module"
     guid: "{27DE7B27-CDE5-4a1d-95B9-8225822565E3}"
     type: "Class"
@@ -164,8 +210,22 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      a computer programs within Sub-systems that perform ITS functions and communicate via ITS interfaces. They can be replicated wholly or partly across locations.
+      computer programs within Sub-systems that perform ITS functions and communicate via ITS interfaces. They can be replicated wholly or partly across locations.
+  - name: "NAP Operator"
+    guid: "{BF181666-230A-47b3-A81E-7DE24C27BCC4}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      public or private entity designated to manage, maintain and operate the National Access Point, ensuring the accessibility of data and that the NAP functions in line with the requirements of the applicable EU legal acts, further specified in national legislation or governance documents.
   - name: "Physical Data Flow"
     guid: "{7A13AE8C-94D4-4d1e-87EF-8CAB5441A938}"
     type: "Class"
@@ -173,8 +233,10 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      a communication channel in ITS, either Internal (linking Sub-systems/Modules) or External (connecting to Terminators/Actors). They're based on a pre-checked Functional View.
+      a communication channel in ITS, either Internal (linking Sub-systems/Modules) or External (connecting to Terminators/Actors). They are based on a pre-checked Functional View.
   - name: "Specification"
     guid: "{7A4CC527-7915-4be0-808E-DDBB5DFBBBFA}"
     type: "Class"
@@ -182,6 +244,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       detailed, precise description of the requirements, design, behaviour, or characteristics of a system, component, or process. Specifications are used to ensure that everyone involved in a project understands what is expected and to provide a basis for verifying that the final product meets the required standards.
   - name: "Stakeholder"
@@ -191,6 +255,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       any organization or individual interested in the deployment, operation, or outcomes of ITS services. They can be directly or indirectly affected by the decisions made during the entire lifecycle of ITS Services. They are usually decision-makers such as politicians, high-level managers, and others e.g., the general public or user groups, who typically have little or no knowledge of systems design and implementation beyond what they have acquired as end users.
   - name: "Sub-system"
@@ -200,6 +266,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a high-level unit that may include multiple Modules but can also have none if simple. Each geographic location has its own Sub-system.
   - name: "Terminator"
@@ -209,6 +277,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       an external entity not modelled within the FRAME Architecture, such as different vehicle types or traveller roles.
   - name: "User Needs"
@@ -218,5 +288,7 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       a set of standardised high-level requirements that, in combination, describe all the ITS Services supported by FRAME.

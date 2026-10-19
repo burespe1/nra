@@ -12,6 +12,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       “IT services” KPI assesses whether there are established responsibilities for resolving as quickly as possible technical issues that may affect the operation of a NAP (both software- and hardware-related issues are encompassed). While a value equal to zero corresponds to the scenario where such responsibilities are not assigned, higher levels of service values depend on the establishment of responsibilities and the planning for the long run maintenance of the NAP
       
@@ -33,6 +35,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Link checking frequency” KPI assesses the existence of predetermined processes and responsibilities among NAP operators, data providers for controlling the quality and maintaining the NAP links, inuring that they are functioning correctly. The difference between the possible values relates to the frequency of these checks.
       
@@ -56,6 +60,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Metadata maintenance frequency” assesses the frequency on which metadata are maintained and updated. This is relevant since metadata specifications are often changed due to stakeholder needs and market developments, and these changes should be reflected on the NAPs to ensure data discoverability. The KPI’s possible values comprise difference options for the frequency of maintenance, where higher values correspond to higher frequency.
       
@@ -75,6 +81,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       4.5 “Data (content) maintenance” evaluates the existence of procedures for keeping the data up-to date by systematically assessing data (content) quality. This is a binary KPI that does not check the frequency on which the data quality is checked but only verifies if there are processes established in this regard.
       Note: This KPI is for data platform NAP type only. For metadata directory NAP type, you answer the first option. Technically, the KPI is skipped in an on-line questionnaire after “metadata directory” NAP type selection.
@@ -86,4 +94,4 @@ elements:
       
       Minimum acceptable value for interoperability: 1
     links:
-      - "Abstraction → K4.5.1 Data maintenance"  # {74369DA5-2A77-4f62-B687-5E27F4D7ACD1} → {EC2AF8AF-F8E6-44b1-9189-D1ED47BA5033}
+      - "Abstraction → K.4.5.1 Data maintenance"  # {74369DA5-2A77-4f62-B687-5E27F4D7ACD1} → {EC2AF8AF-F8E6-44b1-9189-D1ED47BA5033}

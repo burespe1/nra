@@ -12,6 +12,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Free-text search” For data discovery, a free-text search is a common option to find relevant datasets. A NAP is expected to offer such a functionality which is related with a KPI value of 1. The value can be increased by 1 with three different options. The first option is smart processing of the search query which sorts the results according to how well they match the search query. This is probably often the case as some logic has to be implemented how the results are displayed. A second option for an increase of the KPI value is the free-text search of organisations as data providers. This becomes more relevant, the more data providers there are at a NAP. Further free-text search options can be described in the comments an can also raise the value by 1, e.g. the search for data profiles or delegated regulations, but also maybe AI-supported functionality to find the most suitable dataset. The best value of this KPI is already reached with a value of 3.
       
@@ -34,6 +36,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       3.2 “Filtering options” Filtering datasets can be used for discovering datasets (i.e. metadata descriptions of available content data) from the start, but also to narrow down results from a free-text search query. There are many possibilities according to which properties of a dataset can be filtered. The most important properties increase the value of this KPI by 1: Delegated Regulation (according to which regulation the data was provided), transport mode / category, data provider (organisation), data format or data model, data profile, type of interface or access option, licence type. One more option which can be described in the comments can increase the value again by 1. It is expected that at least two filtering properties are implemented. The maximum value is reached with 7.
       
@@ -60,6 +64,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       3.3 “Provision of machine – readable metadata” KPI aims to assess the machine readability of a NAP’s metadata. A value equal to 1 indicates that machine-readable metadata of any description of data provided via the NAP (i.e. any metadata set represented in a common structured format (e.g., JSON, XML)) can be generated or downloaded , while a value equal to 2 indicates that metadata comply to a harmonized application profile and can be represented in a common format using the concept of Linked Data (e.g., RDF). A value equal to 3 indicates that the machine-readable metadata is provided as Linked Data using mobilityDCAT-AP.
       
@@ -78,6 +84,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       As mobility data is always also geospatial data, a map-based search could be of use for some datasets offered at the NAP. This can be done either by displaying all available data on a map in order to find relevant data or by displaying the results from an earlier free-text search or filtering selection.
       

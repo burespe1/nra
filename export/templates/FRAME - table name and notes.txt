@@ -1,7 +1,0 @@
-name: FRAME - table name and notes
-id: {D02D5BE5-419E-478e-B604-0589729FB796}
-kind: template/fragment
-sections: ['Pkg', 'Pkg_Element', 'Pkg_Element_Element', 'Pkg_Pkg']
-options: modcreate="-1" statuslike="-1" phaselike="-1" beforeafter="-1" pkgorder="1" elemorder="1" featorder="1" dgmorder="1" pkgasc="0" elemasc="0" featasc="0" dgmasc="0" imagefmt="1" hindent="9" noteless="0" skiproot="0" statuslist="" phase="All" exdetails="" wordsubst="0" nobookmarks="0" hideanonymous="0" htmlformating="0" exconndetails="" exdiagdetails="" conndirfilter="0" childelements="0" notelessconn="0" fragment="0" fragment_type="0" script_guid="" status_clr="0" elem_as_help="0" prop_filters="0" packageexclude_type="0" packageexclude_guid=""/
-
-Pkg_Beginpackage > \*MERGEFIELD Pkg.Name\Pkg.Name\ \*MERGEFIELD Pkg.Notes\Pkg.Notes\ element > Term Status Meaning \*MERGEFIELD Element.Name\Element.Name\ \*MERGEFIELD Element.Status\Element.Status\ \*MERGEFIELD Element.Notes\Element.Notes\ child elements > < child elements < element child packages > < child packages < package

@@ -1,4 +1,4 @@
-name: NAPCORE
+name: NAPCORE Style
 id: {4CBE6B9C-0BF7-4c48-A698-9240E7C39938}
 kind: template/fragment
 sections: []

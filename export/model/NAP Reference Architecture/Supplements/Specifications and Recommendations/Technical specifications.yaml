@@ -17,6 +17,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard / Open API
       Full Name: CKAN Action API – Comprehensive Interface for Open Data Portals
@@ -37,6 +39,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: DATEX II – CEN/TS 16157: Road Traffic and Travel Information Exchange
@@ -59,6 +63,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: General Bikeshare Feed Specification (GBFS)
@@ -80,6 +86,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: General Transit Feed Specification
@@ -99,6 +107,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: General Transit Feed Specification – Realtime
@@ -119,6 +129,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: IATA Standard Schedules Information Manual
@@ -137,6 +149,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Infrastructure for Spatial Information in the European Community (INSPIRE) – Data Specifications and Implementing Rules
@@ -157,6 +171,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Network Timetable Exchange (NeTEx) – CEN/TS 16614
@@ -179,6 +195,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)
@@ -201,6 +219,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Open Charge Point Interface (OCPI)
@@ -221,6 +241,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Open Journey Planner – CEN/TS 17118: Open API for Distributed Journey Planning
@@ -240,6 +262,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Operational Raw Data and Statistics for Public Transport – CEN Technical Report (OpRa)
@@ -258,6 +282,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Service Interface for Real-time Information (SIRI) – CEN/EN 15531
@@ -278,6 +304,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Telematics Applications for Passenger Services – Technical Specification for Interoperability (TAP-TSI)
@@ -296,6 +324,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Transport Network ITS Spatial Data Exchange – CEN/TS 17268
@@ -317,6 +347,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Transport Operator to Mobility-as-a-Service Provider API (TOMP API)
@@ -337,6 +369,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: Public Transport Reference Data Model – EN 12896 (Transmodel)
@@ -356,6 +390,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Framework / Project Specification
       Full Name: deployEMDS – Technical Specifications for the European Mobility Data Space
@@ -376,6 +412,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Type: Technical Standard
       Full Name: mobilityDCAT-AP – Metadata Specification for Mobility Data Portals

@@ -15,6 +15,7 @@ elements:
     order: 0
     tags:
       "origin_guid": "tbd"
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The user needs associated with managing the operation of a National Access Point (NAP)

@@ -1,6 +1,7 @@
 package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework"
 guid: "{A225E441-BFA4-42ba-987D-F93289E9A874}"
-alias: "KPI Framework"
+alias: "KPI Framework Requirements"
 version: "1.0"
-note: ""
+note: |
+  Requirements derived from the minimum acceptance values of the NAP Level of Service KPI Framework (NLKF), grouped by KPI category. Each requirement is linked to the architecture elements that fulfil it.
 elements: []

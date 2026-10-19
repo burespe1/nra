@@ -6,6 +6,42 @@ note: ""
 tags:
   "isEnabled": "true"
 elements:
+  - name: "CA/NB"
+    guid: "{14298B32-52C8-4cbf-8902-3432F7DD6F22}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      Competent Authority / National Body
+  - name: "CC"
+    guid: "{6A0D7F93-036C-412d-8892-76A2AAEABA7B}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      Content Consumer
+  - name: "CP"
+    guid: "{2FE642BB-2039-4ce2-9980-8EA8AB9290ED}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      Content Provider
   - name: "EA GUID"
     guid: "{B68771F9-6E74-493c-AB7D-53D33ACCA883}"
     type: "Class"
@@ -13,8 +49,34 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Enterprise Architect unique identifier, uniquely identifying the object within the model
+  - name: "EC"
+    guid: "{0DE5BD53-F954-4af8-B45D-EC5F490A5500}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      European Commission
+  - name: "FDF"
+    guid: "{BC308B68-948C-4c10-94FE-09AAF6BE685A}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      Functional Data Flow
   - name: "HLF"
     guid: "{30B9592E-7723-4443-947B-0B99779DD18E}"
     type: "Class"
@@ -22,6 +84,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       High Level Function
   - name: "ITS"
@@ -31,8 +95,10 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      Intelligent Transportation Systems
+      Intelligent Transport Systems
   - name: "KPI"
     guid: "{26B0CF58-6CE5-4649-B4CF-1042A11D37D2}"
     type: "Class"
@@ -40,6 +106,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Key Performance Indicator
   - name: "LLF"
@@ -49,8 +117,34 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Low Level Function
+  - name: "LoS"
+    guid: "{8F7625B4-0AC2-4be1-AC0F-C8FDC3B256AD}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      Level of Service
+  - name: "MS"
+    guid: "{85400B2F-6795-48da-9388-5B3CFEEF7DC0}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      Member State
   - name: "NAP"
     guid: "{1D986FAB-AD16-43aa-B5F4-AFB5A7C85151}"
     type: "Class"
@@ -58,8 +152,22 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       National Access Point
+  - name: "NIT"
+    guid: "{535090FF-D748-4ce5-9DB8-63A1D809D937}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      NAP IT Provider
   - name: "NLKF"
     guid: "{78BC68B5-54A6-432a-86EE-2AB9CBDB9ABD}"
     type: "Class"
@@ -67,8 +175,22 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       NAP LoS KPI Framework tool
+  - name: "NO"
+    guid: "{D593ADA4-93C6-4009-AD1B-A49507CDB4E0}"
+    type: "Class"
+    stereotype: "GlossaryEntry"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.1.0"
+    note: |
+      NAP Operator
   - name: "NRA"
     guid: "{5C13F53C-B882-4a8f-856E-26DDAFEBD460}"
     type: "Class"
@@ -76,5 +198,7 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       National Access Point Reference Architecture

@@ -15,6 +15,7 @@ elements:
     tags:
       "LocationDescription": ""
       "Standrdization": ""
+      "revised": "2025-07-04"
     note: |
       The Data Platform NAP sub system represents the hardware/software implementation of the ITS Service. It consists of modules performing data and metadata quality checks, hosting data and metadata, user data, and credentials, allowing the creation and retrieval of metadata records as well as real data from the internal database and user support.
     links:
@@ -29,5 +30,6 @@ elements:
     tags:
       "LocationDescription": ""
       "Standrdization": ""
+      "revised": "2025-07-04"
     note: |
       The Metadata Directory NAP sub system represents the hardware/software implementation of the ITS Service. It consists of modules performing metadata quality checks, hosting metadata, user data, and credentials, allowing the creation and retrieval of metadata records from the internal database as well as user support.

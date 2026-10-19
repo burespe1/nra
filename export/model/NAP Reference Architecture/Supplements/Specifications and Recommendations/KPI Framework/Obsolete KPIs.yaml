@@ -11,6 +11,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Quality indicators for datasets” KPI assesses the extent to which a NAP provides insight into the quality of the provided data/metadata. There are four possible values that this KPI may take. A value equal to 1 indicates that a NAP includes a description of the quality of the provided metadata (e.g., based on a pre-established metadata quality assessment scheme). A value equal to 2 indicates that a NAP provides a description of general quality definitions to support its users to self-assess the quality of utilized data or high-level quality assessment statements in the metadata of hosted publications. On the other hand, a value equal to 3 indicates that a more detailed data quality description is provided in the metadata of hosted publications; however, provided details and values do not cover the entirety of quality fields that may relate to the nature of exchanged data. Finally, a value equal to 4 indicates that there is a solid description of all fields. It is assumed that a NAP shall at least provide metadata quality descriptions for achieving a minimum acceptable level of service.
       
@@ -30,6 +32,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 10
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Related projects built on the NAP data” KPI is aims to assess how many external projects, platforms, or websites are based and benefited from NAP published in/accommodate through NAPs (irrespective of the utilized monitoring method). It is assumed that at least one project should be based on NAP data for achieving a minimum acceptable level of service.
       How many related services (applications, websites, end-user information services, etc.), were built, according to your best knowledge, using data offered by NAP within the last calendar year?
@@ -45,6 +49,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 12
+    tags:
+      "revised": "2025-07-04"
     note: |
       “NAP promotion – number of publications” KPI records the number of publications made by the NAP operator or national body within the last calendar year. It is assumed that at least three publications shall be made for achieving a minimum acceptable level of service.
       

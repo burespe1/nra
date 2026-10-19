@@ -12,6 +12,8 @@ elements:
     keywords: "Terminator"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The generic terminator role Data Provision System represents any interested entity in traffic, travel data storage. The Data Provision System can request storing traffic and travel data in the NAP Data store. Therefore, Function F3.6.8 Manage Data Input offers an access interface for machine-to-machine data upload. Authorisation is necessary, the Data Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.
       
@@ -29,6 +31,8 @@ elements:
     keywords: "Terminator"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The generic terminator role Data Requesting System represents any interested entity in traffic, travel data. The Data Requesting System can request traffic and travel data available in the NAP Data store. Therefore, Function F3.6.9 Manage NAP Data Retrieval offers a data distribution interface for machine-to-machine data retrieval.
       In some cases, especially when the data are pushed to the Content Consumer systems and / or authorisation is necessary the Data Requesting System must use credentials obtained by Content Consumer. When registering the Content Consumer will obtain credentials and / or to set up a machine account to which data are pushed.
@@ -48,6 +52,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The generic terminator role Metadata Provision System represents any compatible entity in metadata storage.
       The Metadata Provision System can request storing metadata in the NAP Metadata store. Therefore, Function Metadata Management Module offers an access interface for machine-to-machine data upload. Authorisation is necessary, the Metadata Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.
@@ -66,6 +72,8 @@ elements:
     keywords: "Terminator"
     status: "Proposed"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The generic terminator role Metadata Requesting System represents any interested entity in traffic and transport metadata dissemination. The Metadata Requesting System can request information stored in the NAP Metadata store in a standardized format (mobilityDCAT-AP) to incorporate said data into its information services (i.e. metadata harvesting). Therefore, Function F3.6.4 Manage NAP Metadata Retrieval offers a data distribution interface for machine-to-machine data retrieval.
       
@@ -84,6 +92,7 @@ elements:
     status: "Proposed"
     order: 0
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The generic terminator role of the NAP Content Consumer represents any interested entity in traffic and transport data. The Content Consumer can find available data via the NAP. Therefore, Function F3.6.4 Provide Access for NAP Meta-Data Retrieval offers an interface (typically a graphical user interface freely accessible via the Internet) to search the meta-data in D3.15 NAP Meta-Data
@@ -110,6 +119,7 @@ elements:
     status: "Proposed"
     order: 0
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       The generic terminator role of the NAP Content Provider represents any provider of traffic and transport data.
@@ -141,6 +151,7 @@ elements:
     version: "5.0"
     order: 12
     tags:
+      "revised": "2025-07-04"
       "status": "copy"
     note: |
       This Terminator shall represent the actors that participate in the National Access Point (NAP) ITS Service. This ITS Service provides a mechanism that enables organisations to access data available from other ITS Services. It shall consist of the following Terminators.

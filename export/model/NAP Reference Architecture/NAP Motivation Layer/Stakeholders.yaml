@@ -13,6 +13,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       A National Body (NB) typically refers to an organization, institution, or entity that operates at a national level. These bodies are established by the government or recognized by authorities to oversee, manage, regulate, or represent various aspects of national affairs. In this context, the main task of an NB is to support the quality of mobility data and services through an assessment process.
       In line with the legal framework of the ITS Directive 2010/40 amended by Directive (EU) 2023/2661 and related Delegated Regulations NB operates in the field of mobility. A NB is designated by a government and has to be impartial and independent from data providers and service providers.
@@ -26,6 +28,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Content consumers are national and international organizations using NAP-promoted data for added value services to their customers or parties using NAP-promoted data for enhancing their operational capabilities. Content Consumer includes the Data User term as it is specified in MMTIS and RTTI Regulations.
       Content Consumers based on the perceived benefit could be grouped as follows:
@@ -46,6 +50,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Content Providers are national and international organizations, data holders, data, and service providers who are required by the Delegated Regulations of the ITS Directive to make data and/or service accessible via the National Access Point. Content Provider includes the Data Holder term as it is specified in MMTIS and RTTI Regulations.
       According to the obligation to the Delegated Regulations Content providers are represented by:
@@ -64,6 +70,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The European Commission (EC) is part of the executive branch of the European Union (EU) responsible for proposing new European legislation, implementing the decisions of the European Parliament and the Council of the EU, and managing EU policies and budget.
     links:
@@ -77,6 +85,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       A Member State of the European Union is a sovereign country that is a member of the European Union (EU), a political and economic union. There are 27 member states as of 2023. These states are party to the EU’s founding treaties and are subject to the rights and obligations of membership, including access to the EU single market. They have agreed to share their sovereignty through the institutions of the EU in certain aspects of government.
     links:
@@ -89,6 +99,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       A NAP is a mechanism set up by Member States to facilitate access, exchange, and reuse of transport-related data. The NAP Operator ensures that these points function efficiently and effectively, maintaining the robustness and resilience of the transport data infrastructure.
     links:

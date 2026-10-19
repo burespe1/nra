@@ -21,6 +21,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       STUB: Recommended Reference Profiles (RRP's) give a harmonised interpretation of the data categories in the Delegated Regulations A, B, C and E of the EU ITS-Directive 2010/40.
       This concerns the following Delegated Regulations:
@@ -38,6 +40,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       STUB: The EIP Recommended Service Profiles aim to update and harmonize service descriptions for Intelligent Transport Systems (ITS) in Europe. This effort incorporates the latest advancements in digitalization and Cooperative Intelligent Transport Systems (C-ITS), as well as insights from best practices and EU EIP activities.
       Key goals include:
@@ -72,6 +76,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       STUB: The profile contains information such as details of used services, details of the objects used in an exchange, details on the options proposed by the standard, details on optional elements. NeTEx profiles are available to facilitate the implementation of the standard and to improve interoperability by focusing only on the elements that are needed and to fill small gaps voluntarily left by the standard to enable customisation. The European Passenger information profile (EPIP – NeTEx Part 4)6 is a profile focusing on minimum information required to be exchanged to feed passenger information systems (stop displays, mobile applications, journey planners etc.) based on DR MMTIS 2017/1926. The European Passenger Information Accessibility Profile (EPIAP- NeTEx Part 6)7 focuses on the accessibility facilities in stops, stations, vehicles (e.g., ramps, lifts, escalators etc.) for static data, according to MMTIS DR requirements. The respective real time data for both profiles are included in SIRI. The European profiles aim to facilitate the implementation of NeTEx but also to be the basis for the specification of national or local profiles, ensuring interoperability between countries and regions. The EU profiles consider also the existing national profiles, whenever exist, to focus on the common needs between countries and to adopt best approaches.
   - name: "IDACS Recommended Service Profiles"
@@ -82,6 +88,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       In the course of the Programme Support Action (PSA) “Data collection related to recharging/refuelling points for alternative fuels and the unique identification codes related to e-Mobility actors” that was subsequently given the name IDACS, or “ID and Data Collection for Sustainable fuels in Europe”, the 15 member states of the consortium mandatorily have to collect data related to alternative fuels infrastructures, namely electric charging points and hydrogen refuelling stations (HRS) as part of activity 2. Other alternative fuels, such as CNG, LNG, LPG and highly-blended biofuels can be covered optionally.
       As data collection mandatorily has to take place via the National Access Points (NAP) as defined in directive 2010/40/EU on the framework for the deployment of Intelligent Transport Systems in the field of road transport and for interfaces with other modes of transport, it is the aim of these profiles to give guidance on how this can be achieved.
@@ -95,6 +103,8 @@ elements:
     status: "Proposed"
     version: "1.5.1"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       STUB: UVARBox digitized five types of UVARs for which five profiles are available as RSP in the . The five UVAR types are: - low emission zones - limited traffic zones - pedestrian zones - congestion charging - parking zones
       As these profiles are based on un unstable version of DATEX II Traffic Regulations users have to be aware of non-interoperable changes are expected in a stable future v3 release of TrafficRegulation and ControlledZone.

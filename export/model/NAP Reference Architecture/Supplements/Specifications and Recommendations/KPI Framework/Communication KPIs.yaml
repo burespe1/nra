@@ -12,6 +12,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 8
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Support to users to register and add data/metadata” KPI assesses whether a NAP provides information to support NAP users how to register and (more importantly) how to add data, metadata, or both (depending on the type of NAP under evaluation). It is assumed that a NAP shall at minimum provide written support information in the local language (on the website or downloadable). This condition is indicated by a value equal to 1. The availability of such information in English language is indicated by a value equal to 2. The value of this KPI is increased by 1, either when additional support can be provided text-based via contact form, e-mail, text messenger; or when such support can be provided via telephone or web calls which can be booked; or when such support can be provided via chatbot.
       
@@ -37,6 +39,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 9
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Related services monitoring process” KPI assesses whether there is an implemented process that monitors the external relations of a NAP to indicate its influence on the development and operation of ITS services.
       
@@ -55,6 +59,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 11
+    tags:
+      "revised": "2025-07-04"
     note: |
       “NAP promotion channels” KPI records the different official channels, such as conferences, webinars, and social networking, that are used by the NAP operator within the last calendar year for promoting NAP. The possible values range from 0 to 5. The value is increased by 1, if either the NAP was promoted on a conference or trade fair, e.g. with a paper, a presentation, a special booth, flyers on the booth of the NAP operator; or if the NAP operator has organised one or more webinars to promote or inform about the NAP; or if the NAP was promoted on LinkedIn with an own account and at least two news items (or comparable on other social networks); or if the NAP was promoted with a dedicated paper in a journal. Any other channel which can be specified, can also increase the value by 1. It is assumed that at least three different channels shall be utilized for achieving a minimum acceptable level of service.
       
@@ -78,6 +84,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 13
+    tags:
+      "revised": "2025-07-04"
     note: |
       2.6 “Contact details” KPI aims to assess whether a NAP provides contact information (at least email address or telephone number) of the data providers to data consumers. The possible values of this KPI range from 0 to 2 with a value equal to 0 indicating that there are no provided contact details, a value equal to 1 indicating that the contact details of some data providers are made available through the NAP web page, a value equal to 2 indicating that contact details of all data providers are published. It is assumed that a NAP shall provide contact information of all data providers for achieving a minimum acceptable level of service.
       
@@ -96,6 +104,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 14
+    tags:
+      "revised": "2025-07-04"
     note: |
       2.7 and 2.8 “Mass notifications – data providers” and “Mass notification – data consumers” KPIs assess whether a NAP can massively notify registered data providers and data consumers, respectively, about the latest updates and changes. Its value ranges from 0 to 3. A value equal to 0 expresses that no mass notification functionality or procedure is in place. A value equal to 1 expresses mass notifications encompassing only legal updates (e.g., changes in terms and conditions of data reuse). The value is increased by 1 if mass notifications are tailored to the needs of data providers or consumers respectively, e.g. (for data providers) new requirements for data provision like a new data profile or (for data consumers) substantial changes in already published datasets. It is assumed that this KPI does not relate to the minimum acceptable level of service of a NAP but expresses an advanced level of service when notifications encompass both legal and content updates.
       
@@ -118,6 +128,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 15
+    tags:
+      "revised": "2025-07-04"
     note: |
       2.7 and 2.8 “Mass notifications – data providers” and “Mass notification – data consumers” KPIs assess whether a NAP can massively notify registered data providers and data consumers, respectively, about the latest updates and changes. Its value ranges from 0 to 3. A value equal to 0 expresses that no mass notification functionality or procedure is in place. A value equal to 1 expresses mass notifications encompassing only legal updates (e.g., changes in terms and conditions of data reuse). The value is increased by 1 if mass notifications are tailored to the needs of data providers or consumers respectively, e.g. (for data providers) new requirements for data provision like a new data profile or (for data consumers) substantial changes in already published datasets. It is assumed that this KPI does not relate to the minimum acceptable level of service of a NAP but expresses an advanced level of service when notifications encompass both legal and content updates.
       
@@ -140,6 +152,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 16
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Monitoring and evaluation” KPI assesses whether a NAP has implemented technical procedures for monitoring and evaluating its content. The value of this KPI is increased by 1, when a NAP complies with one of the following parameters. The first parameter involves the monitoring of the visibility of a NAP with counting the access, counting the number of search requests and/or the number of registered users. The second one involves the collection of statistics regarding the consumption of the datasets at a data platform NAP. The third one involves the measurement of the performance of the system (e.g., downtime, consequences for other systems, etc.), while the final one involves the assessment of the usefulness of a NAP (e.g., qualitative feedback on the re-use of the provided data, rating of quality, surveys, etc.). It is assumed that the current KPI is not related to the minimum acceptable level of service of a NAP.
       

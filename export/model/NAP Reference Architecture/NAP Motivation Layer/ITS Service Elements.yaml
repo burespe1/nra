@@ -13,6 +13,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 1
+    tags:
+      "revised": "2025-07-04"
     note: |
       To create a Single European Transport Area, underpinned by a digital layer that interlinks all elements of transport. This digital architecture, built on open and common standards and interfaces, will foster an efficient and secure data ecosystem.
     links:
@@ -25,6 +27,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 2
+    tags:
+      "revised": "2025-07-04"
     note: |
       National Access Points (NAPs) will be established across Europe, facilitating access, easy exchange, and reuse of transport-related data, thereby supporting the provision of EU-wide interoperable travel and traffic services to end users.
     links:
@@ -39,6 +43,7 @@ elements:
     order: 3
     tags:
       "Field of Application": ""
+      "revised": "2025-07-04"
     note: |
       The National Access Point of a Member State has specific tasks related to the Delegated Regulations of the ITS Directive 2010/40/EU, which are requested by the European Commission.
       The main task is to provide non-discriminatory central access information to data listed in Delegated Regulations.
@@ -58,6 +63,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 4
+    tags:
+      "revised": "2025-07-04"
     note: |
       Transport Network
       European road and railroad, tram and underground and ferry transport networks and extensible to Public Transport and Interfaces of other modes e.g. air and waterways.

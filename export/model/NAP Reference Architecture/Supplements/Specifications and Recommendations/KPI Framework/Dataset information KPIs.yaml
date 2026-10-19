@@ -12,6 +12,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 6
+    tags:
+      "revised": "2025-07-04"
     note: |
       5.1 “Documentation & description of datasets” KPI assesses whether the datasets of a NAP are accompanied by supporting material, such as documentation, high-level descriptions (included in a metadata filed), XML schemas or samples, or even further detailed documentation. The minimum level of service is associated with the provision of XML schemas or samples. In case there are available links with additional information about datasets, an advanced level of service is assumed.
       
@@ -32,6 +34,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 7
+    tags:
+      "revised": "2025-07-04"
     note: |
       5.2 “Classification of datasets” is the second KPI grouped into this category. Dataset classification can be based either on custom parameters such as parameters indicating the type of network or on formal terminology and coordinated metadata. A classification based on the former parameters is associated with a minimum acceptable level of service, while a classification based on the latter parameters is associated with a REQ required level of service.
       
@@ -51,6 +55,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 8
+    tags:
+      "revised": "2025-07-04"
     note: |
       5.3 “Quality indicators for datasets” KPI assesses the extent to which a NAP provides insight into the quality of the provided data/metadata. There are four possible values that this KPI may take. A value equal to 1 indicates that a NAP includes a description of the quality of the provided metadata (e.g., based on a pre-established metadata quality assessment scheme, or using the field available in the mobiltyDCAT-AP profile for the data provider to indicate the quality of the data). A value equal to 2 indicates that a NAP provides a description of general quality definitions to support its users to self-assess the quality of utilized data or high-level quality assessment statements in the metadata of hosted publications. On the other hand, a value equal to 3 indicates that a more detailed data quality description is provided in the metadata of hosted publications; however, provided details and values do not cover the entirety of quality fields that may relate to the nature of exchanged data. Finally, a value equal to 4 indicates that there is a solid description of all fields. It is assumed that a NAP shall at least provide metadata quality descriptions for achieving a minimum acceptable level of service.
       
@@ -71,6 +77,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 9
+    tags:
+      "revised": "2025-07-04"
     note: |
       Data visualization: This KPI assess the extent to which a NAP can support the visualization of its exchanged content. This means extended view on dataset information. Visualization options are divided according to the form of visualization, namely numbers and graphs, map outputs, or animations (that are typically relevant for time series of data).
       
@@ -95,6 +103,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 10
+    tags:
+      "revised": "2025-07-04"
     note: |
       Metadata visualization: This KPI assess the extent to which a NAP can support the visualization of metadata. This means extended view of aggregated dataset meta information.
       Visualization options are divided according to the form of visualization, namely numbers and graphs, map outputs.

@@ -1,7 +1,7 @@
 package: "NAP Reference Architecture/NAP Communication View"
 guid: "{A1024383-16F4-4ec8-B6E0-1F4E421F7C74}"
 alias: "Communication View"
-version: "2.0"
+version: "2.1.0"
 note: |
   The Communications View is a perspective that focuses on the interaction and data exchange between different components of the system. It outlines the communication protocols, data formats, and interfaces used for data transmission between different system elements.
   The Communications View is elaborated with respect of minimum functionality of two NAP types: Metadata Directory and Data Platform.

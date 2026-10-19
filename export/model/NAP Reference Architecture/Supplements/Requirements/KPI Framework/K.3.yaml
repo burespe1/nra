@@ -1,6 +1,6 @@
 package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.3"
 guid: "{1C8421BE-4A4B-4c12-884C-AD96EC080A39}"
-alias: ""
+alias: "K.3 Data Discovery"
 version: "1.0"
 note: ""
 elements:
@@ -8,11 +8,13 @@ elements:
     guid: "{4CE86A2C-C410-439b-AFFD-9793CCF8B41E}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide at least free-text search to find a datasets (e.g. considering text in title, description or in other metadata elements).
       
@@ -23,11 +25,13 @@ elements:
     guid: "{3EDFD1C1-DFC2-44f5-B31C-F85FBB99684A}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 1
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall support at least 2 of these search filtering options:
       
@@ -49,11 +53,13 @@ elements:
     guid: "{9BD4B8DE-4CA0-4a91-95F8-F0A7FD7CE558}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 2
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide of machine-readable metadata as Linked Data compliant to mobilityDCAT-AP
       

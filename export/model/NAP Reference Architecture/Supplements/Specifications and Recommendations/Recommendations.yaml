@@ -15,6 +15,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       NAPs shall assist in publishing (meta)data to the NAP
   - name: "Metadata insufficiency"
@@ -27,6 +28,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       NAPs shall communicate to content provider any provided metadata insufficiency, that, as a consequence, results in not publishing or removing published datasets.
   - name: "Notification"
@@ -39,6 +41,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       If subscribed: to notify CC about any outages and, optionally, additions to the NAP. NO must ensure that personal data is not misused, General Data Protection Regulation (GDPR) and to whom can it be disclosed. NO must provide the CC the right to delete the account on the NAP.
   - name: "Reuse metadata"
@@ -51,6 +54,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       NAPs shall provide the right to reuse the metadata including consensually provided personal information.
       To provide accurate, timely, and complete metadata.
@@ -64,5 +68,6 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       NAP shall ensure content provider that the provided metadata, data/services are not tampered by the NAP in any manner.

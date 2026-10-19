@@ -5,6 +5,28 @@ version: "1.0"
 note: |
   This chapter defines Roles taken by Actors in Organizational View, irrespective of the NAP type.
 elements:
+  - name: "Competent Authority / National Body (CA/NB)"
+    guid: "{43A7EC8B-5AD2-462b-8F3A-F564FD31B71C}"
+    type: "Object"
+    stereotype: "FRAME_Role"
+    keywords: "Role"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Key Issue": ""
+      "Role Part Of Value Chain": ""
+      "Role Value": ""
+      "Role View": ""
+      "revised": "2026-10-20"
+    note: |
+      Key issue:
+      The CA/NB supports stakeholder in fulfilling the ITS directive and to handover accordingly self-declarations. Perform the compliance assessment of Content Providers (CP) in accordance with the Delegated Regulations and communicate the results with the CPs and NAP Operator (NO) and Member State (MS).  Monitor the NAP operational performance and report to Member State (MS).  Operate objectively and independently from the NO and CPs.
+      
+      Tasks and responsibilities:
+      Identify and contact entities obliged to make their content accessible via the NAP, raising awareness of their obligations and facilitating onboarding.  Randomly and regularly check the compliance of CPs with the EU law requirements (e.g., related to the content and processes of sharing data) and monitor and report operational performance of the NAP.   Follow up on non-compliant results. Assist CPs to reach a successful Compliance Assessment result. Document the Compliance Assessment process, issue a report and share it with CPs, MS and NO.
+    links:
+      - "Association «defines» → Competent Authority / National Body"  # {1998DB38-9322-4fcd-9B7A-ED577A680474} → {B4E9C168-C4F3-4026-B334-9511627C14AC}
   - name: "European Commission (EC)"
     guid: "{1BC0C89E-82C2-4b54-8EF3-C2F663049E05}"
     type: "Object"
@@ -18,12 +40,16 @@ elements:
       "Role Part Of Value Chain": ""
       "Role Value": ""
       "Role View": ""
+      "revised": "2026-10-20"
     note: |
       Key issue:
-      Creation of the EU law that responds to the action plan and white/green books defining the advances in the health, safety, or environmental agendas.
+      
+      Creation of EU law that responds to the action plan and white/green books defining the advances in health, safety, or environmental agendas.
+      
       
       Tasks and responsibilities:
-      Create a legal document (based on the Expert input and MS consultation) to be adopted by the defined approval procedure. To observe the adoption of those legal documents (assessing the obligations of MSs and reacting in case of non-adoption).
+      
+      Create legal documents (based on expert input and Member State consultation) to be adopted through the defined approval procedure. Observe the adoption and implementation of those legal documents, assessing Member State obligations and reacting in cases of non-adoption.
     links:
       - "Association «defines» → European Commission"  # {FABB6D0D-EDF9-4fcc-894C-C1A8379FCCA0} → {142DFBFF-40C1-4f03-A7A7-E5125A5DE9FE}
   - name: "Member State (MS)"
@@ -39,12 +65,13 @@ elements:
       "Role Part Of Value Chain": ""
       "Role Value": ""
       "Role View": ""
+      "revised": "2026-10-20"
     note: |
       Key issue:
-      Transposition of the ITS Directive to the national law and setting up responsibilities for NAP and NB/CA operation.
+      Transposition of the ITS Directive into national law and setting up responsibilities for the NAP and the CA/NB operation.
       
       Tasks and responsibilities:
-      Create a legal framework for the operation of the NAP and NB/CA, including clear definitions of their responsibilities, duties, and rights. Clear definition of obligations of Content Providers and selected Content Consumers.
+      Create a legal framework for the operation of the NAP and CA/NB, including clear definitions of their responsibilities, duties, and rights. Constitute the obligations of Content Providers and selected Content Consumers as required by EU law and further specified in national legislation.
     links:
       - "Association «defines» → Member State"  # {4AD33F01-41A5-46f8-8719-A3B81DC3D610} → {28852F78-1BF6-4858-8E67-E45CF403D4E7}
   - name: "NAP Content Consumer (CC)"
@@ -60,14 +87,15 @@ elements:
       "Role Part Of Value Chain": ""
       "Role Value": ""
       "Role View": ""
+      "revised": "2026-10-20"
     note: |
-      IMPORTANT: Content Consumer includes the Data User term as it is specified in MMTIS and RTTI regulations
+      IMPORTANT: Content Consumer includes the terms Data User, Data Consumer, Data Recipient as specified in EU legal acts.
       
       Key issue:
       Specific Content Consumers shall integrate data shared at NAP and/or provide feedback to Content Providers.
       
       Tasks and responsibilities:
-      Provision of the service based on the consumed data, or any other task related to data processing and analysis. Sign a contract for content consumption with a content provider or with a proxy. Feedback to content providers. Timely and accurate integration of the subscribed content to their products and services.
+      Access and use data in accordance with the defined legal, licensing or contractual conditions. Abide to the Terms and Conditions of the NAP, including e.g., registration requirements, attribution requirements or special license conditions. Provide feedback to Content Providers (e.g., on access, quality or integration of the data), or, where applicable to the NAP via feedback channels. Ensure the proper, timely and accurate integration of the subscribed content to their products and services.
     links:
       - "Association «accepted by» → Privacy agreement (CC to NO) and general terms and conditions"  # {80010DB2-4CD6-42d4-AD69-983E77932321} → {AF555DF2-4535-42f6-993A-5BE72947BD12}
       - "Association «defines» → Content Consumer"  # {23DC667E-8339-4648-BFBC-B3033D35B957} → {0E811D0A-2C79-462f-B560-DD0A48A6E545}
@@ -88,14 +116,15 @@ elements:
       "Role Part Of Value Chain": ""
       "Role Value": ""
       "Role View": ""
+      "revised": "2026-10-20"
     note: |
-      IMPORTANT: Content Provider includes the Data Holder term as it is specified in MMTIS and RTTI regulation.
+      IMPORTANT: Content Provider includes the Data Holder, Data Provider, Service Provider terms as specified in EU legal acts.
       
       Key issue:
-      Publish metadata (and in certain cases data) at the NAP. Provide self-declaration and assistance in case of compliance assessment. Provide data in the prescribed format and with the desired level of quality.
+      Publish content (e.g., data, metadata, documents) at the NAP. Provide the required self-declaration(s) and accompanying documents in accordance with the compliance assessment process. Provide data in the prescribed format and with the desired level of quality, as required by EU law and further specified in national legislation.
       
       Tasks and responsibilities:
-      Publish content they generate based on requirements from the Delegated Regulations under the FRAND conditions. In cases of safety-related traffic information publish content for free. Be of assistance to the NB/CA when performing a compliance assessment and correct any issues found promptly. Publish data with a desired level of quality in a timely fashion and in a prescribed format.
+      Publish content they generate, hold, aggregate or curate and have the right to share based on requirements from the EU law and national law, under the FRAND conditions. Publish, free of charge, any content referent to categories that EU laws require free provision (e.g., safety-related traffic information). Collaborate with the CA/NB compliance assessment process and correct any issues found promptly. Publish content with the required level of quality, updated at an appropriate frequency, in a timely manner and up to date, using the prescribed format(s), as applicable.
     links:
       - "Association «defines» → Content Provider"  # {0060CFED-7AF7-428d-A308-4FBC3DF99B90} → {3F2BCF06-A0E6-4aac-BD7A-3395E43C395B}
       - "Dependency → Content Provider"  # {2AB5BDA7-3F11-41a5-938E-2837D7699DDB} → {87F179F8-1092-46de-BF4B-52A2A5768597}
@@ -117,12 +146,13 @@ elements:
       "Role Part Of Value Chain": ""
       "Role Value": ""
       "Role View": ""
+      "revised": "2026-10-20"
     note: |
       Key issue:
-      Manage IT allowing NAP operation under the service level agreement.
+      Manage the technical infrastructure enabling the operation of the NAP under the service level agreement.
       
       Tasks and responsibilities:
-      Set up the IT infrastructure. Scale the IT infrastructure according to the CPs, CCs, and NO demands. Operate, manage, and secure the infrastructure. Report to the NO and resolve promptly any technical issues. Provide technical user support.
+      Set up the IT infrastructure. Scale the IT infrastructure according to usage patterns, feedback and requirements established by the NAP Operator (NO). Operate, monitor, manage, and secure the infrastructure. Report to the NO and promptly resolve any technical issues affecting the proper operation of the NAP. Provide technical user support (e.g., address access issues, API usage, platform errors).
     links:
       - "Association «defines» → NAP Operator"  # {B6A9B3DF-79AD-49c7-9ED6-CA76F11BA4C0} → {B0B3260D-C376-4e8f-A620-72BC71353D5D}
       - "Dependency → NAP Maintainer"  # {824E4F9B-F144-4855-958E-1FEDC0B0A5A1} → {C36B6532-FE00-4759-82AB-2BF1908C6978}
@@ -140,16 +170,15 @@ elements:
       "Role Part Of Value Chain": ""
       "Role Value": ""
       "Role View": ""
+      "revised": "2026-10-20"
     note: |
       Key issue:
-      Publish information about Content Providers (CP) and their content in a transparent and timely manner. Provide free-to-all, barrier-free access to information collected by NO.
+      Publish information about Content Providers (CPs) and their content in a transparent and timely manner. Provide free-to-all, barrier-free access to information available in the NAP.
       
       Tasks and responsibilities:
-      Publish information about the responsibilities of the Content Providers (CP), and the purpose of the NAP. Provide guidance and help to entities obliged to publish metadata to the NAP. Publish metadata about Content Providers and their content, free-to-all, barrier-free at the NAP. Enable CP to update/insert any information about their content or their organization. Publish metadata quality guidelines. Handle the exceptions about metadata/data not meeting threshold conditions for its publication (i.e., content is not in prescribed format). Promote the NAP and provide support for the Content Providers and Content Consumers. Monitor metadata quality and, potentially, data usage and provide this information either at NAP (if in the public interest) or to MS. Report to the MS about its operation. Keep the NAP-published metadata up to date. Provide a mechanism to collect feedback from the Content Consumers (CC) on the Content Providers' content.
+      Ensure the accessibility of content through the NAP by providing the necessary means and conditions for Content Providers. Promote the NAP as a national source of ITS related information. Prepare, maintain and publish the Terms and Conditions of the NAP. Provide guidance and support to Content Providers and Content Consumers. Guarantee that metadata is accessible free-to-all and barrier-free at the NAP. Maintain and publish the Content Provider information in accordance with GDPR. Publish (meta)data quality guidelines. Establish mechanisms to facilitate the update, submission or publication of content at the NAP. Establish mechanism(s) to collect feedback from NAP Users. Set up quality measures, resolve reported issues, communicate with NAP Users when needed. Report NAP related statistics to the MS.
       
-      The tasks of the NAP Operator (or NAP) are NOT data processing, they publish Content Providers (meta)data in one place.
-      
-      NOTE: The organization performing the NAP Operator (NO) role can also perform other roles (i.e. Content Provider and Content Consumer) these roles do not intersect and shall be performed in such a way as to avoid conflict of interest.
+      NOTE: The organization performing the NAP Operator (NO) role may act also as Content Provider and/or Content Consumer. These roles shall be carried out in a way that avoids conflicts of interest.
     links:
       - "Association «defines» → NAP Operator"  # {1CB68449-7ACE-4e3e-9944-8C06841BEAC7} → {B0B3260D-C376-4e8f-A620-72BC71353D5D}
       - "Dependency → NAP Content Manager"  # {26AEC905-84D0-49f2-B178-DA68D5A8C6BF} → {C38BD0E0-09FA-457c-B964-75087C1C932E}
@@ -159,24 +188,3 @@ elements:
       - "Dependency → NAP User Manager"  # {7EA599AA-3C80-4be3-A2B5-E05EE7B7F329} → {8B67D738-5BDD-4043-B9D6-17D40F8C53DA}
       - "Dependency → NAP User Support"  # {A897A3ED-0204-4549-B491-69341B37A8E7} → {3D2ADCCA-F86E-4004-B3CA-CDA1049391A1}
       - "Dependency → User"  # {A524E6C3-3844-4eda-AFC4-9FDB0D46255F} → {13796023-E912-4a94-B857-0146211998B3}
-  - name: "National Body / Competent Authority (NB/CA)"
-    guid: "{43A7EC8B-5AD2-462b-8F3A-F564FD31B71C}"
-    type: "Object"
-    stereotype: "FRAME_Role"
-    keywords: "Role"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    tags:
-      "Key Issue": ""
-      "Role Part Of Value Chain": ""
-      "Role Value": ""
-      "Role View": ""
-    note: |
-      Key issue:
-      Provide a compliance assessment of the Content Providers (CP) and NAP operator (NO) with the Delegated Regulations and share these assessments with the CPs and NO. To operate objectively and independently from the NO and CPs.
-      
-      Tasks and responsibilities:
-      Randomly and regularly check the compliance of CPs and the NO with the Delegated Regulations (data and metadata are compliant and processes of sharing the data and reporting are compliant with the rules set up by Delegated Regulations). Follow up on non-compliant results, and report results to the MS and NO. Collaborate with CP to reach a successful Compliance Assessment. Identify and contact entities obliged to publish (meta)data to the NAP.
-    links:
-      - "Association «defines» → National Body / Competent Authority"  # {1998DB38-9322-4fcd-9B7A-ED577A680474} → {B4E9C168-C4F3-4026-B334-9511627C14AC}

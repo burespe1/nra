@@ -12,6 +12,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 3
+    tags:
+      "revised": "2025-07-04"
     note: |
       “On-line availability” KPI assesses whether the NAP platform is online or not. For the online case, the KPI assesses if there is some automated check used, and an example of such a tool is provided in the Note. The REQ value is set to 1 to reflect that the online availability of a NAP constitutes a fundamental prerequisite. The ACC value is set to 2, i.e., there is a gap if the availability is not checked using some automated service.
       
@@ -32,6 +34,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 4
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Compatibility with web browsers” KPI refers to the compatibility of NAP with 4 different most-used web browsers and possibility of periodic compatibility verification. The ACC KPI value is set to 3 indicating that a NAP platform should be operational with at least 3 web browsers (or 2 browsers but with periodic verification), whereas the REQ required KPI value is set to 0 to indicate that NAP is operational with at least one web browser. This KPI is closely related to the previous one, considering that its quantification makes sense only when a NAP is available online.
       
@@ -52,6 +56,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 5
+    tags:
+      "revised": "2025-07-04"
     note: |
       The "Homepage load time" assesses the time response of a NAP’s website by assessing the time in seconds needed to load a homepage. Tools are now added and some recommendations how to use them for this KPI.
       Please, measure load time from 3 different European cities other than your country, in daytime (8-16h), and make an arithmetic mean of the results. Use one or both of the following free services:
@@ -75,6 +81,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 6
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Responsiveness” KPI examines whether a NAP’s web design is adaptable to different devices and screen sizes. There is a tool provided in the Note. There are three possible values that this KPI may take. A value equal to 0 indicates that there is no responsiveness, a value equal to 1 indicates a basic responsiveness (for desktops/laptops), a value equal to 2 indicates that a NAP is responsive to more devices. Both necessary (REQ) and sufficient (ACC) levels of service are associated, in this case, with the basic responsiveness.
       Note: You can test your NAP webpage responsiveness using some web-based tool.
@@ -94,6 +102,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 7
+    tags:
+      "revised": "2025-07-04"
     note: |
       The "Web performance – simplicity / usability" is related to the average number of operations needed to gain access to specific information about a data resource (not necessarily involving the access to data itself). These operations may encompass mouse wheel movements, key presses, or mouse/screen clicks.
       
@@ -115,6 +125,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 8
+    tags:
+      "revised": "2025-07-04"
     note: |
       Web performance – consistency and navigability is related to the existence of a simple structure and the hierarchical arrangement of a NAP’s webpage. A value equal to 0 indicates the absence of a hierarchical arrangement, while a higher value indicates that a hierarchical arrangement exists (up to 6 options can be checked, see the values). This KPI also assesses the consistency of the layout of a NAP’s website. The adopted parameters for its assessment revolve around the position of menus during navigation, the utilized colours and fonts throughout the site, the availability of a search box, as well as the availability and position of a logo that links back to the home page. The value of this KPI is increased by one when a NAP complies with each one of the adopted parameters. It is assumed that a NAP should comply with at least (REQ) two of the adopted parameters to be addressed as exhibiting a minimum level of service (these parameters reflect elementary design principles of any web page/platform).
       
@@ -136,6 +148,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 9
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Support of commonly used languages” KPI may take four possible values. A value equal to 0 indicates that a NAP supports only the national language. A value equal to 1 indicates that although a NAP supports English, some of its content (e.g., metadata of included publications) is provided only in the national language. On the other hand, a value equal to 2 indicates that a NAP fully supports the English language.
       
@@ -159,6 +173,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 10
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Security – Technical” KPI addresses the existence of security features for access (i.e., security certificates). A value equal to 0 points out the absence of any security feature. A value equal to 1 indicates the existence of up-to-date security certificates in specific parts of a NAP’s website, while a value equal to 2 indicates the existence of up-to-date security certificates throughout the website of a NAP. In that case, a minimum level of service is assumed to be exhibited by a NAP when up-to-date SSL certificates cover at least the most critical (in terms of data protection) parts of a NAP’s website.
       
@@ -177,6 +193,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 11
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Security – providers verification” KPI assesses the extent to which the authenticity of provided data (e.g., input provided during the registration process) is verified. In case that a self-verification process is in place for data providers, this KPI takes a value equal to 1. On the other hand, when the authenticity of provided, data is doubled checked by both data providers and NAP operator, this KPI gets a value equal to 2.
       
@@ -192,7 +210,7 @@ elements:
       
       Minimum acceptable value for interoperability: 2
     links:
-      - "Abstraction → K1.10.1 providers verification"  # {3C6DF67C-6F4F-480e-BAEA-1CB591E32371} → {3F00CF71-2F41-413b-BAA8-CAF56CF80F39}
+      - "Abstraction → K.1.10.1 providers verification"  # {3C6DF67C-6F4F-480e-BAEA-1CB591E32371} → {3F00CF71-2F41-413b-BAA8-CAF56CF80F39}
   - name: "KPI 1.11 Personal data protection"
     guid: "{A5A53223-42A8-41bd-8565-C583560DA902}"
     type: "DeploymentSpecification"
@@ -200,6 +218,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 12
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Personal data protection” KPI aims to assess whether personal data is stored in a manner compliant to GDPR norms. This KPI is not addressed as affecting the minimum level of service of a NAP; however, the existence of a GDPR-compliant procedure for handling personal data is associated with an increased level of service.
       
@@ -220,6 +240,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 13
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Procedure for input of metadata or data to the NAP” KPI assesses whether data providers need to register to add (input) data/metadata. It gets a value equal to 0 when data or metadata is uploaded by the NAP operator, equal to 1 when data providers upload data/metadata by themselves, equal to 2 when there is some interface used by data providers. REQ level of service is associated with possibility on behalf of data providers to upload data/metadata by themselves with some interface.
       
@@ -238,6 +260,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 14
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Metadata access restrictions” KPI assesses whether NAP users/data consumers require to register to access the metadata of a NAP’s publications. The indiscriminate need of NAP users/data consumers to access any type of metadata is not addressed as a favourable condition for a NAP’s level of service, considering the imposed barrier to a NAP’s content discoverability. Therefore, it is assumed that a minimum level of service is associated with the possibility on behalf of NAP users/data consumers to freely access the metadata of publicly available publications.
       
@@ -259,6 +283,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 15
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Authentication and security mechanisms for data upload” KPI aims to assess the availability of security mechanisms controlling and restricting the possibility of data uploading. This KPI is addressed as making sense only if a NAP complies with the concept of a data portal. Given that several access and authentication control methods exist, the value of this KPI is increased by 1 for each method that is applied. The predetermined options include (a) the utilization of the HTTP Strict Transport Security (HSTS) mechanism that enables the interaction of a NAP’s server with other machines only through HTTPS connections, (b) the utilization of IP Address Authentication mechanism configuring the API Gateway of a NAP to allow its interaction with machines the IP address of which is included in the list of accepted IP addresses, (c) the Basic RFC 7617 Authentication mechanism which enforces the transmission of credentials (e.g., username and password) encoded according to Base64, (d) the utilization of the Digest RFC 7617 Authentication which enforces the transmission of credentials and any other requested information in an encrypted form, (e) the authentication by URL parameters enabling the provision of authentication information to a NAP in the form of query string parameters, (f) authentication through client certificates that allow a machine to communicate with a NAP only when a client certificate (e.g., a PKCS12 file) is loaded onto that machine, and (g) authentication using tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0).
       
@@ -288,6 +314,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 16
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Authentication and security mechanisms for data download” KPI aims to assess the availability of security mechanisms controlling and restricting the possibility of data downloading. This KPI is addressed as making sense only if a NAP complies with the concept of a data portal. Given that several access and authentication control methods exist, the value of this KPI is increased by 1 for each method that is applied. The predetermined options include (a) the utilization of the HTTP Strict Transport Security (HSTS) mechanism that enables the interaction of a NAP’s server with other machines only through HTTPS connections, (b) the utilization of IP Address Authentication mechanism configuring the API Gateway of a NAP to allow its interaction with machines the IP address of which is included in the list of accepted IP addresses, (c) the Basic RFC 7617 Authentication mechanism which enforces the transmission of credentials (e.g., username and password) encoded according to Base64, (d) the utilization of the Digest RFC 7617 Authentication which enforces the transmission of credentials and any other requested information in an encrypted form, (e) the authentication by URL parameters enabling the provision of authentication information to a NAP in the form of query string parameters, (f) authentication through client certificates that allow a machine to communicate with a NAP only when a client certificate (e.g., a PKCS12 file) is loaded onto that machine, and (g) authentication using tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0).
       
@@ -317,6 +345,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 17
+    tags:
+      "revised": "2025-07-04"
     note: |
       “Indication of provided data modification” KPI assess the extent to data changes information. KPI 1.16 is regarding “on-line” information in the data coming with the latest version of data and belongs to data platform NAP type only. Thanks to this information, it is simple to find out if the actual content has changed in comparison to its previous state. In such a case, it is assumed that a minimum level of service is associated with the support of at least one of the possible methods. An advanced level of service is associated with the support of more methods. The pre-defined methods are “Last updated date and/or time” information included in the data and 2 applications of ability of a NAP’s webserver to use “etag” headers (the value of which supports the assessment of whether a change has been made or not) and return the changed part of the provided content. 4th option has been added as open for any other method that should be described in the feedback.
       Note: etag = a hash containing information about data modification that allows to download the data only if it is different from the previous version.
@@ -341,6 +371,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 18
+    tags:
+      "revised": "2025-07-04"
     note: |
       1.17 “Data transfer optimization” KPI assesses the extent to which a NAP can optimize data transferring by compressing the requested content. This KPI is addressed as making sense only if a NAP complies with the concept of a data platform, since a metadata directory is not involved at all in the data transferring process. A value equal to 0 indicates that such a functionality does not exist, while a value “+1” indicates that some of the possible transfer optimization methods are available, i.e., compression possibility, compression client’s request (de)activation possibility or differential form of provided data.
       Note: This KPI is for data platform NAP type only. For metadata directory NAP type, you answer the first option. Technically, the KPI is skipped in an on-line questionnaire after “metadata directory” NAP type selection.
@@ -363,6 +395,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 19
+    tags:
+      "revised": "2025-07-04"
     note: |
       1.18 “API usage for data transfer” KPI investigates whether a NAP is equipped with an Application Programming Interface (API) service that allows clients of data consumers to request and download data content through external code or other resources matching specific queries. Moreover, it investigates whether such a service allows the clients of data providers to automatically upload and import (through external coding) new data content but also update it or even delete it.
       This KPI is addressed as making sense only if a NAP complies with the concept of a data platform, since a metadata directory is not involved at all in the data transferring process. Given that the focus of NAPs is placed (or at least should be placed) on machine-to-machine communication and data exchange supporting the operation of ITS systems, a minimum level of service is associated with the existence of an API service allowing at least one of automated download or automated upload of data content.
@@ -387,6 +421,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 20
+    tags:
+      "revised": "2025-07-04"
     note: |
       The Web performance – (meta)data load time assesses the time response of a NAP’s website by loading the meta(data) the time in seconds needed to load a homepage). Tools are now added and some recommendations how to use them for this KPI.
       
@@ -416,6 +452,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 21
+    tags:
+      "revised": "2025-07-04"
     note: |
       KPI 1.21 is regarding “off-line” metadata information about data changes (update frequency and/or expected regular times of data updates, each as “Value +1”). Higher evaluation (next “Value +1”) is applied if Mobility DCAT-AP is used in such metadata information.
       

@@ -2,17 +2,20 @@ package: "NAP Reference Architecture/Supplements/Requirements/Legal Requirements
 guid: "{1749BBC0-2AE8-464a-94D5-30C58E9BC6DF}"
 alias: "Legal Requirements"
 version: "1.0"
-note: ""
+note: |
+  Requirements derived from the legal specifications, i.e. the ITS Directive and its Delegated and Implementing Regulations. Each requirement refers to its source and is linked to the architecture elements that fulfil it.
 elements:
-  - name: "L.1.1 Public website accesibility"
+  - name: "L.1.1 Public website accessibility"
     guid: "{A51F2AC6-F30A-41f9-A541-C79492AE8B88}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2026-10-20"
     note: |
       Member States shall ensure that public sector bodies take the necessary measures to make their websites and mobile applications more accessible by making them perceivable, operable, understandable and robust.
       
@@ -20,15 +23,17 @@ elements:
       L1 Directive (EU) 2016/2102 - Website Accessibility
     links:
       - "Association «fulfilled by» → EU Legal Framework (EC to MS)"  # {9F09EBBA-E483-40d2-AED6-BFBFB54220DD} → {D91DD8AD-EAF3-4d4d-97EC-2668B2AFB9EC}
-  - name: "L.1.2 Platform accesibility"
+  - name: "L.1.2 Platform accessibility"
     guid: "{F35D46F9-3ED9-4a74-AAC7-83BC2FFCD46A}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 1
     tags:
       "Requirement Category": ""
+      "revised": "2026-10-20"
     note: |
       The platform shall comply with conformance level AA of the “Web Content Accessibility Guidelines Web - WCAG 2.1” or with the applicable European standard EN 301 549 V2.1.2 (2018-08).
       
@@ -37,17 +42,19 @@ elements:
     links:
       - "Association «fulfilled by» → Data Platform NAP"  # {1DA4E46A-4FCA-4e99-BA40-E6988E2EEFB5} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
       - "Association «fulfilled by» → Metadata Directory NAP"  # {71375158-E81E-4b46-8D43-1A455D01B517} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
-  - name: "L.2.1 National Body support"
+  - name: "L.2.1 CA/NB support"
     guid: "{E6106D59-DA87-4922-86F9-2C886A68B717}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 2
     tags:
       "Requirement Category": ""
+      "revised": "2026-10-20"
     note: |
-      The NAP shall fully disclose all received information/evidence to the NB/CA assisting in the assessment process.
+      The NAP shall fully disclose all received information/evidence to the CA/NB assisting in the assessment process.
       
       Source:
       L2 Regulation (EU) No 886/2013 - SRTI
@@ -55,16 +62,18 @@ elements:
       L4 Regulation (EU) 2022/670 - RTTI (recast)
       L5 Regulation (EU) 2017/1926 - MMTIS
     links:
-      - "Association «fulfilled by» → Collaboration Agreement (NB/CA to NO)"  # {2C1D663C-289D-41b0-8F48-72EAC2810BEF} → {0B562BCC-408D-4b46-9039-5A275BDFDD86}
+      - "Association «fulfilled by» → Collaboration Agreement (CA/NB to NO)"  # {2C1D663C-289D-41b0-8F48-72EAC2810BEF} → {0B562BCC-408D-4b46-9039-5A275BDFDD86}
   - name: "L.2.5 Information provision on NAP"
     guid: "{01A81D55-8849-4dc4-BCA4-0FC22836D828}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 3
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide functionalities to enable ITS directive relevant data provider to publish relevant information about data/services (e.g., Metadata) and information on the data quality at the NAP.
       
@@ -80,11 +89,13 @@ elements:
     guid: "{0F70486B-CC74-49de-9030-3CD319E1E03A}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 4
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       NAPs shall provide appropriate discovery services to NAP users / Content Consumers (CC).
       
@@ -96,17 +107,19 @@ elements:
     links:
       - "Association «fulfilled by» → F3.6.4 Manage Metadata Retrieval"  # {595CF938-ACD3-42a2-8B6C-F5088B948ED5} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {D08A4199-70C9-4581-A168-27096238D2F5} → {832264BF-9750-421b-9BFF-C77CE32FA053}
-  - name: "L.2.9 NB/CA access"
+  - name: "L.2.9 CA/NB access"
     guid: "{6F3CFCE8-0D04-4436-A95E-1FE1EE9AAA3A}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 5
     tags:
       "Requirement Category": ""
+      "revised": "2026-10-20"
     note: |
-      NAPs shall allow the NB/CA to access stored information about the CPs at the NAP and cooperate with NB/CA on the ITS directive implementation.
+      NAPs shall allow the CA/NB to access stored information about the CPs at the NAP and cooperate with CA/NB on the ITS directive implementation.
       
       Source:
       L2 Regulation (EU) No 886/2013 - SRTI
@@ -122,11 +135,13 @@ elements:
     guid: "{D4156A89-0ED7-433c-958A-3595DFC04FE1}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 6
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall enable the access to AFIR-data via exposing CPO's APIs.
       
@@ -137,11 +152,13 @@ elements:
     guid: "{E1E0521B-2F0E-4c6f-BE85-EB719519603A}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 7
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       If the platform aggregates AFIR-data, it may provide those data to a common European access point by means of an API.
       
@@ -152,11 +169,13 @@ elements:
     guid: "{20EB6C72-5D11-49f7-8692-86134D5D4931}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 8
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       Platforms shall be compliant with any GDPR rules for any personal information used on the platform.
       The Platform shall clearly state the use, data processing and data related methods (e.g. deletion) on the website.

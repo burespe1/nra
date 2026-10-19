@@ -13,6 +13,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CC-DMM; Content Consumer - Data Management Module
       Type: User interface
@@ -26,6 +28,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CC-UMM; Content Consumer - User Management Module
       Type: User interface
@@ -39,6 +43,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CC-mdMM; Content Consumer - Metadata Management Module
       Type: User interface
@@ -54,6 +60,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CC-SM; Content Consumer - Support Module
       Type: User interface
@@ -67,6 +75,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CP-DMM; Content Provider - Data Management Module
       Type: User interface
@@ -80,6 +90,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CP - UMM; Content Provider – User Management Module
       Type: User interface
@@ -93,6 +105,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CP-mdMM; Content Provider - Metadata Management Module
       Type: User interface
@@ -108,6 +122,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: CP - SM; Content Provider - Support Module
       Type: User interface
@@ -121,6 +137,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: DRS - DMM; Data Requesting System - Data Management Module
       Type: Programming Interface
@@ -134,6 +152,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: DPS - DMM; Data Provision System - Data Management Module
       Type: Programming Interface
@@ -147,6 +167,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Identification: mdRS – mdMM; Metadata Requesting System - Metadata Management Module
       Type: Programming Interface
@@ -164,6 +186,7 @@ elements:
     order: 0
     tags:
       "Optional": "True"
+      "revised": "2025-07-04"
     note: |
       Identification: mdPS - mdMM; Metadata Provision System - Metadata Management Module
       Type: Programming Interface

@@ -1,6 +1,6 @@
 package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.7"
 guid: "{246631BC-F949-463d-8410-E0936F42D21B}"
-alias: ""
+alias: "K.7 Data Exchange and Operational"
 version: "1.0"
 note: ""
 elements:
@@ -8,11 +8,13 @@ elements:
     guid: "{D72070D6-9ECF-411a-8281-534019823FD6}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall  provide terms and conditions and/or standardized licenses framework such as “CC (Creative Commons) License” for reuse of metadata and NAP website content.
       
@@ -24,11 +26,13 @@ elements:
     guid: "{8A1CF06F-F5C9-4f65-B5F6-84DA47139132}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 1
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall encourage use of standardized license framework  for all published datasets.
       
@@ -40,11 +44,13 @@ elements:
     guid: "{1941874B-D599-4a5b-A6EA-6209F7E72127}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 2
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide self-declaration forms/templates without any additional involvement in process.
       
@@ -55,11 +61,13 @@ elements:
     guid: "{747DB3C3-C956-4030-9637-30756698054B}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 3
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall associate dataset with Delegated Regulations using the vocabulary of the mobiltyDCAT-AP.
       

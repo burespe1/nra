@@ -1,7 +1,0 @@
-name: empty line
-id: {892BE0FF-7061-45b0-9498-195BB14DC851}
-kind: template/fragment
-sections: []
-options: modcreate="-1" statuslike="-1" phaselike="-1" beforeafter="-1" pkgorder="1" elemorder="1" featorder="1" dgmorder="1" pkgasc="0" elemasc="0" featasc="0" dgmasc="0" imagefmt="0" hindent="9" noteless="0" skiproot="0" statuslist="" phase="All" exdetails="" wordsubst="0" nobookmarks="0" hideanonymous="0" htmlformating="0" exconndetails="" exdiagdetails="" conndirfilter="0" childelements="0" notelessconn="0" fragment="1" fragment_type="0" script_guid="" status_clr="0" elem_as_help="0" prop_filters="0" all_diag_elems="0" packageexclude_type="0" packageexclude_guid=""/
-
-....... ........ List20388784_1; . .. ... .... ..... ...... ....... ........ List20404961_1; . .. ... .... ..... ...... ....... ........ List20425398_1; \* Figure : Table : <template> <element> <if test="len(trim(element.notes)) > 0"> <notes> <content> \Element.Notes\ </content> </notes> </if> </element> </template>

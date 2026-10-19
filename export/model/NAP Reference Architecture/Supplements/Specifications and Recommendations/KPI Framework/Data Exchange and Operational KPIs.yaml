@@ -12,6 +12,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       7.1 “Terms and conditions for reuse of metadata and NAP website content ” KPI assesses, from the perspective of a NAP operator, whether a NAP operator provides descriptive or detailed information about the terms and conditions for reuse of data or content to which NAP is the owner such as: metadata, or data originally provided by NAP, or other content displayed at the NAP. A value equal to 0 points out an absence of such a provision, a value equal to 1 indicates that there is a descriptive provision (e.g. “fair use” limit), while a value equal to 2 indicates that there is a detailed provision through standardized data licensing frameworks such as “CC (Creative Commons) License”. It is assumed that a NAP should at least provide descriptive information about the terms and conditions for data reuse.
       
@@ -30,6 +32,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       7.2 “Terms and conditions for data reuse from data providers” KPI assesses, from the perspective of data provider, whether a data provider provides descriptive/detailed information about the terms and conditions of data advertised by the data provider at the NAP. A value equal to 0 points out an absence of such a provision, a value equal to 1 indicates that there is a descriptive provision, while a value equal to 2 indicates that there is a detailed provision through sample contracts or standardized data licensing frameworks such as CC – (Creative Commons) License. It is assumed that a NAP should at least mandate detailed provision through sample contracts or standardized data licensing frameworks about the terms and conditions for data reuse.
       The difference between 7.1 " Terms and conditions for reuse of metadata and NAP website content " and 7.2 " Terms and conditions for data reuse from data providers " KPIs lies in perspective: 7.1 assesses whether the NAP operator provides clear information on terms and conditions for data reuse, while 7.2 evaluates whether data providers publishing on the NAP offer similar clarity regarding their data reuse terms.
@@ -51,6 +55,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Operational procedure information: KPI assesses whether a NAP includes guidelines and operational procedures that need to be followed for becoming a data provider or data consumer of a NAP or, general responsibilities (who is responsible for doing what within or while using the NAP). In this case, the ACC value is set to 1 reflecting that NAPs provide such guidelines.
       
@@ -75,6 +81,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       7.4 “Dataset compliance assessment indicator"” KPI examines whether a NAP provides information on the self declarations provided by data or service providers on compliance of its datasets or services with the requirements set by the Delegated Regulations supplementing the ITS Directive. These requirements include ensuring data quality (e.g. accuracy, timeliness and reliability), accessibility, adherence to specified exchange timeframe, support for data re-use (e.g. machine readable formats), and regular update of the provided data. A value equal to 1 indicates that a NAP provides information on the results (how many) of processed self-declaration form that ha been submitted by the provider of a dataset, attesting the compliance with these requirements. A value equal to 2 indicates that a NAP provides information about the results of compliant services and data sets, verifying adherence to these standards. However, this KPI is assumed as not relating to the minimum acceptable level of service of a NAP.
       
@@ -91,6 +99,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Compliance assessment support by NAP” KPI assesses whether a NAP facilitates the procedure of compliance assessment by providing self-declaration templates or by enabling data providers to submit self-declarations (to National Bodies). In the first case, the KPI is equal to 1, whereas in the second one the KPI is equal to 2. This KPI is once again assumed as not relating to the minimum acceptable level of service of a NAP.
       
@@ -110,6 +120,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       7.6 “Association of published datasets with Delegated Regulations” KPI assesses whether the metadata provided by a NAP can indicate the relevance of its datasets with the Delegated Regulations supplementing the ITS Directive (using European legislation identifier according to the mobiltyDCAT-AP profile). Both ACC and REQ value is set to 1, reflecting that such an association is necessary.
       

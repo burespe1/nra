@@ -13,6 +13,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The National Body expects better and easier access to the content providers and their services (with their description and (observed) qualitative parameters) as they are being promoted through NAP, instead of finding and reaching out to the content consumer separately.
     links:
@@ -25,6 +27,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Content Providers expect to fulfil obligations stipulated by the ITS Directive and related Delegated Regulations and as side effects increase the visibility of their data by publishing them (or respective metadata) at the NAP and increase the usability of their data by adopting EU-wide recommended standards and profiles.
     links:
@@ -37,6 +41,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       Member State is the main protagonist in creating and implementing European Policy through the European Parliament and legislature development process. It has similar expectations to the European Commission e.g. more efficient transport and fewer accidents. It also has expectations targeted to increased use of governmental data as well as data from private parties. Better cross-border traffic management and increased MS cooperation.
     links:
@@ -49,6 +55,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The NAP Operator is the main facilitator of the data and service exchange between provider and consumer. They expect an easy / defined operational and legislative environment laid out by Member States.
     links:
@@ -61,6 +69,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The European Commission is the main policy facilitator, it proposes and implements legislation. The EC expectations are stipulated within the EU mobility strategy documents and are ultimately focused, regardless of age, health, and gender, on reducing the environmental impact of European transport and reducing fatalities and accidents on European roads through the facilitation of easy-to-access-EU-wide harmonized traffic and travel data exchange. The European Commission establishes a common framework for EU harmonisation legislation for placing services on the market at the EU level to ensure that EU-wide ITS information service is provided following the EU specifications.
     links:
@@ -73,6 +83,8 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2025-07-04"
     note: |
       The Content Consumer expects all mobility data or services accessible online at one place (NAP), uniformly described, accessible to all, and with content aligned by recommended standards and/or relevant profiles.
     links:

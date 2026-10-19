@@ -13,6 +13,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall have at least annual procedure to keep metadata maintained and updated by a content provider.
       
@@ -28,6 +29,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide operational procedure information about the processes in the NAP.
       e.g.: Registration of potential data provider, How issues are handled
@@ -44,6 +46,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       Content provider shall provide up-to-date and accurate data with a desired level of quality, in the prescribed format.
       
@@ -63,6 +66,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall enable Content Consumer to report to the content provider (CP) any inaccuracies related to the data without delay.
       
@@ -80,6 +84,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       Technical system for the cross-border automated exchange of evidence and application of the ‘once-only’ principle
       
@@ -124,6 +129,7 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       If the Member State defines the NAP as critical infrastructure according to NIS II, the platform has to fulfill the requirements according to NIS II regulation.
       
@@ -139,6 +145,7 @@ elements:
     order: 1
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall track the use of the data available at the NAP either based on the user feedback or by using a tool.
       
@@ -152,6 +159,7 @@ elements:
     order: 4
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide Mass notifications to registered providers in at least one of the following ways:
       
@@ -171,6 +179,7 @@ elements:
     order: 4
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall support at least one of following data visualization:
       
@@ -192,6 +201,7 @@ elements:
     order: 5
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide mass notifications of the data consumers about at least legal (T&C) updates
       
@@ -205,6 +215,7 @@ elements:
     order: 5
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall support at least one of the following metadata visualization:
       
@@ -225,6 +236,7 @@ elements:
     order: 6
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall monitor and evaluate the success and impact of the NAP, by using at least one of following options:
       

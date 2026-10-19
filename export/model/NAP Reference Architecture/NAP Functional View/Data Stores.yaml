@@ -34,6 +34,7 @@ elements:
       "itemKind": "Information"
       "itemSubjectRef": ""
       "monitoring": ""
+      "revised": "2025-07-04"
       "transaction numbers over time": "10"
     note: |
       This Data Store shall be used within the Manage Traffic Functional Area. It shall contain information objects that provide traffic and travel data.
@@ -80,6 +81,7 @@ elements:
       "itemKind": "Information"
       "itemSubjectRef": ""
       "monitoring": ""
+      "revised": "2025-07-04"
       "status": "copy"
       "transaction numbers over time": "10"
     note: |
@@ -126,6 +128,7 @@ elements:
       "itemKind": "Information"
       "itemSubjectRef": ""
       "monitoring": ""
+      "revised": "2025-07-04"
       "status": "copy"
       "transaction numbers over time": "10"
     note: |

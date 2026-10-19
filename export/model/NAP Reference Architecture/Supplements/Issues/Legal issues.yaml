@@ -30,12 +30,12 @@ elements:
     note: |
       Feedback loop from Content Consumer to Content Provider
       
-      Functionality for granting NB/CA access to information
+      Functionality for granting CA/NB access to information
       
       Discussion with KPI-Team needed!!
     links:
       - "Association → L.2.4 Reporting obligation"  # {E925600F-6C99-4944-B5CA-6E808CBEA56F} → {ED7D9261-5E1A-4278-93F5-1159D460C378}
-      - "Association → L.2.9 NB/CA access"  # {558F42CC-8DC6-46b6-9CF4-FF0500A5615E} → {6F3CFCE8-0D04-4436-A95E-1FE1EE9AAA3A}
+      - "Association → L.2.9 CA/NB access"  # {558F42CC-8DC6-46b6-9CF4-FF0500A5615E} → {6F3CFCE8-0D04-4436-A95E-1FE1EE9AAA3A}
   - name: "Issue: Agreement Missing"
     guid: "{CE7A9755-57B2-4f08-8288-D04B0A5D68A2}"
     type: "Issue"

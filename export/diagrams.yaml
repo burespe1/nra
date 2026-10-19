@@ -248,6 +248,7 @@
     - "Clear set of requirements"
     - "Companies engaged in providing transport services and entities ensuring transport services benefit"
     - "Competent Authority / National Body"
+    - "Competent Authority / National Body"
     - "Content Consumer"
     - "Content Consumer"
     - "Content Provider"
@@ -277,7 +278,6 @@
     - "NAP Operator"
     - "NAP Operator"
     - "National Access Point mission statement"
-    - "National Body / Competent Authority"
     - "Public (end users) benefit"
     - "Public Administration benefit"
     - "Scientific and Research institutions benefit"
@@ -287,11 +287,23 @@
 - name: "NAP Organisational View"
   guid: "{57D36614-A861-4aeb-8D07-84BB90CFFE58}"
   package: "NAP Reference Architecture/NAP Organisational View"
-  note: ""
+  note: |
+    The Organisational View provides information about the Actors, their Roles and responsibilities, and relationships between roles in terms of lawful or contractual relationships. It also depicts the processes relevant to the ITS deployment (owns, plans, maintains, deploys, implements, tenders, …).
+    
+    The View consists of Actors assuming one or more Roles, the Agreements between the Roles, and their relations to the Components and Modules.
+    
+    In the NAP Reference Architecture, the main Actors are the European Commission, the Member State, the Competent Authority / National Body, the NAP Operator, the NAP IT Provider, the NAP Content Provider, and the NAP Content Consumer. The Organisational View describes the responsibilities, obligations and the typical representatives of each role. It also describes the lawful obligations of these roles, modelled as relationships between the law-making Roles (European Commission and Member State) and the other Roles. It further outlines the expected content of contractual relationships between the Roles.
+    
+    
+    
+    IMPORTANT: All lawful obligations come from the policy maker Roles (EC and MS) towards other Roles. Contracts between two non-policy-making roles do not repeat obligations already defined by law.
   elements:
-    - "Collaboration Agreement (NB/CA to NO)"
+    - "Collaboration Agreement (CA/NB to NO)"
+    - "Competent Authority / National Body"
+    - "Competent Authority / National Body (CA/NB)"
     - "Content Consumer"
     - "Content Provider"
+    - "Content provision contract/agreement"
     - "Content usage contract (CP to CC)"
     - "EU Legal Framework (EC to MS)"
     - "European Commission"
@@ -307,9 +319,7 @@
     - "NAP IT Provider (NIT)"
     - "NAP Operator"
     - "NAP Operator (NO)"
-    - "National Body / Competent Authority"
-    - "National Body / Competent Authority (NB/CA)"
-    - "National Law or Contract (MS to NB/CA)"
+    - "National Law or Contract (MS to CA/NB)"
     - "National Law or Contract (MS to NO)"
     - "Privacy agreement (CC to NO) and general terms and conditions"
 - name: "NAP Physical View - Data Platform"
@@ -481,15 +491,15 @@
     - "Communication View - Legend"
     - "Communication View - interfaces"
     - "Functional View - Functions"
-    - "Functional View - Functions"
+    - "Functional View - Functions introduction"
     - "Functional View - Heading, Notes, Diagram"
     - "Functional View - Items"
     - "Functional View - Legend"
     - "Glossary"
     - "Introduction - Heading, Notes, Diagram"
+    - "Motivation Layer - Added Value, Expectations, Specifications"
     - "Motivation Layer - Heading, Notes, Diagram"
-    - "Motivation Layer - Items"
-    - "Motivation Layer - Items"
+    - "Motivation Layer - ITS Service Elements"
     - "Motivation Layer - Legend"
     - "Motivation Layer - Stakeholders"
     - "Organisational View - Actors"

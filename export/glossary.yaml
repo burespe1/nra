@@ -2,14 +2,30 @@
   type: "Definition"
   meaning: |
     is what the ITS Stakeholders aim to achieve by the implementation / operation of the ITS Service. Business Expectations could be the political, economic, social, socio-economic, socio-political, operational, organisational, safety, and efficiency-related added values that are associated with an ITS service and are formulated as goals. These expectations are used together with the ITS Mission Statement to define the ITS Service
+- term: "CA/NB"
+  type: "Abbreviation"
+  meaning: |
+    Competent Authority / National Body
+- term: "CC"
+  type: "Abbreviation"
+  meaning: |
+    Content Consumer
+- term: "Competent Authority / National Body"
+  type: "Definition"
+  meaning: |
+    impartial and independent public or private entity designated by a Member State to monitor the operation of the National Access Point and to verify compliance of Content Providers with the requirements established by the ITS Directive and its Delegated Regulations. The term National Body can be used interchangeably with Competent Authority, but it carries an additional requirement of impartiality and independence; the term remains valid in current legislation.
 - term: "Content Consumer"
   type: "Definition"
   meaning: |
-    any stakeholder that is specified by the delegated regulations explicitly as the user of the data/services made available by Content Providers via NAP. It includes the Data User term as it is specified in MMTIS and RTTI regulations.
+    public or private entity that accesses, retrieves or uses data or information made accessible through the National Access Point for the purpose of developing services, applications or analyses. It includes the Data User, Data Consumer and Data Recipient terms as specified in EU legal acts.
 - term: "Content Provider"
   type: "Definition"
   meaning: |
-    any stakeholder that is required by the delegated regulations to provide data/information or services to the Content Consumers via NAP. It includes the Data Holder term as it is defined in MMTIS and RTTI regulations.
+    public or private entity that supplies content (e.g., data, metadata, documents) to the National Access Point, making it available for reuse in accordance with the requirements of EU legal acts and national laws. It includes the Data Holder, Data Provider and Service Provider terms as specified in EU legal acts.
+- term: "CP"
+  type: "Abbreviation"
+  meaning: |
+    Content Provider
 - term: "Data Flow"
   type: "Definition"
   meaning: |
@@ -26,6 +42,14 @@
   type: "Abbreviation"
   meaning: |
     Enterprise Architect unique identifier, uniquely identifying the object within the model
+- term: "EC"
+  type: "Abbreviation"
+  meaning: |
+    European Commission
+- term: "FDF"
+  type: "Abbreviation"
+  meaning: |
+    Functional Data Flow
 - term: "HLF"
   type: "Abbreviation"
   meaning: |
@@ -33,7 +57,7 @@
 - term: "ITS"
   type: "Abbreviation"
   meaning: |
-    Intelligent Transportation Systems
+    Intelligent Transport Systems
 - term: "ITS Actor"
   type: "Definition"
   meaning: |
@@ -78,6 +102,10 @@
   type: "Abbreviation"
   meaning: |
     Low Level Function
+- term: "LoS"
+  type: "Abbreviation"
+  meaning: |
+    Level of Service
 - term: "Metadata directory"
   type: "Definition"
   meaning: |
@@ -85,19 +113,35 @@
 - term: "Mobility data"
   type: "Definition"
   meaning: |
-    Mobility data includes all data types that are directly related to a person or good movement via motorized or non-motorized, individual or public transport, or new transport modes. It includes general real-time and statistical information.
+    Mobility data includes all data types that are directly related to the movement of persons or goods via motorized or non-motorized, individual or public transport, or new transport modes. It includes general real-time and statistical information.
 - term: "Module"
   type: "Definition"
   meaning: |
-    a computer programs within Sub-systems that perform ITS functions and communicate via ITS interfaces. They can be replicated wholly or partly across locations.
+    computer programs within Sub-systems that perform ITS functions and communicate via ITS interfaces. They can be replicated wholly or partly across locations.
+- term: "MS"
+  type: "Abbreviation"
+  meaning: |
+    Member State
 - term: "NAP"
   type: "Abbreviation"
   meaning: |
     National Access Point
+- term: "NAP Operator"
+  type: "Definition"
+  meaning: |
+    public or private entity designated to manage, maintain and operate the National Access Point, ensuring the accessibility of data and that the NAP functions in line with the requirements of the applicable EU legal acts, further specified in national legislation or governance documents.
+- term: "NIT"
+  type: "Abbreviation"
+  meaning: |
+    NAP IT Provider
 - term: "NLKF"
   type: "Abbreviation"
   meaning: |
     NAP LoS KPI Framework tool
+- term: "NO"
+  type: "Abbreviation"
+  meaning: |
+    NAP Operator
 - term: "NRA"
   type: "Abbreviation"
   meaning: |
@@ -105,7 +149,7 @@
 - term: "Physical Data Flow"
   type: "Definition"
   meaning: |
-    a communication channel in ITS, either Internal (linking Sub-systems/Modules) or External (connecting to Terminators/Actors). They're based on a pre-checked Functional View.
+    a communication channel in ITS, either Internal (linking Sub-systems/Modules) or External (connecting to Terminators/Actors). They are based on a pre-checked Functional View.
 - term: "Specification"
   type: "Definition"
   meaning: |

@@ -5,6 +5,25 @@ version: "1.0"
 note: |
   This chapter defines Actors interacting with the NAP in Organizational View, irrespective of the NAP type.
 elements:
+  - name: "Competent Authority / National Body"
+    guid: "{B4E9C168-C4F3-4026-B334-9511627C14AC}"
+    type: "Actor"
+    stereotype: "FRAME_Actor"
+    keywords: "Actor"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+    note: |
+      A Competent Authority / National Body is an impartial and independent public or private entity designated by a Member State to monitor and report to the MS the operation of the National Access Point and to verify compliance of the Content Providers (CPs) with the requirements established by the ITS Directive and its Delegated Regulations, including the prescribed availability and accessibility, format, and quality requirements for data and services made accessible through the National Access Point.
+      
+      Note: The term National Body can be used interchangeably with Competent Authority, but it carries an additional requirement of impartiality and independence for the organisation towards Service Providers, public and private Road Operators, Parking Operators and Broadcasters. The term National Body remains valid in current legislation.
+      
+      Represented by:
+      Usually, a Member State department of the Ministry of Transport. The Competent Authority / National Body assignment shall be formalised through explicit designation in national law. Can also be represented by a private entity assigned by and cooperating with the government body
+    links:
+      - "Abstraction «is Type of» → Competent Authority / National Body"  # {B77330A7-30F9-4348-AD41-1C78FB74E173} → {60AC1314-7147-4d43-89C6-2CD3B26BDEBE}
   - name: "Content Consumer"
     guid: "{0E811D0A-2C79-462f-B560-DD0A48A6E545}"
     type: "Actor"
@@ -13,29 +32,30 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      Public and private organizations that are using static or dynamic traffic and travel information or any other relevant content, made accessible, under the Delegated Regulations obligations, via NAP, to create multimodal or traffic and travel or mobility information or were provided by the terms and conditions using the data for other related purposes. They are one or a group of actors who get added value by using data promoted by NAP.
+      Public or private entity that accesses, retrieves, or uses data or information made accessible through the National Access Point for the purpose of developing services, applications, or analyses.
       
-      NOTE1: We do not create objects for each Content Consumer actor type.
-      NOTE2: Content Consumer includes the Data User term as it is specified in MMTIS and RTTI regulations.
+      NOTE1: Content Consumer includes the terms Data User, Data Consumer and Data Recipient terms as specified in EU legal acts.
       
       Content Consumer actor represents and fulfils the interests of the Content Consumer Stakeholder.
       
       Represented by:
       
-      	- road authorities
-      	- public or private road operator/s
-      	- traffic managers
-      	- tolling operators
-      	- service providers*
-      	- broadcasters dedicated to traffic information
-      	- transport authorities,
-      	- transport operators,
-      	- travel information service providers,
-      	- digital map producers,
-      	- transport on-demand service providers
-      	- infrastructure managers
-      	- data users, any public or private entity or any other entity using data listed in the Delegated Regulations
+      	- Road authorities
+      	- Public or private road operators
+      	- Traffic managers
+      	- Tolling operators
+      	- Service providers
+      	- Broadcasters dedicated to traffic information
+      	- Transport authorities
+      	- Transport operators
+      	- Travel information service providers
+      	- Digital map producers
+      	- Transport on-demand service providers
+      	- Infrastructure managers
+      	- Data users, any public or private entity or any other entity using data accessible via NAP.
     links:
       - "Abstraction «is Type of» → Content Consumer"  # {CE250A94-50C3-4082-A073-5ADA4F4062DA} → {77E9CEBA-B991-4860-A6D3-952CAD1B776E}
   - name: "Content Provider"
@@ -46,15 +66,35 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      Any legal person, data subject, or public or private entity/organization who has the right to grant access to or to share the data under its control. The subject in question shall hold the data that are required to be made accessible via NAP by or more of the Delegated Regulations.
+      Public or private entity that supplies content (e.g., data, metadata, documents) to the National Access Point, making it available for reuse in accordance with the requirements of the EU legal acts and National Laws.
       
-      NOTE1: We do not create objects for each Content Provider actor type.
-      NOTE2: Content Provider includes the Data Holder term as it is specified in MMTIS and RTTI regulations.
+      NOTE1: Content Provider includes the Data Holder, Data Provider, Service Provider terms as specified in EU legal acts.
       
       Content Provider actor represents and fulfils the interests of the Content Provider Stakeholders.
       
       Represented by:
+      
+      	- Automotive industries (when acting as service providers)
+      	- Broadcasters dedicated to traffic information
+      	- Holders of in vehicle generated data
+      	- Infrastructure managers
+      	- Operators of publicly accessible recharging points
+      	- Operators of publicly accessible refuelling points
+      	- Owners of recharging/refuelling infrastructure
+      	- Public or private parking operators
+      	- Public or private road operators
+      	- Recharging and refuelling related stakeholders
+      	- Road authorities
+      	- Service providers*
+      	- Tolling operators
+      	- Transport authorities
+      	- Transport operators
+      	- Transport on demand service providers
+      	- Travel information service providers
+      
       
       For the RTTI (2022/670) concerning:
       
@@ -64,7 +104,7 @@ elements:
       	- data on the real-time use of the network: road authorities, public or private road operator/s, holders of in-vehicle generated data, service providers*, recharging and refuelling-related stakeholders
       
       
-      * ‘service provider’ means any public or private provider of a real-time traffic information service, excluding a mere conveyer of data to data users;
+      * ‘service provider’ means any public or private provider of a real-time traffic information service, excluding a mere conveyer of data-to-data users;
       
       For the SRTI (886/2013) concerning:
       
@@ -96,8 +136,11 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      European Union responsible entity for the creation of the law and its publication.
+      European Union’s main executive body, responsible for proposing legislation, its publication, upholding EU treaties and ensuring Member States apply EU law and policies.
+      
       European Commission actor represents and fulfils the interests of the European Commission Stakeholder.
       
       Represented by:
@@ -112,8 +155,11 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      European Union Member State is the responsible entity for the application and transposition of ITS-related EU laws and the creation of the national legal framework for the operation of the NAP and its surrounding entities.
+      European Union country responsible for the application and transposition of ITS-related EU laws and the creation of the national legal framework for the operation of the NAP and its surrounding entities.
+      
       Member State actor represents and fulfils the interests of the Member State Stakeholder.
       
       Represented by:
@@ -128,28 +174,14 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
-      Any public or private organization responsible for collecting and publishing information about content generated by Content Providers (metadata) under the Delegated Regulations obligations, to any interested party (Content Consumers) without prejudice.
+      Public or private entity designated to manage, maintain and operate the National Access Point, ensuring the accessibility of data and that the NAP functions in line with the requirements of the applicable EU legal acts, further specified in national legislation or governance documents.
       
-      The NAP (National Access Point) Actor represents and fulfils the interests of the NAP (National Access Point) Stakeholder.
+      The National Access Point (NAP) Actor represents and fulfils the interests of the National Access Point (NAP) Stakeholder.
       
       Represented by:
-      Usually, a department of the MS relevant Ministry (responsible for Transport matters), a state-owned organization, or a research organization. Usually, based on the explicit stating of the entity in the national law.
+      Usually, a department of the Member State’s ministry responsible for transport, a state-owned organisation, or a research institution acts as NAP Operator. The organisation fulfilling this role is generally designated explicitly in national legislation or related governance documents.
     links:
       - "Abstraction «is Type of» → NAP Operator"  # {1DF4BB96-2848-4dee-AF41-9340F2D054B0} → {4B4D9772-CCE6-459c-B5E0-80E3C5C32674}
-  - name: "National Body / Competent Authority"
-    guid: "{B4E9C168-C4F3-4026-B334-9511627C14AC}"
-    type: "Actor"
-    stereotype: "FRAME_Actor"
-    keywords: "Actor"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    note: |
-      Independent entity performing compliance assessment of the Content Providers, their specific content, the NAP operation, and reporting its findings to the MS.
-      The NB/CA (National Body / Competent Authority) actor represents and fulfils the interests of the National Body / Competent Authority Stakeholder.
-      
-      Represented by:
-      Usually, a department of the MS Ministry of Transport and an independent body. Based on the explicit naming of the entity in the national law. The NB/CA shall be independent of CPs and NOs since it checks its compliance.
-    links:
-      - "Abstraction «is Type of» → Competent Authority / National Body"  # {B77330A7-30F9-4348-AD41-1C78FB74E173} → {60AC1314-7147-4d43-89C6-2CD3B26BDEBE}

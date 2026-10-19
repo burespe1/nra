@@ -1,6 +1,6 @@
 package: "NAP Reference Architecture/Supplements/Requirements/KPI Framework/K.6"
 guid: "{0DE00589-00C6-4eda-813F-15F539ED8FA1}"
-alias: ""
+alias: "K.6 Interoperability"
 version: "1.0"
 note: ""
 elements:
@@ -8,11 +8,13 @@ elements:
     guid: "{808C630F-74B1-46ed-91AF-3A16E94E6616}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
     order: 0
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall be full compliance/adopted with the MobilityDCAT-AP specification
       
@@ -23,11 +25,13 @@ elements:
     guid: "{3031B4C2-3C66-4139-BC26-B3914F8D3146}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 0
+    order: 1
     tags:
       "Requirement Category": ""
+      "revised": "2025-07-04"
     note: |
       The platform shall provide harvesting interface or protocols for exporting/querying metadata (e.g., RESTful API, CSW, CKAN), allowing other portals to retrieve metadata.
       
