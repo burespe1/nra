@@ -36,8 +36,7 @@ elements:
     note: |
       The platform shall encourage use of standardized license framework for all published datasets.
       
-      Source:
-      KPI 7.2 Terms and conditions for data reuse from data providers
+      Source: KPI 7.2 Terms and conditions for data reuse from data providers
     links:
       - "Association «fulfilled by» → Metadata Management Module"  # {76028265-E062-4a86-888B-2E0EA669A462} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
   - name: "K.7.3.1 Operational procedure information"
