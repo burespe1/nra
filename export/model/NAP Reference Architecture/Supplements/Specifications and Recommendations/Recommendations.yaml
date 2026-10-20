@@ -51,7 +51,7 @@ elements:
       
       Description: NAPs shall assist content providers in publishing (meta)data to the NAP.
       
-      Additional details: The obligation to publish falls on the content provider, while the means of publishing are controlled by the NAP operator. A provider that cannot publish correctly therefore produces a compliance failure that is attributed to the Member State, not to the provider alone, which is what makes assistance a NAP duty rather than a courtesy. In practice it means: publication instructions that are written down, versioned and current; a test or staging endpoint where a provider can try a publication before it becomes public; validation feedback that names the element that failed rather than rejecting a submission as a whole; a named contact or helpdesk with a stated response time; and onboarding support for providers publishing for the first time. How far the assistance goes — self-service documentation, a helpdesk, or hands-on data preparation — is a resourcing decision for the NAP operator and differs legitimately between Member States. What should not differ is that the level offered is stated, so that a provider knows what to expect.
+      Additional details: The content provider is responsible for publishing; the NAP operator provides the means. Assistance covers up-to-date publication instructions, a contact point or helpdesk with a stated response time, support for first-time publishers and, where available, a test environment for trial publications. The NAP operator decides the level of assistance and states it, so that content providers know what to expect. Feedback on the quality of submitted metadata is covered by R3 Metadata quality feedback.
   - name: "R3 Metadata quality feedback"
     guid: "{BC945A8B-01D0-4f70-9484-586F0F7F9325}"
     type: "Requirement"
@@ -66,11 +66,11 @@ elements:
     note: |
       Type: Recommendation
       
-      Full Name: Quality gate with feedback to the content provider
+      Full Name: Metadata quality feedback to the content provider
       
-      Description: Where a publication is of insufficient quality to be accepted, the NAP contacts the data provider and says so. The provider is given the opportunity to make improvements, after which the publication can proceed.
+      Description: Where the metadata provided by a content provider are insufficient, the NAP informs the content provider of the deficiencies that prevent the publication of the dataset or lead to the removal of an already published dataset. The content provider is given the opportunity to correct the metadata before the dataset is refused or removed.
       
-      Additional details: This describes a quality gate with a feedback loop, not a silent rejection, and the loop is the point: the provider is told what is wrong and gets an opportunity to fix it before the publication is refused. Making that workable needs four things. Published quality criteria, so that “insufficient” is testable rather than a matter of opinion. A validation report that identifies what failed and where. A stated period within which the provider can correct and resubmit. And a record of the exchange, so that a recurring quality problem is visible as a pattern rather than as a series of unrelated rejections. There is a deliberate tension with the “Not tampered by the NAP” recommendation: because the NAP must not alter provider content, the gate can only accept or reject with feedback — it must never quietly correct. The recommendation bears mainly on the Metadata Directory role, where the NAP holds the metadata record and can assess it directly; where the NAP only references a remote dataset, the assessable object is the metadata, not the data behind it.
+      Additional details: The feedback concerns the metadata record held by the NAP, not the data it describes. It requires published quality criteria, a validation report that identifies the deficient elements, a period for correction and resubmission, and a record of the exchange. The assessment of metadata quality can follow R7 MQA and is performed by F3.6.6 Provide Metadata Quality Checks.
   - name: "R4 Not tampered by the NAP"
     guid: "{C1EA86E6-A64D-41b8-9E07-E71ACD5F9088}"
     type: "Requirement"
@@ -89,7 +89,7 @@ elements:
       
       Description: The NAP shall assure the content provider that the metadata, data and services it provides are not altered by the NAP in any way.
       
-      Additional details: The NAP is a conduit, not an editor. The content provider remains the author of the data and remains accountable for it, and that accountability only holds if the NAP does not change what was submitted. Concretely: no silent normalisation of values, no re-encoding that changes meaning, and no enrichment presented as though it came from the provider. Where the NAP does transform — converting a format, harvesting a record into mobilityDCAT-AP, deriving a summary — the transformation should be declared and the original should remain identifiable and retrievable, so that a consumer can tell provider content from NAP content. This is also what keeps the NAP’s role narrow under the GDPR (see L7): a NAP that alters or enriches content moves closer to determining the means of processing. The usual technical means are a checksum or signature over the submitted artefact, retention of the artefact as submitted, and a documented transformation chain.
+      Additional details: The NAP does not modify the metadata, data or services submitted by the content provider. Information that the NAP generates itself, such as a metadata quality score or the availability of a distribution, is computed and updated by the NAP; it is kept separate from the provider’s content and identified as generated by the NAP.
   - name: "R5 Notification"
     guid: "{8DE95B47-D58D-4339-BE76-DBACC7909669}"
     type: "Requirement"
@@ -108,7 +108,7 @@ elements:
       
       Description: Where a Content Consumer (CC) has subscribed, the NAP notifies them of any outage and, optionally, of additions to the NAP. The NAP Operator (NO) must ensure that the personal data collected for that subscription is not misused, must state to whom it may be disclosed in accordance with the General Data Protection Regulation (GDPR), and must give the Content Consumer the right to delete their account on the NAP.
       
-      Additional details: Two separate duties sit in this recommendation and both apply. The first is service availability: a content consumer who has built a service on a NAP feed needs to be told about outages, planned and unplanned, and ideally about additions. The notification channel must not depend on the NAP being up — a status page, a mailing list or a feed hosted elsewhere — or it fails exactly when it is needed. This duty is distinct from the incident notification required under NIS2 (L12): that one runs to the national CSIRT or competent authority, this one runs to the users, and meeting one does not meet the other. The second duty follows from the first: operating a subscription list is itself the processing of personal data. The NAP operator therefore needs a lawful basis for it, a retention period, a statement of who the data may be disclosed to, and a working way for a content consumer to delete their account and with it their subscription. Subscription data collected for outage notices should not be reused for anything else.
+      Additional details: The recommendation is implemented through the agreements between the NAP Operator and the Content Consumer: the privacy agreement, which covers the processing of the subscription data, and the general terms and conditions, which include the licence for the use of the NAP (see Privacy agreement (CC to NO) and general terms and conditions).
   - name: "R6 Reuse metadata"
     guid: "{D01BC616-BDA0-4444-9C0E-AE363B819E22}"
     type: "Requirement"
@@ -127,7 +127,7 @@ elements:
       
       Description: NAPs shall grant the right to reuse the metadata, including personal information provided with consent, and shall provide metadata that is accurate, timely and complete.
       
-      Additional details: This recommendation has a licensing half and a quality half, and both are needed for it to mean anything. Licensing: the metadata a NAP holds should carry an explicit open licence, so that a harvester — a national open data portal, the European data portal, another NAP — may reuse it without asking first. Absent a stated licence the default is that all rights are reserved and harvesting is legally uncertain, which is enough to stop it happening. Where a metadata record contains personal information, typically a contact name for the content provider, the reuse right extends only as far as the consent that was given for it, and that boundary should be visible in the record. Quality: accurate, timely and complete means the record actually matches the dataset it describes and is updated when that dataset changes, which in practice requires either provider-driven updates or periodic revalidation by the NAP — a metadata record that has silently drifted from its dataset is worse than no record, because it is trusted. This recommendation is the operational counterpart of the Open Data Directive obligations in L13, and mobilityDCAT-AP is the vocabulary in which it is expressed.
+      Additional details: The metadata carry an explicit open licence, so that national open data portals, the European data portal and other NAPs can harvest and reuse them. Personal information in a metadata record, typically a contact person of the content provider, is reused only within the consent given. Accurate, timely and complete means that the metadata record corresponds to the dataset and is updated when the dataset changes. The recommendation supports the obligations of L13 Open Data Directive; the metadata are expressed in S8 mobilityDCAT-AP.
   - name: "R7 MQA"
     guid: "{27EC8DD4-99C6-429E-BF00-AA6461544103}"
     type: "Requirement"
