@@ -63,15 +63,6 @@ elements:
       Option b is nice to have.
     links:
       - "Association → KPI 6.2 Harvesting functionalities"  # {8F54C300-F51A-4c9f-A6F7-07E62193F8FA} → {42A19936-0BD4-4750-977F-441851A057FE}
-  - name: "No requirement for the platform"
-    guid: "{EC670059-EF71-4e2a-B47E-5DFE83B2E046}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    note: ""
-    links:
-      - "Association → KPI 3.4 Map-based search"  # {16DDC25D-38C9-4e74-AA64-6B68684EE1D8} → {DB4A4825-A22D-49af-804A-54E7A0CC948E}
   - name: "Request"
     guid: "{D23C70E9-F3C0-4918-8EEC-537A8CB6F503}"
     type: "Issue"

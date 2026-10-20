@@ -41,6 +41,8 @@ elements:
       	- CKAN FileStore & DataStore APIs – Interfaces for file uploads and tabular data access
       	- CKAN GitHub Repository – Source code, issue tracking, and plugin ecosystem
       	- CKAN Harvesting Extension – Plugin for federated metadata harvesting across portals
+    links:
+      - "Association → Does not yield a Requirement"  # {3D32F737-F7E6-4953-A1F6-177E32852644} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S10 OAI-PMH"
     guid: "{B2EDFAA0-DF8A-4744-A9E6-FBEBA0011D75}"
     type: "DeploymentSpecification"
@@ -72,6 +74,8 @@ elements:
       	- OAI-PMH Validator – Validator & data extractor tools
       	- OAI-PMH Metadata Harvesting Overview (CLARIN) – Presentation on protocol structure and use cases
       	- Technical Recommendations for Member States – Harvesting Guidelines (PDF) – EU guidance on metadata harvesting for open data portals and NAPs
+    links:
+      - "Association → Does not yield a Requirement"  # {A0934392-EB6F-4AA9-A554-0A3457C75BAB} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S11 OCPI"
     guid: "{4472B597-2F44-461b-B7B1-74BCACB02E64}"
     type: "DeploymentSpecification"
@@ -101,6 +105,8 @@ elements:
       	- OCPI Guide – AMPECO – Practical overview of OCPI modules, roles, and use cases.
       	- EVRoaming Foundation – Governance body responsible for OCPI development and stakeholder coordination.
       	- OCPI–DATEX II Mapping Guidance – NAPCORE – Field-level correspondence for NAP-compliant integration.
+    links:
+      - "Association → Does not yield a Requirement"  # {9FEF8BB8-A7D0-4FD5-A5C1-4FF3159C92B7} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S12 OJP"
     guid: "{77DBDD7C-6A16-4195-AFE6-3D44A30E8033}"
     type: "DeploymentSpecification"
@@ -129,6 +135,8 @@ elements:
       	- OJP Specification – Transmodel Portal – Overview of the standard, architecture, and use cases.
       	- Swiss OJP Implementation – OpenTransportData.ch – National profile and deployment example.
       	- OJP GitHub Repository (Unofficial) – Sample implementation and interface bindings.
+    links:
+      - "Association → Does not yield a Requirement"  # {6CC48DB7-C6EB-4DC2-9C53-9129628CBCDE} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S13 OpRa"
     guid: "{1240A1C8-FD0D-4239-8295-88D948622D90}"
     type: "DeploymentSpecification"
@@ -156,6 +164,8 @@ elements:
       
       	- OpRa Overview – Transmodel Portal – Scope, use cases, and conceptual alignment
       	- DATA4PT OpRa Workstream – Coordination of OpRa evolution and implementation support
+    links:
+      - "Association → Does not yield a Requirement"  # {D1498028-8740-4D0F-8793-340AB8BE55B4} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S14 SIRI"
     guid: "{E14C46B0-7A08-4284-BF7D-294B3FD4373B}"
     type: "DeploymentSpecification"
@@ -245,6 +255,8 @@ elements:
       	- TOMP Working Group Website – Governance, use cases, and stakeholder engagement
       	- TOMP API Swiss Profile (PDF) – National implementation guidance
       	- TOMP API SwaggerHub Documentation – Interactive OpenAPI interface
+    links:
+      - "Association → Does not yield a Requirement"  # {2ED1EB05-615E-44C1-985C-A6BF4337868B} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S17 Transmodel"
     guid: "{0D35A5A5-9321-4869-84CD-A33C1C285172}"
     type: "DeploymentSpecification"
@@ -303,6 +315,8 @@ elements:
       
       	- mobilityDCAT-AP – The mobility extension of this profile, and the NAPCORE baseline for NAP metadata.
       	- data.europa.eu data provider manual – What a harvested record must contain to be accepted by the European data portal.
+    links:
+      - "Association → Does not yield a Requirement"  # {971D356E-9F00-429E-B921-575370B00935} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S19 ERA Ontology"
     guid: "{7C8A9F83-2ED2-4B4E-9AA1-A4D97AE4AA90}"
     type: "DeploymentSpecification"
@@ -426,6 +440,8 @@ elements:
       	- GBFS Validator Tool – Online tool for schema validation and feed diagnostics.
       	- GBFS Systems Catalog – List of known GBFS-compliant deployments.
       	- GBFS website: GBFS specification web site
+    links:
+      - "Association → Does not yield a Requirement"  # {C2F34660-AF57-4AE5-92EC-7DA9B2630202} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S4 GTFS"
     guid: "{CAEF2437-B0BA-4aac-BFEB-3A8CE86835D6}"
     type: "DeploymentSpecification"
@@ -454,6 +470,8 @@ elements:
       	- GTFS Schedule Reference – Defines required and optional files (e.g. stops.txt, routes.txt, trips.txt) and field-level specifications.
       	- GTFS Realtime Specification – Protocol buffer-based format for vehicle positions, trip updates, and service alerts.
       	- GTFS Community Forum – Governance and change proposal process.
+    links:
+      - "Association → Does not yield a Requirement"  # {5BD12B73-5100-4D44-9BE2-6B65D3C0BB4F} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S5 GTFS-RT"
     guid: "{BD5ADEA6-B249-4fad-ACB8-298D1542C33F}"
     type: "DeploymentSpecification"
@@ -483,6 +501,8 @@ elements:
       	- GTFS Realtime Best Practices – Implementation guidance for latency, update frequency, and feed architecture.
       	- GTFS Realtime GitHub Repository – Official bindings and protocol definitions.
       	- GTFS Realtime Libraries & Demo Apps: Tools and applications for producing and consuming GTFS-RT feeds.
+    links:
+      - "Association → Does not yield a Requirement"  # {29657316-32D6-47F9-8852-513A8B9B5084} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "S6 IATA SSIM"
     guid: "{EEC79522-E329-4da9-89B6-82617E53E335}"
     type: "DeploymentSpecification"

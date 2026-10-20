@@ -220,6 +220,8 @@ elements:
       	- Legal Specification: L10 – TEL TSI – The first mobility act to build its data-sharing obligations explicitly on the Data Act.
       	- Regulation (EU) 2022/868 – Data Governance Act – The companion act governing reuse of protected data and data intermediation (L16).
       	- European Commission – Data Act explanatory page – Scope, application dates and guidance.
+    links:
+      - "Association → Does not yield a Requirement"  # {E225AA32-A01F-4AB6-97BA-994A971EAED3} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "L16 Data Governance Act"
     guid: "{FB40A081-6B20-4F80-8310-AD9B4C0B53E0}"
     type: "DeploymentSpecification"
@@ -302,6 +304,8 @@ elements:
       
       	- Commission Delegated Regulation (EU) No 885/2013 – SSTP – The act requiring the data to be published through the NAP (L3).
       	- Regulation (EC) No 561/2006 – driving times and rest periods – The parent act; the reason the parking standards exist at all.
+    links:
+      - "Association → Does not yield a Requirement"  # {C8D9E16B-996E-4071-AE6A-D76B234CD270} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
   - name: "L2 SRTI"
     guid: "{4B31C570-BDB3-4ccd-A917-C3680106BA2A}"
     type: "DeploymentSpecification"

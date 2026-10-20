@@ -94,3 +94,5 @@ elements:
       b. A map or map section can be used to filter displayed search results
       
       Minimum acceptable value for interoperability: 0
+    links:
+      - "Association → Does not yield a Requirement"  # {06480954-5B8C-437E-8034-6DA8EB639EED} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
