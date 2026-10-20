@@ -13,8 +13,9 @@ note: |
   Those types are presented via TWO diagrams, each depicting functionality of respective type.
 elements:
   - name: ""
-    guid: "{555524C2-A564-41E2-A7BC-7B192F0F00F1}"
-    type: "Note"
-    order: 1
-    note: |
-      Legend: light blue fill = function with RequirementLevel OPTIONAL (Guideline 05).
+    guid: "{157FF1B9-E7BA-48c4-A764-48CC1EAE7300}"
+    type: "Text"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    note: ""
