@@ -3,7 +3,7 @@ guid: "{6A10582A-DB0D-4ec1-91B4-48C9FD9D7F5B}"
 alias: "Actors"
 version: "1.0"
 note: |
-  This chapter defines Actors interacting with the NAP in Organizational View, irrespective of the NAP type.
+  This chapter defines Actors interacting with the NAP in Organisational View, irrespective of the NAP type.
 elements:
   - name: "Competent Authority / National Body"
     guid: "{B4E9C168-C4F3-4026-B334-9511627C14AC}"
@@ -37,7 +37,7 @@ elements:
     note: |
       Public or private entity that accesses, retrieves, or uses data or information made accessible through the National Access Point for the purpose of developing services, applications, or analyses.
       
-      NOTE1: Content Consumer includes the terms Data User, Data Consumer and Data Recipient terms as specified in EU legal acts.
+      NOTE: Content Consumer includes the terms Data User, Data Consumer and Data Recipient terms as specified in EU legal acts.
       
       Content Consumer actor represents and fulfils the interests of the Content Consumer Stakeholder.
       
@@ -71,7 +71,7 @@ elements:
     note: |
       Public or private entity that supplies content (e.g., data, metadata, documents) to the National Access Point, making it available for reuse in accordance with the requirements of the EU legal acts and National Laws.
       
-      NOTE1: Content Provider includes the Data Holder, Data Provider, Service Provider terms as specified in EU legal acts.
+      NOTE: Content Provider includes the Data Holder, Data Provider, Service Provider terms as specified in EU legal acts.
       
       Content Provider actor represents and fulfils the interests of the Content Provider Stakeholders.
       

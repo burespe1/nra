@@ -3,7 +3,7 @@ guid: "{6A5ADC96-B8FF-49af-890A-75475AB933A0}"
 alias: "Roles"
 version: "1.0"
 note: |
-  This chapter defines Roles taken by Actors in Organizational View, irrespective of the NAP type.
+  This chapter defines Roles taken by Actors in Organisational View, irrespective of the NAP type.
 elements:
   - name: "Competent Authority / National Body (CA/NB)"
     guid: "{43A7EC8B-5AD2-462b-8F3A-F564FD31B71C}"
@@ -21,10 +21,10 @@ elements:
       "revised": "2026-10-20"
     note: |
       Key issue:
-      The CA/NB supports stakeholder in fulfilling the ITS directive and to handover accordingly self-declarations. Perform the compliance assessment of Content Providers (CP) in accordance with the Delegated Regulations and communicate the results with the CPs and NAP Operator (NO) and Member State (MS).  Monitor the NAP operational performance and report to Member State (MS).  Operate objectively and independently from the NO and CPs.
+      The CA/NB supports stakeholder in fulfilling the ITS directive and to handover accordingly self-declarations. Perform the compliance assessment of Content Providers (CP) in accordance with the Delegated Regulations and communicate the results with the CPs and NAP Operator (NO) and Member State (MS). Monitor the NAP operational performance and report to Member State (MS). Operate objectively and independently from the NO and CPs.
       
       Tasks and responsibilities:
-      Identify and contact entities obliged to make their content accessible via the NAP, raising awareness of their obligations and facilitating onboarding.  Randomly and regularly check the compliance of CPs with the EU law requirements (e.g., related to the content and processes of sharing data) and monitor and report operational performance of the NAP.   Follow up on non-compliant results. Assist CPs to reach a successful Compliance Assessment result. Document the Compliance Assessment process, issue a report and share it with CPs, MS and NO.
+      Identify and contact entities obliged to make their content accessible via the NAP, raising awareness of their obligations and facilitating onboarding. Randomly and regularly check the compliance of CPs with the EU law requirements (e.g., related to the content and processes of sharing data) and monitor and report operational performance of the NAP. Follow up on non-compliant results. Assist CPs to reach a successful Compliance Assessment result. Document the Compliance Assessment process, issue a report and share it with CPs, MS and NO.
     links:
       - "Association «defines» → Competent Authority / National Body"  # {1998DB38-9322-4fcd-9B7A-ED577A680474} → {B4E9C168-C4F3-4026-B334-9511627C14AC}
   - name: "European Commission (EC)"
@@ -43,12 +43,9 @@ elements:
       "revised": "2026-10-20"
     note: |
       Key issue:
-      
       Creation of EU law that responds to the action plan and white/green books defining the advances in health, safety, or environmental agendas.
       
-      
       Tasks and responsibilities:
-      
       Create legal documents (based on expert input and Member State consultation) to be adopted through the defined approval procedure. Observe the adoption and implementation of those legal documents, assessing Member State obligations and reacting in cases of non-adoption.
     links:
       - "Association «defines» → European Commission"  # {FABB6D0D-EDF9-4fcc-894C-C1A8379FCCA0} → {142DFBFF-40C1-4f03-A7A7-E5125A5DE9FE}
