@@ -173,6 +173,20 @@ elements:
       	- NAP Roles are mentioned in the text of the function, it must be clear who this is.
       	- IMPORTANT: reduce number of dataflows by just addressing all NAP users at once by their higher-level terminator
       	- IMPORTANT: who is the NAP User? Where do we have it specified? Different for NAP Actor?
+  - name: "F3.6.6 #1"
+    guid: "{EEB2C6CB-74EB-4B6E-8A27-F34B12D46F6F}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: Facility (1) says “The checks follow the MQA and InQMS methodology, at minimum it is an availability of the urls provided in metadata.” MQA is modelled as a Recommendation. By Guideline 03 a part derived only from a Recommendation is OPTIONAL, while the function has RequirementLevel = MANDATORY.
+      
+      Proposed solution: Keep the minimum mandatory (link checking, K.4.2.1, through the Metadata Quality Check Module) and mark the methodology as optional: reword facility (1) to “The ability to perform metadata quality checks based on pre specified rules and procedures (including appropriate time frequencies), at minimum the availability of the URLs provided in metadata.”, add “OPTIONAL: metadata quality checks following the MQA and InQMS methodology.” and set RequirementLevel = MANDATORY_PLUS. Alternative: keep the text and close the issue, because the minimum is already distinguished in the sentence.
   - name: "FV: Functionality to be processed into NRA - FROM 2023"
     guid: "{631D9702-F36C-495f-9D8B-8B778A056921}"
     type: "Issue"
@@ -342,6 +356,34 @@ elements:
       
       
       Neither data and service providers nor NAP operators shall not be able to submit a form in case that all required fields are populated
+  - name: "Hosting of User Management and Support modules"
+    guid: "{1028CFCB-DE82-4239-9D3D-556234CC0FFD}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: User Management Module (F3.6.2) and Support (ticket) Module (F3.6.5) are hosted only by the Data Platform NAP. A Metadata Directory NAP also registers and authorises NAP Content Providers (F3.6.3 forwards their credentials to F3.6.2) and supports NAP Users (K.2.1.1), so both functions are effectively missing in the Metadata Directory NAP.
+      
+      Proposed solution: Add «hosted by» links from User Management Module and Support (ticket) Module to Metadata Directory NAP and add both modules to its diagram. Then check the physical data flows of the Metadata Directory NAP to the NAP Content Provider and NAP Content Consumer.
+  - name: "RequirementLevel and NAP type"
+    guid: "{74D5833B-7B98-47FA-A815-7DADCC1A236A}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: RequirementLevel does not express the NAP type. F3.6.7, F3.6.8, F3.6.9 and F3.6.10 are performed only by modules hosted by the Data Platform NAP, and their requirements (e.g. K.1.18.1, K.4.5.1) are N/A for a Metadata Directory NAP. MANDATORY is therefore valid only within the NAP type the function belongs to, which neither Guideline 05 nor the model states.
+      
+      Proposed solution: Add to Guideline 05: “RequirementLevel applies within the NAP type the function belongs to. The NAP type follows from the Physical View: the subsystem (Metadata Directory NAP or Data Platform NAP) hosting the module that performs the function.” No new tagged value is needed.
   - name: "Rethink Agreement setup"
     guid: "{42102251-3ABE-4686-B487-890153AF6C69}"
     type: "Issue"
