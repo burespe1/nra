@@ -141,6 +141,31 @@ elements:
     order: 0
     note: |
       - check where reporting of the monitoring is done.
+  - name: "F3.6.11 #1"
+    guid: "{A0C4E0B6-0BAC-4615-9A62-64BF9293AD08}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: F3.6.11 Monitor NAP Usage and Performance (OPTIONAL, since 2.2.0) has no data flows and is not performed by any module, so it appears only on the functional tree. The Functional View has no terminator for the NAP Operator or the Competent Authority / National Body, only the generic “NAP Actors”.
+      
+      Proposed data flows:
+      
+      	- IN from F3.6.2 Manage Registrations and Provide Authorisation Service: NAP User activity and registrations.
+      	- IN from F3.6.4 Manage Metadata Retrieval and F3.6.9 Manage NAP Data Retrieval: logs of searches, downloads and subscriptions.
+      	- IN from F3.6.5 Provide NAP User Support: qualitative feedback of NAP Users.
+      	- OUT to NAP Content Provider: statistics of access to its data.
+      	- OUT to “NAP Actors” or to a new terminator NAP Operator: usage and performance reports (for reporting to the MS and the CA/NB).
+      
+      
+      Proposed module: a new optional “Monitoring and Reporting Module” hosted by both the Metadata Directory NAP and the Data Platform NAP, because KPI 2.2 and KPI 2.9 apply to both NAP types. Alternative: assign the function to the User Management Module.
+      
+      To decide: data flows; new module or User Management Module; terminator for the NAP Operator (new or “NAP Actors”); then place F3.6.11 on the module and data flow diagrams. To be discussed in the team.
   - name: "F3.6.2 #1"
     guid: "{D5880A35-90B7-4cb5-B51C-671E3E03E154}"
     type: "Issue"

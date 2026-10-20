@@ -94,7 +94,6 @@ elements:
       Tasks and responsibilities:
       Access and use data in accordance with the defined legal, licensing or contractual conditions. Abide to the Terms and Conditions of the NAP, including e.g., registration requirements, attribution requirements or special license conditions. Provide feedback to Content Providers (e.g., on access, quality or integration of the data), or, where applicable to the NAP via feedback channels. Ensure the proper, timely and accurate integration of the subscribed content to their products and services.
     links:
-      - "Association «accepted by» → Privacy agreement (CC to NO) and general terms and conditions"  # {80010DB2-4CD6-42d4-AD69-983E77932321} → {AF555DF2-4535-42f6-993A-5BE72947BD12}
       - "Association «defines» → Content Consumer"  # {23DC667E-8339-4648-BFBC-B3033D35B957} → {0E811D0A-2C79-462f-B560-DD0A48A6E545}
       - "Dependency → Content Consumer"  # {33F8752C-7B9C-452a-9DD7-FCD405C8B1D2} → {11A68175-D1A4-4bdf-B3BC-83D813879077}
       - "Dependency → User"  # {0B149C71-36BE-49ea-AF06-8B42E7E3FD2E} → {13796023-E912-4a94-B857-0146211998B3}
