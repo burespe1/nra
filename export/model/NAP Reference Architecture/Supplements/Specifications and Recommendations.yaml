@@ -4,5 +4,6 @@ alias: "Specifications and Recommendations"
 version: "1.0"
 note: |
   The Specifications and Requirements document describes legal and technical specifications as well as recommendations and profiles used for the ITS Service in different Views. The specifications could be linked to different objects defining is technical or organizational parameters, its usage, interaction requirements behaviour etc.
+  
   The Specifications and Requirements is elaborated with respect of minimum functionality of two NAP types: Metadata Directory and Data Platform.
 elements: []

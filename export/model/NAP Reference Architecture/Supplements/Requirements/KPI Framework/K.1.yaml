@@ -175,7 +175,6 @@ elements:
       a. Authentication of data providers is double checked, i.e., by the data provider and by the NAP operator (e.g., via checking a state registry of legal bodies)
       b. Usage of two-factor authentication and/or ID certificate (e.g., self-logging with secure national ID)
       
-      
       Source: KPI 1.10 Security – providers verification
     links:
       - "Association «fulfilled by» → User Management Module"  # {895B8C3B-11E0-4187-86ED-F05BE8F625DE} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
@@ -255,7 +254,6 @@ elements:
       f. Authentication by client certificates (private keys, API-keys, certificates, incl. EU-wide common user authentication mechanism)
       g. Authentication by tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0)
       
-      
       Source: KPI 1.14 Authentication and security mechanisms for data upload
     links:
       - "Association «fulfilled by» → Data Management Module"  # {BFFA3A27-6DCB-4514-A5CB-D80062A8758A} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
@@ -281,7 +279,6 @@ elements:
       e. Authentication by URL parameters
       f. Authentication by client certificates (private keys, API-keys, certificates, incl. EU-wide common user authentication mechanism)
       g. Authentication by tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0)
-      
       
       Source: KPI 1.14 Authentication and security mechanisms for data upload
     links:

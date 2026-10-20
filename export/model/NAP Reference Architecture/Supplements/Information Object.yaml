@@ -76,7 +76,6 @@ elements:
       4. The terms and conditions for the use of the traffic and travel data provided through the national access point may be determined through a licence agreement. Those conditions shall not unnecessarily restrict possibilities for reuse or be used to restrict competition. Licence agreements, whenever used, shall in any event impose as few restrictions on reuse as possible. Any financial compensation shall be reasonable and proportionate to the legitimate costs incurred of providing and disseminating the relevant travel and traffic data.
       5. Terms and conditions of linking travel information services shall be defined in contractual agreements between the travel information service providers. Any financial compensation of the expenses of linking travel information services incurred shall be reasonable and proportionate.
       
-      
       DATA CATEGORIES
       (as referred to in Articles 3, 4, 5, 6, 8 and 10)
       Partition of transport modes by type, such as:
@@ -163,8 +162,6 @@ elements:
       2.3. Level of service 3
       Trip plans:
       Future predicted road link travel times
-      
-      
       
       3. This Regulation shall apply in accordance with Article 5 of Directive 2010/40/EU.
       1. This Regulation establishes the necessary specifications in order to ensure that EU-wide multimodal travel information services are accurate and available across borders to ITS users.
@@ -391,7 +388,6 @@ elements:
       — at least the next two safe and secure parking places along a corridor within approximately 100 kilometres,
       — the availability of parking places in a priority zone in at least the next two parking areas within approximately 100 kilometres.
       The dissemination of information shall be consistent with the Vienna convention where a Member State has signed it. In-vehicle application should have a robust human machine interface in order to avoid driver distraction and fatigue. Parking operators and/or service providers shall inform the users about the launch of any new information service for safe and secure parking by any communication means they find appropriate.
-      
       
       https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32013R0885
     links:

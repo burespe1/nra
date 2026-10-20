@@ -17,10 +17,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information (recast)
+      
       Link: https://eur-lex.europa.eu/eli/dir/2019/1024/oj
+      
       Description: Directive (EU) 2019/1024, also known as the Open Data Directive, establishes binding rules for the release and reuse of public sector information across the EU. It obliges Member States to ensure that data produced, held, or funded by public bodies is made available in machine-readable formats, via Application Programming Interfaces (APIs), and under open licences with minimal legal, technical, or financial restrictions. It defines categories of high-value datasets, including transport, which are subject to specific publication and reuse obligations.
+      
       Additional details: In the context of National Access Points (NAPs) under Directive 2010/40/EU (ITS Directive), the Open Data Directive applies where the transport-related data hosted or disseminated via NAPs is produced or funded by public sector bodies. It imposes legal obligations on such data to be openly licensed, structured for automatic processing, accessible through APIs, and free of charge. This directly impacts the way NAPs must provide access to static and dynamic ITS data, ensuring compliance with both the ITS legal framework and the horizontal open data obligations. If the NAP environment includes private stakeholders, applicability may depend on whether the data provision is mandated by law or publicly funded.
+      
       Related Documents:
       
       	- Commission Implementing Regulation (EU) 2023/138 – Defines high-value datasets, including transport, and mandates their free availability via APIs and bulk download.
@@ -42,10 +47,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Directive (EU) 2016/2102 of the European Parliament and of the Council of 26 October 2016 on the accessibility of the websites and mobile applications of public sector bodies
+      
       Link: https://eur-lex.europa.eu/eli/dir/2016/2102/oj
+      
       Description: Directive (EU) 2016/2102 on the accessibility of websites and mobile applications of public sector bodies ensures that digital services are usable by all, including people with disabilities. This is directly relevant to the National Access Points (NAPs) established under Directive 2010/40/EU (ITS Directive) and its recast, which require Member States to provide access to transport-related data through digital platforms.
+      
       Additional details: Since NAPs are typically operated by public authorities or on their behalf, they fall under the scope of the Web Accessibility Directive. This means that the websites and mobile apps used for publishing transport data—such as real-time traffic, public transport schedules, or multimodal travel information—must comply with accessibility standards like EN 301 549.
+      
       Related Documents:
       
       	- Commission Implementing Decision (EU) 2018/1523: Establishing a model accessibility statement
@@ -65,10 +75,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal (Implementing Act – in preparation)
+      
       Full Name: Commission Implementing Regulation laying down technical specifications regarding the format, frequency, and quality of data on alternative fuels infrastructure pursuant to Regulation (EU) 2023/1804
+      
       Link: https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14345-_en
+      
       Description: This implementing regulation will define harmonised technical specifications for the format, update frequency, and quality of data relating to publicly accessible alternative fuels infrastructure in the EU. It supports Regulation (EU) 2023/1804 (AFIR) and applies to electric recharging points, hydrogen refuelling stations, and other designated fuel types. The regulation aims to standardise machine-to-machine data exchange and improve accessibility, reliability, and cross-border interoperability.
+      
       Additional details: The act will mandate the use of DATEX II for structured data exchange by April 2026. Static data (location, capacity, connector types, operational status) must be updated at least every 24 hours; dynamic data (availability, malfunction, real-time energy status) must be refreshed at intervals no greater than 1 minute. EV charging point operators will be required to disclose roaming capability, smart charging readiness, and communication interfaces. Hydrogen stations must signal low-fuel warnings (<100 kg). NAPs will act as the central access points for compliant data publication and retrieval.
+      
       Related Documents:
       
       	- Regulation (EU) 2023/1804 – AFIR – Legal base establishing mandatory deployment and data reporting obligations for alternative fuels infrastructure.
@@ -89,10 +104,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Implementing Regulation (EU) 2025/655 of 2 April 2025 laying down rules for the application of Regulation (EU) 2023/1804 as regards specifications and procedures relating to the availability and accessibility of data on alternative fuels infrastructure
+      
       Link: https://eur-lex.europa.eu/eli/reg_impl/2025/655/oj
+      
       Description: This regulation establishes binding technical specifications and procedures for the provision of data on publicly accessible alternative fuels infrastructure under Regulation (EU) 2023/1804 (AFIR). It defines harmonised requirements for data format, update frequency, quality, and accessibility to ensure interoperability and transparency across the EU. The act applies to electric recharging points, hydrogen refuelling stations, and other AFIR-regulated infrastructure types.
+      
       Additional details: Operators must publish static data (e.g. location, connector types, access conditions) with a maximum update interval of 24 hours, and dynamic data (e.g. availability, operational status) with a maximum latency of 1 minute. The use of the DATEX II format is mandatory from 14 April 2026. Additional obligations include disclosure of roaming capability, smart charging features, and hydrogen low-fuel alerts (<100 kg). NAPs serve as the designated access points for compliant data exchange.
+      
       Related Documents:
       
       	- Regulation (EU) 2023/1804 – AFIR – Legal base establishing mandatory deployment and data reporting obligations for alternative fuels infrastructure.
@@ -114,10 +134,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)
+      
       Link: https://eur-lex.europa.eu/eli/dir/2022/2555/oj
+      
       Description: Directive (EU) 2022/2555, also known as the NIS 2 Directive, establishes a common framework for cybersecurity risk management and reporting obligations across the EU. It replaces the original NIS Directive (EU) 2016/1148 and significantly expands the scope of entities subject to cybersecurity requirements, including operators of essential and important services in sectors such as transport, energy, and digital infrastructure.
+      
       Additional details: National Access Points (NAPs), as defined under Directive 2010/40/EU, typically qualify as essential or important entities under NIS 2 if they are operated by public authorities or provide critical digital services related to transport data exchange. As such, they are subject to obligations including Implementation of technical and organizational cybersecurity measures, incident notification to national CSIRTs or competent authorities and Participation in cybersecurity supervision and enforcement mechanisms.
+      
       Related Documents:
       
       	- Directive (EU) 2016/1148 – The original NIS Directive, now repealed, provides historical context and may still influence transitional arrangements.
@@ -138,10 +163,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Delegated Regulation (EU) No 886/2013 of 15 May 2013 supplementing Directive 2010/40/EU with regard to data and procedures for the provision, where possible, of road safety-related minimum universal traffic information free of charge to users
+      
       Link: https://eur-lex.europa.eu/eli/reg_del/2013/886/oj
+      
       Description: This regulation defines the minimum requirements for the provision of safety-related traffic information (SRTI) services across the EU road network. It mandates that specific categories of safety-critical events (e.g. wrong-way drivers, unprotected accident areas, reduced visibility) be made available to users free of charge, where possible. It sets obligations for data collection, processing, quality assurance, and dissemination, and requires Member States to ensure interoperability and continuity of service through harmonised procedures and formats.
+      
       Additional details: NAPs are the designated interface for publishing SRTI-relevant data. They must provide machine-readable access to static and dynamic datasets covering the event categories defined in the regulation. Data must comply with update frequency, latency, and quality requirements. NAPs must also support metadata publication, service documentation, and conformity assessment. The harmonised DATEX II Reference Profile for SRTI must be used to ensure semantic and syntactic interoperability across Member States.
+      
       Related Documents:
       
       	- European Commission SRTI Guidance – Technical guidance and implementation context under the ITS Directive.
@@ -169,10 +199,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Delegated Regulation (EU) No 885/2013 of 15 May 2013 supplementing Directive 2010/40/EU of the European Parliament and of the Council with regard to the provision of information services for safe and secure parking places for trucks and commercial vehicles
+      
       Link: https://eur-lex.europa.eu/eli/reg_del/2013/885/oj
+      
       Description: This regulation defines functional and technical specifications for the provision of information services related to safe and secure parking places for trucks and commercial vehicles (SSTP). It supplements Directive 2010/40/EU (ITS Directive) and establishes requirements for static and dynamic data collection, dissemination, quality assurance, and compliance assessment. It applies to parking areas located along the trans-European road network (TERN) and aims to improve driver safety, rest compliance, and freight security through harmonised digital services.
+      
       Additional details: NAPs are designated as access points for SSTP-related data. Where Member States or service providers implement SSTP services, NAPs must ensure machine-readable access to static data (e.g. location, capacity, equipment, security features) and dynamic data (e.g. availability, occupancy). Data must conform to the regulation’s quality, update frequency, and metadata requirements. NAPs must also support compliance monitoring by national bodies and provide documentation on data coverage, dissemination methods, and service reliability.
+      
       Related Documents:
       
       	- FAQ on Delegated Regulation (EU) No 885/2013 – European Commission – Clarifies scope, applicability, and compliance procedures for SSTP services under the ITS Directive.
@@ -198,9 +233,13 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Delegated Regulation (EU) 2022/670 of 2 February 2022 supplementing Directive 2010/40/EU of the European Parliament and of the Council with regard to the provision of EU-wide real-time traffic information services
+      
       Link: https://eur-lex.europa.eu/eli/reg_del/2022/670/oj
+      
       Description: This regulation defines binding technical specifications for the provision of EU-wide real-time traffic information (RTTI) services. It repeals Delegated Regulation (EU) 2015/962 and introduces updated requirements for the availability, accessibility, and reusability of static and dynamic road traffic data. Compared to the repealed act, it clarifies data categories, strengthens obligations for dynamic data updates, and adjusts performance requirements to reflect the current state of ITS deployment and operational data exchange practices. It enforces harmonised data formats and minimum service levels to ensure interoperability and continuity of RTTI services across Member States.
+      
       Additional details: National Access Points (NAPs) are the mandatory interface for publishing RTTI-relevant datasets. Under this regulation, NAPs must:
       
       	- Provide machine-readable access to static and dynamic data elements listed in Annex I and II,
@@ -208,6 +247,7 @@ elements:
       	- Use DATEX II or equivalent formats to guarantee semantic and syntactic interoperability,
       	- Support cross-border data exchange by aligning with EU-wide service coverage and latency thresholds,
       	- Maintain metadata and service documentation to enable automated discovery and integration by third parties.
+      
       
       Related Documents:
       
@@ -238,11 +278,16 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Delegated Regulation (EU) 2017/1926 of 31 May 2017 supplementing Directive 2010/40/EU of the European Parliament and of the Council with regard to the provision of EU-wide multimodal travel information services.
+      
       Link: https://eur-lex.europa.eu/eli/reg_del/2017/1926/oj
+      
       Description: It establishes specifications for the provision of EU-wide multimodal travel information services (MMTIS). The regulation aims to ensure that static and dynamic travel and traffic data from various transport modes (road, rail, air, maritime, etc.) are made accessible in a harmonised, interoperable, and machine-readable format to support seamless multimodal journey planning across the EU.
       National Access Points (NAPs) are the designated platforms for publishing and accessing the datasets required under this regulation. MMTIS data providers—such as transport operators, authorities, and infrastructure managers—must make their data available via the NAP in accordance with the technical and organisational requirements set out in the regulation. This includes metadata, data formats, update frequencies, and accessibility conditions. NAPs thus serve as the core infrastructure for enabling compliance and interoperability under MMTIS.
+      
       Additional details: https://transport.ec.europa.eu/transport-themes/smart-mobility/road/its-directive-and-action-plan/multimodal-travel-information_en
+      
       Related Documents:
       
       	- Delegated Regulation (EU) 2024/490 – Amends and updates the original 2017/1926 regulation, refining data categories, deadlines, and technical specifications for MMTIS implementation.
@@ -277,10 +322,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Regulation (EU) 2023/1804 of the European Parliament and of the Council of 13 September 2023 on the deployment of alternative fuels infrastructure, and repealing Directive 2014/94/EU
+      
       Link: https://eur-lex.europa.eu/eli/reg/2023/1804/oj
+      
       Description: The new Alternative Fuels Infrastructure Regulation (AFIR), which repeals Directive 2014/94/EU. It establishes binding targets for the deployment of publicly accessible recharging and refuelling infrastructure for electric and hydrogen vehicles, vessels, and aircraft across the EU. It aims to ensure full interoperability, user-friendliness, and data transparency to support the EU’s climate and mobility goals.
+      
       Additional details: While AFIR does not explicitly mandate publication via NAPs, it requires real-time and static data on alternative fuels infrastructure (e.g. location, availability, pricing, technical characteristics) to be made publicly accessible in machine-readable formats. This aligns with the role of NAPs under the ITS Directive and its delegated acts, making them a natural access point for such datasets—especially where they support routing, parking, or multimodal travel services.
+      
       Related Documents:
       
       	- Directive 2014/94/EU– Alternative Fuels Infrastructure Directive (repealed) – The predecessor to AFIR, it laid the groundwork for infrastructure deployment and data requirements. Still useful for understanding the evolution of obligations, especially where national frameworks are based on it.
@@ -302,9 +352,13 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)
+      
       Link: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+      
       Description: Regulation (EU) 2016/679, known as the General Data Protection Regulation (GDPR), establishes a uniform legal framework across the EU for the protection of personal data. It governs how personal data of natural persons is collected, processed, stored, and shared, and grants individuals enforceable rights over their data. It applies to both public and private entities that process personal data within the EU or target EU residents.
+      
       Additional details: Even though NAPs don't generate or determine the content of the data they distribute, they may still be considered to be processing personal data if that data includes, for instance, vehicle trajectories, location-time stamps, or user-specific transport service data—especially in multimodal travel information services or dynamic datasets.
       In GDPR terms, this processing—listing, storing, or facilitating access to personal data on behalf of data holders—may place the NAP operator in the role of a data processor, or in some setups, even a joint controller. This depends on the nature of its involvement, contractual arrangements, and whether it has any influence over the purpose or means of processing. Therefore, under GDPR:
       
@@ -312,7 +366,9 @@ elements:
       	- The NAP must implement security and organisational safeguards (Art. 32 GDPR).
       	- If the platform enables discovery or access to personal data, data subject rights (e.g. access, erasure) must be supported—typically redirected to the original controller.
       
+      
       If the National Access Point (NAP) merely provides metadata listings or pointers (e.g. links, APIs) to datasets without storing, transforming, or transmitting personal data, and has no access to the actual payload or content, then it’s technically not processing personal data within the meaning of Article 4(2) of the GDPR. In such cases, a Data Processing Agreement (DPA) would indeed not be required, as the NAP does not act as a processor or controller.
+      
       Related Documents:
       
       	- Guidelines 01/2020 on Processing Personal Data in the Context of Connected Vehicles and Mobility-Related Applications (EDPB) – Clarifies how GDPR applies to vehicle-generated data, location tracking, and ITS services.
@@ -333,16 +389,19 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Directive (EU) 2023/2661 of the European Parliament and of the Council of 22 November 2023 amending Directive 2010/40/EU on the framework for the deployment of Intelligent Transport Systems in the field of road transport and for interfaces with other modes of transport
+      
       Link: https://eur-lex.europa.eu/eli/dir/2023/2661/oj
+      
       Description: Directive (EU) 2023/2661 is the recast of the original ITS Directive 2010/40/EU. It updates the legal framework for the deployment of Intelligent Transport Systems (ITS) in road transport and their interfaces with other transport modes. The recast reflects technological advancements and policy priorities such as multimodal mobility, digitalisation, and safety. It introduces mandatory availability of certain transport data in digital formats and strengthens interoperability and data accessibility across the EU.
+      
       Additional details: National Access Points (NAPs), as defined under the ITS Directive, are central to implementing the recast. The updated directive reinforces their role as mandatory digital platforms for publishing and accessing static and dynamic transport data. It expands the scope of data types to be made available (e.g. speed limits, roadworks, multimodal travel info) and introduces stricter requirements for data quality, timeliness, and accessibility, including through APIs and machine-readable formats.
+      
       Related Documents:
       
       	- Commission Delegated Regulation (EU) No 885/2013 – On the provision of information services for safe and secure parking places for trucks and commercial vehicles.
       	- Commission Delegated Regulation (EU) No 886/2013 – On the provision of road safety-related minimum universal traffic information.
-      
-      
       	- Commission Delegated Regulation (EU) 2015/962 – On the provision of EU-wide real-time traffic information services. Partially superseded by 2022/670 but still relevant for transitional provisions.
       	- Commission Delegated Regulation (EU) 2017/1926 – On the provision of EU-wide multimodal travel information services.
       	- Commission Delegated Regulation (EU) 2022/670 – Updates and replaces parts of 2015/962; sets new specifications for real-time traffic information services.
@@ -363,16 +422,22 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Regulation (EU) 2018/1724 of the European Parliament and of the Council of 2 October 2018 establishing a single digital gateway to provide access to information, to procedures and to assistance and problem-solving services and amending Regulation (EU) No 1024/2012
+      
       Link: https://eur-lex.europa.eu/eli/reg/2018/1724/oj
+      
       Description: Regulation (EU) 2018/1724, known as the Single Digital Gateway (SDG) Regulation, establishes a unified EU-wide portal—Your Europe—that offers cross-border users streamlined access to public services, procedures, and information. The regulation aims to improve the usability, accessibility, and multilingual availability of digital public services. It also introduces the once-only principle, meaning that public administrations should not ask citizens or businesses to resubmit information already provided to another authority.
       While not transport-specific, the regulation applies to National Access Points (NAPs) when they serve as public-facing digital platforms operated by authorities. If NAPs provide access to regulated datasets or procedures relevant to cross-border users, they must meet accessibility, quality, and multilingual standards. The once-only principle also supports federated data publishing, reducing duplication between NAPs and national open data portals.
+      
       Additional details: The SDG’s once-only principle supports a more streamlined and federated approach to data publishing. The goal is to avoid redundant data publication and collection—public sector data should be published once and reused or accessed via interoperable systems rather than duplicated. This has practical implications for NAPs and open data portals:
       
       	- Transport datasets required under ITS delegated regulations must be made available via the NAP.
       	- The same datasets may also be subject to publication obligations under the Open Data Directive, typically via a national open data portal.
       
+      
       To resolve this, Member States should implement a federated data publishing model where the NAP serves as the authoritative data provider and the open data portal references or harvests its metadata. This avoids duplication while ensuring discoverability, open licensing, and machine-readability under both legal regimes.
+      
       Related Documents:
       
       	- Your Europe Portal – The operational interface of the Single Digital Gateway, which may link to or integrate with national portals like NAPs for transport-related procedures.
@@ -392,10 +457,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Delegated Regulation (EU) 2024/490 of 29 November 2023 amending Delegated Regulation (EU) 2017/1926 supplementing Directive 2010/40/EU with regard to the provision of EU-wide multimodal travel information services
+      
       Link: https://eur-lex.europa.eu/eli/reg_del/2024/490/oj
+      
       Description: This regulation amends Delegated Regulation (EU) 2017/1926 by expanding the scope of mandatory data accessibility for EU-wide multimodal travel information services (MMTIS). It introduces new obligations for the availability of dynamic, historic, and observed datasets, and strengthens requirements for data quality, update frequency, and interoperability. The amendment supports the European Green Deal and Sustainable and Smart Mobility Strategy by enhancing the usability of multimodal travel services and enabling better integration of active modes (e.g. walking, cycling) and real-time operational data.
+      
       Additional details: NAPs must ensure machine-readable access to newly mandated datasets, including dynamic data (e.g. delays, disruptions), historic performance data, and observed occupancy levels. The regulation reinforces the use of harmonised formats and metadata, and requires service providers to maintain data accuracy and timeliness. The amendment also introduces provisions for monitoring compliance and supporting cross-border continuity of MMTIS services.
+      
       Related Documents:
       
       	- Delegated Regulation (EU) 2017/1926 – MMTIS – Original legal act establishing the MMTIS framework.
@@ -417,10 +487,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Regulation (EU) No 1305/2014 of 11 December 2014 on the technical specification for interoperability relating to the telematics applications for freight subsystem of the rail system in the European Union and repealing Regulation (EC) No 62/2006
+      
       Link: https://eur-lex.europa.eu/eli/reg/2014/1305/oj
+      
       Description: This regulation establishes the mandatory Technical Specification for Interoperability (TSI) for the rail telematics applications for freight (TAF) subsystem, applicable to railway undertakings, infrastructure managers, wagon keepers, and other actors involved in freight operations. It replaces Regulation (EC) No 62/2006 and introduces extended message sets, a structured implementation governance model (including Change Control Management), and mandatory reference data alignment. It defines XML-based message exchange formats, interoperability interfaces, data models, and operational procedures to ensure seamless, real-time information sharing between rail freight stakeholders.
+      
       Additional details: When a National Access Point supports integration with rail freight data services, this regulation becomes binding for any data publication or relay function that involves TAF-compliant messages. NAPs interacting with these datasets must ensure message conformity with TAF TSI schemas, maintain full alignment with central reference data registries (e.g. company and location codes), and apply consistent semantic mapping if integrating with other ITS domains. NAPs must not alter the structure, content, or identification of regulated message types during conversion to other formats. Data quality assurance and interface documentation must be traceable to the latest applicable TAF TSI baseline.
+      
       Related Documents:
       
       	- ERA TAF TSI Portal – Maintained by the European Union Agency for Railways; includes official message catalogues, implementation baselines, and interface control documents.
@@ -442,10 +517,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Regulation (EU) No 454/2011 of 5 May 2011 on the technical specification for interoperability relating to the subsystem ‘telematics applications for passenger services’ of the trans-European rail system
+      
       Link: https://eur-lex.europa.eu/eli/reg/2011/454/oj
+      
       Description: This regulation defines the Technical Specification for Interoperability (TSI) for the telematics applications for passenger services (TAP) subsystem of the trans-European rail system. It mandates standardised data exchange between railway undertakings, infrastructure managers, ticket vendors, and other actors involved in passenger rail services. It covers journey planning, real-time information, reservation, ticketing, and after-sales processes. The regulation enforces the use of harmonised message formats, reference data registries, and interface protocols to ensure cross-border interoperability. It has been amended to reflect updated IT architectures, governance models, and implementation deadlines.
+      
       Additional details: In NAP environments that expose or aggregate rail passenger data, TAP TSI applies where data originates from or conforms to TAP-compliant systems. NAPs must ensure interface compatibility with TAP message structures, maintain alignment with central reference data (e.g. company and location codes), and preserve semantic integrity when mapping to other ITS domains. Any transformation or relay of TAP messages must comply with the regulation’s baseline and versioning rules.
+      
       Related Documents:
       
       	- ERA TAP TSI Portal – Official source for baselines, message schemas, and implementation guidance.

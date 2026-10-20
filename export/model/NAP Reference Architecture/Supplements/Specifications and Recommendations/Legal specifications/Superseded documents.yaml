@@ -17,10 +17,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Directive 2010/40/EU of the European Parliament and of the Council of 7 July 2010 on the framework for the deployment of Intelligent Transport Systems in the field of road transport and for interfaces with other modes of transport
+      
       Link: https://eur-lex.europa.eu/eli/dir/2010/40/oj
+      
       Description: This directive establishes the legal framework for coordinated deployment of Intelligent Transport Systems (ITS) in road transport and its interfaces with other modes. It defines priority areas and empowers the Commission to adopt delegated acts specifying functional, technical, and organisational requirements. It was amended by Directive (EU) 2023/2661 to reflect developments in connected and automated mobility, digital infrastructure, and multimodal services. The amendment expands the scope of data availability obligations and strengthens requirements for interoperability, continuity, and digital access to transport-related information.
+      
       Additional details: Member States must designate National Access Points (NAPs) to enable access, exchange, and reuse of transport data. NAPs are required to support delegated acts adopted under this directive (e.g. RTTI, SRTI, SSTP, MMTIS) by providing harmonised, machine-readable, and quality-assured datasets. NAP operators must ensure compliance with the technical specifications of each delegated regulation and maintain cross-border interoperability.
+      
       Related Documents:
       
       	- ITS Directive and Action Plan – European Commission – Overview of the directive, its amendments, and implementation priorities.
@@ -47,10 +52,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Legal
+      
       Full Name: Commission Delegated Regulation (EU) 2015/962 of 18 December 2014 supplementing Directive 2010/40/EU with regard to the provision of EU-wide real-time traffic information services
+      
       Link: https://eur-lex.europa.eu/eli/reg_del/2015/962/oj
+      
       Description: This regulation defined the initial technical specifications for the provision of EU-wide real-time traffic information (RTTI) services under Directive 2010/40/EU. It established requirements for the availability, accessibility, exchange, and re-use of static and dynamic road traffic data. It introduced the concept of a minimum level of service and required Member States to designate National Access Points (NAPs) for data publication. The regulation was repealed with effect from 31 December 2024 and replaced by Regulation (EU) 2022/670, which introduced updated data categories, performance requirements, and alignment with current ITS deployment practices.
+      
       Additional details: NAPs were required to provide machine-readable access to RTTI-relevant datasets, including road network attributes, traffic regulations, and real-time traffic status. The regulation mandated metadata publication, data quality assurance, and use of harmonised formats to support cross-border interoperability. It served as the legal foundation for early RTTI deployments and was superseded to reflect evolving data models and service expectations.
+      
       Related Documents:
       
       	- Regulation (EU) 2022/670 – Successor regulation introducing revised RTTI specifications.

@@ -4,6 +4,7 @@ alias: "Communication View"
 version: "1.0"
 note: |
   The Communications View is a perspective that focuses on the interaction and data exchange between different components of the system. It outlines the communication protocols, data formats, and interfaces used for data transmission between different system elements.
+  
   The Communications View is elaborated with respect of minimum functionality of two NAP types: Metadata Directory and Data Platform.
   Those types are presented via TWO diagrams, each leveraging Physical View of respective type.
 elements: []

@@ -44,7 +44,6 @@ elements:
       1: Classification of datasets based on custom parameters only (e.g., transport mode/network covered)
       2: Classification of datasets based at least on formal terminology/keywords (vocabulary of the mobility-DCAT-AP) or coordinated metadata catalogues
       
-      
       Minimum acceptable value for interoperability: 2
     links:
       - "Abstraction → K.5.2.1 Classification of datasets"  # {D44E003E-140A-47f7-AB24-85CFE0CD900A} → {83214B25-55CB-415c-B142-439C41EEF164}

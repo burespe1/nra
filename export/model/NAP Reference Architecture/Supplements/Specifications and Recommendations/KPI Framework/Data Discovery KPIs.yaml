@@ -25,7 +25,6 @@ elements:
       b. Data providers (organisations) can be searched with free-text
       c. Other search options with free text (e.g. search for data profiles or delegated regulations, but also maybe AI-supported functionality to find the most suitable datasets; please specify in the ”Suggestions” box)
       
-      
       Minimum acceptable value for interoperability: 1
     links:
       - "Abstraction → K.3.1.1 Free-text search"  # {AF3D868D-4648-4ba3-8B54-AC80A2C77CE1} → {4CE86A2C-C410-439b-AFFD-9793CCF8B41E}
@@ -52,7 +51,6 @@ elements:
       g. license type
       h. temporal validity
       i. other (please specify in the “Suggestions” box)
-      
       
       Minimum acceptable value for interoperability: 2
     links:

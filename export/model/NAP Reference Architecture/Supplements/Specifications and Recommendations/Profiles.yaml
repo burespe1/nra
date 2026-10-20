@@ -4,12 +4,14 @@ alias: "Profiles"
 version: "1.0"
 note: |
   Datex II provides a set of Recommended Reference Profiles (RRPs) and Recommended Service Profiles (RSPs). While the RRPs establish minimum set of data-elements required to provide the information meant by the specific data categories in the specific delegated regulation (SRTI, RRTI and MMTIS), the RSPs support harmonised uses cases for the provision of data from the road operator’s point of view.
+  
   NeTEx, also a recommended profile – European Passenger Information Profile (EPIP), which is part of the CENT/TNS 16614 Standard and used for the following use cases:
   
   	- Provision of data for journey planners
   	- Provision of data to a path mapping software tool on an (interactive) map
   	- Provision of timetable printout data
   	- Provision of station information
+  
   
   In addition to these general profiles (RRPs and RSPs for Datex II and the EPIP for NeTEx), some MS build their own national profiles related those 2 Standards and SIRI as well.
 elements:
@@ -49,6 +51,7 @@ elements:
       	- Modernizing service descriptions to reflect current technologies and regulatory contexts.
       	- Simplifying information to make it more accessible and understandable.
       	- Eliminating redundancies by merging separate documents into a comprehensive guide.
+      
       
       The profiles, developed jointly by the EU EIP and DATEX II PSA, are available for free and provide guidance on data sharing for ITS services. They describe interfaces for communication between systems and vehicles, ensuring compliance with European regulations and standards like DATEX II.
       You can get the Recommended Service Profiles at the DATEX II webtool.
@@ -106,7 +109,14 @@ elements:
     tags:
       "revised": "2025-07-04"
     note: |
-      STUB: UVARBox digitized five types of UVARs for which five profiles are available as RSP in the . The five UVAR types are: - low emission zones - limited traffic zones - pedestrian zones - congestion charging - parking zones
+      STUB: UVARBox digitized five types of UVARs for which five profiles are available as RSP in the . The five UVAR types are:
+      
+      	- low emission zones
+      	- limited traffic zones
+      	- pedestrian zones
+      	- congestion charging
+      	- parking zones
+      
       As these profiles are based on un unstable version of DATEX II Traffic Regulations users have to be aware of non-interoperable changes are expected in a stable future v3 release of TrafficRegulation and ControlledZone.
       UVARBox website
     links:

@@ -17,8 +17,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CC-DMM; Content Consumer - Data Management Module
+      
       Type: User interface
+      
       Description: This interface is used by the Content Consumer to retrieve Content Providers data stored or proxied via NAP. User selects data he/she has access to in the web interface and downloads them to his/her workstation. The Interface shall be a web-based application that any authorised NAP CC could access. It should support all common web browsing tools / devices. It should have an access authorisation mechanism and a graphical interface which at least support the local language.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
   - name: "Content Consumer Management"
     guid: "{572A0DDD-F3CD-426f-B920-5E8E986DFC0C}"
@@ -32,8 +35,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CC-UMM; Content Consumer - User Management Module
+      
       Type: User interface
+      
       Description: This interface enables content consumer to access NAP to change and modify account details including potential machine accounts. The Content Consumer registration is voluntary and at minimum NAP metadata shall be accessible without user registration. The Interface is a web-based application which is supposed to be a part of the NAP web page. The authorised person should be able to access this application through all possible browsers / devices and the graphical interface should at least support the local language.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
   - name: "Content Consumer Metadata Access"
     guid: "{ECF5445C-50A8-4ca3-8C86-50DB480DBD8C}"
@@ -47,8 +53,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CC-mdMM; Content Consumer - Metadata Management Module
+      
       Type: User interface
+      
       Description: This interface is used by content consumer to search the NAP for data and metadata. User selects data he/she has access to in the web interface and downloads them to his/her workstation. The Interface shall be a web-based application that any NAP CC could access. It should support all common web browsing tools / devices. It should have a graphical interface which at least support the local language and should support metadata standard mobilityDCAT-AP
+      
       Related Documents: ---
     links:
       - "Association «adheres to» → mobility DCAT-AP"  # {D36A20D3-E4C2-4e2f-A564-9CD231C64B80} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
@@ -64,8 +73,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CC-SM; Content Consumer - Support Module
+      
       Type: User interface
+      
       Description: This interface enables information exchange between the content consumer and the NAP support and handles the support requests. Users post a question which is responded to in an organised manner. The Interface shall be a web-based application that any authorised NAP CC could access. It should support all common web browsing tools / devices. It should have an access authorisation mechanism and a graphical interface which at least support the local language.
+      
       Related Documents: ---
   - name: "Content Provider Data Provision"
     guid: "{C03CF47C-96E7-4733-B905-CB836A908BB7}"
@@ -79,8 +91,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CP-DMM; Content Provider - Data Management Module
+      
       Type: User interface
+      
       Description: This interface is used by the Content Provider to provide data to be stored in the NAP. User selects data he/she wants to store (associated with a catalogue record entry) and via web interface uploads to the NAP. The Interface shall be a web-based application that any authorised NAP CP could access. It should support all common web browsing tools / devices. It shall have an access authorisation mechanism and a graphical interface which at least support the local language.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
   - name: "Content Provider Management"
     guid: "{D137DB55-A2D0-4a62-9A98-6144AC1C5404}"
@@ -94,8 +109,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CP - UMM; Content Provider – User Management Module
+      
       Type: User interface
+      
       Description: This interface enables content provider to access NAP to change and modify account details including potential machine accounts. It is assumed that the NAP shall have a registration procedure for metadata provider. The registration can differ in Member States. The authenticity of the registered content provider shall be guaranteed and shall follow international standards. The Interface is a web-based application which is supposed to be a part of the NAP web page. The authorised person should be able to access this application through all possible browsers / devices and the graphical interface should at least support the local language.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
   - name: "Content Provider Metadata Provision"
     guid: "{DAA1010E-3FD1-49b7-AC66-2080DB101A8E}"
@@ -109,8 +127,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CP-mdMM; Content Provider - Metadata Management Module
+      
       Type: User interface
+      
       Description: This interface enables Content Provider to insert, modify, delete metadata into NAP. The Interface shall be a web-based application that any authorised NAP CP could access. NAP returns success codes or information about error. It should support all common web browsing tools / devices. It shall have an access authorisation mechanism and a graphical interface which at least support the local language. Data adheres to mobilityDCAT-AP standard.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
     links:
       - "Association «adheres to» → mobility DCAT-AP"  # {8432D70B-A647-4557-935E-BDB4F4DF0CC6} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
@@ -126,8 +147,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: CP - SM; Content Provider - Support Module
+      
       Type: User interface
+      
       Description: This interface enables information exchange between the content provider and the NAP support and handles the support requests. Users post a question which is responded to in an organised manner. The Interface shall be a web-based application that any authorised NAP CP could access. It should support all common web browsing tools / devices. It should have an access authorisation mechanism and a graphical interface which at least support the local language.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
   - name: "Machine Data Access"
     guid: "{B5381D32-D813-436f-8E09-B87BD10B5F64}"
@@ -141,8 +165,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: DRS - DMM; Data Requesting System - Data Management Module
+      
       Type: Programming Interface
+      
       Description: This interface is used for the retrieval of the data stored at or proxied via NAP by automated system of Content Consumer. To allow for basic service provision and as a protection from denial-of-service attacks and to identify data requesting system this interface shall require authorization. The API shall provide data retrieval functionality as web-based user-oriented UI. The authorization is envisaged via machine account preregistration by content consumer.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
   - name: "Machine Data Provision"
     guid: "{EBF272EF-DE4F-4939-83C4-C3924574983A}"
@@ -156,8 +183,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: DPS - DMM; Data Provision System - Data Management Module
+      
       Type: Programming Interface
+      
       Description: This interface is used for the automatic upload of the data to be stored at the NAP by system of Content Provider. To allow for basic security and to identify data requesting system this interface shall require authorization. The API shall provide data insert, modify and delete functionality as web-based user-oriented UI. The authorization is envisaged via machine account preregistration by content provider.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
   - name: "Machine Metadata Access"
     guid: "{373128AD-1078-42bc-A0B2-F5E56522B7B8}"
@@ -171,8 +201,11 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: mdRS – mdMM; Metadata Requesting System - Metadata Management Module
+      
       Type: Programming Interface
+      
       Description: This interface is used for the retrieval of the metadata stored at NAP by automated system of Content Consumer. To allow for basic service provision and as a protection from denial of service attacks this interface may require authorization. The API shall provide similar search and retrieve functionality as web-based user-oriented UI. This interface shall support metadata exchange as specified by mobilityDCAT-AP.
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
     links:
       - "Association «adheres to» → mobility DCAT-AP"  # {309A6BD1-8246-4c71-9F02-16A1B9AEDF4C} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
@@ -189,6 +222,9 @@ elements:
       "revised": "2025-07-04"
     note: |
       Identification: mdPS - mdMM; Metadata Provision System - Metadata Management Module
+      
       Type: Programming Interface
+      
       Description: This interface is used by content consumer system to automatically insert, modify or delete metadata at NAP. The interface must allow authorised access. The Interface shall be an API based application that any compatible system could access. It should support metadata standard mobilityDCAT-AP
+      
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/

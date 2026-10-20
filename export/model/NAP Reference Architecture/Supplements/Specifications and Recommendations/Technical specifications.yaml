@@ -5,8 +5,11 @@ version: "1.0"
 note: |
   Technical specifications are used to specify:
   Performance: Outline the required performance metrics, such as speed, capacity, and reliability. They strictly define the measurable criteria that the system must meet, without specifying the functions or design details.
+  
   Technical: Provide detailed technical information, including materials, dimensions, and manufacturing processes. They focus exclusively on the technical aspects and physical characteristics of the system or component.
+  
   Design: Detail the design aspects, including drawings, schematics, and design principles. They concentrate on the visual and structural design elements, without specifying the technical details or performance metrics.
+  
   Interface: Define how different systems or components will interact with each other, including communication protocols and data formats. They focus on the interaction and integration points, without detailing the functions, performance, or design aspects.
 elements:
   - name: "CKAN API"
@@ -21,10 +24,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard / Open API
+      
       Full Name: CKAN Action API – Comprehensive Interface for Open Data Portals
+      
       Link: https://docs.ckan.org/en/2.9/api/
+      
       Description: The CKAN API is a powerful, RPC-style interface that exposes the full functionality of CKAN-based open data portals. It allows external applications to create, read, update, and delete datasets, resources, organizations, and metadata records. The API supports JSON-based requests and responses and is widely used for automating data publication, harvesting, and integration with third-party systems. CKAN’s modular architecture also includes APIs for FileStore and DataStore extensions, enabling file uploads and structured data querying.
+      
       Additional details: Highly relevant for National Access Points (NAPs) and mobility data portals built on CKAN. The API enables programmatic access to metadata records (e.g. mobilityDCAT-AP), supports dataset harvesting and federation, and allows integration with validation pipelines and monitoring tools. It is often used in conjunction with DCAT-AP-compatible metadata schemas and can be extended via plugins to support domain-specific workflows (e.g. transport, environment, energy).
+      
       Related Documents:
       
       	- CKAN API Guide – Official Docs – Full reference for Action API endpoints and usage
@@ -43,10 +51,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: DATEX II – CEN/TS 16157: Road Traffic and Travel Information Exchange
+      
       Link: https://datex2.eu/specifications/
+      
       Description: DATEX II is the European standard for the structured exchange of road traffic and travel information between traffic management centres, service providers, and other ITS actors. It defines a modular, extensible data model and exchange framework for publishing real-time and static data on traffic conditions, incidents, roadworks, parking, regulations, and energy infrastructure. DATEX II is mandated or recommended under multiple EU delegated regulations (e.g. RTTI, SRTI, SSTP, AFIR) to ensure semantic and syntactic interoperability across Member States.
+      
       Additional details: Highly relevant for the publication of National Access Point (NAP) data under multiple delegated acts. DATEX II Reference Profiles define required content and encoding rules for RTTI, SRTI, AFIR, and SSTP implementations. It supports machine-readable, versioned XML payloads, structured metadata, and standardized update frequencies. NAPs must enable pull or push access using Exchange 2020 protocols, and ensure conformance to regulation-specific subsets derived from the CEN/TS 16157 series.
+      
       Related Documents:
       
       	- DATEX II Documentation Portal – Official reference for content specifications, profiles, and implementation guidance.
@@ -67,10 +80,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: General Bikeshare Feed Specification (GBFS)
+      
       Link: https://www.gbfs.org/
+      
       Description: GBFS is an open, real-time data standard for shared mobility systems (e.g. bikeshare, scooters, mopeds). It defines a uniform JSON-based structure for publishing system status, vehicle availability, pricing, and station metadata. GBFS is designed for public consumption by trip planners, mobility apps, and data aggregators. It is read-only and does not support transactional operations.
+      
       Additional details: -
+      
       Related Documents:
       
       	- GBFS GitHub Repository – Specification source, schemas, governance model.
@@ -90,10 +108,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: General Transit Feed Specification
+      
       Link: https://gtfs.org/
+      
       Description: GTFS is an open, machine-readable data format for publishing public transport schedules, routes, stops, and associated geographic and fare information. It enables transit agencies to share static and real-time data with developers, trip planners, and mobility platforms. GTFS consists of two components: GTFS Schedule (static) and GTFS Realtime, both defined using structured text or protocol buffer formats.
+      
       Additional details: (none)
+      
       Related Documents:
       
       	- GTFS Schedule Reference – Defines required and optional files (e.g. stops.txt, routes.txt, trips.txt) and field-level specifications.
@@ -111,10 +134,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: General Transit Feed Specification – Realtime
+      
       Link: https://gtfs.org/realtime/
+      
       Description: GTFS-RT is an open data format for sharing real-time public transport information. It extends the static GTFS Schedule specification by enabling transit agencies to publish live updates on vehicle positions, trip progress, and service alerts. GTFS-RT uses Protocol Buffers for compact, efficient data exchange and is designed for integration with trip planners, mobility apps, and real-time dashboards.
+      
       Additional details: (none)
+      
       Related Documents:
       
       	- GTFS Realtime Reference – Defines feed types (TripUpdates, VehiclePositions, Alerts) and message structure.
@@ -133,10 +161,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: IATA Standard Schedules Information Manual
+      
       Link: https://www.iata.org/en/publications/manuals/standard-schedules-information/
+      
       Description: SSIM is the authoritative IATA standard for the structured exchange of airline schedule data, slot coordination messages, and minimum connecting time (MCT) information. It defines message formats, data elements, and transmission protocols used by airlines, airports, and slot coordinators to ensure consistency and interoperability in global aviation scheduling systems.
+      
       Additional details: (none)
+      
       Related Documents:
       
       	- SSIM Format Overview – Wikipedia – Summary of SSIM structure, use cases, and data hierarchy.
@@ -153,10 +186,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Infrastructure for Spatial Information in the European Community (INSPIRE) – Data Specifications and Implementing Rules
+      
       Link: https://knowledge-base.inspire.ec.europa.eu/data-specifications-technical-guidelines_en
+      
       Description: INSPIRE defines a harmonised framework for the interoperability of spatial datasets and services across the EU. It provides legally binding Implementing Rules and non-binding Technical Guidelines covering metadata, data models, network services, and data sharing. The specifications apply to 34 spatial data themes grouped under Annexes I–III of Directive 2007/2/EC and are aligned with ISO 19100-series standards.
+      
       Additional details: INSPIRE’s Transport Networks theme is referenced in Delegated Regulation (EU) 2022/670 as the normative basis for describing road network links and their physical attributes (e.g. geometry, width, number of lanes, gradients, junctions). Implementers of RTTI services may use INSPIRE-compliant representations (e.g. GM_Curve objects from ISO 19107) to encode road topology and ensure semantic consistency across Member States.
+      
       Related Documents:
       
       	- INSPIRE Transport Networks – Road Theme – Guidance for representing road links, nodes, and attributes.
@@ -175,10 +213,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Network Timetable Exchange (NeTEx) – CEN/TS 16614
+      
       Link: https://transmodel-cen.eu/index.php/netex/
+      
       Description: NeTEx is a modular XML-based CEN technical standard for exchanging public transport data, including network topology, timetables, and fare structures. It is based on the Transmodel conceptual framework and supports multimodal, multilingual, and versioned data exchange between systems. NeTEx is designed for use in journey planning, timetable publishing, fare calculation, and real-time information systems.
+      
       Additional details: (none)
+      
       Related Documents:
       
       	- NeTEx Overview – Transmodel – Official CEN portal with schema structure, parts, and implementation guidance.
@@ -199,10 +242,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)
+      
       Link: https://www.openarchives.org/pmh/
+      
       Description: OAI-PMH is a low-barrier, HTTP-based protocol developed by the Open Archives Initiative for harvesting structured metadata from distributed repositories. It enables service providers to collect metadata records from data providers using a standardised set of six verbs (e.g. ListRecords, GetRecord, Identify). OAI-PMH supports XML-based responses and is widely used in digital libraries, research infrastructures, and open data portals to enable metadata federation and interoperability.
+      
       Additional details: Highly relevant for metadata harvesting across National Access Points (NAPs) and open data ecosystems. OAI-PMH allows third-party services to synchronise metadata records (e.g. mobilityDCAT-AP) from CKAN-based or custom portals. It supports selective harvesting using datestamps and sets, and is compatible with Dublin Core and other metadata schemas. While not domain-specific, it provides a foundational mechanism for metadata aggregation and cross-portal discoverability.
+      
       Related Documents:
       
       	- OAI-PMH Specification v2.0 – Core protocol definition and XML schema
@@ -223,10 +271,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Open Charge Point Interface (OCPI)
+      
       Link: https://github.com/ocpi/ocpi
+      
       Description: OCPI is an open, modular protocol that enables seamless communication between electric vehicle (EV) charging infrastructure operators (CPOs) and eMobility service providers (eMSPs). It supports roaming, real-time availability, pricing transparency, smart charging, and billing interoperability. OCPI is maintained by the EVRoaming Foundation and is widely adopted across Europe to facilitate cross-network EV charging access.
+      
       Additional details: OCPI is commercially focused and used for direct exchange between CPOs and eMSPs, but its data structures are often reused to populate DATEX II-compliant datasets required for publication via National Access Points (NAPs) under RTTI and AFIR delegated regulations. Static and dynamic data from OCPI (e.g. connector types, availability, tariffs) can be programmatically mapped to the DATEX II EnergyInfrastructure and Parking publications. This ensures regulatory compliance without duplicating data sources. Field-level mappings and data transformation practices have been standardised by IDACS and NAPCORE profiles.
+      
       Related Documents:
       
       	- OCPI GitHub Repository – Official specification, modules, changelogs, and implementation resources.
@@ -245,10 +298,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Open Journey Planner – CEN/TS 17118: Open API for Distributed Journey Planning
+      
       Link: https://transmodel-cen.eu/index.php/ojp/
+      
       Description: OJP is a CEN technical specification that defines a standardised XML-based interface for distributed, multimodal journey planning. It enables real-time and scheduled trip planning across multiple transport operators and regions by allowing systems to exchange routing requests and responses. OJP is based on the Transmodel conceptual framework and aligned with NeTEx and SIRI data models. It supports cross-border interoperability and is referenced in Delegated Regulation (EU) 2017/1926 (MMTIS), as amended by Regulation (EU) 2024/490.
+      
       Additional details: Highly relevant as a standardised API for National Access Points (NAPs) under the MMTIS delegated regulation. OJP enables NAPs to expose distributed journey planning services in a harmonised, machine-readable format, allowing third-party applications to query multimodal routes across borders. It supports integration of real-time and scheduled data using NeTEx and SIRI structures. OJP’s distributed architecture allows interlinking of journey planning services across adjacent or remote regions, enabling systems to forward routing requests and compose seamless itineraries from multiple sources — a capability already demonstrated in cross-border deployments such as LinkingAlps
+      
       Related Documents:
       
       	- OJP Specification – Transmodel Portal – Overview of the standard, architecture, and use cases.
@@ -266,10 +324,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Operational Raw Data and Statistics for Public Transport – CEN Technical Report (OpRa)
+      
       Link: https://transmodel-cen.eu/index.php/opra/
+      
       Description: OpRa is a CEN initiative focused on the identification, collection, and exchange of raw operational data in public transport systems. It defines the conceptual framework and data requirements for recording actual, measured events — such as delays, cancellations, and vehicle movements — to support performance monitoring, service quality analysis, and strategic planning. OpRa complements Transmodel by formalising the “recorded reality” of operations, enabling consistent statistical reporting and historical analysis.
+      
       Additional details: OpRa is highly relevant for transport authorities and operators seeking to analyse operational efficiency and service reliability. It supports the study and control phase of the public transport lifecycle, bridging the gap between real-time data (e.g. SIRI) and strategic planning (e.g. NeTEx). OpRa data can be used to generate KPIs, inform policy decisions, and optimise resource allocation. It is aligned with Transmodel Parts 4 and 8 and is being developed into a full Technical Specification under CEN governance.
+      
       Related Documents:
       
       	- OpRa Overview – Transmodel Portal – Scope, use cases, and conceptual alignment
@@ -286,10 +349,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Service Interface for Real-time Information (SIRI) – CEN/EN 15531
+      
       Link: https://transmodel-cen.eu/index.php/siri/
+      
       Description: SIRI is a European CEN standard for the exchange of real-time public transport information between distributed computer systems. It defines a modular XML-based interface for delivering updates on vehicle positions, estimated timetables, service disruptions, and facility status. SIRI is aligned with the Transmodel conceptual framework and complements NeTEx by providing the dynamic counterpart to scheduled data. It supports both request/response and publish/subscribe architectures.
+      
       Additional details: (none)
+      
       Related Documents:
       
       	- SIRI Overview – Transmodel Portal – Specification structure, parts, and use cases.
@@ -308,10 +376,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Telematics Applications for Passenger Services – Technical Specification for Interoperability (TAP-TSI)
+      
       Link: https://www.era.europa.eu/domains/technical-specifications-interoperability/telematics-applications-passenger-service-tsi_en
+      
       Description: TAP-TSI is a legally binding EU technical specification that governs the interoperability of telematics applications for passenger rail services across the trans-European rail system. It defines common procedures, message formats, and data exchange protocols for timetable publication, reservation, ticketing, real-time information, and intermodal coordination. TAP-TSI ensures that railway undertakings, infrastructure managers, and ticket vendors can exchange data in a harmonised, machine-readable format.
+      
       Additional details: (none)
+      
       Related Documents:
       
       	- TAP-TSI Overview – European Union Agency for Railways – Scope, implementation phases, and governance structure.
@@ -328,10 +401,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Transport Network ITS Spatial Data Exchange – CEN/TS 17268
+      
       Link: https://tn-its.eu/standardisation/
+      
       Description: TN-ITS is a CEN Technical Specification (TS 17268) that defines a harmonised framework for the exchange of static road attribute changes (e.g. speed limits, access restrictions, lane configurations) between road authorities and map providers. It enables near real-time updates of digital maps by providing trusted, machine-readable notifications of authoritative changes to road infrastructure. TN-ITS supports safety-critical ITS applications, such as ADAS and automated driving, by ensuring that digital maps reflect the latest road conditions.
+      
       Additional details: Highly relevant for National Access Points (NAPs) as a mechanism for publishing authoritative road attribute updates. TN-ITS enables road authorities to deliver structured change notifications to map makers and service providers, improving data freshness and regulatory compliance. It is referenced in NAPCORE and supported by schema files, code lists, and API definitions hosted by the TN-ITS platform.
+      
       Related Documents:
       
       	- TN-ITS Standardisation Overview – Specification background, governance, and CEN/TS 17268 scope.
@@ -351,10 +429,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Transport Operator to Mobility-as-a-Service Provider API (TOMP API)
+      
       Link: https://github.com/TOMP-WG/TOMP-API
+      
       Description: TOMP API is an open, modular interface specification that standardises communication between Transport Operators (e.g. bikeshare, carshare, public transport) and Mobility-as-a-Service (MaaS) Providers. It enables seamless integration of planning, booking, trip execution, support, and payment services across diverse mobility offerings. TOMP API facilitates interoperability, reduces integration costs, and supports the development of MaaS platforms by providing a common “language” for service orchestration.
+      
       Additional details: Highly relevant for enabling NAP-aligned MaaS ecosystems. TOMP API allows mobility providers to expose their services in a harmonised, machine-readable format, supporting integration with journey planners, booking platforms, and real-time service aggregators. While not mandated by delegated regulations, it complements standards like NeTEx, SIRI, and OJP by enabling transactional MaaS interactions. National profiles (e.g. Switzerland) and pilots under NAPCORE explore its role in federated MaaS architectures.
+      
       Related Documents:
       
       	- TOMP API GitHub Repository – Specification, OpenAPI definitions, and implementation resources
@@ -373,10 +456,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: Public Transport Reference Data Model – EN 12896 (Transmodel)
+      
       Link: https://transmodel-cen.eu/
+      
       Description: Transmodel is the European conceptual data model for public transport information systems. It provides a harmonised, implementation-independent framework for representing transport networks, timetables, fares, operations, and real-time information. Transmodel defines entities, relationships, and attributes in Unified Modeling Language (UML), serving as the semantic foundation for derived standards such as NeTEx, SIRI, and OJP. It supports multimodal, multi-operator, and multilingual transport systems, enabling consistent data exchange and system interoperability across Europe.
+      
       Additional details: Highly relevant as the semantic backbone for multiple NAP-aligned standards. Transmodel underpins NeTEx (scheduled data), SIRI (real-time data), and OJP (distributed journey planning), ensuring conceptual consistency across their implementations. It enables NAPs to align data structures, terminology, and integration logic across domains. Transmodel is also referenced in the ITS Directive and supports harmonisation of TAP-TSI rail standards with other modes.
+      
       Related Documents:
       
       	- Transmodel Overview – Official Portal – Conceptual structure, functional areas, and standard evolution
@@ -394,10 +482,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Framework / Project Specification
+      
       Full Name: deployEMDS – Technical Specifications for the European Mobility Data Space
+      
       Link: https://deployemds.dev/
+      
       Description: deployEMDS is a European project co-funded under the Digital Europe Programme that defines the technical architecture, governance, and interoperability mechanisms for the European Mobility Data Space (EMDS). It aims to enable secure, sovereign, and standardised data sharing across public and private mobility actors. The specifications support real-life implementations in nine cities and regions and are aligned with the European Data Strategy and Sustainable and Smart Mobility Strategy.
+      
       Additional details: The deployEMDS technical specifications define common building blocks for data interoperability, data sovereignty, and data accessibility. They include reference architectures, metadata vocabularies, trust frameworks, and APIs for federated data exchange. The framework supports integration with existing standards (e.g. DCAT-AP, mobilityDCAT-AP, DATEX II, OCPI) and enables cross-domain use cases such as multimodal routing, traffic management, and SUMI monitoring. The specifications are being piloted in 16 use cases across 9 EU countries.
+      
       Related Documents:
       
       	- deployEMDS Technical Documentation – Architecture, components, and implementation guidance
@@ -416,10 +509,15 @@ elements:
       "revised": "2025-07-04"
     note: |
       Type: Technical Standard
+      
       Full Name: mobilityDCAT-AP – Metadata Specification for Mobility Data Portals
+      
       Link: https://w3id.org/mobilitydcat-ap/releases/
+      
       Description: mobilityDCAT-AP is a metadata specification tailored for describing datasets and services in the mobility domain, particularly those published via National Access Points (NAPs) and other transport data portals. It extends the general-purpose DCAT-AP standard to support harmonised, machine-readable metadata for Intelligent Transport Systems (ITS) and mobility-related datasets. The specification enables cross-border discoverability, semantic interoperability, and metadata exchange across the European mobility data ecosystem.
+      
       Additional details: Highly relevant for structuring and publishing metadata on National Access Points (NAPs). It enables consistent representation of transport datasets, data services, access conditions, update frequency, and conformance indicators — all essential for delegated ITS regulations. It supports RDF serialisation and is aligned with the EU Metadata Core Vocabulary, ensuring compatibility with the European Data Portal and NAPCORE interoperability targets.
+      
       Related Documents:
       
       	- mobilityDCAT-AP Specification (current version) – Official release with RDF schemas, usage notes, and conformance rules.

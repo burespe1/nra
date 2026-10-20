@@ -45,7 +45,6 @@ elements:
       AFIR related obligations like registration at IDRO and ++
       How to ensure single digital gateway between NAP and other state owned (open) data portals
       
-      
       v2.2.0: the Single Digital Gateway part is closed (specification does not yield a requirement); SRTI free of charge and AFIR obligations remain open.
     links:
       - "Abstraction → European or national law (MS to CP)"  # {E3BB747F-CF5A-45b2-9D60-607F2DF5E695} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}

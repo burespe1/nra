@@ -103,8 +103,7 @@ elements:
       	- Mass notifications are available on the NAP website to the registered data providers, e.g., pop-up information after logging in
       
       
-      
-      source: KPI 2.7 Mass notifications – data providers
+      Source: KPI 2.7 Mass notifications – data providers
     links:
       - "Association «fulfilled by» → User Management Module"  # {572E725B-1EFB-4748-ADCE-9AC102B462C5} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
   - name: "K.2.8.1 Mass notifications – data consumers"
@@ -121,7 +120,7 @@ elements:
     note: |
       The platform shall provide mass notifications of the data consumers about at least legal (T&C) updates
       
-      source: KPI 2.8 Mass notifications – data consumers
+      Source: KPI 2.8 Mass notifications – data consumers
     links:
       - "Association «fulfilled by» → User Management Module"  # {2A7F7E7E-9793-4511-8AF1-8EFA807070B6} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
   - name: "K.2.9.1 Monitoring and evaluation"
@@ -144,6 +143,6 @@ elements:
       	- Measuring usefulness of the NAP (e.g., qualitative feedback on re-use, rating of quality, surveys, etc.)
       
       
-      source: KPI 2.9 Monitoring and evaluation
+      Source: KPI 2.9 Monitoring and evaluation
     links:
       - "Association «fulfilled by» → F3.6.11 Monitor NAP Usage and Performance"  # {CD524366-79E5-434c-862F-E85CE666957E} → {678C8981-D1F4-47ea-8F47-1E260E07F935}
