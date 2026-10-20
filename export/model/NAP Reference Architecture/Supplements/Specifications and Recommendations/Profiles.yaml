@@ -3,9 +3,9 @@ guid: "{A8806412-9C1B-4ff5-9A78-25DC4D58E680}"
 alias: "Profiles"
 version: "1.0"
 note: |
-  Datex II provides a set of Recommended Reference Profiles (RRPs) and Recommended Service Profiles (RSPs). While the RRPs establish minimum set of data-elements required to provide the information meant by the specific data categories in the specific delegated regulation (SRTI, RRTI and MMTIS), the RSPs support harmonised uses cases for the provision of data from the road operator’s point of view.
+  DATEX II provides a set of Recommended Reference Profiles (RRPs) and Recommended Service Profiles (RSPs). While the RRPs establish minimum set of data-elements required to provide the information meant by the specific data categories in the specific delegated regulation (SRTI, RRTI and MMTIS), the RSPs support harmonised uses cases for the provision of data from the road operator’s point of view.
   
-  NeTEx, also a recommended profile – European Passenger Information Profile (EPIP), which is part of the CENT/TNS 16614 Standard and used for the following use cases:
+  NeTEx also has a recommended profile – the European Passenger Information Profile (EPIP) – which is part of the CEN/TS 16614 standard and is used for the following use cases:
   
   	- Provision of data for journey planners
   	- Provision of data to a path mapping software tool on an (interactive) map
@@ -13,7 +13,7 @@ note: |
   	- Provision of station information
   
   
-  In addition to these general profiles (RRPs and RSPs for Datex II and the EPIP for NeTEx), some MS build their own national profiles related those 2 Standards and SIRI as well.
+  In addition to these general profiles (RRPs and RSPs for DATEX II and the EPIP for NeTEx), some Member States build their own national profiles based on those two standards and on SIRI.
 elements:
   - name: "P1 DATEX II Recommended Reference Profiles"
     guid: "{0284859D-C83B-423b-909A-05291C3F0B08}"
