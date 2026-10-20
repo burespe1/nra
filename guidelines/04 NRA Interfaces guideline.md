@@ -4,10 +4,11 @@
 
 **Audience:** NRA maintenance team.
 
-| Version | Author      | Note                                                                                                                 |
-| ------- | ----------- | -------------------------------------------------------------------------------------------------------------------- |
-| 1.0     | Petr Bureš  | Revised, simplified structure of the Interface, added requirements, Information object and Specification connection. |
-|         | Darko Illic |                                                                                                                      |
+| Version | Author             | Note                                                                                                                 |
+| ------- | ------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | Petr Bureš         | Revised, simplified structure of the Interface, added requirements, Information object and Specification connection. |
+|         | Darko Illic        |                                                                                                                      |
+| 1.1     | Petr Bureš, Claude | After the 2.2.0 model update: Keywords, documentation template, link types. Approved on 20 October 2026.             |
 
 # Scope
 
@@ -30,6 +31,8 @@ In the NRA **the interface is a central point** of the communications view, atta
 Interface names follow this format:
 
   - A meaningful name focusing on the main interface purpose
+
+  - Keywords set to “Interface”; the documentation prints each Interface with its physical data flows and linked Requirements (template NC\_NN\_NNN\_PV).
 
 ## Interface Content
 
@@ -103,7 +106,7 @@ In this part we examine all identified “data items” within the functional da
 
 In this part we assess what is the maximum acceptable delay between start and end of the transaction carrying the data item. It comprises of data transfer, reception, processing and response, there could be intermediate communication between the parties. This parameter assesses what is the typical delay that is perceived as waiting too long, e.g. what could be harmful to the connected systems, what could be bad as perceived by a human connected to interface (and waiting for the response). If the data flow is broken down to 2 ways of communication, e.g. req...
 
-The allowable delay from when data is generated to when it is utilized. Based on the urgency, potential pre-actuality \[1\]of the data and type of data. For highly dynamic data like incident, accidents or status information (travel times) is this value rather low, while for some static data updates it could be days
+\[1\]pdates it could be days
 
 This is critical parameter that together with message size defines initial bandwidth requirements.
 
@@ -177,7 +180,7 @@ For the interface the overall values must be assessed.
 
 > ![](media/04%20NRA%20Interfaces%20guideline/image1.png)
 > 
-> Figure 1 Example of Communication Requirements
+> 1
 
 # Connecting Interface to other NRA objects
 
@@ -188,6 +191,8 @@ The Interface is specified by its description, communication requirements, physi
   - Requirement(s) linked to the Interface: Specifications linked to the Interface via requirements yield mandatory requirements (either form the law or by decision of the NAPCORE)
 
   - Information Object(s) linked to the Interface: if there is specific information object known (described, e.g. per legislative requirement) it can be linked to the Interface.
+
+  - Requirements are linked with «fulfilled by» from the Requirement to the Interface, as for all other NRA objects (see Guideline 03 and Guideline 07).
 
 ![](media/04%20NRA%20Interfaces%20guideline/image2.png)
 

@@ -4,9 +4,10 @@
 
 **Audience:** NRA maintenance team.
 
-| Version | Author     | Note                                                                               |
-| ------- | ---------- | ---------------------------------------------------------------------------------- |
-| 1.0     | Petr Bureš | Revised, simplified structure of the Specification, added requirements connection. |
+| Version | Author             | Note                                                                                                                                                                                                                                                                               |
+| ------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | Petr Bureš         | Revised, simplified structure of the Specification, added requirements connection.                                                                                                                                                                                                 |
+| 1.1     | Petr Bureš, Claude | After the 2.1.0/2.2.0 model update: Keywords per type, sourceVersion, global issue link, deprecation aligned with model versioning (Guideline 06). Open questions resolved: Technical Specifications and Recommendations are linked via Requirements. Approved on 20 October 2026. |
 
 # Scope
 
@@ -21,6 +22,8 @@ This guideline covers:
       - Specifications derived from KPIs (see Guideline 2)
     
       - Requirements derived from Specifications (see Guideline 3)
+    
+      - Versioning and change management of the model (see Guideline 06) and modelling conventions (see Guideline 07)
 
 # Role of Specifications in the NRA
 
@@ -65,6 +68,10 @@ Following structure describe and document specifications:
   - **Link** URL linking directly to the official source document or specification repository.
 
   - **Type** Classification of the specification, selected from the following: *Legal*, *Technical*, *Recommendation*, *Profile*, *KPI*.
+
+  - **Keywords** The EA Keywords field carries the type label printed in the documentation: “Legal Specification”, “Technical Specification”, “Recommendation”, “Profile”. Keywords are mandatory; tools/check.py reports specifications without them.
+
+  - **sourceVersion** Tagged value with the version or date of the external document the model reflects (e.g. “3.6” for DATEX II, “2024” for an NLKF edition). Optional, but recommended for Technical Specifications and Profiles.
 
   - **Description** A brief summary of the specification’s purpose and scope. If the specification supersedes a previous version, highlight the key changes or improvements.
 
@@ -128,17 +135,19 @@ Specifications are arranged in this hierarchy (when applicable):
 
 \> Direct connections to NRA architecture objects are *not* used—those are managed via Requirements (see Guideline 3)
 
+Technical Specifications and Recommendations follow the same Specification → Requirement → NRA Object rule. A direct Dependency from a Recommendation to an Interface is allowed as an informative link (see Guideline 04); it is not printed as a requirement.
+
 # Working with Requirements 
 
 Some Specifications result in Requirements that articulate enforceable architectural constraints. **See the Requirement guideline** for:
 
   - Creating Requirements
 
-  - Moving requirement in the model
+  - Placing Requirements in the model
 
   - Mapping and Linking Requirements to NRA Objects
 
-**Important rule**: If the Specification does not yield any Requirement then it shall be linked to a global issue “Does not yield a Requirement”.
+**Important rule**: If the Specification does not yield any Requirement then it shall be linked to a global issue “Does not yield a Requirement”. The issue is kept in Supplements\\Issues\\Legal issues; link the Specification to it with an Association. tools/check.py warns about every Specification that has neither a Requirement (Abstraction or Usage) nor this link.
 
 # Specification Maintenance and Updates
 
@@ -148,7 +157,7 @@ Initiated during major updates, or when external specifications are revised.
 
 ## Version Tracking
 
-Specifications themselves are **not versioned**. Use related metadata or document references for version awareness.
+Specifications themselves are **not versioned**. Use related metadata or document references for version awareness. The version of the external document is recorded in the tagged value sourceVersion; a change of the model element itself is recorded by the tagged values revised and since (see Guideline 06).
 
 ## Update Procedure
 
@@ -183,6 +192,8 @@ This procedure outlines how to maintain the specification registry when changes 
               - If not, create an empty placeholder object titled **“Generic Specification”** and map the Requirement there.
 
   - **Create a trace link** to any Specification that supersedes or replaces the deprecated one.
+
+  - Keep the deprecated Specification in the Superseded folder at least until the next MAJOR version of the NRA; deleting it is a breaking change and is recorded in the Change Protocol (see Guideline 06).
 
 **➕ When a New Specification Becomes Relevant**
 
@@ -267,12 +278,6 @@ This structure ensures that each specification is clearly identified, classified
 **Additional details**: The NAPs are encouraged to follow this methodology since it would allow better interoperability between NAPs. There is also SHACL validator available <https://data.europa.eu/mqa/shacl-validator-ui/data-provision>. Norwegian NAP has implemented this methodology, see <https://transportportal.no/> in any of the catalogue records.
 
 **Related Documents**: -
-
-# Open Questions
-
-  - How to connect Recommendation Specifications to the NRA Objects?
-
-  - How to connect Technical Specifications to the NRA Objects?
 
 # Annex
 

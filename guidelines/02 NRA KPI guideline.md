@@ -4,9 +4,10 @@
 
 **Audience:** NRA maintenance team.
 
-| Version | Author                      | Note                                                                              |
-| ------- | --------------------------- | --------------------------------------------------------------------------------- |
-| 1.0     | Petr Bureš, Benjamin Witsch | Revised, connection to NRA objects via Requirements and updated folder structure. |
+| Version | Author                      | Note                                                                                                                                                                                                                           |
+| ------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.0     | Petr Bureš, Benjamin Witsch | Revised, connection to NRA objects via Requirements and updated folder structure.                                                                                                                                              |
+| 1.1     | Petr Bureš, Claude          | After the 2.1.0/2.2.0 model update: NLKF version in sourceVersion, category aliases, obsolete KPIs kept until MAJOR version. KPI text inserted 1:1 as a linked document (RTF), as for Interfaces. Approved on 20 October 2026. |
 
 # Scope
 
@@ -21,6 +22,8 @@ This guideline covers:
       - Other specifications then KPIs (see Guideline 1)
     
       - Requirements derived from Specifications (see Guideline 3)
+    
+      - Versioning and change management of the model (see Guideline 06)
 
 # Role of NKLF KPI Specifications in the NRA
 
@@ -40,25 +43,25 @@ As high-level references, NRA KPI Specifications are *not* linked directly to ar
 
   - NLKF KPIs are maintained in the EA model under: Supplements\\Specifications\\KPI Framework.
 
-  - The folder structure mirrors the NLKF KPI categorization, with each category represented as a subfolder.
+  - The folder structure mirrors the NLKF KPI categorization, with each category represented as a subfolder. Each category package carries the Alias “K.n Category name” (K.1–K.7), printed as the chapter heading in the documentation; the packages are ordered by category number.
 
-  - Each KPI is created as a **Specification** object. Its name matches the original KPI name.
+  - Each KPI is created as a **Specification** object. Its name matches the original KPI name. Keywords are not used for KPI Specification objects; their Requirements carry the Keywords “Requirement”.
 
 ![](media/02%20NRA%20KPI%20guideline/image1.png)
 
 # Modelling KPIs in the NRA
 
-Each KPI Specification includes:
+Each KPI Specification is taken over from the NLKF document as follows:
 
-  - ID and Name
+  - Name: ID and name of the KPI as in the NLKF document, e.g. “KPI 1.19 Web performance – (meta)data load time”.
 
-  - Description and supporting notes
+  - Notes: a short description of the purpose of the KPI.
 
-  - Options or choices (if applicable)
+  - Linked document: the complete KPI text copied 1:1 from the NLKF document as rich text (RTF), including the question, the supporting notes, the table of options or values and the minimum acceptable value for interoperability.
 
-  - Minimum acceptable threshold (for interoperability)
+The KPI text is inserted in the same way as the communication requirements of an Interface (linked document in RTF). The table is not rewritten into text, so the model keeps the KPI text identical with the NLKF version, and a new NLKF version replaces the linked document as a whole. The documentation prints the linked document of each KPI Specification.
 
-![](media/02%20NRA%20KPI%20guideline/image2.png) ![](media/02%20NRA%20KPI%20guideline/image3.png)
+![](media/02%20NRA%20KPI%20guideline/image2.png)
 
 # Managing Requirements
 
@@ -66,7 +69,7 @@ Some NRA KPIs Specifications result in Requirements that articulate enforceable 
 
   - Creating Requirements
 
-  - Moving requirement in the model
+  - Placing Requirements in the model
 
   - Mapping and Linking Requirements to NRA Objects
 
@@ -78,9 +81,11 @@ Initiated only upon the release of a new NLKF KPI Framework version.
 
 **Version tracking:**
 
-  - The version is recorded at the **KPI Framework package** level in EA.
+  - The NLKF version is recorded in the tagged value sourceVersion of the KPI Framework package. The package Version field is not used for this (it is not versioned per package, see Guideline 06).
 
   - It is not propagated into individual KPI or Requirement elements.
+
+  - Each changed KPI Specification and Requirement gets the tagged value revised (approval date of the NRA release); new elements also get since (NRA version).
 
 ## Update process:
 
@@ -90,7 +95,7 @@ Initiated only upon the release of a new NLKF KPI Framework version.
 
   - If changes exist:
     
-      - Update the NRA KPI content.
+      - Replace the linked document with the KPI text of the new NLKF version and update the Notes.
     
       - Identify impacted Requirements and NRA objects:
         
@@ -100,7 +105,7 @@ Initiated only upon the release of a new NLKF KPI Framework version.
 
 **For deprecated KPIs (present in NRA, missing in NLKF):**
 
-  - Delete the NRA KPI and all related Requirements and mappings.
+  - Move the NRA KPI and its Requirements to the package “Obsolete KPIs” (not published) and remove their «fulfilled by» links. Delete them only in the next MAJOR version of the NRA (see Guideline 06).
 
 **For new KPIs (present in NLKF, missing in NRA):**
 

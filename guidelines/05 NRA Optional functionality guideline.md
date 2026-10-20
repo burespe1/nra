@@ -4,11 +4,12 @@
 
 **Audience:** NRA maintenance team.
 
-**Status**: for review
+**Status**: approved on 20 October 2026
 
-| Version | Author     | Note           |
-| ------- | ---------- | -------------- |
-| 0.9     | Petr Bureš | First proposal |
+| Version | Author             | Note                                                                                                                                          |
+| ------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0.9     | Petr Bureš         | First proposal                                                                                                                                |
+| 1.0     | Petr Bureš, Claude | Title corrected; RequirementLevel mandatory with derivation rule; colour via diagram legend; template and check. Approved on 20 October 2026. |
 
 # Scope
 
@@ -52,21 +53,25 @@ Optional functionality is recorded and differentiated in two products:
 
 1.  Functions are represented as objects in the EA functional view of the NAP.
 
-2.  Each function is assigned a tagged value RequirementLevel with one of the following values:
+2.  Each function is assigned a tagged value RequirementLevel with one of the following values: The tag is mandatory on every Low Level Function; when the level is not yet decided, MANDATORY is the default.
     
     1.  **MANDATORY** – element contains only mandatory functionality.
     
     2.  **OPTIONAL** – element contains only optional functionality.
     
     3.  **MANDATORY\_PLUS** – element is a mix of mandatory and optional functionality
-    
-    4.  Visual differentiation:
-        
-        1.  Elements with RequirementLevel = OPTIONAL are displayed in a distinct colour.
-    
-    5.  In **MANDATORY\_PLUS** elements, optional functionality is clearly delineated by the keyword **OPTIONAL**, followed by the list of optional items.
 
-3.  Optional functions may have their own dataflows. These can connect either to the functions they extend (via IN/OUT flows) or to other functions.
+3.  The level follows the Requirements the function fulfils (see Guideline 03): only MANDATORY requirements → MANDATORY; only OPTIONAL → OPTIONAL; both → MANDATORY\_PLUS. For a function without Requirements the team decides.
+    
+    1.  Visual differentiation:
+        
+        1.  Elements with RequirementLevel = OPTIONAL are displayed in a distinct colour. The colour is applied with a diagram legend bound to the tagged value RequirementLevel, so that it follows the tag automatically and is explained on every functional diagram.
+    
+    2.  In **MANDATORY\_PLUS** elements, optional functionality is clearly delineated by the keyword **OPTIONAL**, followed by the list of optional items.
+    
+    3.  The documentation template for functions (NC\_NNN\_Functions) prints RequirementLevel next to the function name.
+
+4.  Optional functions may have their own dataflows. These can connect either to the functions they extend (via IN/OUT flows) or to other functions.
     
     1.  ## EA Rules for Creating Optional Functional objects in Model
 
@@ -77,3 +82,7 @@ New optional functionality should be created when:
   - Graphical representation is needed to express functionality as optional.
 
   - Optional functionality introduces new IN and OUT dataflows.
+
+  - New optional functions and new OPTIONAL parts get the tagged value since with the NRA version that introduced them (see Guideline 06).
+
+  - tools/check.py checks that MANDATORY\_PLUS functions contain the keyword OPTIONAL and warns about functions without RequirementLevel.
