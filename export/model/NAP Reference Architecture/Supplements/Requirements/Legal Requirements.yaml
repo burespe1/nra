@@ -181,6 +181,24 @@ elements:
       Source: L8 ITS Directive
     links:
       - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {B457DD98-16C6-4B03-89D6-08B110D3835F} → {832264BF-9750-421b-9BFF-C77CE32FA053}
+  - name: "L.9.1 Once-only principle and information quality"
+    guid: "{5EBE8828-70DD-4b25-9F5D-8F7E58A529FF}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      Where the NAP is a public-facing service of a public authority, the platform shall meet the quality requirements of the Single Digital Gateway Regulation: the information is accurate, up to date, clearly structured and available in the national language and in at least one other official language of the Union. In line with the once-only principle, transport datasets published on the NAP shall not be published again on other national portals; those portals reference or harvest the NAP metadata.
+      
+      Source: L9 Single Digital Gateway
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {B74B0693-D4D2-4109-8DD5-BED3265433CC} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {83335B84-420E-4814-8854-469A98C2CE0B} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
   - name: "L.2.4 Reporting obligation"
     guid: "{ED7D9261-5E1A-4278-93F5-1159D460C378}"
     type: "Requirement"
