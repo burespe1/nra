@@ -24,6 +24,10 @@ jobs:
         run: |
           python tools/export.py model/NRA.qea export
           git diff --stat --exit-code export || (echo "::warning::export/ is not up to date – run tools/export.py or install the pre-commit hook" )
+      - name: Model check (conventions, Guideline 06/07)
+        run: |
+          python tools/check.py model/NRA.qea check.md
+          cat check.md >> "$GITHUB_STEP_SUMMARY"
       - name: Change report (pull request)
         if: github.event_name == 'pull_request'
         run: |
@@ -40,8 +44,13 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: model-change-report
-          path: report.md
+          path: |
+            report.md
+            check.md
       - name: Comment on pull request
+        if: github.event_name == 'pull_request'
+        run: cat check.md >> report.md
+      - name: Post comment
         if: github.event_name == 'pull_request'
         uses: marocchino/sticky-pull-request-comment@v2
         with:
