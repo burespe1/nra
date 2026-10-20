@@ -267,7 +267,7 @@ elements:
       - "Association «OUT» → mt_NAP_data_mod_request"  # {1FEC81F9-A14A-478f-955F-6431A651FB7A} → {B7FC7C2F-C1AA-4bf8-82D4-0EA2370C6BC9}
       - "Association «OUT» → tnap.cp-data_upload_result_report"  # {D23A0177-082E-4c2f-A119-9278166E477A} → {A6E68B7A-7C94-474f-B168-C2A98537BC37}
       - "Association «OUT» → tnap.dps-data_upload_result_report"  # {FC1EAC08-2188-41a8-96DD-29D765650423} → {FBD65825-894B-415a-AE17-8AD14FDF8F08}
-      - "Association «adheres to» → DATEX II Recommended Reference Profiles"  # {2EFB0378-AB78-477f-8D9A-62977211CCE7} → {0284859D-C83B-423b-909A-05291C3F0B08}
+      - "Association «adheres to» → P1 DATEX II Recommended Reference Profiles"  # {2EFB0378-AB78-477f-8D9A-62977211CCE7} → {0284859D-C83B-423b-909A-05291C3F0B08}
       - "Dependency «trace» → RequirementLevel and NAP type"  # {2975048C-EE64-4FC0-8E9D-32635ED4B0BB} → {74D5833B-7B98-47FA-A815-7DADCC1A236A}
   - name: "F3.6.9 Manage NAP Data Retrieval"
     guid: "{A3764B72-97E2-400c-81B8-C945964F9E0D}"
