@@ -582,6 +582,8 @@ elements:
       	- Commission Delegated Regulation (EU) 2022/670 – Updates and replaces parts of 2015/962; sets new specifications for real-time traffic information services.
       	- Delegated Regulation (EU) 2024/490 – Amends and updates the original 2017/1926 regulation, refining data categories, deadlines, and technical specifications for MMTIS implementation.
     links:
+      - "Abstraction → L.8.1 Annex III data via the NAP"  # {74BE164A-E5EE-4552-864B-D5FBA7211316} → {C8A1CCD5-7AD8-440A-8BD9-CA21354120EA}
+      - "Abstraction → L.8.2 Reporting by the Member State"  # {B9FEC9FF-4C87-450D-802F-102B8AEFD4D5} → {1A1FB516-70B9-443A-B75B-9F81F5C95DA6}
       - "Substitution → Directive 2010/EU/40 - ITS"  # {F8B3C953-3B44-4a36-8775-BAB8B78C10E0} → {16A6F191-FEAD-43db-A673-B04711F39783}
       - "Usage «Instantiate» → Fulfilling National Access Point obligations according to ITS directive"  # {52C46008-292B-465e-84B5-FFAD81D36502} → {5BC72E89-BADD-4468-8CF6-53736DE6B090}
   - name: "L9 Single Digital Gateway"

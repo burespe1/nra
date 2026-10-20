@@ -105,6 +105,44 @@ elements:
       L5 MMTIS (Delegated Regulation (EU) 2017/1926 as amended by Delegated Regulation (EU) 2024/490)
     links:
       - "Association «fulfilled by» → European or national law (MS to CP)"  # {22FC0A7F-0036-44D8-ACBB-6CAB7147703A} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+  - name: "L.8.1 Annex III data via the NAP"
+    guid: "{C8A1CCD5-7AD8-440A-8BD9-CA21354120EA}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      The data types listed in Annex III of Directive 2010/40/EU, as amended by Directive (EU) 2023/2661, shall be made accessible in a digital machine-readable format through the NAP, within the geographical coverage and by the deadlines set out there. The obligation concerns data that the data holder already holds; it does not require new data to be collected.
+      
+      Source: L8 ITS Directive
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {023A6F25-E680-497D-A6EF-928B5239ACB0} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → European or national law (MS to CP)"  # {D683F89B-6336-4789-AF97-238D4AEDA50E} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {C17B7DED-4C64-4B31-AB83-0B62DB756725} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "L.8.2 Reporting by the Member State"
+    guid: "{1A1FB516-70B9-443A-B75B-9F81F5C95DA6}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      The Member State shall report to the Commission every three years on the progress of the implementation, including the key performance indicators. The NAP operator shall provide the NAP-related information and statistics for the report.
+      
+      Source: L8 ITS Directive
+    links:
+      - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {B457DD98-16C6-4B03-89D6-08B110D3835F} → {832264BF-9750-421b-9BFF-C77CE32FA053}
   - name: "L.2.4 Reporting obligation"
     guid: "{ED7D9261-5E1A-4278-93F5-1159D460C378}"
     type: "Requirement"
