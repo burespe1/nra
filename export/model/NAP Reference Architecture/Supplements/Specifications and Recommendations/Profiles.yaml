@@ -109,7 +109,7 @@ elements:
     tags:
       "revised": "2025-07-04"
     note: |
-      STUB: UVARBox digitized five types of UVARs for which five profiles are available as RSP in the . The five UVAR types are:
+      STUB: UVARBox digitized five types of UVARs for which five profiles are available as RSP on the DATEX II website. The five UVAR types are:
       
       	- low emission zones
       	- limited traffic zones
@@ -118,7 +118,7 @@ elements:
       	- parking zones
       
       
-      As these profiles are based on un unstable version of DATEX II Traffic Regulations users have to be aware of non-interoperable changes are expected in a stable future v3 release of TrafficRegulation and ControlledZone.
+      As these profiles are based on an unstable version of DATEX II Traffic Regulations users have to be aware that non-interoperable changes are expected in a stable future v3 release of TrafficRegulation and ControlledZone.
       UVARBox website
     links:
       - "Usage → DATEX II"  # {F7C076D9-310F-46bf-A4EA-3D2CCDDBF66E} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
