@@ -755,6 +755,7 @@
     - "P3 EPIP Profile"
     - "P4 IDACS Recommended Service Profiles"
     - "P5 UVARBox"
+    - "R1 EMDS practical guidance"
     - "S1 CKAN API"
     - "S10 OAI-PMH"
     - "S11 OCPI"
@@ -772,7 +773,6 @@
     - "S7 INSPIRE"
     - "S8 mobilityDCAT-AP"
     - "S9 NeTEx"
-    - "deployEMDS"
 - name: "KPI Framework"
   guid: "{95AB177C-4741-45a3-B43C-6D274D2C2EDB}"
   package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/KPI Framework"
@@ -900,6 +900,7 @@
   package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/Recommendations"
   note: ""
   elements:
+    - "R1 EMDS practical guidance"
     - "R2 Assistance"
     - "R3 Metadata quality feedback"
     - "R4 Not tampered by the NAP"
@@ -927,4 +928,3 @@
     - "S7 INSPIRE"
     - "S8 mobilityDCAT-AP"
     - "S9 NeTEx"
-    - "deployEMDS"

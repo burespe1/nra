@@ -5,6 +5,34 @@ version: "1.0"
 note: |
   Recommendation: Provide guidelines or best practices that are not mandatory but are suggested to achieve optimal performance, compliance, or quality. These can include industry standards, advisory notes, or expert recommendations.
 elements:
+  - name: "R1 EMDS practical guidance"
+    guid: "{7E203B2F-A441-4204-A6A1-9B2B669C5C12}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+    note: |
+      Type: Recommendation
+      
+      Full Name: deployEMDS – Technical Specifications for the European Mobility Data Space
+      
+      Link: https://deployemds.eu/
+      
+      Description: deployEMDS is a European project co-funded under the Digital Europe Programme that defines the technical architecture, governance, and interoperability mechanisms for the European Mobility Data Space (EMDS). It aims to enable secure, sovereign, and standardised data sharing across public and private mobility actors. The specifications support real-life implementations in nine cities and regions and are aligned with the European Data Strategy and Sustainable and Smart Mobility Strategy.
+      
+      Additional details: The deployEMDS technical specifications define common building blocks for data interoperability, data sovereignty, and data accessibility. They include reference architectures, metadata vocabularies, trust frameworks, and APIs for federated data exchange. The framework supports integration with existing standards (e.g. DCAT-AP, mobilityDCAT-AP, DATEX II, OCPI) and enables cross-domain use cases such as multimodal routing, traffic management, and SUMI monitoring. The specifications are being piloted in 16 use cases across 9 EU countries.
+      
+      Related Documents:
+      
+      	- deployEMDS Technical Documentation – Architecture, components, and implementation guidance
+      	- deployEMDS Project Portal – Project overview, use cases, and governance
+      	- EU Transition Pathways – deployEMDS Summary – Strategic context and policy alignment
+      	- Digital Europe Programme – EMDS Objectives – Background on European data space initiatives
+      	- BoostEDIC Mobilty & Logistics Project — Successor initiative to deployEMDS, launched February 2026 under the Digital Europe Programme.
   - name: "R2 Assistance"
     guid: "{0D28759C-0D39-4657-95CF-58C45787B5DC}"
     type: "Requirement"
