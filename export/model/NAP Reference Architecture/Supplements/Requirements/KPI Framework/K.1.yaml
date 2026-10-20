@@ -297,7 +297,7 @@ elements:
     order: 14
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
       At least one change/modification information about the data shall be provided:
       a. Webserver uses “Last updated date and/or time” information (e.g., the DATEX XML includes the “publication time” which shows when the dataset has been updated)
@@ -306,6 +306,9 @@ elements:
       d. Webserver uses some other method for data modification indication (please specify the method used in the “Suggestions” box)
       
       Source: KPI 1.16 Indication of provided data modification
+    links:
+      - "Association «fulfilled by» → F3.6.9 Manage NAP Data Retrieval"  # {5C6AEB7C-4FE9-4B45-B5A0-A0E424FCDF3D} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+      - "Association «fulfilled by» → Machine Data Access"  # {571D419E-72C3-49FD-9EA5-A31EA3A35B0E} → {B5381D32-D813-436f-8E09-B87BD10B5F64}
   - name: "K.1.17.1 Data transfer optimization"
     guid: "{025CAF43-3430-4650-B487-6B6AAF7E6C50}"
     type: "Requirement"
@@ -360,11 +363,14 @@ elements:
     order: 17
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
       The load time for (meta)data shall be higher than 1 sec, max. 2 sec.
       
       Source: KPI 1.19 Web performance - (meta)data load time
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {56A7B2D9-19D8-4EBF-BB6A-FA065584C551} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {67F761C0-5CF0-4FE7-8CA9-E296846849FC} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
   - name: "K.1.21.1 Metadata about data modification"
     guid: "{4456CECE-D82D-45f3-B576-2BE6BAFBE615}"
     type: "Requirement"

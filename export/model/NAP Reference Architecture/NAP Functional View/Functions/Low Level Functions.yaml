@@ -9,7 +9,7 @@ elements:
     guid: "{28A2C553-2939-4542-B14B-8A13B25BC494}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
@@ -39,11 +39,12 @@ elements:
     guid: "{D01EFD87-A3E1-4216-81D9-855530ECE1B9}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -60,7 +61,7 @@ elements:
     guid: "{15D991EA-63BC-40ac-936A-A0B8D3CBC28A}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
@@ -102,11 +103,12 @@ elements:
     guid: "{E8D1212C-A787-4da1-A4EB-B4E1896ABD19}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -131,7 +133,7 @@ elements:
     guid: "{2F2393E9-9A59-4344-A2C0-207945E7F438}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
@@ -164,7 +166,7 @@ elements:
     guid: "{E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
@@ -193,11 +195,12 @@ elements:
     guid: "{15BFF38A-05D9-4775-84C9-6604B0EEA3C6}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This function shall be capable of providing the following facilities:
       
@@ -212,11 +215,12 @@ elements:
     guid: "{57AEF510-D710-4920-9CCE-96BE708F6AAC}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -238,11 +242,12 @@ elements:
     guid: "{5B4F357F-A164-4a3f-8909-C370F4C0615F}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -264,7 +269,7 @@ elements:
     guid: "{A3764B72-97E2-400c-81B8-C945964F9E0D}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
@@ -293,7 +298,7 @@ elements:
     guid: "{678C8981-D1F4-47ea-8F47-1E260E07F935}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 1
     tags:

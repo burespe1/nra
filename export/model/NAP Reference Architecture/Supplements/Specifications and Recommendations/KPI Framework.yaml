@@ -1,7 +1,7 @@
 package: "NAP Reference Architecture/Supplements/Specifications and Recommendations/KPI Framework"
 guid: "{D8FE367F-943D-4534-9390-BE3D63506234}"
 alias: "KPI Framework"
-version: "derived from KPI 2025/06/01"
+version: "1.0"
 note: |
   To assess a NAP LoS based on a framework of Key Performance Indicators (KPIs) related to the offered NAP interoperability features and services. The tool is called “NAP LoS KPI Framework tool” (NLKF) and it is used by NAP operators as a self-assessment survey in periodic (yearly) scoring exercises (starting in spring 2023). NLKF helps NAP harmonization activities such as:
   
@@ -10,4 +10,6 @@ note: |
   	- Creating NAP European benchmark reference based on the minimum, average and other statistic scores of all Member states.
   
   NLKF is as bottom-up principle, as a state of practice in Europe going from individual KPIs. NLKF includes both quantitative and qualitative KPIs and differentiates the provided answers when a different platform (2 types) is operated for one or more Delegated Regulations supplementing the ITS Directive (2010/40/EC). The aggregated results for feature categories or for a NAP as a whole are expressed in quantitative manner (Grade of Achievement, GA) or qualitative (Maturity Level, LoS 1 to 5).
+tags:
+  "sourceVersion": "KPI 2025/06/01"
 elements: []

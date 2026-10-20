@@ -68,13 +68,13 @@ elements:
     order: 3
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
       The platform shall provide self-declaration forms/templates without any additional involvement in process.
       
       Source KPI 7.5 Compliance assessment support by NAP
     links:
-      - "Association → Function missing in the NRA for the KPI"  # {46A7C62A-E5B5-44c1-8F2E-EBBB98959726} → {A6EA45BA-53FF-4177-AA14-F282A8C55D0F}
+      - "Association «fulfilled by» → Support (ticket) Module"  # {F0FD3356-22D8-436A-85A2-D469010AAE01} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
   - name: "K.7.6.1 Association of published datasets with Delegated Regulations"
     guid: "{747DB3C3-C956-4030-9637-30756698054B}"
     type: "Requirement"

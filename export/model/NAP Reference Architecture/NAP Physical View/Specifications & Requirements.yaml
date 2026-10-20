@@ -1,7 +1,0 @@
-package: "NAP Reference Architecture/NAP Physical View/Specifications & Requirements"
-guid: "{4D455F25-9AB7-49bf-9BC8-45681A7C5107}"
-alias: "Specifications and Requirements"
-version: "1.0"
-note: |
-  Specifications and requirements affecting the implementation of the ITS Service and depicted on the diagram are described in a Specifications document.
-elements: []
