@@ -48,6 +48,9 @@ def main(argv):
         o = obj[oid]
         if o['type'] == 'Package' and not c.execute('select Alias from t_object where Object_ID=?', (oid,)).fetchone()[0]:
             W('alias', f'package **{o["name"]}** is printed by a model document but has no Alias (used as chapter heading)')
+    for mid, mname, cls, aname in c.execute("select o.Object_ID, o.Name, a.Classifier, a.Name from t_attribute a join t_object o on o.Object_ID=a.Object_ID where o.Stereotype='model document'"):
+        if not (cls and cls.isdigit() and int(cls) in obj):
+            E('model-document', f'model document **{mname}** refers to a deleted package “{aname}” – remove the reference')
     # --- versioning tags
     for o in frame + [o for o in obj.values() if o['st'] == 'GlossaryEntry']:
         if 'revised' not in tags[o['id']]:
