@@ -9,7 +9,7 @@ Resolution of the 12 unresolved requirements (Guidelines 01, 03, 05) and alignme
 - **Added:** function F3.6.11 Monitor NAP Usage and Performance (OPTIONAL); issue *Does not yield a Requirement*.
 - **Changed:** F3.6.1, F3.6.2, F3.6.4, F3.6.5, F3.6.9 extended (MANDATORY_PLUS, optional parts marked OPTIONAL); 10 requirements moved from Unresolved to their packages and linked to the architecture; L.12.1 (NIS2) as conditional requirement; User Need → F3.6.4 links converted to «Servedby»; issues resolved/closed; RequirementLevel on all functions (MANDATORY by default); K.1.16.1, K.1.19.1, K.7.5.1 linked («fulfilled by»); issue *Functionality Missing* renamed to *Missing functionality for the Requirement*; F3.6.11 on the functional tree (light blue = OPTIONAL); template NC_NNN_Functions prints the requirement level; partial master documents per view (*NAP Documentation/Partial documents*) for reviews in Word.
 - **Archived:** requirement L.9.1 (Single Digital Gateway) removed, specification L9 linked to *Does not yield a Requirement*; three closed issues merged; five empty *Specifications & Requirements* view folders removed (and the model-document reference to one of them).
-- **Editorial:** K5.4.1 → K.5.4.1; package versions reset to default (model versioned by tag), NLKF edition in `sourceVersion`; Keywords in title case (Low Level Function, High Level Function, Physical Data Flow).
+- **Editorial:** K5.4.1 → K.5.4.1; package versions reset to default (model versioned by tag), NLKF edition in `sourceVersion`; Keywords in title case (Low Level Function, High Level Function, Physical Data Flow); Organisational View notes formatted consistently (bold labels, blank line before headings, bullet lists).
 
 ## v2.1.0 – 2026-10-20
 
