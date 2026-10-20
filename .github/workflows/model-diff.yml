@@ -27,14 +27,15 @@ jobs:
       - name: Change report (pull request)
         if: github.event_name == 'pull_request'
         run: |
-          git lfs fetch origin ${{ github.base_ref }}
-          python tools/diff.py --git origin/${{ github.base_ref }} HEAD report.md
+          BASE=${{ github.event.pull_request.base.sha }}
+          git lfs fetch origin "$BASE"
+          python tools/diff.py --git "$BASE" HEAD report.md
           cat report.md >> "$GITHUB_STEP_SUMMARY"
       - name: Change report (release tag)
         if: startsWith(github.ref, 'refs/tags/')
         run: |
           PREV=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || echo "")
-          if [ -n "$PREV" ]; then git lfs fetch origin "$PREV"; python tools/diff.py --git "$PREV" HEAD report.md; else echo "# First release" > report.md; fi
+          if [ -n "$PREV" ]; then git lfs fetch origin "$(git rev-list -n1 "$PREV")"; python tools/diff.py --git "$PREV" HEAD report.md; else echo "# First release" > report.md; fi
           cat report.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
