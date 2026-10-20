@@ -209,7 +209,7 @@ elements:
       "revised": "2026-10-20"
       "since": "2.2.0"
     note: |
-      Issue: Facility (1) says “The checks follow the MQA and InQMS methodology, at minimum it is an availability of the urls provided in metadata.” MQA is modelled as a Recommendation. By Guideline 03 a part derived only from a Recommendation is OPTIONAL, while the function has RequirementLevel = MANDATORY.
+      Issue: Facility (1) says “The checks follow the MQA and InQMS methodology, at minimum it is an availability of the urls provided in metadata.” MQA is a Recommendation (the worked example of Guideline 01; R7 in the revised Specifications and Recommendations document of 15.09.2026, not yet in the model). By Guideline 03 a part derived only from a Recommendation is OPTIONAL, while the function has RequirementLevel = MANDATORY.
       
       Proposed solution: Keep the minimum mandatory (link checking, K.4.2.1, through the Metadata Quality Check Module) and mark the methodology as optional: reword facility (1) to “The ability to perform metadata quality checks based on pre specified rules and procedures (including appropriate time frequencies), at minimum the availability of the URLs provided in metadata.”, add “OPTIONAL: metadata quality checks following the MQA and InQMS methodology.” and set RequirementLevel = MANDATORY_PLUS. Alternative: keep the text and close the issue, because the minimum is already distinguished in the sentence.
   - name: "FV: Functionality to be processed into NRA - FROM 2023"
