@@ -20,7 +20,7 @@ elements:
       Member States shall ensure that public sector bodies take the necessary measures to make their websites and mobile applications more accessible by making them perceivable, operable, understandable and robust.
       
       Source:
-      L1 Directive (EU) 2016/2102 - Website Accessibility
+      L1 Web Accessibility Directive
     links:
       - "Association «fulfilled by» → EU Legal Framework (EC to MS)"  # {9F09EBBA-E483-40d2-AED6-BFBFB54220DD} → {D91DD8AD-EAF3-4d4d-97EC-2668B2AFB9EC}
   - name: "L.1.2 Platform accessibility"
@@ -38,7 +38,7 @@ elements:
       The platform shall comply with conformance level AA of the “Web Content Accessibility Guidelines Web - WCAG 2.1” or with the applicable European standard EN 301 549 V2.1.2 (2018-08).
       
       Source:
-      L1 Directive (EU) 2016/2102 - Website Accessibility
+      L1 Web Accessibility Directive
     links:
       - "Association «fulfilled by» → Data Platform NAP"  # {1DA4E46A-4FCA-4e99-BA40-E6988E2EEFB5} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
       - "Association «fulfilled by» → Metadata Directory NAP"  # {71375158-E81E-4b46-8D43-1A455D01B517} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
@@ -57,10 +57,10 @@ elements:
       The NAP shall fully disclose all received information/evidence to the CA/NB assisting in the assessment process.
       
       Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      L2 SRTI
+      L3 SSTP
+      L4 RTTI
+      L5 MMTIS
     links:
       - "Association «fulfilled by» → Collaboration Agreement (CA/NB to NO)"  # {2C1D663C-289D-41b0-8F48-72EAC2810BEF} → {0B562BCC-408D-4b46-9039-5A275BDFDD86}
   - name: "L.2.2 Provide up to date data"
@@ -78,10 +78,10 @@ elements:
       Content provider shall provide up-to-date and accurate data with a desired level of quality, in the prescribed format.
       
       Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      L2 SRTI
+      L3 SSTP
+      L4 RTTI
+      L5 MMTIS
       
       Prescribed formats: DATEX II, NeTEx, SIRI, Transmodel, IATA SSIM, INSPIRE, TN-ITS, TEL TSI and ERA Ontology (linked by Usage).
     links:
@@ -120,10 +120,10 @@ elements:
       The platform shall enable Content Consumer to report to the content provider (CP) any inaccuracies related to the data without delay.
       
       Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      L2 SRTI
+      L3 SSTP
+      L4 RTTI
+      L5 MMTIS
     links:
       - "Association «fulfilled by» → European or national law (MS to CC)"  # {E6C45E92-F6EC-44a4-99E3-3CAB7454E497} → {C7C1A638-F3DE-4b70-9BD0-F24DB573079A}
       - "Association «fulfilled by» → Support (ticket) Module"  # {C8EC553F-7FA5-4eae-81F0-2CE004DBA1C9} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
@@ -142,10 +142,10 @@ elements:
       The platform shall provide functionalities to enable ITS directive relevant data provider to publish relevant information about data/services (e.g., Metadata) and information on the data quality at the NAP.
       
       Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      L2 SRTI
+      L3 SSTP
+      L4 RTTI
+      L5 MMTIS
     links:
       - "Association «fulfilled by» → European or national law (MS to CP)"  # {CBD79F6E-9DBF-467d-BC25-9B0305543C16} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
       - "Association «fulfilled by» → Metadata Management Module"  # {862C0AD5-1654-4f7b-A78F-783AF5E1CA94} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
@@ -164,10 +164,10 @@ elements:
       NAPs shall provide appropriate discovery services to NAP users / Content Consumers (CC).
       
       Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      L2 SRTI
+      L3 SSTP
+      L4 RTTI
+      L5 MMTIS
     links:
       - "Association «fulfilled by» → F3.6.4 Manage Metadata Retrieval"  # {595CF938-ACD3-42a2-8B6C-F5088B948ED5} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {D08A4199-70C9-4581-A168-27096238D2F5} → {832264BF-9750-421b-9BFF-C77CE32FA053}
@@ -186,10 +186,10 @@ elements:
       NAPs shall allow the CA/NB to access stored information about the CPs at the NAP and cooperate with CA/NB on the ITS directive implementation.
       
       Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      L2 SRTI
+      L3 SSTP
+      L4 RTTI
+      L5 MMTIS
     links:
       - "Association → Rethink Agreement setup"  # {39B8C0DC-FE99-4af3-8891-43B8603E40D9} → {42102251-3ABE-4686-B487-890153AF6C69}
       - "Association «fulfilled by» → Data Platform NAP"  # {A110310E-EA5E-445a-8B59-C2044E1CB963} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
@@ -209,7 +209,7 @@ elements:
     note: |
       The platform shall enable the access to AFIR-data via exposing CPO's APIs.
       
-      Source: L6 Regulation (EU) 2023/1804 - AFIR
+      Source: L6 AFIR
     links:
       - "Association «fulfilled by» → Metadata Management Module"  # {044EEB72-D0C4-4bad-941A-CB41AA42DBE7} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
   - name: "L.6.3 Aggregated AFIR data maybe provided via API to European access point"
@@ -226,7 +226,7 @@ elements:
     note: |
       If the platform aggregates AFIR-data, it may provide those data to a common European access point by means of an API.
       
-      Source: L6 Regulation (EU) 2023/1804 - AFIR
+      Source: L6 AFIR
     links:
       - "Association «fulfilled by» → Data Management Module"  # {549E39B6-8749-4033-AB7E-6C62373BEB6D} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
   - name: "L.7.1 GDPR compliance"
@@ -245,7 +245,7 @@ elements:
       The Platform shall clearly state the use, data processing and data related methods (e.g. deletion) on the website.
       
       Source:
-      L7 Regulation (EU) 2016/679 - GDPR
+      L7 GDPR
     links:
       - "Association «fulfilled by» → Metadata provision contract (NO to CP)"  # {A08D3FF7-C720-4dfa-BE95-BD410999FBE5} → {BEED600A-C5D2-4829-9BF5-6E6649CB3D14}
       - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {A0F99D57-B522-4204-B003-C22C84BC9417} → {832264BF-9750-421b-9BFF-C77CE32FA053}
