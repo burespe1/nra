@@ -72,6 +72,7 @@ elements:
       - "Substitution → Regulation (EU) No 1305/2014 – TAF TSI"  # {F59E872C-3F96-491F-B540-45EDCB3D99E0} → {1C65E621-1EED-47c9-AD18-66A51CC0A9F4}
       - "Substitution → Regulation (EU) No 454/2011 – TAP TSI"  # {114C0A5A-DFBE-4DC4-8CA6-D5740EA0D219} → {1D4FBC58-0459-48fd-82D8-411F6693B4A7}
       - "Substitution → TAP-TSI"  # {A29DB5BE-C994-4A0E-848C-9E7DCD4305E7} → {682395F9-50B7-41f0-A637-3327735690CE}
+      - "Usage → L.2.2 Provide up to date data"  # {371E5AAD-CF84-4AF3-8394-84C97CB7108C} → {3A5AE4E8-99D6-446e-9A35-26D9A69357B2}
   - name: "L11 AFIR data specifications"
     guid: "{BB34947F-7458-46e4-B45C-28338EDB244A}"
     type: "DeploymentSpecification"
@@ -273,6 +274,7 @@ elements:
       	- Directive (EU) 2022/2555 – NIS2 – The parent directive (L12), which this act implements.
       	- ENISA Technical Implementation Guidance – Maps each requirement of the Annex to concrete controls and to existing standards.
     links:
+      - "Abstraction → L.12.1 NAP as critical infrastructure"  # {26D7FDAC-E6A8-4D83-B506-4A32CB2933B2} → {037F8E03-319D-4b87-A355-4744DCC160F7}
       - "Realisation → L12 NIS2"  # {8814803A-2E9D-4C54-947C-54CBACA1C971} → {4960CAB3-98F8-4f09-94E1-62AFA0954523}
   - name: "L18 SSPA standards"
     guid: "{22C738DD-60AB-407D-9D03-151B372D58B0}"

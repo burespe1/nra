@@ -82,6 +82,8 @@ elements:
       L3 Regulation (EU) No 885/2013 - SSTP
       L4 Regulation (EU) 2022/670 - RTTI (recast)
       L5 Regulation (EU) 2017/1926 - MMTIS
+      
+      Prescribed formats: DATEX II, NeTEx, SIRI, Transmodel, IATA SSIM, INSPIRE, TN-ITS, TEL TSI and ERA Ontology (linked by Usage).
     links:
       - "Association «fulfilled by» → European or national law (MS to CP)"  # {FED17C9C-78D9-4dd4-9282-EF6A6C6B2EC9} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
   - name: "L.5.1 Minimum EU or national profiles"
@@ -263,7 +265,7 @@ elements:
     note: |
       If the Member State defines the NAP as critical infrastructure according to NIS II, the platform has to fulfill the requirements according to NIS II regulation.
       
-      Source: L12 Directive (EU) 2022/2555 - NIS2
+      Source: L12 NIS2, L17 NIS2 implementing act
     links:
       - "Association «fulfilled by» → Data Platform NAP"  # {0AD4A4C9-0D8B-4637-B146-3D8FA9665FB3} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
       - "Association «fulfilled by» → Metadata Directory NAP"  # {AB779473-0809-4e31-A981-43F2E94F35DC} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
