@@ -135,6 +135,8 @@ elements:
       	- DATA4PT NeTEx wiki – Schemas, examples and implementation guidance for the profile.
       	- NeTEx National Implementations – DATA4PT – Country-by-country profile coverage and Level of Service alignment.
       	- NAPCORE MMTIS Data Dictionary – Alignment between the MMTIS data categories and NeTEx/SIRI elements.
+    links:
+      - "Usage → S9 NeTEx"  # {8ACF90DF-A2CF-489E-B6AA-B6C5E3627FCB} → {477B7D19-AF4F-483d-BF7D-70FEBB8AE8BB}
   - name: "P4 IDACS Recommended Service Profiles"
     guid: "{87698942-37BC-4e11-ABA4-EA4038A0791C}"
     type: "DeploymentSpecification"

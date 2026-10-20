@@ -128,3 +128,31 @@ elements:
       Description: NAPs shall grant the right to reuse the metadata, including personal information provided with consent, and shall provide metadata that is accurate, timely and complete.
       
       Additional details: This recommendation has a licensing half and a quality half, and both are needed for it to mean anything. Licensing: the metadata a NAP holds should carry an explicit open licence, so that a harvester — a national open data portal, the European data portal, another NAP — may reuse it without asking first. Absent a stated licence the default is that all rights are reserved and harvesting is legally uncertain, which is enough to stop it happening. Where a metadata record contains personal information, typically a contact name for the content provider, the reuse right extends only as far as the consent that was given for it, and that boundary should be visible in the record. Quality: accurate, timely and complete means the record actually matches the dataset it describes and is updated when that dataset changes, which in practice requires either provider-driven updates or periodic revalidation by the NAP — a metadata record that has silently drifted from its dataset is worse than no record, because it is trusted. This recommendation is the operational counterpart of the Open Data Directive obligations in L13, and mobilityDCAT-AP is the vocabulary in which it is expressed.
+  - name: "R7 MQA"
+    guid: "{27EC8DD4-99C6-429E-BF00-AA6461544103}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Type: Recommendation
+      
+      Full Name: Metadata Quality Assessment (MQA) Methodology, data.europa.eu
+      
+      Link: https://data.europa.eu/mqa/methodology
+      
+      Description: The MQA is the methodology and the tool that data.europa.eu uses to measure the quality of the metadata it harvests. It scores each catalogue record against findability, accessibility, interoperability, reusability and contextuality, reports which checks the record failed, and indicates what to correct. Both the methodology and the scoring are published, and the tool runs continuously against the portals that are harvested.
+      
+      Additional details: The MQA scores the metadata record, not the dataset behind it, which is exactly what makes it useful to a NAP: it measures what the NAP itself publishes and controls. Three things follow. It gives the “Metadata quality feedback” recommendation an objective criterion — “insufficient quality” becomes a named set of failed checks rather than a judgement. It covers the licence and access-rights fields, which is where the “Reuse metadata” recommendation and the high-value dataset obligations of L14 are enforced in practice. And because the score is computed from the DCAT-AP projection of a record, a NAP can predict it before harvest by running the SHACL validator itself, rather than discovering the result on the European data portal weeks later. Following the methodology also makes quality comparable between NAPs, which is the reason NAPCORE encourages it.
+      
+      Related Documents:
+      
+      	- MQA methodology – The published scoring method and the dimensions it measures.
+      	- MQA SHACL validator – Validates a catalogue record before it is harvested.
+      	- Norwegian NAP – A deployed implementation; the assessment is visible in any catalogue record.
+      	- DCAT-AP – The vocabulary the score is computed from (S18).

@@ -269,6 +269,62 @@ elements:
       	- Transmodel Overview – Official Portal – Conceptual structure, functional areas, and standard evolution
       	- Transmodel on Data4PT – Strategic role in EU public transport data harmonisation
       	- Standards for Implementation – Transmodel – Mapping to NeTEx, SIRI, OJP, and OpRa
+  - name: "S18 DCAT-AP"
+    guid: "{2D557EE9-6CC1-4F9D-88CB-A963EF2F0A7F}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Technical Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Type: Technical
+      
+      Sub-type: Technical
+      
+      Full Name: DCAT-AP – Data Catalogue Vocabulary Application Profile for data portals in Europe
+      
+      Link: https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe
+      
+      Description: DCAT-AP is the European application profile of the W3C Data Catalogue Vocabulary. It specifies how a dataset, a data service and a catalogue are described in RDF so that records can be exchanged between public sector data portals across Europe. mobilityDCAT-AP is the mobility-domain extension of it.
+      
+      Additional details: A NAP meets DCAT-AP twice over and it is worth keeping the two apart. mobilityDCAT-AP is what the NAP uses to describe mobility datasets richly, and it is the NAPCORE baseline. Plain DCAT-AP is what the NAP must be able to emit when its records are harvested by a national open data portal or by data.europa.eu, and it is the form in which the high-value dataset arrangements (L14) are expressed. Because mobilityDCAT-AP is an extension, a valid mobilityDCAT-AP record is also a valid DCAT-AP record with extra properties, so harvesting is a projection rather than a separate mapping — but only where the NAP has kept to the extension. Local properties invented outside it are dropped silently on harvest, which is the usual reason a NAP dataset appears on a national portal carrying less information than the NAP holds.
+      
+      Related Documents:
+      
+      	- mobilityDCAT-AP – The mobility extension of this profile, and the NAPCORE baseline for NAP metadata.
+      	- data.europa.eu data provider manual – What a harvested record must contain to be accepted by the European data portal.
+  - name: "S19 ERA Ontology"
+    guid: "{7C8A9F83-2ED2-4B4E-9AA1-A4D97AE4AA90}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Technical Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Type: Technical
+      
+      Sub-type: Technical
+      
+      Full Name: ERA Vocabulary – the European Union Agency for Railways ontology for rail infrastructure and telematics data
+      
+      Link: https://data-interop.era.europa.eu/era-vocabulary/
+      
+      Description: The ERA Ontology is the RDF and OWL vocabulary maintained by the European Union Agency for Railways for describing rail infrastructure, operational and telematics data. TEL TSI designates it as the common data format for data sharing in rail.
+      
+      Additional details: This entry exists because TEL TSI does not recommend a format, it mandates an ontology, which is a different kind of obligation from the XML schemas used elsewhere in this catalogue. Rail data reaching a NAP under TEL TSI is expressed in RDF against this vocabulary, not in NeTEx or SIRI, so a NAP handling rail data must either consume RDF directly or maintain a mapping to the public-transport standards used for the other modes. That mapping is neither trivial nor currently standardised, which makes it an architectural decision rather than an implementation detail: either the NAP keeps rail data in its native form and translates on request, or it translates on ingest and accepts what is lost. The vocabulary is versioned by ERA and evolves with the TSI, so a materialised mapping is a maintenance commitment.
+      
+      Related Documents:
+      
+      	- Legal Specification: L10 – TEL TSI – The act that designates this ontology as the mandatory data format for rail.
+      	- ERA Telematics Applications TSI portal – Implementation guidance, message schemas and Organisation Codes.
   - name: "S2 DATEX II"
     guid: "{F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}"
     type: "DeploymentSpecification"
@@ -300,6 +356,34 @@ elements:
       	- DATEX II Schema Generation Wizard – Interactive tool for generating custom DATEX II XML schemas based on selected profiles and extensions.
       	- NAPCORE DATEX II Workstream – Coordination of DATEX II evolution and cross-domain alignment under the NAPCORE project.
       	- CEN/TS 16157 p1- p15: Part 1: Context and framework; Part 2: Location referencing; Part 3: Situation publication; Part 4: Variable Message Sign (VMS) publications; Part 5: Measured and elaborated data publications; Part 6: Parking publications; Part 7: Common data elements; Part 8: Traffic management publications and urban extensions; Part 9: Traffic signal management publications; Part 10: Energy infrastructure publications; Part 11: Publication of machine interpretable traffic regulations; Part 12: Facility related publications; Part 13: Status & Fault; Part 14: TN-ITS; Part 15: JSON Mapping
+  - name: "S20 ICT Accessibility"
+    guid: "{AE7B26DA-8E05-414F-BC42-3F237A3F37D5}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Technical Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Type: Technical
+      
+      Sub-type: Technical
+      
+      Full Name: EN 301 549 – Accessibility requirements for ICT products and services
+      
+      Link: https://www.etsi.org/human-factors-accessibility/en-301-549-v3-the-harmonized-european-standard-for-ict-accessibility
+      
+      Description: EN 301 549 is the harmonised European standard setting accessibility requirements for ICT products and services, including web pages, mobile applications, documents and software. For web content it incorporates the W3C Web Content Accessibility Guidelines at level AA. Conformance with it confers a presumption of conformity with the accessibility obligations of Directive (EU) 2016/2102.
+      
+      Additional details: L1 states the obligation; this is the document against which conformance is actually tested, which is why it belongs in the catalogue in its own right. For a NAP the relevant clauses are those covering web content and documents: the portal pages, the search and browse interface, the documentation, and any downloadable templates or reports. Two things are commonly missed. The accessibility statement required by the Directive follows a prescribed model and has to be published and kept current, which is an organisational duty rather than a front-end one. And machine-readable delivery is not exempt by virtue of being machine-readable — the pages through which a person finds and requests the data are in scope even where the payload itself is not.
+      
+      Related Documents:
+      
+      	- Directive (EU) 2016/2102 – Website Accessibility – The obligation this standard is the conformance target for (L1).
+      	- Commission Implementing Decision (EU) 2018/1523 – The model accessibility statement a NAP has to publish.
   - name: "S3 GBFS"
     guid: "{B33AF3D7-0DE6-4244-975F-A8E2E508930F}"
     type: "DeploymentSpecification"
@@ -478,6 +562,7 @@ elements:
     links:
       - "Usage → K.3.3.1 Provision of machine – readable metadata"  # {5F4F6DCF-4226-4503-8058-67AA9DBD3DDA} → {9BD4B8DE-4CA0-4a91-95F8-F0A7FD7CE558}
       - "Usage → K.6.1.1 Metadata specification"  # {EA578F6F-F835-4dc5-A9EC-28D9F130916B} → {808C630F-74B1-46ed-91AF-3A16E94E6616}
+      - "Usage → S18 DCAT-AP"  # {A4DDE1AF-A0CD-4962-89C1-F4B8CC21898F} → {2D557EE9-6CC1-4F9D-88CB-A963EF2F0A7F}
   - name: "S9 NeTEx"
     guid: "{477B7D19-AF4F-483d-BF7D-70FEBB8AE8BB}"
     type: "DeploymentSpecification"
