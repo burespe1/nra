@@ -316,7 +316,7 @@ elements:
       	- mobilityDCAT-AP – The mobility extension of this profile, and the NAPCORE baseline for NAP metadata.
       	- data.europa.eu data provider manual – What a harvested record must contain to be accepted by the European data portal.
     links:
-      - "Association → Does not yield a Requirement"  # {971D356E-9F00-429E-B921-575370B00935} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
+      - "Usage → L.14.1 High-value datasets"  # {06CA53C7-0BF4-4070-B9BA-7C15A688F056} → {1DA88A3C-B633-474C-A7E3-CB39364F73FF}
   - name: "S19 ERA Ontology"
     guid: "{7C8A9F83-2ED2-4B4E-9AA1-A4D97AE4AA90}"
     type: "DeploymentSpecification"

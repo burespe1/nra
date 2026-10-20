@@ -192,6 +192,7 @@ elements:
       	- data.europa.eu high-value dataset guidance – Publication requirements, including the HVD metadata conventions.
       	- DCAT-AP – The metadata vocabulary in which the publication arrangements are expressed.
     links:
+      - "Abstraction → L.14.1 High-value datasets"  # {42D730CA-2287-4126-B55E-D00AD89F2F8E} → {1DA88A3C-B633-474C-A7E3-CB39364F73FF}
       - "Realisation → L13 Open Data Directive"  # {0DE3959E-C6E8-493F-BC7B-044CC99B1F20} → {A47BBEAA-7629-4fb8-A2B9-082D024A3B64}
   - name: "L15 Data Act"
     guid: "{CABFF118-BACD-4DE0-A95B-72E7729FCA99}"
@@ -249,6 +250,8 @@ elements:
       	- Regulation (EU) 2023/2854 – Data Act – The companion act on access to connected-product data (L15).
       	- Directive (EU) 2019/1024 – Open Data – Covers unprotected public sector data; the DGA covers what it excludes (L13).
       	- European Commission – Data Governance Act explanatory page – Scope, notification duties and the register of intermediation services.
+    links:
+      - "Abstraction → L.16.1 Protected data and data intermediation"  # {43D542B9-5FFD-4ED0-95C9-8554551F4C07} → {05A41B3C-F2B4-4FC7-BA20-0045E7AA5552}
   - name: "L17 NIS2 implementing act"
     guid: "{0A888600-1198-4932-AC00-26658979FDB6}"
     type: "DeploymentSpecification"

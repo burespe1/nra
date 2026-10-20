@@ -63,6 +63,44 @@ elements:
       L5 MMTIS
     links:
       - "Association «fulfilled by» → Collaboration Agreement (CA/NB to NO)"  # {2C1D663C-289D-41b0-8F48-72EAC2810BEF} → {0B562BCC-408D-4b46-9039-5A275BDFDD86}
+  - name: "L.14.1 High-value datasets"
+    guid: "{1DA88A3C-B633-474C-A7E3-CB39364F73FF}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Where the NAP provides high-value datasets held by public sector bodies, the platform shall make them available free of charge, under a licence no more restrictive than CC BY 4.0, in a machine-readable format, through an API and as a bulk download, with metadata that the national open data portal can harvest (DCAT-AP).
+      
+      Source: L14 High-value datasets
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {4D4D0466-00A5-435E-9CD8-E8AF20C6392C} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {99B4F579-E73C-42E7-957F-67D9A9DFEA58} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "L.16.1 Protected data and data intermediation"
+    guid: "{05A41B3C-F2B4-4FC7-BA20-0045E7AA5552}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Where the NAP mediates access to protected public sector data, the reuse conditions of the Data Governance Act shall apply: reuse is non-exclusive and non-discriminatory, and a secure processing environment or anonymisation is provided where required. Where the NAP operator acts as a data intermediation service, it shall notify the competent authority and comply with the neutrality conditions, in particular not using the intermediated data for its own purposes.
+      
+      Source: L16 Data Governance Act
+    links:
+      - "Association «fulfilled by» → Content provision contract/agreement"  # {AED3628C-A7C3-48E3-B692-2E6489D52446} → {F43E1EE6-3E45-4900-9953-330E07D69C15}
+      - "Association «fulfilled by» → Data Platform NAP"  # {0C3B4CF6-52BB-4CBD-908C-8A79A05292E1} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
   - name: "L.2.2 Provide up to date data"
     guid: "{3A5AE4E8-99D6-446e-9A35-26D9A69357B2}"
     type: "Requirement"
