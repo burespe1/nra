@@ -68,13 +68,6 @@ elements:
       2.2.0: global issue for Requirements without NRA content (Guideline 03). Merged with the closed issues “Functionality missing”, “Function missing in the NRA for the KPI” and “Element missing”.
     links:
       - "Association → L.2.9 CA/NB access"  # {558F42CC-8DC6-46b6-9CF4-FF0500A5615E} → {6F3CFCE8-0D04-4436-A95E-1FE1EE9AAA3A}
-  - name: "Revision after new TAP TSI is published"
-    guid: "{88B469C2-A3CF-47ab-8972-7EB0E96665D6}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    note: ""
   - name: "Revision needed in NAPCORE"
     guid: "{9227DA58-B8A6-419f-BB56-A90F3950CF28}"
     type: "Issue"

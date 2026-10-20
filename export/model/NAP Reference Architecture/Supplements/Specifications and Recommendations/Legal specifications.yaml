@@ -35,6 +35,42 @@ elements:
     links:
       - "Abstraction → L.1.1 Public website accessibility"  # {CE6B6EC1-62A8-4fc0-A1C3-36D280C2AC3D} → {A51F2AC6-F30A-41f9-A541-C79492AE8B88}
       - "Abstraction → L.1.2 Platform accessibility"  # {E170EFD3-4F0C-49e5-8FD1-2EF6BEE48B0D} → {F35D46F9-3ED9-4a74-AAC7-83BC2FFCD46A}
+  - name: "L10 TEL TSI"
+    guid: "{A940EFE9-F1A8-49A8-9DF0-4DE46B1BB588}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Legal Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Type: Legal
+      
+      Full Name: Commission Implementing Regulation (EU) 2026/253 of 6 February 2026 on a technical specification relating to the telematics subsystem of the rail system in the European Union for interoperability of data sharing in rail transport (TEL TSI)
+      
+      Link: https://eur-lex.europa.eu/eli/reg_impl/2026/253/oj
+      
+      Description: This regulation establishes a technical specification for interoperability (TSI) relating to the telematics subsystem, covering both passenger and freight services. It supports non-discriminatory and transparent data sharing in the rail sector, based on the EU rules set out in Regulation (EU) 2023/2854 (Data Act). It repeals and replaces the previously separate TAP TSI (Commission Regulation (EU) No 454/2011) and TAF TSI (Commission Regulation (EU) No 1305/2014) with a single unified framework. It specifies the data format to be used, based on a common ontology (the 'ERA Ontology'), as well as requirements in terms of data quality, cybersecurity and data use. Encouraging paperless freight transport and aligning with Regulation (EU) 2020/1056 (eFTI), this TSI also sets out requirements for the electronic consignment note (eCN) to replace paper-based documents.
+      
+      Additional details: For passengers, the TSI requires that journey planning, passenger information and ticketing data be made publicly available, free of charge, via the National Access Points established under MMTIS Delegated Regulation (EU) 2017/1926. Such data include timetables, connection times, conditions of carriage, station accessibility, real-time and forecast train positions, train composition and historical records. For freight, the regulation establishes requirements for capacity management, traffic management, train preparation, and intermodal logistics data exchange. ERA is designated as system authority for the digitalisation of rail communications, with a clear compliance framework. NAP operators must ensure interface compatibility with TEL TSI data formats and the ERA Ontology when exposing or aggregating rail data. Transition dates are phased: key passenger data provisions apply from December 2026, with capacity and traffic management requirements following by December 2027.
+      
+      Related Documents:
+      
+      	- ERA Telematics Applications TSI Portal — Official source for implementation guidance, Organisation Codes, message schemas, and compliance information. Replaces the former separate TAP TSI and TAF TSI portal pages.
+      	- Commission news release — 10 February 2026 — Summary of the adopted implementing regulation, its objectives, and the legislative package context.
+      	- TAP/TAF Reference Data Portal — Central management system for Organisation Codes (formerly RICS codes) and location codes required under the regulation. Note: from 1 January 2026, all railway actors must use the new 4-character alphanumeric Organisation Code assigned by ERA.
+      	- Commission Regulation (EU) No 454/2011 (TAP TSI) — Repealed by this regulation. Historical reference only.
+      	- Commission Regulation (EU) No 1305/2014 (TAF TSI) — Repealed by this regulation. Historical reference only.
+      	- ERA Organisation Codes and TAF/TAP reference files (teleref.era.europa.eu) — The ERA register from which the 4-character alphanumeric Organisation Codes are assigned and published.
+      	- Regulation (EU) 2023/2854 (Data Act) — The horizontal EU data-sharing rules on which the TEL TSI data-sharing obligations are built.
+      	- ERA Ontology — The RDF vocabulary this regulation mandates as the data format for rail; it has its own entry in the technical section.
+    links:
+      - "Substitution → Regulation (EU) No 1305/2014 – TAF TSI"  # {F59E872C-3F96-491F-B540-45EDCB3D99E0} → {1C65E621-1EED-47c9-AD18-66A51CC0A9F4}
+      - "Substitution → Regulation (EU) No 454/2011 – TAP TSI"  # {114C0A5A-DFBE-4DC4-8CA6-D5740EA0D219} → {1D4FBC58-0459-48fd-82D8-411F6693B4A7}
+      - "Substitution → TAP-TSI"  # {A29DB5BE-C994-4A0E-848C-9E7DCD4305E7} → {682395F9-50B7-41f0-A637-3327735690CE}
   - name: "L10 [Title Pending] – Data Specifications for Alternative Fuels Infrastructure (AFIR)"
     guid: "{B7ADA655-593E-48ce-A50C-97CB4684F009}"
     type: "DeploymentSpecification"
@@ -318,12 +354,12 @@ elements:
       - "Dependency «trace» → S4 GTFS"  # {1308EDFB-9A92-4902-8E8D-DF1315369A7F} → {CAEF2437-B0BA-4aac-BFEB-3A8CE86835D6}
       - "Dependency «trace» → S5 GTFS-RT"  # {2702D37E-0565-4a88-B641-2EA465B766F3} → {BD5ADEA6-B249-4fad-ACB8-298D1542C33F}
       - "Realisation → L8 ITS Directive"  # {01FCA1FA-0048-4710-9E26-244CD7A9B331} → {4FEB9792-F5AB-4f30-A299-4A2EB59732D5}
+      - "Usage → L10 TEL TSI"  # {4F77BE32-E9E7-4fc6-B4EA-95D377BC2570} → {A940EFE9-F1A8-49A8-9DF0-4DE46B1BB588}
       - "Usage → S14 SIRI"  # {B243E02B-8832-4555-9C26-1179395F8290} → {E14C46B0-7A08-4284-BF7D-294B3FD4373B}
       - "Usage → S17 Transmodel"  # {3CD9D337-837D-44a2-BE5F-7B4AF041C2B7} → {0D35A5A5-9321-4869-84CD-A33C1C285172}
       - "Usage → S2 DATEX II"  # {B857E65A-F082-4dc5-95F1-CD03369E4308} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
       - "Usage → S6 IATA SSIM"  # {596DBB08-6375-499f-AF9D-9E56475D47F2} → {EEC79522-E329-4da9-89B6-82617E53E335}
       - "Usage → S9 NeTEx"  # {413ADCB6-AF87-4dd8-BBDC-CCEDF43B37DF} → {477B7D19-AF4F-483d-BF7D-70FEBB8AE8BB}
-      - "Usage → TAP-TSI"  # {4F77BE32-E9E7-4fc6-B4EA-95D377BC2570} → {682395F9-50B7-41f0-A637-3327735690CE}
   - name: "L6 AFIR"
     guid: "{0FF49A13-ACA1-4574-BC6C-56ECA1698F91}"
     type: "DeploymentSpecification"
@@ -491,63 +527,3 @@ elements:
       	- DATA4PT National Implementations – NeTEx Profiles Overview – Inventory of national and transnational NeTEx and SIRI profiles, including the Czech Republic’s specification status. It outlines profile alignment with the European Passenger Information Profile (EPIP) and categorises data coverage by Level of Service (LOS) in accordance with MMTIS Regulation (EU) 2024/490.
     links:
       - "Realisation → L5 MMTIS"  # {05622342-18D8-4b00-A092-9F4A67D775BD} → {9A0AAF44-DAED-4b89-81B3-12DD2B666F55}
-  - name: "Regulation (EU) No 1305/2014 – TAF TSI"
-    guid: "{1C65E621-1EED-47c9-AD18-66A51CC0A9F4}"
-    type: "DeploymentSpecification"
-    stereotype: "FRAME_Specification"
-    keywords: "Legal Specification"
-    status: "Proposed"
-    version: "1.5.1"
-    order: 0
-    tags:
-      "revised": "2025-07-04"
-    note: |
-      Type: Legal
-      
-      Full Name: Commission Regulation (EU) No 1305/2014 of 11 December 2014 on the technical specification for interoperability relating to the telematics applications for freight subsystem of the rail system in the European Union and repealing Regulation (EC) No 62/2006
-      
-      Link: https://eur-lex.europa.eu/eli/reg/2014/1305/oj
-      
-      Description: This regulation establishes the mandatory Technical Specification for Interoperability (TSI) for the rail telematics applications for freight (TAF) subsystem, applicable to railway undertakings, infrastructure managers, wagon keepers, and other actors involved in freight operations. It replaces Regulation (EC) No 62/2006 and introduces extended message sets, a structured implementation governance model (including Change Control Management), and mandatory reference data alignment. It defines XML-based message exchange formats, interoperability interfaces, data models, and operational procedures to ensure seamless, real-time information sharing between rail freight stakeholders.
-      
-      Additional details: When a National Access Point supports integration with rail freight data services, this regulation becomes binding for any data publication or relay function that involves TAF-compliant messages. NAPs interacting with these datasets must ensure message conformity with TAF TSI schemas, maintain full alignment with central reference data registries (e.g. company and location codes), and apply consistent semantic mapping if integrating with other ITS domains. NAPs must not alter the structure, content, or identification of regulated message types during conversion to other formats. Data quality assurance and interface documentation must be traceable to the latest applicable TAF TSI baseline.
-      
-      Related Documents:
-      
-      	- ERA TAF TSI Portal – Maintained by the European Union Agency for Railways; includes official message catalogues, implementation baselines, and interface control documents.
-      	- TAF TSI Implementation Reports – National-level deployment progress and milestone documentation, including XML mapping guides.
-      	- TAP/TAF Reference Data Portal – Central management system for code lists (e.g. RICS location codes, company codes) required under the regulation.
-      	- Commission Implementing Regulation (EU) 2021/541 – Updates the TAF TSI annexes; includes revised process flow diagrams and implementation dates.
-    links:
-      - "Abstraction → Revision after new TAP TSI is published"  # {1D2B8D1B-323D-4d71-A972-03ADC37FDE9B} → {88B469C2-A3CF-47ab-8972-7EB0E96665D6}
-      - "Usage → TAP-TSI"  # {8D8F62CE-B833-4b2d-B9EB-67D84735E983} → {682395F9-50B7-41f0-A637-3327735690CE}
-  - name: "Regulation (EU) No 454/2011 – TAP TSI"
-    guid: "{1D4FBC58-0459-48fd-82D8-411F6693B4A7}"
-    type: "DeploymentSpecification"
-    stereotype: "FRAME_Specification"
-    keywords: "Legal Specification"
-    status: "Proposed"
-    version: "1.5.1"
-    order: 0
-    tags:
-      "revised": "2025-07-04"
-    note: |
-      Type: Legal
-      
-      Full Name: Commission Regulation (EU) No 454/2011 of 5 May 2011 on the technical specification for interoperability relating to the subsystem ‘telematics applications for passenger services’ of the trans-European rail system
-      
-      Link: https://eur-lex.europa.eu/eli/reg/2011/454/oj
-      
-      Description: This regulation defines the Technical Specification for Interoperability (TSI) for the telematics applications for passenger services (TAP) subsystem of the trans-European rail system. It mandates standardised data exchange between railway undertakings, infrastructure managers, ticket vendors, and other actors involved in passenger rail services. It covers journey planning, real-time information, reservation, ticketing, and after-sales processes. The regulation enforces the use of harmonised message formats, reference data registries, and interface protocols to ensure cross-border interoperability. It has been amended to reflect updated IT architectures, governance models, and implementation deadlines.
-      
-      Additional details: In NAP environments that expose or aggregate rail passenger data, TAP TSI applies where data originates from or conforms to TAP-compliant systems. NAPs must ensure interface compatibility with TAP message structures, maintain alignment with central reference data (e.g. company and location codes), and preserve semantic integrity when mapping to other ITS domains. Any transformation or relay of TAP messages must comply with the regulation’s baseline and versioning rules.
-      
-      Related Documents:
-      
-      	- ERA TAP TSI Portal – Official source for baselines, message schemas, and implementation guidance.
-      	- TAP TSI Implementation Reports – Status reports on national deployment and compliance.
-      	- TAP/TAF Reference Data Portal – Central management system for code lists (e.g. RICS location codes, company codes) required under the regulation.
-      	- Commission Implementing Regulation (EU) 2019/775 – Updates Annexes and implementation timelines.
-    links:
-      - "Abstraction → Revision after new TAP TSI is published"  # {3F4D4612-EC37-40e0-B71D-9E3DD039A9A8} → {88B469C2-A3CF-47ab-8972-7EB0E96665D6}
-      - "Usage → TAP-TSI"  # {B1F989FE-947F-4c99-AF30-627B1F524317} → {682395F9-50B7-41f0-A637-3327735690CE}

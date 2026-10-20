@@ -69,3 +69,86 @@ elements:
       	- NAPCORE RTTI Workstream Summary (PDF) – Overview of Member State alignment and implementation under the updated regulation.
     links:
       - "Realisation → L8 ITS Directive"  # {63FD3C57-BAA9-4674-9048-4B7451F62831} → {4FEB9792-F5AB-4f30-A299-4A2EB59732D5}
+  - name: "Regulation (EU) No 1305/2014 – TAF TSI"
+    guid: "{1C65E621-1EED-47c9-AD18-66A51CC0A9F4}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Legal Specification"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    tags:
+      "revised": "2025-07-04"
+    note: |
+      Type: Legal
+      
+      Full Name: Commission Regulation (EU) No 1305/2014 of 11 December 2014 on the technical specification for interoperability relating to the telematics applications for freight subsystem of the rail system in the European Union and repealing Regulation (EC) No 62/2006
+      
+      Link: https://eur-lex.europa.eu/eli/reg/2014/1305/oj
+      
+      Description: This regulation establishes the mandatory Technical Specification for Interoperability (TSI) for the rail telematics applications for freight (TAF) subsystem, applicable to railway undertakings, infrastructure managers, wagon keepers, and other actors involved in freight operations. It replaces Regulation (EC) No 62/2006 and introduces extended message sets, a structured implementation governance model (including Change Control Management), and mandatory reference data alignment. It defines XML-based message exchange formats, interoperability interfaces, data models, and operational procedures to ensure seamless, real-time information sharing between rail freight stakeholders.
+      
+      Additional details: When a National Access Point supports integration with rail freight data services, this regulation becomes binding for any data publication or relay function that involves TAF-compliant messages. NAPs interacting with these datasets must ensure message conformity with TAF TSI schemas, maintain full alignment with central reference data registries (e.g. company and location codes), and apply consistent semantic mapping if integrating with other ITS domains. NAPs must not alter the structure, content, or identification of regulated message types during conversion to other formats. Data quality assurance and interface documentation must be traceable to the latest applicable TAF TSI baseline.
+      
+      Related Documents:
+      
+      	- ERA TAF TSI Portal – Maintained by the European Union Agency for Railways; includes official message catalogues, implementation baselines, and interface control documents.
+      	- TAF TSI Implementation Reports – National-level deployment progress and milestone documentation, including XML mapping guides.
+      	- TAP/TAF Reference Data Portal – Central management system for code lists (e.g. RICS location codes, company codes) required under the regulation.
+      	- Commission Implementing Regulation (EU) 2021/541 – Updates the TAF TSI annexes; includes revised process flow diagrams and implementation dates.
+    links:
+      - "Usage → TAP-TSI"  # {8D8F62CE-B833-4b2d-B9EB-67D84735E983} → {682395F9-50B7-41f0-A637-3327735690CE}
+  - name: "Regulation (EU) No 454/2011 – TAP TSI"
+    guid: "{1D4FBC58-0459-48fd-82D8-411F6693B4A7}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Legal Specification"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    tags:
+      "revised": "2025-07-04"
+    note: |
+      Type: Legal
+      
+      Full Name: Commission Regulation (EU) No 454/2011 of 5 May 2011 on the technical specification for interoperability relating to the subsystem ‘telematics applications for passenger services’ of the trans-European rail system
+      
+      Link: https://eur-lex.europa.eu/eli/reg/2011/454/oj
+      
+      Description: This regulation defines the Technical Specification for Interoperability (TSI) for the telematics applications for passenger services (TAP) subsystem of the trans-European rail system. It mandates standardised data exchange between railway undertakings, infrastructure managers, ticket vendors, and other actors involved in passenger rail services. It covers journey planning, real-time information, reservation, ticketing, and after-sales processes. The regulation enforces the use of harmonised message formats, reference data registries, and interface protocols to ensure cross-border interoperability. It has been amended to reflect updated IT architectures, governance models, and implementation deadlines.
+      
+      Additional details: In NAP environments that expose or aggregate rail passenger data, TAP TSI applies where data originates from or conforms to TAP-compliant systems. NAPs must ensure interface compatibility with TAP message structures, maintain alignment with central reference data (e.g. company and location codes), and preserve semantic integrity when mapping to other ITS domains. Any transformation or relay of TAP messages must comply with the regulation’s baseline and versioning rules.
+      
+      Related Documents:
+      
+      	- ERA TAP TSI Portal – Official source for baselines, message schemas, and implementation guidance.
+      	- TAP TSI Implementation Reports – Status reports on national deployment and compliance.
+      	- TAP/TAF Reference Data Portal – Central management system for code lists (e.g. RICS location codes, company codes) required under the regulation.
+      	- Commission Implementing Regulation (EU) 2019/775 – Updates Annexes and implementation timelines.
+    links:
+      - "Usage → TAP-TSI"  # {B1F989FE-947F-4c99-AF30-627B1F524317} → {682395F9-50B7-41f0-A637-3327735690CE}
+  - name: "TAP-TSI"
+    guid: "{682395F9-50B7-41f0-A637-3327735690CE}"
+    type: "DeploymentSpecification"
+    stereotype: "FRAME_Specification"
+    keywords: "Technical Specification"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2025-07-04"
+    note: |
+      Type: Technical Standard
+      
+      Full Name: Telematics Applications for Passenger Services – Technical Specification for Interoperability (TAP-TSI)
+      
+      Link: https://www.era.europa.eu/domains/technical-specifications-interoperability/telematics-applications-passenger-service-tsi_en
+      
+      Description: TAP-TSI is a legally binding EU technical specification that governs the interoperability of telematics applications for passenger rail services across the trans-European rail system. It defines common procedures, message formats, and data exchange protocols for timetable publication, reservation, ticketing, real-time information, and intermodal coordination. TAP-TSI ensures that railway undertakings, infrastructure managers, and ticket vendors can exchange data in a harmonised, machine-readable format.
+      
+      Additional details: (none)
+      
+      Related Documents:
+      
+      	- TAP-TSI Overview – European Union Agency for Railways – Scope, implementation phases, and governance structure.
+      	- Commission Regulation (EU) No 454/2011 – Legal basis for TAP-TSI adoption and enforcement.
