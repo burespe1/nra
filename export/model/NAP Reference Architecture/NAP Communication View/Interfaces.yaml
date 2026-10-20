@@ -60,7 +60,7 @@ elements:
       
       Related Documents: ---
     links:
-      - "Association «adheres to» → mobility DCAT-AP"  # {D36A20D3-E4C2-4e2f-A564-9CD231C64B80} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
+      - "Association «adheres to» → S8 mobilityDCAT-AP"  # {D36A20D3-E4C2-4e2f-A564-9CD231C64B80} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
   - name: "Content Consumer Support"
     guid: "{9D010BE5-6592-4e26-86F6-6D16140A0A39}"
     type: "Interface"
@@ -134,7 +134,7 @@ elements:
       
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
     links:
-      - "Association «adheres to» → mobility DCAT-AP"  # {8432D70B-A647-4557-935E-BDB4F4DF0CC6} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
+      - "Association «adheres to» → S8 mobilityDCAT-AP"  # {8432D70B-A647-4557-935E-BDB4F4DF0CC6} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
   - name: "Content Provider Support"
     guid: "{2B49F77B-92D8-4494-B75B-7482740303ED}"
     type: "Interface"
@@ -208,7 +208,7 @@ elements:
       
       Related Documents: https://napcore.eu/activity-wg2-interoperability-and-level-of-service-of-naps/
     links:
-      - "Association «adheres to» → mobility DCAT-AP"  # {309A6BD1-8246-4c71-9F02-16A1B9AEDF4C} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
+      - "Association «adheres to» → S8 mobilityDCAT-AP"  # {309A6BD1-8246-4c71-9F02-16A1B9AEDF4C} → {E2577D77-AFB9-46e3-818C-9764DC209E14}
   - name: "Machine Metadata Provision"
     guid: "{70F2112F-B845-4d29-AECD-17CD9D7B4B7D}"
     type: "Interface"

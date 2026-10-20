@@ -33,7 +33,7 @@ elements:
       	- Delegated Regulation 962/2015 (RTTI, Action B)
       	- Delegated Regulation 1926/2017 (MTIS, action A)
     links:
-      - "Usage → DATEX II"  # {B8339D22-9828-4437-9258-626D2E1FB6DB} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+      - "Usage → S2 DATEX II"  # {B8339D22-9828-4437-9258-626D2E1FB6DB} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
   - name: "EIP Recommended Service Profiles"
     guid: "{3D7BA083-1874-45c0-9B49-E81F3F261DF9}"
     type: "DeploymentSpecification"
@@ -70,7 +70,7 @@ elements:
       	- Traffic Management for Corridors and Networks
       	- Intelligent and Secure Truck Parking
     links:
-      - "Usage → DATEX II"  # {1864F58A-A564-4627-A18C-0F468D025CA3} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+      - "Usage → S2 DATEX II"  # {1864F58A-A564-4627-A18C-0F468D025CA3} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
   - name: "EPIP Profile"
     guid: "{483C3636-0B3E-4cf4-BCA0-788C9923AF24}"
     type: "DeploymentSpecification"
@@ -97,7 +97,7 @@ elements:
       In the course of the Programme Support Action (PSA) “Data collection related to recharging/refuelling points for alternative fuels and the unique identification codes related to e-Mobility actors” that was subsequently given the name IDACS, or “ID and Data Collection for Sustainable fuels in Europe”, the 15 member states of the consortium mandatorily have to collect data related to alternative fuels infrastructures, namely electric charging points and hydrogen refuelling stations (HRS) as part of activity 2. Other alternative fuels, such as CNG, LNG, LPG and highly-blended biofuels can be covered optionally.
       As data collection mandatorily has to take place via the National Access Points (NAP) as defined in directive 2010/40/EU on the framework for the deployment of Intelligent Transport Systems in the field of road transport and for interfaces with other modes of transport, it is the aim of these profiles to give guidance on how this can be achieved.
     links:
-      - "Usage → DATEX II"  # {B0BD5ECB-E47F-4070-8CDA-1598E82E9AD9} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+      - "Usage → S2 DATEX II"  # {B0BD5ECB-E47F-4070-8CDA-1598E82E9AD9} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
   - name: "UVARBox"
     guid: "{C5FEBBBE-152B-47a6-8892-5C453997CEBA}"
     type: "DeploymentSpecification"
@@ -121,4 +121,4 @@ elements:
       As these profiles are based on an unstable version of DATEX II Traffic Regulations users have to be aware that non-interoperable changes are expected in a stable future v3 release of TrafficRegulation and ControlledZone.
       UVARBox website
     links:
-      - "Usage → DATEX II"  # {F7C076D9-310F-46bf-A4EA-3D2CCDDBF66E} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
+      - "Usage → S2 DATEX II"  # {F7C076D9-310F-46bf-A4EA-3D2CCDDBF66E} → {F9A9AFD3-AF4D-4391-9AE4-2FB290C7C9F9}
