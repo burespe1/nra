@@ -84,6 +84,25 @@ elements:
       L5 Regulation (EU) 2017/1926 - MMTIS
     links:
       - "Association «fulfilled by» → European or national law (MS to CP)"  # {FED17C9C-78D9-4dd4-9282-EF6A6C6B2EC9} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+  - name: "L.5.1 Minimum EU or national profiles"
+    guid: "{D2CE8F6E-7917-45B7-BEDC-E82BF357E700}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Static, historic and observed travel and traffic data for which NeTEx and DATEX II are applicable shall be represented through minimum EU profiles or national profiles.
+      
+      Source:
+      L5 MMTIS (Delegated Regulation (EU) 2017/1926 as amended by Delegated Regulation (EU) 2024/490)
+    links:
+      - "Association «fulfilled by» → European or national law (MS to CP)"  # {22FC0A7F-0036-44D8-ACBB-6CAB7147703A} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
   - name: "L.2.4 Reporting obligation"
     guid: "{ED7D9261-5E1A-4278-93F5-1159D460C378}"
     type: "Requirement"
