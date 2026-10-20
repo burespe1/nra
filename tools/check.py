@@ -105,6 +105,30 @@ def main(argv):
                 W('req-level', f'function **{o["name"]}** has no valid RequirementLevel')
             elif lv == 'MANDATORY_PLUS' and 'OPTIONAL' not in o['note']:
                 E('req-level', f'function **{o["name"]}** is MANDATORY_PLUS but its description has no “OPTIONAL:” part')
+    # --- completeness of elements (typical result of new elements from a Word review)
+    def links(o, st=None, direction=None, other=None):
+        ks = (out_links[o['id']] if direction != 'in' else []) + (in_links[o['id']] if direction != 'out' else [])
+        return [k for k in ks if (st is None or k['st'].lower().replace(' ', '') == st or (st == 'componentof' and k['type'] == 'Aggregation'))
+                and (other is None or other((k['t'] if k['s']['id'] == o['id'] else k['s'])))]
+    for o in obj.values():
+        if o['st'] == 'FRAME_Low_Level_Function':
+            flows = links(o, other=is_flow)
+            if not any(k['st'] == 'IN' for k in flows) or not any(k['st'] == 'OUT' for k in flows):
+                W('incomplete', f'function **{o["name"]}** has no {"IN and OUT" if not flows else ("IN" if not any(k["st"] == "IN" for k in flows) else "OUT")} data flows')
+            if not links(o, 'componentof', 'out'):
+                W('incomplete', f'function **{o["name"]}** is not «componentof» a high level function')
+        elif o['st'] == 'FRAME_Role' and not links(o, 'defines'):
+            W('incomplete', f'role **{o["name"]}** is not defined by an Actor («defines»)')
+        elif o['st'] == 'FRAME_Agreement' and len(links(o, 'adheresto')) < 2:
+            W('incomplete', f'agreement **{o["name"]}** has fewer than two parties («adheres to»)')
+    # --- open review items and unapproved elements (Guideline 06)
+    for oid, kind, prob, st in c.execute("select Object_ID, ProblemType, Problem, Status from t_objectproblems"):
+        if (st or '').lower() not in ('resolved', 'closed', 'complete', 'completed', 'done') and oid in obj:
+            W('open-items', f'{kind} on **{obj[oid]["name"]}**: {prob}')
+    status = {o['id']: c.execute('select Status from t_object where Object_ID=?', (o['id'],)).fetchone()[0] for o in frame}
+    for o in (frame if 'Approved' in status.values() else []):  # only once releases set Approved
+        if status[o['id']] == 'Proposed':
+            W('proposed', f'{o["kw"] or o["st"]} **{o["name"]}** is still Proposed (set Approved at release)')
     # --- duplicates
     seen = defaultdict(list)
     for o in frame:
