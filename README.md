@@ -62,19 +62,20 @@ python tools/diff.py old.qea new.qea report.md
 
 ## Review in Word (offline)
 
-Views can be reviewed in a generated Word document and transferred back automatically:
+Views can be reviewed in a generated Word document and transferred back with tools – full rules in Guideline 06, section *Review in Word*.
 
-1. Generate the document from a tagged version (e.g. `NRA-2.2.0-review-OrgView.docx`). Reviewers work with **Track Changes** on and do not touch the line *Revised/Last changed …, GUID: {…}* – it anchors each element.
-2. TODOs and questions are **Word comments**: `TODO …` becomes an EA task on the element, other unresolved comments become EA issues (Maintenance tab; not printed in the documentation). New elements are written as a new heading without GUID.
-3. Import and review the proposal:
+1. Generate the document from a tagged version (e.g. `NRA-2.2.0-review-OrgView-2026-11.docx`, keep it in `reviews/`). Reviewers use **Track Changes** and never touch the line *Revised/Last changed …, GUID: {…}*.
+2. Open work goes into **Word comments**, the first word decides: `TODO` (task), `ISSUE` (open question), `WIP` (section still drafted – kept, not applied; or `[WIP]` in a heading), `PROPOSAL` (not agreed – kept, not applied), `DELETE` (remove the element). Tracked changes by **Claude** are proposals: accept/reject them in Word first.
+3. New elements are new headings `Keyword: Name` with a description.
+4. Import:
    ```powershell
-   python tools/docx_import.py review.docx model/NRA.qea --out changes/2026-11-orgview/changes
+   python tools/docx_import.py reviews/x.docx <base>.qea --current model/NRA.qea --out changes/x/changes
    ```
-   `changes.yaml` lists every changed element (name, new note, change type, authors, comments); set `apply: false` to skip one. `changes.md` shows the text diff.
-4. Close EA and apply: `python tools/docx_apply.py review.docx <base>.qea model/NRA.qea --changes changes/…/changes.yaml`. Names, notes, package descriptions, Status = Proposed and `revised` are written; new elements, connection changes and conflicts (element changed in the model meanwhile) are done by hand in EA following the report.
-5. Commit, push, pull request – the change report shows the result.
+   `changes.yaml` – every changed/new element with `apply: true/false`, warnings (left-over TODO/TBD, abbreviations missing in the glossary, unknown Keywords, duplicate names), conflicts, and for new elements the connections still missing (e.g. data flows). `changes.md` – report with text diffs.
+5. With EA closed: `python tools/docx_apply.py reviews/x.docx <base>.qea model/NRA.qea --changes changes/x/changes.yaml --since 2.3.0` writes names, descriptions and new elements (Status Proposed) and records everything else as EA **maintenance items** (Maintenance tab): tasks for missing connections, pending proposals, TODO/WIP; issues for questions and import warnings.
+6. Finish in EA (data flows, diagrams, decisions), resolve the tasks; `tools/check.py` warns about incomplete elements and open items. Commit in small steps.
 
-Pilot: `changes/pilot-2.0-orgview` – the WG 4.6.3 comparison document imported against v2.0 reproduces the manually entered v2.1.0 texts (19 of 20 elements ≥ 99 % identical).
+Pilot: `changes/pilot-2.0-orgview` – the WG 4.6.3 document imported against v2.0 reproduces the manually entered v2.1.0 texts (19 of 20 elements ≥ 99 % identical). Regression test: `python tests/test_review_import.py`.
 
 ## Notes
 
