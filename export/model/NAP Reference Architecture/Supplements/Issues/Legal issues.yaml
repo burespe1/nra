@@ -15,13 +15,6 @@ elements:
       "since": "2.2.0"
     note: |
       Global issue for Specifications that do not yield any Requirement for the NRA (Guideline 01 Specifications). The Specification remains in the model for reference.
-  - name: "Draft - Planed for 12.2025"
-    guid: "{2B0D3CC8-A31F-4546-95C0-CC8534984F4E}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    note: ""
   - name: "Issue: Agreement Missing"
     guid: "{CE7A9755-57B2-4f08-8288-D04B0A5D68A2}"
     type: "Issue"

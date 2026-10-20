@@ -71,35 +71,6 @@ elements:
       - "Substitution → Regulation (EU) No 1305/2014 – TAF TSI"  # {F59E872C-3F96-491F-B540-45EDCB3D99E0} → {1C65E621-1EED-47c9-AD18-66A51CC0A9F4}
       - "Substitution → Regulation (EU) No 454/2011 – TAP TSI"  # {114C0A5A-DFBE-4DC4-8CA6-D5740EA0D219} → {1D4FBC58-0459-48fd-82D8-411F6693B4A7}
       - "Substitution → TAP-TSI"  # {A29DB5BE-C994-4A0E-848C-9E7DCD4305E7} → {682395F9-50B7-41f0-A637-3327735690CE}
-  - name: "L10 [Title Pending] – Data Specifications for Alternative Fuels Infrastructure (AFIR)"
-    guid: "{B7ADA655-593E-48ce-A50C-97CB4684F009}"
-    type: "DeploymentSpecification"
-    stereotype: "FRAME_Specification"
-    keywords: "Legal Specification"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    tags:
-      "revised": "2025-07-04"
-    note: |
-      Type: Legal (Implementing Act – in preparation)
-      
-      Full Name: Commission Implementing Regulation laying down technical specifications regarding the format, frequency, and quality of data on alternative fuels infrastructure pursuant to Regulation (EU) 2023/1804
-      
-      Link: https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14345-_en
-      
-      Description: This implementing regulation will define harmonised technical specifications for the format, update frequency, and quality of data relating to publicly accessible alternative fuels infrastructure in the EU. It supports Regulation (EU) 2023/1804 (AFIR) and applies to electric recharging points, hydrogen refuelling stations, and other designated fuel types. The regulation aims to standardise machine-to-machine data exchange and improve accessibility, reliability, and cross-border interoperability.
-      
-      Additional details: The act will mandate the use of DATEX II for structured data exchange by April 2026. Static data (location, capacity, connector types, operational status) must be updated at least every 24 hours; dynamic data (availability, malfunction, real-time energy status) must be refreshed at intervals no greater than 1 minute. EV charging point operators will be required to disclose roaming capability, smart charging readiness, and communication interfaces. Hydrogen stations must signal low-fuel warnings (<100 kg). NAPs will act as the central access points for compliant data publication and retrieval.
-      
-      Related Documents:
-      
-      	- Regulation (EU) 2023/1804 – AFIR – Legal base establishing mandatory deployment and data reporting obligations for alternative fuels infrastructure.
-      	- Public Consultation Summary – Data Specification Initiative – Commission platform outlining scope and stakeholder feedback.
-      	- DATEX II Electric Vehicle Charging Profile – Technical profile defining data elements and structure for compliant AFIR data exchange.
-    links:
-      - "Abstraction → Draft - Planed for 12.2025"  # {57EC2D05-68EB-4988-A42F-A2FCDD81499C} → {2B0D3CC8-A31F-4546-95C0-CC8534984F4E}
-      - "Realisation → L6 AFIR"  # {6BDC7DB1-220F-424b-B62D-BC3577431090} → {0FF49A13-ACA1-4574-BC6C-56ECA1698F91}
   - name: "L11 AFIR data specifications"
     guid: "{BB34947F-7458-46e4-B45C-28338EDB244A}"
     type: "DeploymentSpecification"
@@ -130,6 +101,7 @@ elements:
     links:
       - "Abstraction → L.6.2 Made AFIR data accessible"  # {A9EC7CEA-EDC5-4a41-A5DD-1EBC4F885E0B} → {D4156A89-0ED7-433c-958A-3595DFC04FE1}
       - "Realisation → L6 AFIR"  # {1805EA83-30DB-4fd7-B9B8-E8C261BED414} → {0FF49A13-ACA1-4574-BC6C-56ECA1698F91}
+      - "Substitution → Data Specifications for Alternative Fuels Infrastructure (AFIR) – placeholder"  # {3A57D8DA-7AE4-4A01-ADE5-CBAA4DEAA0C8} → {B7ADA655-593E-48ce-A50C-97CB4684F009}
   - name: "L12 NIS2"
     guid: "{4960CAB3-98F8-4f09-94E1-62AFA0954523}"
     type: "DeploymentSpecification"
@@ -497,33 +469,3 @@ elements:
       	- Commission Implementing Regulation (EU) 2022/1463 – Defines the technical and operational specifications for the Once-Only Technical System (OOTS), enabling cross-border automated exchange of evidence between public authorities. Relevant for NAPs pursuing federated data publishing models where transport datasets are published once and accessed across portals without duplication.
     links:
       - "Association → Does not yield a Requirement"  # {FB628ECA-C1E1-443f-9204-7A6E6A0A34DD} → {ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}
-  - name: "Regulation (EU) 2024/490 – MMTIS (Amendment)"
-    guid: "{E1524B08-D6A6-42b4-8B5C-0136C4A9D6D4}"
-    type: "DeploymentSpecification"
-    stereotype: "FRAME_Specification"
-    keywords: "Legal Specification"
-    status: "Proposed"
-    version: "1.5.1"
-    order: 0
-    tags:
-      "revised": "2025-07-04"
-    note: |
-      Type: Legal
-      
-      Full Name: Commission Delegated Regulation (EU) 2024/490 of 29 November 2023 amending Delegated Regulation (EU) 2017/1926 supplementing Directive 2010/40/EU with regard to the provision of EU-wide multimodal travel information services
-      
-      Link: https://eur-lex.europa.eu/eli/reg_del/2024/490/oj
-      
-      Description: This regulation amends Delegated Regulation (EU) 2017/1926 by expanding the scope of mandatory data accessibility for EU-wide multimodal travel information services (MMTIS). It introduces new obligations for the availability of dynamic, historic, and observed datasets, and strengthens requirements for data quality, update frequency, and interoperability. The amendment supports the European Green Deal and Sustainable and Smart Mobility Strategy by enhancing the usability of multimodal travel services and enabling better integration of active modes (e.g. walking, cycling) and real-time operational data.
-      
-      Additional details: NAPs must ensure machine-readable access to newly mandated datasets, including dynamic data (e.g. delays, disruptions), historic performance data, and observed occupancy levels. The regulation reinforces the use of harmonised formats and metadata, and requires service providers to maintain data accuracy and timeliness. The amendment also introduces provisions for monitoring compliance and supporting cross-border continuity of MMTIS services.
-      
-      Related Documents:
-      
-      	- Delegated Regulation (EU) 2017/1926 – MMTIS – Original legal act establishing the MMTIS framework.
-      	- DATEX II MMTIS Profile (Draft) – Defines the data model for compliant multimodal travel information exchange.
-      	- NeTEx European Passenger Information Profile (EPIP) – Defines the subset of NeTEx (CEN/TS 16614) elements required for compliance with MMTIS obligations, including static, dynamic, and accessibility-related data.
-      	- NAPCORE MMTIS Data Dictionary (NeTEx/SIRI Mapping) – Provides alignment between MMTIS data categories and NeTEx/SIRI elements, supporting harmonised implementation across Member States.
-      	- DATA4PT National Implementations – NeTEx Profiles Overview – Inventory of national and transnational NeTEx and SIRI profiles, including the Czech Republic’s specification status. It outlines profile alignment with the European Passenger Information Profile (EPIP) and categorises data coverage by Level of Service (LOS) in accordance with MMTIS Regulation (EU) 2024/490.
-    links:
-      - "Realisation → L5 MMTIS"  # {05622342-18D8-4b00-A092-9F4A67D775BD} → {9A0AAF44-DAED-4b89-81B3-12DD2B666F55}
