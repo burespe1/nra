@@ -8,6 +8,7 @@ changes:
     change: "package description change"
     apply: true
     note_new: |-
+      <i>version: 2.0</i>
       The Organisational View provides information about the Actors, their Roles and responsibilities, and relationships between roles in terms of lawful or contractual relationships. It also depicts the processes relevant to the ITS deployment (owns, plans, maintains, deploys, implements, tenders, …).
       The View consists of <b>Actors</b> assuming one or more <b>Roles</b>, the <b>Agreements</b> between the Roles, and their relations to the <b>Components</b> and <b>Modules</b>.
       In the NAP Reference Architecture, the main Actors are the European Commission, the Member State, the Competent Authority/National Body, the NAP Operator, the NAP IT Provider, the NAP Content Provider, and the NAP Content Consumer. The Organisational View describes the responsibilities, obligations and the typical representatives of each role. It also describes the lawful obligations of these roles, modelled as relationships between the law-making Roles (European Commission and Member State) and the other Roles. It further outlines the expected content of contractual relationships between the Roles.
@@ -57,8 +58,7 @@ changes:
     similarity: "0.76"
     authors: ["Änderung"]
     note_new: |-
-      Public or private entity that supplies content (e.g., data, metadata, documents) to the
-      National Access Point, making it available for reuse in accordance with the requirements of the EU legal acts and National Laws.
+      Public or private entity that supplies content (e.g., data, metadata, documents) to the  National Access Point, making it available for reuse in accordance with the requirements of the EU legal acts and National Laws.
       
       <b>NOTE1: </b>
       Content Provider includes the Data Holder, Data Provider, Service Provider terms as specified in EU legal acts.
@@ -150,25 +150,22 @@ changes:
     kind: element
     object: "NAP Operator"
     type: "Actor"
-    change: "substantive description change; connection change (manual)"
+    change: "substantive description change"
     apply: true
     similarity: "0.13"
     authors: ["Änderung"]
     note_new: |-
-      Public or private entity designated to manage, maintain and operate the
-      
-      National Access Point, ensuring the accessibility of data and that the NAP functions in line with the requirements of the applicable EU legal acts, further specified in national legislation or governance documents.
+      Public or private entity designated to manage, maintain and operate the  National Access Point, ensuring the accessibility of data and that the NAP functions in line with the requirements of the applicable EU legal acts, further specified in national legislation or governance documents.
       
       The National Access Point (NAP) Actor represents and fulfils the interests of the National Access Point (NAP) Stakeholder.
       
       <b>Represented by:</b>
       Usually, a department of the Member State’s ministry responsible for transport, a stateowned organisation, or a research institution acts as <b>NAP Operator</b>. The organisation fulfilling this role is generally designated explicitly in national legislation or related governance documents.
-    # structure: '' -> ''
   - guid: "{B4E9C168-C4F3-4026-B334-9511627C14AC}"
     kind: element
     object: "National Body / Competent Authority"
     type: "Actor"
-    change: "title change; substantive description change; connection change (manual)"
+    change: "title change; substantive description change"
     apply: true
     name_new: "Competent Authority / National Body"
     similarity: "0.08"
@@ -180,7 +177,6 @@ changes:
       
       <b>Represented by:</b>
       Usually, a Member State department of the Ministry of Transport. The Competent Authority / National Body assignment shall be formalised through explicit designation in national law. Can also be represented by a private entity assigned by and cooperating with the government body
-    # structure: '' -> ''
   - guid: "{1BC0C89E-82C2-4b54-8EF3-C2F663049E05}"
     kind: element
     object: "European Commission (EC)"
@@ -323,8 +319,7 @@ changes:
     note_new: |-
       <b>Parties</b>: European Commission (EC) and Member State (MS).
       <b>Objective</b>: To set up obligations of the MS towards the EC and of the national stakeholders.
-      <b>Form</b>: the ITS Directive and Delegated Regulations
-      <b>Obligations:</b>
+      <b>Form</b>: the ITS Directive and Delegated Regulations <b>Obligations:</b>
       &gt; EC to MS: ---
       &gt; MS to EC:
       <ul>
@@ -359,9 +354,9 @@ changes:
     kind: element
     object: "European or national law (MS to CP)"
     type: "Agreement"
-    change: "substantive description change; connection change (manual)"
+    change: "substantive description change"
     apply: true
-    similarity: "0.77"
+    similarity: "0.78"
     authors: ["Änderung"]
     note_new: |-
       <b>Parties</b>: Member State (MS) and Content Provider (CP).
@@ -423,9 +418,9 @@ changes:
       	<li>Competent Authority / National Body (CA/NB) may request from the data holders and travel information service providers the following documents: [2024/490 art. 9]</li>
       	<li>1 a description of the travel and traffic data accessible via the national access point, the information on the quality thereof and the conditions of reuse of that data;</li>
       	<li>2 a description of the travel information services available including connections with other services where applicable;</li>
+      	<li>3 an evidence-based declaration of compliance with the requirements set out in Delegated Regulations;</li>
+      	<li>4 the license or contractual agreements with travel information service providers.</li>
       </ul>
-    # structure: '3 an evidence-based declaration of compliance with the requirements set out in Delegated Regulations;4 the licence or contractual agreements with travel information service providers.' -> '3 an evidence-based declaration of compliance with the requirements set out in Delegated Regulations;'
-    # structure: '' -> '4 the license or contractual agreements with travel information service providers.'
   - guid: "{BEED600A-C5D2-4829-9BF5-6E6649CB3D14}"
     kind: element
     object: "Metadata provision contract (NO to CP)"
@@ -457,10 +452,19 @@ changes:
       NONE
   - guid: ""
     kind: new element
-    object: "Agreement: Content provision contract/agreement (NO to CP)"
+    object: "Content provision contract/agreement (NO to CP)"
     type: ""
-    change: "new object (manual)"
-    apply: false
+    change: "new object"
+    apply: true
+    keyword: "Agreement"
+    package_guid: "{AC628A41-4BD9-486c-B5B8-7B9ABAF28C40}"
+    after: "Metadata provision contract (NO to CP)"
+    # TO DO after creation: «adheres to» links to both parties (Roles)
+    # candidate link: Agreement: European or national law (MS to CP)
+    # candidate link: Role: NAP Content Provider (CP)
+    # candidate link: Role: NAP Operator (NO)
+    # candidate link: Stakeholder: Content Consumer
+    # candidate link: Stakeholder: Content Provider
     authors: ["Änderung"]
     text: |-
       NEW AGREEMENT

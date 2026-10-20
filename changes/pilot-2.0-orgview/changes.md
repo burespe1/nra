@@ -7,10 +7,13 @@ Base model: `NRA_20250704-clean.qea`
 | elements/packages with changes | 21 |
 | title changes | 3 |
 | description changes | 20 |
-| structure (manual) | 4 |
+| structure (manual) | 0 |
 | conflicts | 0 |
 | unmapped sections | 0 |
 | comments | 2 |
+| new elements | 1 |
+| not applied (WIP / proposal / conflict) | 0 |
+| warnings | 0 |
 
 <details><summary><b> NAP Organisational View</b> – package description change</summary>
 
@@ -18,11 +21,12 @@ Base model: `NRA_20250704-clean.qea`
 ```diff
 --- 
 +++ 
-@@ -1,4 +1,4 @@
+@@ -1,4 +1,5 @@
 -The Organizational View provides information about the actors, their roles and responsibilities, and relationships between roles in terms of lawful or contractual relationships. It also depicts desired business results and business processes for the ITS deployment which are related to the sub-set ITS architecture (owns, plans, maintains, deploys, implements, tender, …).
 -The View consists of Actors performing one or more Roles, Agreements between the Roles, and relations to the Components and Modules.
 -In the NAP Reference Architecture, the main Actors are the NAP Operator, the NAP Content Provider, the NAP Content Consumer, the National Body, the Member State, the European Commission, and the NAP Technical Operator. The Organizational View describes their responsibilities/obligations and identifies typical representatives of those roles. It also describes what lawful obligations these roles have (modelled as the relationship between the law-making roles and other roles) and what shall be the content of a contractual relationship between the roles.
 -IMPORTANT: All lawful obligations come from the policy maker roles towards other roles, i.e., contracts between two non-policy-making roles do not contain what is already given, for the relationship of those roles, by the law.
++version: 2.0
 +The Organisational View provides information about the Actors, their Roles and responsibilities, and relationships between roles in terms of lawful or contractual relationships. It also depicts the processes relevant to the ITS deployment (owns, plans, maintains, deploys, implements, tenders, …).
 +The View consists of Actors assuming one or more Roles, the Agreements between the Roles, and their relations to the Components and Modules.
 +In the NAP Reference Architecture, the main Actors are the European Commission, the Member State, the Competent Authority/National Body, the NAP Operator, the NAP IT Provider, the NAP Content Provider, and the NAP Content Consumer. The Organisational View describes the responsibilities, obligations and the typical representatives of each role. It also describes the lawful obligations of these roles, modelled as relationships between the law-making Roles (European Commission and Member State) and the other Roles. It further outlines the expected content of contractual relationships between the Roles.
@@ -82,15 +86,14 @@ Base model: `NRA_20250704-clean.qea`
 ```diff
 --- 
 +++ 
-@@ -1,3 +1,4 @@
+@@ -1,3 +1,3 @@
 -Any legal person, data subject, or public or private entity/organization who has the right to grant access to or to share the data under its control. The subject in question shall hold the data that are required to be made accessible via NAP by or more of the Delegated Regulations.
 -NOTE1: We do not create objects for each Content Provider actor type.
 -NOTE2: Content Provider includes the Data Holder term as it is specified in MMTIS and RTTI regulations.
-+Public or private entity that supplies content (e.g., data, metadata, documents) to the
-+National Access Point, making it available for reuse in accordance with the requirements of the EU legal acts and National Laws.
++Public or private entity that supplies content (e.g., data, metadata, documents) to the National Access Point, making it available for reuse in accordance with the requirements of the EU legal acts and National Laws.
 +NOTE1:
 +Content Provider includes the Data Holder, Data Provider, Service Provider terms as specified in EU legal acts.
-@@ -5,0 +7,17 @@
+@@ -5,0 +6,17 @@
 +Automotive industries (when acting as service providers)
 +Broadcasters dedicated to traffic information
 +Holders of in vehicle generated data
@@ -108,7 +111,7 @@ Base model: `NRA_20250704-clean.qea`
 +Transport operators
 +Transport on demand service providers
 +Travel information service providers
-@@ -11 +29 @@
+@@ -11 +28 @@
 -* ‘service provider’ means any public or private provider of a real-time traffic information service, excluding a mere conveyer of data to data users;
 +* ‘service provider’ means any public or private provider of a real-time traffic information service, excluding a mere conveyer of data-to-data users;
 ```
@@ -141,27 +144,25 @@ Base model: `NRA_20250704-clean.qea`
 
 </details>
 
-<details><summary><b>Actor NAP Operator</b> – substantive description change; connection change (manual)</summary>
+<details><summary><b>Actor NAP Operator</b> – substantive description change</summary>
 
 
 ```diff
 --- 
 +++ 
-@@ -1,2 +1,3 @@
+@@ -1,2 +1,2 @@
 -Any public or private organization responsible for collecting and publishing information about content generated by Content Providers (metadata) under the Delegated Regulations obligations, to any interested party (Content Consumers) without prejudice.
 -The NAP (National Access Point) Actor represents and fulfils the interests of the NAP (National Access Point) Stakeholder.
-+Public or private entity designated to manage, maintain and operate the
-+National Access Point, ensuring the accessibility of data and that the NAP functions in line with the requirements of the applicable EU legal acts, further specified in national legislation or governance documents.
++Public or private entity designated to manage, maintain and operate the National Access Point, ensuring the accessibility of data and that the NAP functions in line with the requirements of the applicable EU legal acts, further specified in national legislation or governance documents.
 +The National Access Point (NAP) Actor represents and fulfils the interests of the National Access Point (NAP) Stakeholder.
-@@ -4 +5 @@
+@@ -4 +4 @@
 -Usually, a department of the MS relevant Ministry (responsible for Transport matters), a state-owned organization, or a research organization. Usually, based on the explicit stating of the entity in the national law.
 +Usually, a department of the Member State’s ministry responsible for transport, a stateowned organisation, or a research institution acts as NAP Operator. The organisation fulfilling this role is generally designated explicitly in national legislation or related governance documents.
 ```
-- structure: ~~~~ → 
 
 </details>
 
-<details><summary><b>Actor National Body / Competent Authority</b> – title change; substantive description change; connection change (manual)</summary>
+<details><summary><b>Actor National Body / Competent Authority</b> – title change; substantive description change</summary>
 
 - name → **Competent Authority / National Body**
 
@@ -177,7 +178,6 @@ Base model: `NRA_20250704-clean.qea`
 -Usually, a department of the MS Ministry of Transport and an independent body. Based on the explicit naming of the entity in the national law. The NB/CA shall be independent of CPs and NOs since it checks its compliance.
 +Usually, a Member State department of the Ministry of Transport. The Competent Authority / National Body assignment shall be formalised through explicit designation in national law. Can also be represented by a private entity assigned by and cooperating with the government body
 ```
-- structure: ~~~~ → 
 
 </details>
 
@@ -330,14 +330,18 @@ Base model: `NRA_20250704-clean.qea`
 ```diff
 --- 
 +++ 
-@@ -10 +10 @@
+@@ -3,2 +3 @@
+-Form: the ITS Directive and Delegated Regulations
+-Obligations:
++Form: the ITS Directive and Delegated Regulations Obligations:
+@@ -10 +9 @@
 -To establish the National Body / Competent Authority (NB/CA) in the national law; either delegate its establishment to a responsible ministry or directly state the party responsible for NB/CA operation; create a legal framework for its operation.
 +To establish the National Body / Competent Authority (CA/NB) in the national law; either delegate its establishment to a responsible ministry or directly state the party responsible for CA/NB operation; create a legal framework for its operation.
 ```
 
 </details>
 
-<details><summary><b>Agreement European or national law (MS to CP)</b> – substantive description change; connection change (manual)</summary>
+<details><summary><b>Agreement European or national law (MS to CP)</b> – substantive description change</summary>
 
 
 ```diff
@@ -397,12 +401,10 @@ Base model: `NRA_20250704-clean.qea`
 @@ -34 +36 @@
 -NB/CA (competent authorities of the Member States) may request from the data holders and travel information service providers the following documents: [2024/490 art. 9]
 +Competent Authority / National Body (CA/NB) may request from the data holders and travel information service providers the following documents: [2024/490 art. 9]
-@@ -37,2 +38,0 @@
--3 an evidence-based declaration of compliance with the requirements set out in Delegated Regulations;
+@@ -38 +40 @@
 -4 the licence or contractual agreements with travel information service providers.
++4 the license or contractual agreements with travel information service providers.
 ```
-- structure: ~~3 an evidence-based declaration of compliance with the requirements set out in Delegated Regulations;4 the licence or contractual agreements with travel information service providers.~~ → 3 an evidence-based declaration of compliance with the requirements set out in Delegated Regulations;
-- structure: ~~~~ → 4 the license or contractual agreements with travel information service providers.
 
 </details>
 
@@ -415,8 +417,32 @@ Base model: `NRA_20250704-clean.qea`
 
 </details>
 
-<details><summary><b> Agreement: Content provision contract/agreement (NO to CP)</b> – new object (manual)</summary>
+<details><summary><b> Content provision contract/agreement (NO to CP)</b> – new object</summary>
 
+- new **Agreement** after *Metadata provision contract (NO to CP)*
+- [ ] «adheres to» links to both parties (Roles)
+- candidate links: Agreement: European or national law (MS to CP); Role: NAP Content Provider (CP); Role: NAP Operator (NO); Stakeholder: Content Consumer; Stakeholder: Content Provider
+
+```
+NEW AGREEMENT
+Parties: NAP operator (NO) and Content Provider (CP).
+Objective: Set up operational and/or contractual obligations under which the content could be stored or proxied at/by the NAP. Set up obligations and responsibilities of the NO towards the CP, that are not regulated by law.
+Form: Contract, terms and conditions.
+Obligations:
+> CP to NO
+Provide the content to be made available through the NAP, supplying it in accordance with the agreed operational procedures or contractual obligations.
+Provide, where applicable, the necessary authorization for the NAP operator to publish personal data on the NAP, limited to the scope explicitly agreed between the parties.
+> NO to CP
+Make the content accessible to Content Consumers (CCs) immediately after it has been provided by the CP.
+Provide the necessary support and guidance for the content submission and publication on the NAP.
+Respect the CP authorization to publish personal data on the NAP and ensure that the applicable data protection legislation is upheld.
+Communicate clearly and in a timely manner, any detected technical issues with the provision of the data to CCs.
+Provide the relevant statistics of data access on the NAP to the CP.
+Ensure that the provided content is not tampered with nor altered in any way, allowing only the technical processing necessary for its publication on the NAP.
+NOTE: The mandatory obligations of the CP, established by European or National Law (connected to e.g., data provision, information, quality, compliance assessment), are defined in the European or national law (MS to CP) Agreement between MS and CP.
+Reference to the EU law:
+NONE
+```
 
 </details>
 

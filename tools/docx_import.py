@@ -8,6 +8,12 @@ Track Changes; TODOs and questions are Word comments. Each element section is an
     python tools/docx_import.py REVIEW.docx BASE.qea [--current CURRENT.qea] [--out changes/NAME]
 
 Writes NAME.yaml (proposed changes, input for docx_apply.py) and NAME.md (report for the PR).
+
+Review markers (Guideline 06): Word comments starting with TODO (task), ISSUE (open question), DELETE (remove element),
+WIP (section still being drafted – not applied), PROPOSAL (suggestion – not applied until accepted);
+tracked changes authored by "Claude" are proposals as well (accept or reject them in Word first).
+The import also lints the new text (left-over markers, abbreviations missing in the glossary,
+unknown keyword, duplicate names) and lists the connections a new element still needs.
 Standard library only.
 """
 import sys, re, zipfile, sqlite3, difflib, argparse, html, os
@@ -96,14 +102,86 @@ def norm(t): return re.sub(r'\s+', ' ', t.replace('\u00a0', ' ')).strip()
 
 def load(path):
     c = sqlite3.connect(f'file:{path}?mode=ro', uri=True)
-    els = {g.upper(): dict(guid=g, id=i, name=n, note=no or '', type=t, kw=k or '')
-           for i, g, n, no, t, k in c.execute("select Object_ID,ea_guid,Name,Note,Object_Type,PDATA5 from t_object")}
+    pg = dict(c.execute("select Package_ID, ea_guid from t_package"))
+    els = {g.upper(): dict(guid=g, id=i, name=n or '', note=no or '', type=t, kw=k or '', st=st or '', pkg=pg.get(pid))
+           for i, g, n, no, t, k, st, pid in c.execute("select Object_ID,ea_guid,Name,Note,Object_Type,PDATA5,Stereotype,Package_ID from t_object")}
     pk = {}
     for pid, n, no, g in c.execute("select Package_ID,Name,Notes,ea_guid from t_package"):
         al = c.execute("select Alias from t_object where Object_Type='Package' and PDATA1=?", (str(pid),)).fetchone()
         for key in {n, (al[0] if al and al[0] else n)}:
             pk.setdefault(norm(key).lower(), dict(guid=g, name=n, note=no or '', pid=pid))
     return els, pk
+
+def vocab(path):
+    """Glossary terms and abbreviations, keywords in use, element names."""
+    c = sqlite3.connect(f'file:{path}?mode=ro', uri=True)
+    terms = {r[0] for r in c.execute("select Term from t_glossary") if r[0]}
+    terms |= {r[0] for r in c.execute("select Name from t_object where Stereotype='GlossaryEntry'") if r[0]}
+    abbr = set()
+    for t in terms:
+        abbr |= set(re.findall(r'\b[A-Z][A-Z0-9]{1,}[a-z]?\b', t))
+    names = {}
+    for n, st, k, g in c.execute("select Name, Stereotype, PDATA5, ea_guid from t_object where Stereotype like 'FRAME_%'"):
+        if n: names.setdefault(norm(n), []).append(dict(name=n, st=st, kw=k or '', guid=g))
+        for a in re.findall(r'\(([A-Z][A-Z/]{1,})\)', n or ''): abbr |= set(a.split('/')) | {a}
+    kws = {r[0] for r in c.execute("select distinct PDATA5 from t_object where PDATA5 is not null and PDATA5<>''")}
+    return dict(abbr=abbr, names=names, keywords=kws)
+
+# Connections a new element needs before it is complete (Guideline 07)
+REQUIRED = {
+    'low level function': ['«componentof» link to its High Level Function', 'IN and OUT functional data flows (and their «componentof» to high level flows)',
+                           'allocation to a Module (place it inside the module on the functional diagrams)', 'review RequirementLevel (set to MANDATORY by default, Guideline 05)'],
+    'high level function': ['«componentof» links from its Low Level Functions', 'high level data flows'],
+    'functional data flow': ['OUT link from the producing function and IN link to the consuming function', '«componentof» link to the high level data flow'],
+    'role': ['«defines» link from its Actor', '«adheres to» links from the Agreements the role is party to'],
+    'actor': ['«defines» links to its Roles', 'link to the Stakeholder it represents'],
+    'agreement': ['«adheres to» links to both parties (Roles)'],
+    'requirement': ['Abstraction from its Specification', '«fulfilled by» links to NRA objects (Guideline 03)'],
+    'interface': ['physical data flow it belongs to', 'Requirements («fulfilled by»)'],
+    'module': ['parent Subsystem', 'functions allocated to the module'],
+    'data store': ['functions reading and writing it (data flows)'],
+}
+
+def ckind(text):
+    u = text.strip().upper()
+    for k in ('TODO', 'ISSUE', 'WIP', 'DRAFT', 'PROPOSAL', 'DELETE'):
+        if u.startswith(k): return {'DRAFT': 'wip'}.get(k, k.lower())
+    return 'comment'
+
+STOP = {'TODO', 'TBD', 'FIXME', 'XXX', 'WIP', 'EU', 'IT', 'API', 'OR', 'AND', 'NOTE', 'NEW', 'NONE', 'TEL', 'URL', 'HTTP', 'HTTPS', 'XML', 'JSON', 'PDF', 'ID', 'OPTIONAL', 'NOT', 'ALL', 'ANY', 'SHALL', 'MUST'}
+
+MARKER_RE = re.compile(r'\b(TODO|TBD|FIXME|XXX)\b|\?\?\?|\[\s*\.\.\.\s*\]')
+
+def annotate(changes, B, V, base_names_text):
+    """Flags (WIP, proposals), lint warnings and the apply decision for every change."""
+    for c in changes:
+        warn, flags = [], []
+        kinds = [ckind(m['text']) for m in c['comments'] if not m['done']]
+        if 'wip' in kinds or re.search(r'(?i)\[(wip|draft)\]|\((wip|draft)\)', c.get('heading', '')): flags.append('wip')
+        if 'proposal' in kinds: flags.append('proposal')
+        if 'delete' in kinds and 'object deleted' not in c.get('change', ''): c['change'] = (c.get('change', '') + '; ' if c.get('change') else '') + 'object deleted (requested, manual)'
+        if any(re.search(r'(?i)claude', a) for a in c.get('authors', [])): flags.append('proposal by Claude')
+        text = ' '.join(plain_lines(c.get('note_new') or c.get('text') or ''))
+        if text:
+            for m in sorted(set(x.group(0) for x in MARKER_RE.finditer(text))): warn.append(f'left-over marker “{m}” in the text')
+            old = ' '.join(plain_lines(c.get('note_old', '')))
+            for a in sorted(set(re.findall(r'\b[A-Z][A-Z0-9]{1,4}s?\b', text))):
+                b = a[:-1] if a.endswith('s') and len(a) > 2 else a
+                if b in V['abbr'] or b in old or b in base_names_text or b in STOP: continue
+                if True:
+                    warn.append(f'abbreviation “{a}” is not in the glossary')
+        elif c['kind'] in ('element', 'new element') and ('note_new' in c or c['kind'] == 'new element'):
+            warn.append('empty description')
+        nm = c.get('name_new') or (c.get('name') if c['kind'] == 'new element' else None)
+        if nm:
+            for o in V['names'].get(norm(nm), []):
+                if o['guid'].upper() != c.get('guid', '').upper() and (o['kw'] or o['st']).lower() in ((c.get('type') or c.get('keyword') or '').lower(), o['st'].lower()) and (o['kw'] or '').lower() == (c.get('type') or c.get('keyword') or '').lower(): warn.append(f'name already used by {o["kw"] or o["st"]} {o["guid"]}')
+        if c['kind'] == 'new element' and c.get('keyword') and c['keyword'].lower() not in {k.lower() for k in V['keywords']}:
+            warn.append(f'unknown keyword “{c["keyword"]}” – use one of Guideline 07')
+        if c['kind'] == 'element' and c.get('heading_kw') and c.get('type') and c['heading_kw'].lower() != c['type'].lower():
+            warn.append(f'heading says “{c["heading_kw"]}” but the element is a {c["type"]}')
+        c['flags'], c['warnings'] = flags, warn
+        c['apply'] = not (flags or c.get('conflict'))
 
 # ---------------------------------------------------------------- note building
 def to_html(paras):
@@ -159,6 +237,7 @@ def ratio(a, b): return difflib.SequenceMatcher(None, a, b).ratio()
 def run(docx, base, current=None):
     paras, comments = parse(docx)
     B, BP = load(base); C, CP = load(current) if current else (B, BP)
+    V = vocab(current or base)
     sections, cur = [], None
     for k, p in enumerate(paras):
         g = GUID_RE.search(p['old'] or p['new'])
@@ -167,7 +246,7 @@ def run(docx, base, current=None):
         if is_heading(p):
             cur = dict(start=k, head=p, guid=None, body=[], level=p['style']); sections.append(cur); continue
         if cur is not None: cur['body'].append(p)
-    changes, unmapped = [], []
+    changes, unmapped, last = [], [], None
     for s in sections:
         h = s['head']; ho, hn = norm(h['old']), norm(h['new'])
         cm = [comments[c] for p in [h] + s['body'] for c in p['comments'] if c in comments and not comments[c].get('reply')]
@@ -176,7 +255,9 @@ def run(docx, base, current=None):
         if s['guid']:
             g = s['guid'].upper(); be = B.get(g); ce = C.get(g)
             if not be: unmapped.append(dict(rec, guid=s['guid'], problem='GUID not in base model')); continue
-            rec.update(kind='element', guid=be['guid'], type=be['kw'] or be['type'], name=be['name'])
+            rec.update(kind='element', guid=be['guid'], type=be['kw'] or be['type'], name=be['name'],
+                       heading_kw=(hn or ho).split(': ', 1)[0] if ': ' in (hn or ho) else '')
+            last = be
             if h['only_del'] or all(p['only_del'] or not p['old'].strip() for p in body if p['old'].strip()) and h['only_del']:
                 rec['change'] = 'object deleted'; changes.append(rec); continue
             nl = plain_lines(be['note'])
@@ -205,8 +286,20 @@ def run(docx, base, current=None):
             if ct or cm: changes.append(rec)
         else:
             if h['only_ins']:
-                rec.update(kind='new element', text=to_html(body), authors=sorted({a for a, d in h['authors']}))
-                rec['change'] = 'new object (manual)'; changes.append(rec); continue
+                kw, nm = (hn.split(': ', 1) + [''])[:2] if ': ' in hn else ('', hn)
+                txt = to_html(join_split(body))
+                mention = []
+                for key, lst in V['names'].items():
+                    o = lst[0]
+                    if len(key) > 6 and key in norm(hn + ' ' + ' '.join(plain_lines(txt))) and key != norm(nm): mention.append(f'{o["kw"] or o["st"]}: {o["name"]}')
+                for a in re.findall(r'\(([^)]*)\)', nm):
+                    for ab in re.findall(r'[A-Z][A-Z/]+', a):
+                        mention += [f'{o["kw"]}: {o["name"]}' for lst in V['names'].values() for o in lst if o['name'].endswith(f'({ab})')]
+                nm = re.sub(r'\s*(\[(WIP|DRAFT)\]|\((WIP|DRAFT)\))\s*', ' ', nm, flags=re.I).strip()
+                rec.update(kind='new element', keyword=kw, name=nm, text=txt, authors=sorted({a for a, d in h['authors']}),
+                           package_guid=last['pkg'] if last else None, after=last['name'] if last else None,
+                           required=REQUIRED.get(kw.lower(), ['connections according to Guideline 07']), mentions=sorted(set(mention)))
+                rec['change'] = 'new object'; changes.append(rec); continue
             key = norm(ho).lower(); pk = BP.get(key)
             if pk and any(p['changed'] for p in body):
                 nl = plain_lines(pk['note']); a, b = note_span(body, nl)
@@ -216,6 +309,7 @@ def run(docx, base, current=None):
             elif any(p['changed'] for p in body) or cm:
                 unmapped.append(dict(rec, problem='section without GUID and without matching package',
                                      text=[dict(old=norm(p['old']), new=norm(p['new'])) for p in body if p['changed']]))
+    annotate(changes, B, V, ' '.join(o['name'] for o in B.values()))
     return changes, unmapped, comments
 
 def yq(s):
@@ -231,15 +325,21 @@ def write(changes, unmapped, docx, base, out):
         f.write('# Set apply: false to skip an entry; docx_apply.py writes names and notes, the rest is manual.\nchanges:\n')
         for c in changes:
             f.write(f'  - guid: {yq(c.get("guid",""))}\n    kind: {c["kind"]}\n    object: {yq(c.get("name", c["heading"]))}\n')
-            f.write(f'    type: {yq(c.get("type",""))}\n    change: {yq(c.get("change",""))}\n    apply: {"false" if c.get("conflict") or c["kind"]=="new element" else "true"}\n')
+            f.write(f'    type: {yq(c.get("type",""))}\n    change: {yq(c.get("change",""))}\n    apply: {"true" if c.get("apply") else "false"}\n')
             for k in ('name_new', 'conflict', 'similarity'):
                 if k in c: f.write(f'    {k}: {yq(c[k])}\n')
+            if c.get('flags'): f.write(f'    flags: [{", ".join(yq(x) for x in c["flags"])}]\n')
+            for w in c.get('warnings', []): f.write(f'    # WARNING: {w}\n')
+            if c['kind'] == 'new element':
+                f.write(f'    keyword: {yq(c.get("keyword",""))}\n    package_guid: {yq(c.get("package_guid") or "")}\n    after: {yq(c.get("after") or "")}\n')
+                for r in c.get('required', []): f.write(f'    # TO DO after creation: {r}\n')
+                for m in c.get('mentions', []): f.write(f'    # candidate link: {m}\n')
             if c.get('authors'): f.write(f'    authors: [{", ".join(yq(a) for a in c["authors"])}]\n')
             if c.get('note_new') is not None: f.write(f'    note_new: {yq(c["note_new"])}\n')
             if c.get('text'): f.write(f'    text: {yq(c["text"])}\n')
             for s in c.get('structure', []): f.write(f'    # structure: {s["old"]!r} -> {s["new"]!r}\n')
             for m in c['comments']:
-                kind = 'todo' if m['text'].upper().startswith('TODO') else 'issue' if m['text'].upper().startswith('ISSUE') else 'comment'
+                kind = ckind(m['text'])
                 f.write(f'    - {kind}: {yq(m["text"])}  # {m["author"]} {m["date"]}{" (resolved)" if m["done"] else ""}\n')
                 for r in m['replies']: f.write(f'      # reply {r["author"]}: {r["text"]}\n')
     with open(out + '.md', 'w', encoding='utf8', newline='\n') as f:
@@ -248,10 +348,17 @@ def write(changes, unmapped, docx, base, out):
         f.write(f'| | count |\n|---|---|\n| elements/packages with changes | {len(changes)} |\n| title changes | {n("title")} |\n'
                 f'| description changes | {n("description")} |\n| structure (manual) | {n("manual")} |\n'
                 f'| conflicts | {sum(1 for c in changes if c.get("conflict"))} |\n| unmapped sections | {len(unmapped)} |\n'
-                f'| comments | {sum(len(c["comments"]) for c in changes)} |\n\n')
+                f'| comments | {sum(len(c["comments"]) for c in changes)} |\n| new elements | {sum(1 for c in changes if c["kind"]=="new element")} |\n'
+                f'| not applied (WIP / proposal / conflict) | {sum(1 for c in changes if not c.get("apply"))} |\n| warnings | {sum(len(c.get("warnings",[])) for c in changes)} |\n\n')
         for c in changes:
             f.write(f'<details><summary><b>{c.get("type","")} {c.get("name", c["heading"])}</b> – {c.get("change","")}'
-                    f'{" ⚠️ conflict" if c.get("conflict") else ""}</summary>\n\n')
+                    f'{" ⚠️ conflict" if c.get("conflict") else ""}{" 🚧" if c.get("flags") else ""}</summary>\n\n')
+            if c.get('flags'): f.write(f'- 🚧 **not applied:** {", ".join(c["flags"])}\n')
+            for w in c.get('warnings', []): f.write(f'- ⚠️ {w}\n')
+            if c['kind'] == 'new element':
+                f.write(f'- new **{c.get("keyword")}** after *{c.get("after")}*\n' + ''.join(f'- [ ] {r}\n' for r in c.get('required', [])))
+                if c.get('mentions'): f.write('- candidate links: ' + '; '.join(c['mentions']) + '\n')
+                f.write('\n```\n' + '\n'.join(plain_lines(c.get('text', ''))) + '\n```\n')
             if 'name_new' in c: f.write(f'- name → **{c["name_new"]}**\n')
             if c.get('note_new') is not None:
                 f.write('\n```diff\n' + '\n'.join(difflib.unified_diff(plain_lines(c.get('note_old','')), plain_lines(c['note_new']), lineterm='', n=0)) + '\n```\n')
