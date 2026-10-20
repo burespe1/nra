@@ -9,12 +9,13 @@ elements:
     guid: "{7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}"
     type: "Activity"
     stereotype: "FRAME_High_Level_Function"
-    keywords: "High level function"
+    keywords: "High Level Function"
     status: "Proposed"
     version: "5.0"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This High-level function shall provide the facilities needed to enable a National Access Point (NAP) to operate. It shall include functionality that enables information objects containing NAP data to be provided and stored. These information objects shall consist of meta-data describing the data that is available and pointers to the Internet address from which data may be obtained. NAP Content Consumers shall be able to discover, search for and obtain some or all the NAP information objects. These information objects will be provided to and entered for the first time by the NAP Content Provider once they have been approved as Content Providers.

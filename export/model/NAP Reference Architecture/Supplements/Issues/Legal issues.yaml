@@ -4,38 +4,17 @@ alias: ""
 version: "1.0"
 note: ""
 elements:
-  - name: "Draft - Planed for 12.2025"
-    guid: "{2B0D3CC8-A31F-4546-95C0-CC8534984F4E}"
+  - name: "Does not yield a Requirement"
+    guid: "{ED073BB5-E55D-49b4-9EFA-7F5ED573C1FF}"
     type: "Issue"
     status: "Proposed"
     version: "1.0"
     order: 0
-    note: ""
-  - name: "Element missing"
-    guid: "{3EDC5D6D-FB7D-4d3b-8B5D-30879024C53B}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
     note: |
-      Agreement for data provision missing
-    links:
-      - "Association → L.2.2 Provide up to date data"  # {853D4CD8-2F59-4137-A144-F31B9FBF9095} → {3A5AE4E8-99D6-446e-9A35-26D9A69357B2}
-  - name: "Functionality Missing"
-    guid: "{0FDDF4FC-1D13-4013-B1B4-51667FE8F776}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    note: |
-      Feedback loop from Content Consumer to Content Provider
-      
-      Functionality for granting CA/NB access to information
-      
-      Discussion with KPI-Team needed!!
-    links:
-      - "Association → L.2.4 Reporting obligation"  # {E925600F-6C99-4944-B5CA-6E808CBEA56F} → {ED7D9261-5E1A-4278-93F5-1159D460C378}
-      - "Association → L.2.9 CA/NB access"  # {558F42CC-8DC6-46b6-9CF4-FF0500A5615E} → {6F3CFCE8-0D04-4436-A95E-1FE1EE9AAA3A}
+      Global issue for Specifications that do not yield any Requirement for the NRA (Guideline 01 Specifications). The Specification remains in the model for reference.
   - name: "Issue: Agreement Missing"
     guid: "{CE7A9755-57B2-4f08-8288-D04B0A5D68A2}"
     type: "Issue"
@@ -52,23 +31,43 @@ elements:
     status: "Proposed"
     version: "1.0"
     order: 0
+    tags:
+      "revised": "2026-10-20"
     note: |
       SRTI provision free of charge
       AFIR related obligations like registration at IDRO and ++
       How to ensure single digital gateway between NAP and other state owned (open) data portals
+      
+      v2.2.0: the Single Digital Gateway part is closed (specification does not yield a requirement); SRTI free of charge and AFIR obligations remain open.
     links:
       - "Abstraction → European or national law (MS to CP)"  # {E3BB747F-CF5A-45b2-9D60-607F2DF5E695} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
-  - name: "Revision after new TAP TSI is published"
-    guid: "{88B469C2-A3CF-47ab-8972-7EB0E96665D6}"
+  - name: "Missing functionality for the Requirement"
+    guid: "{0FDDF4FC-1D13-4013-B1B4-51667FE8F776}"
     type: "Issue"
     status: "Proposed"
     version: "1.0"
     order: 0
-    note: ""
+    tags:
+      "revised": "2026-10-20"
+    note: |
+      Feedback loop from Content Consumer to Content Provider
+      
+      Functionality for granting CA/NB access to information
+      
+      Discussion with KPI-Team needed!!
+      
+      Partly resolved in v2.2.0: feedback loop from Content Consumer to Content Provider added to F3.6.5 Provide NAP User Support (L.2.4). Access of the CA/NB to information remains open.
+      
+      2.2.0: global issue for Requirements without NRA content (Guideline 03). Merged with the closed issues “Functionality missing”, “Function missing in the NRA for the KPI” and “Element missing”.
+    links:
+      - "Association → L.2.9 CA/NB access"  # {558F42CC-8DC6-46b6-9CF4-FF0500A5615E} → {6F3CFCE8-0D04-4436-A95E-1FE1EE9AAA3A}
   - name: "Revision needed in NAPCORE"
     guid: "{9227DA58-B8A6-419f-BB56-A90F3950CF28}"
     type: "Issue"
-    status: "Proposed"
+    status: "Closed"
     version: "1.0"
     order: 0
-    note: ""
+    tags:
+      "revised": "2026-10-20"
+    note: |
+      Resolved in v2.2.0: NIS2 kept as conditional requirement L.12.1; L.9.1 (Single Digital Gateway) removed, the specification is linked to the issue Does not yield a Requirement.

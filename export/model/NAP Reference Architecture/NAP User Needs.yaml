@@ -1,7 +1,7 @@
 package: "NAP Reference Architecture/NAP User Needs"
 guid: "{309744F3-4B5B-43af-A5CC-6FF69B5E1BFD}"
 alias: "User Needs"
-version: "2.1.0"
+version: "1.0"
 note: |
   The results of the Motivation analysis are likely to contain several ideas, written in a variety of styles, and which may be open to interpretation. It is therefore necessary to re-write the ITS Service that was informally described by the stakeholders in a consistent manner. The User Needs provide a way of expressing these ideas in a way that is Unambiguous, Testable (with objective tests), Traceable (with unique reference numbers) and Singular (with only one idea at a time).
   

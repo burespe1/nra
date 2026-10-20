@@ -27,14 +27,6 @@ elements:
       Does this need a functionality?
     links:
       - "Association → K.2.4.1 NAP promotion – number of channels"  # {EA5073F3-80C9-4f50-985A-47D927923B43} → {1942245D-8D8A-425c-8364-D8364B8407EA}
-  - name: "Functionality missing"
-    guid: "{0E49C150-2EF4-45a2-9314-050D4465A17D}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    note: |
-      Add this to F3.6.1 Manage NAP Metadata Repository
   - name: "Future work needed"
     guid: "{74E43F44-BEC6-44fd-B060-5A9524947986}"
     type: "Issue"
@@ -71,15 +63,6 @@ elements:
       Option b is nice to have.
     links:
       - "Association → KPI 6.2 Harvesting functionalities"  # {8F54C300-F51A-4c9f-A6F7-07E62193F8FA} → {42A19936-0BD4-4750-977F-441851A057FE}
-  - name: "No requirement for the platform"
-    guid: "{EC670059-EF71-4e2a-B47E-5DFE83B2E046}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    note: ""
-    links:
-      - "Association → KPI 3.4 Map-based search"  # {16DDC25D-38C9-4e74-AA64-6B68684EE1D8} → {DB4A4825-A22D-49af-804A-54E7A0CC948E}
   - name: "Request"
     guid: "{D23C70E9-F3C0-4918-8EEC-537A8CB6F503}"
     type: "Issue"
@@ -209,22 +192,3 @@ elements:
       The NAP shall have a provision for adding or linking of XML schemas and samples of data being made accessible.
     links:
       - "Association → KPI 5.1 Documentation & description of datasets"  # {7F24ACBC-2334-4831-BB94-8FA935345F33} → {0C85EE9E-FEEA-4e4c-A559-92D10421902A}
-  - name: "Function missing in the NRA for the KPI"
-    guid: "{A6EA45BA-53FF-4177-AA14-F282A8C55D0F}"
-    type: "Issue"
-    status: "Proposed"
-    version: "1.0"
-    order: 7
-    note: |
-      Function missing in the NRA
-      
-      K.2.2.1 Track availability of data on the NAP
-      K.2.7.1 and K.2.8.1 Mass notification for content provider and content consumer
-      K.2.9.1 Missing Evaluation functionality
-      K.5.4.1/K.5.5.1 Missing Data aggregation for visualisation
-      K.7.3.1/K.7.5.1 General Information provision
-    links:
-      - "Association → K.2.2.1 Related services monitoring functionality"  # {C95DCAE4-ED42-4976-868B-D86B022D8DB7} → {57A18050-B4C1-42f9-881F-A8C6AE3EAF1A}
-      - "Association → K.2.7.1 Mass notifications – data providers"  # {F7D02D71-43B1-4163-B38D-6E20CF492C4F} → {1F17B282-6DF7-4368-8BF9-EB565BA7D4D5}
-      - "Association → K.2.8.1 Mass notifications – data consumers"  # {4EDA6734-1B2C-4c59-840A-7C3E3C32785F} → {6069CE61-FD93-4212-A7EC-BA701EBE8A7E}
-      - "Association → K.2.9.1 Monitoring and evaluation"  # {53E39B0B-3B95-4913-8E48-4CD1F7E79965} → {1B5911BF-D7A2-4e07-A4CE-4DC33E7E5C26}

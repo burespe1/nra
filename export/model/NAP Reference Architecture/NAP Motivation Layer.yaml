@@ -1,10 +1,12 @@
 package: "NAP Reference Architecture/NAP Motivation Layer"
 guid: "{4C40A73D-B8F9-4e96-BBB3-00352EB54506}"
 alias: "Motivation Layer"
-version: "2.1.0"
+version: "1.0"
 note: |
   The Motivational Layer models the motivations, reasons for the necessity of the NAP, and the expectations to be fulfilled by its successful deployment and implementation.
+  
   Several stakeholders are depicted in the diagram, gathered around the NAP because they share a common vision. However, each stakeholder interacts with the NAP differently and has unique expectations. Together, they define the NAP as an ITS service, and this definition serves as the primary guideline for all other views in the architecture.
+  
   For this view we do not distinguish between both NAP types, Metadata Directory and Data Platform.
 elements:
   - name: "Link to other Views"

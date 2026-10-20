@@ -1,8 +1,9 @@
 package: "NAP Reference Architecture/Supplements/Specifications and Recommendations"
 guid: "{FB5C5B3E-3676-4161-8D3C-ED841C93DED7}"
 alias: "Specifications and Recommendations"
-version: "2.1.0"
+version: "1.0"
 note: |
-  The Specifications and Requirements document describes legal and technical specifications as well as recommendations and profiles used for the ITS Service in different Views. The specifications could be linked to different objects defining is technical or organizational parameters, its usage, interaction requirements behaviour etc.
-  The Specifications and Requirements is elaborated with respect of minimum functionality of two NAP types: Metadata Directory and Data Platform.
+  The Specifications and Recommendations document describes the legal and technical specifications, profiles and recommendations used for the ITS Services in the different Views of the NAP Reference Architecture. A specification is bound to the architecture through the requirements derived from it: each derived requirement is attached to an NRA object whose technical or organisational parameters, usage, interaction or behaviour it constrains. That chain — specification → requirement → NRA object — is maintained in the model.
+  
+  The Specifications and Recommendations are elaborated with respect to the minimum functionality of the two NAP types: Metadata Directory and Data Platform.
 elements: []

@@ -1,0 +1,7 @@
+package: "NAP Reference Architecture/Supplements/NAP Documentation/Partial documents"
+guid: "{729E1A0B-7B22-471F-A31F-0ED3E2F4A8D1}"
+alias: ""
+version: "1.0"
+note: |
+  Master documents for single views, used for reviews in Word (Guideline 06, Review in Word). Generate with the same cover, TOC and style as the full document.
+elements: []

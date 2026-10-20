@@ -34,14 +34,13 @@ elements:
       "Requirement Category": ""
       "revised": "2025-07-04"
     note: |
-      The platform shall encourage use of standardized license framework  for all published datasets.
+      The platform shall encourage use of standardized license framework for all published datasets.
       
-      Source:
-      KPI 7.2 Terms and conditions for data reuse from data providers
+      Source: KPI 7.2 Terms and conditions for data reuse from data providers
     links:
       - "Association «fulfilled by» → Metadata Management Module"  # {76028265-E062-4a86-888B-2E0EA669A462} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
-  - name: "K.7.5.1 Compliance assessment support by NAP"
-    guid: "{1941874B-D599-4a5b-A6EA-6209F7E72127}"
+  - name: "K.7.3.1 Operational procedure information"
+    guid: "{16AB0A17-9AC4-4aec-9EAA-7EA1F349055C}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
     keywords: "Requirement"
@@ -50,13 +49,31 @@ elements:
     order: 2
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
+    note: |
+      The platform shall provide operational procedure information about the processes in the NAP.
+      e.g.: Registration of potential data provider, How issues are handled
+      
+      Source: KPI 7.3 Operational procedure information
+    links:
+      - "Association «fulfilled by» → Support (ticket) Module"  # {D7503DD9-8894-4cf1-B15B-ED357E0B3E8B} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
+  - name: "K.7.5.1 Compliance assessment support by NAP"
+    guid: "{1941874B-D599-4a5b-A6EA-6209F7E72127}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
     note: |
       The platform shall provide self-declaration forms/templates without any additional involvement in process.
       
       Source KPI 7.5 Compliance assessment support by NAP
     links:
-      - "Association → Function missing in the NRA for the KPI"  # {46A7C62A-E5B5-44c1-8F2E-EBBB98959726} → {A6EA45BA-53FF-4177-AA14-F282A8C55D0F}
+      - "Association «fulfilled by» → Support (ticket) Module"  # {F0FD3356-22D8-436A-85A2-D469010AAE01} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
   - name: "K.7.6.1 Association of published datasets with Delegated Regulations"
     guid: "{747DB3C3-C956-4030-9637-30756698054B}"
     type: "Requirement"
@@ -64,7 +81,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 3
+    order: 4
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"

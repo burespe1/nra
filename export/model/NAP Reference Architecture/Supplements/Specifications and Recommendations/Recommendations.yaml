@@ -5,7 +5,35 @@ version: "1.0"
 note: |
   Recommendation: Provide guidelines or best practices that are not mandatory but are suggested to achieve optimal performance, compliance, or quality. These can include industry standards, advisory notes, or expert recommendations.
 elements:
-  - name: "Assistance"
+  - name: "R1 EMDS practical guidance"
+    guid: "{7E203B2F-A441-4204-A6A1-9B2B669C5C12}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.5.1"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+    note: |
+      Type: Recommendation
+      
+      Full Name: deployEMDS – Technical Specifications for the European Mobility Data Space
+      
+      Link: https://deployemds.eu/
+      
+      Description: deployEMDS is a European project co-funded under the Digital Europe Programme that defines the technical architecture, governance, and interoperability mechanisms for the European Mobility Data Space (EMDS). It aims to enable secure, sovereign, and standardised data sharing across public and private mobility actors. The specifications support real-life implementations in nine cities and regions and are aligned with the European Data Strategy and Sustainable and Smart Mobility Strategy.
+      
+      Additional details: The deployEMDS technical specifications define common building blocks for data interoperability, data sovereignty, and data accessibility. They include reference architectures, metadata vocabularies, trust frameworks, and APIs for federated data exchange. The framework supports integration with existing standards (e.g. DCAT-AP, mobilityDCAT-AP, DATEX II, OCPI) and enables cross-domain use cases such as multimodal routing, traffic management, and SUMI monitoring. The specifications are being piloted in 16 use cases across 9 EU countries.
+      
+      Related Documents:
+      
+      	- deployEMDS Technical Documentation – Architecture, components, and implementation guidance
+      	- deployEMDS Project Portal – Project overview, use cases, and governance
+      	- EU Transition Pathways – deployEMDS Summary – Strategic context and policy alignment
+      	- Digital Europe Programme – EMDS Objectives – Background on European data space initiatives
+      	- BoostEDIC Mobilty & Logistics Project — Successor initiative to deployEMDS, launched February 2026 under the Digital Europe Programme.
+  - name: "R2 Assistance"
     guid: "{0D28759C-0D39-4657-95CF-58C45787B5DC}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
@@ -15,10 +43,16 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
-      NAPs shall assist in publishing (meta)data to the NAP
-  - name: "Metadata insufficiency"
+      Type: Recommendation
+      
+      Full Name: NAP assistance to content providers in publishing (meta)data
+      
+      Description: NAPs shall assist content providers in publishing (meta)data to the NAP.
+      
+      Additional details: The content provider is responsible for publishing; the NAP operator provides the means. Assistance covers up-to-date publication instructions, a contact point or helpdesk with a stated response time, support for first-time publishers and, where available, a test environment for trial publications. The NAP operator decides the level of assistance and states it, so that content providers know what to expect. Feedback on the quality of submitted metadata is covered by R3 Metadata quality feedback.
+  - name: "R3 Metadata quality feedback"
     guid: "{BC945A8B-01D0-4f70-9484-586F0F7F9325}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
@@ -28,37 +62,16 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
-      NAPs shall communicate to content provider any provided metadata insufficiency, that, as a consequence, results in not publishing or removing published datasets.
-  - name: "Notification"
-    guid: "{8DE95B47-D58D-4339-BE76-DBACC7909669}"
-    type: "Requirement"
-    stereotype: "FRAME_Requirement"
-    keywords: "Recommendation"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    tags:
-      "Requirement Category": ""
-      "revised": "2025-07-04"
-    note: |
-      If subscribed: to notify CC about any outages and, optionally, additions to the NAP. NO must ensure that personal data is not misused, General Data Protection Regulation (GDPR) and to whom can it be disclosed. NO must provide the CC the right to delete the account on the NAP.
-  - name: "Reuse metadata"
-    guid: "{D01BC616-BDA0-4444-9C0E-AE363B819E22}"
-    type: "Requirement"
-    stereotype: "FRAME_Requirement"
-    keywords: "Recommendation"
-    status: "Proposed"
-    version: "1.0"
-    order: 0
-    tags:
-      "Requirement Category": ""
-      "revised": "2025-07-04"
-    note: |
-      NAPs shall provide the right to reuse the metadata including consensually provided personal information.
-      To provide accurate, timely, and complete metadata.
-  - name: "not tampered by the NAP"
+      Type: Recommendation
+      
+      Full Name: Metadata quality feedback to the content provider
+      
+      Description: Where the metadata provided by a content provider are insufficient, the NAP informs the content provider of the deficiencies that prevent the publication of the dataset or lead to the removal of an already published dataset. The content provider is given the opportunity to correct the metadata before the dataset is refused or removed.
+      
+      Additional details: The feedback concerns the metadata record held by the NAP, not the data it describes. It requires published quality criteria, a validation report that identifies the deficient elements, a period for correction and resubmission, and a record of the exchange. The assessment of metadata quality can follow R7 MQA and is performed by F3.6.6 Provide Metadata Quality Checks.
+  - name: "R4 Not tampered by the NAP"
     guid: "{C1EA86E6-A64D-41b8-9E07-E71ACD5F9088}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
@@ -68,6 +81,78 @@ elements:
     order: 0
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
-      NAP shall ensure content provider that the provided metadata, data/services are not tampered by the NAP in any manner.
+      Type: Recommendation
+      
+      Full Name: Integrity of provider content passing through the NAP
+      
+      Description: The NAP shall assure the content provider that the metadata, data and services it provides are not altered by the NAP in any way.
+      
+      Additional details: The NAP does not modify the metadata, data or services submitted by the content provider. Information that the NAP generates itself, such as a metadata quality score or the availability of a distribution, is computed and updated by the NAP; it is kept separate from the provider’s content and identified as generated by the NAP.
+  - name: "R5 Notification"
+    guid: "{8DE95B47-D58D-4339-BE76-DBACC7909669}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      Type: Recommendation
+      
+      Full Name: Notification of content consumers, and protection of their subscription data
+      
+      Description: Where a Content Consumer (CC) has subscribed, the NAP notifies them of any outage and, optionally, of additions to the NAP. The NAP Operator (NO) must ensure that the personal data collected for that subscription is not misused, must state to whom it may be disclosed in accordance with the General Data Protection Regulation (GDPR), and must give the Content Consumer the right to delete their account on the NAP.
+      
+      Additional details: The recommendation is implemented through the agreements between the NAP Operator and the Content Consumer: the privacy agreement, which covers the processing of the subscription data, and the general terms and conditions, which include the licence for the use of the NAP (see Privacy agreement (CC to NO) and general terms and conditions).
+  - name: "R6 Reuse metadata"
+    guid: "{D01BC616-BDA0-4444-9C0E-AE363B819E22}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      Type: Recommendation
+      
+      Full Name: Reusable, accurate and complete metadata
+      
+      Description: NAPs shall grant the right to reuse the metadata, including personal information provided with consent, and shall provide metadata that is accurate, timely and complete.
+      
+      Additional details: The metadata carry an explicit open licence, so that national open data portals, the European data portal and other NAPs can harvest and reuse them. Personal information in a metadata record, typically a contact person of the content provider, is reused only within the consent given. Accurate, timely and complete means that the metadata record corresponds to the dataset and is updated when the dataset changes. The recommendation supports the obligations of L13 Open Data Directive; the metadata are expressed in S8 mobilityDCAT-AP.
+  - name: "R7 MQA"
+    guid: "{27EC8DD4-99C6-429E-BF00-AA6461544103}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Recommendation"
+    status: "Proposed"
+    version: "1.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Type: Recommendation
+      
+      Full Name: Metadata Quality Assessment (MQA) Methodology, data.europa.eu
+      
+      Link: https://data.europa.eu/mqa/methodology
+      
+      Description: The MQA is the methodology and the tool that data.europa.eu uses to measure the quality of the metadata it harvests. It scores each catalogue record against findability, accessibility, interoperability, reusability and contextuality, reports which checks the record failed, and indicates what to correct. Both the methodology and the scoring are published, and the tool runs continuously against the portals that are harvested.
+      
+      Additional details: The MQA scores the metadata record, not the dataset behind it, which is exactly what makes it useful to a NAP: it measures what the NAP itself publishes and controls. Three things follow. It gives the “Metadata quality feedback” recommendation an objective criterion — “insufficient quality” becomes a named set of failed checks rather than a judgement. It covers the licence and access-rights fields, which is where the “Reuse metadata” recommendation and the high-value dataset obligations of L14 are enforced in practice. And because the score is computed from the DCAT-AP projection of a record, a NAP can predict it before harvest by running the SHACL validator itself, rather than discovering the result on the European data portal weeks later. Following the methodology also makes quality comparable between NAPs, which is the reason NAPCORE encourages it.
+      
+      Related Documents:
+      
+      	- MQA methodology – The published scoring method and the dimensions it measures.
+      	- MQA SHACL validator – Validates a catalogue record before it is harvested.
+      	- Norwegian NAP – A deployed implementation; the assessment is visible in any catalogue record.
+      	- DCAT-AP – The vocabulary the score is computed from (S18).

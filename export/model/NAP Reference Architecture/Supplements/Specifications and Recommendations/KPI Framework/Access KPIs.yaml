@@ -85,6 +85,7 @@ elements:
       "revised": "2025-07-04"
     note: |
       “Responsiveness” KPI examines whether a NAP’s web design is adaptable to different devices and screen sizes. There is a tool provided in the Note. There are three possible values that this KPI may take. A value equal to 0 indicates that there is no responsiveness, a value equal to 1 indicates a basic responsiveness (for desktops/laptops), a value equal to 2 indicates that a NAP is responsive to more devices. Both necessary (REQ) and sufficient (ACC) levels of service are associated, in this case, with the basic responsiveness.
+      
       Note: You can test your NAP webpage responsiveness using some web-based tool.
       
       Values:
@@ -375,6 +376,7 @@ elements:
       "revised": "2025-07-04"
     note: |
       1.17 “Data transfer optimization” KPI assesses the extent to which a NAP can optimize data transferring by compressing the requested content. This KPI is addressed as making sense only if a NAP complies with the concept of a data platform, since a metadata directory is not involved at all in the data transferring process. A value equal to 0 indicates that such a functionality does not exist, while a value “+1” indicates that some of the possible transfer optimization methods are available, i.e., compression possibility, compression client’s request (de)activation possibility or differential form of provided data.
+      
       Note: This KPI is for data platform NAP type only. For metadata directory NAP type, you answer the first option. Technically, the KPI is skipped in an on-line questionnaire after “metadata directory” NAP type selection.
       
       N/A: Metadata directory case (No data is provided via the NAP online/web interface)
@@ -400,6 +402,7 @@ elements:
     note: |
       1.18 “API usage for data transfer” KPI investigates whether a NAP is equipped with an Application Programming Interface (API) service that allows clients of data consumers to request and download data content through external code or other resources matching specific queries. Moreover, it investigates whether such a service allows the clients of data providers to automatically upload and import (through external coding) new data content but also update it or even delete it.
       This KPI is addressed as making sense only if a NAP complies with the concept of a data platform, since a metadata directory is not involved at all in the data transferring process. Given that the focus of NAPs is placed (or at least should be placed) on machine-to-machine communication and data exchange supporting the operation of ITS systems, a minimum level of service is associated with the existence of an API service allowing at least one of automated download or automated upload of data content.
+      
       Note: This KPI is for data platform NAP type only. For metadata directory NAP type, you answer the first option. Technically, the KPI is skipped in an on-line questionnaire after “metadata directory” NAP type selection.
       
       Values:

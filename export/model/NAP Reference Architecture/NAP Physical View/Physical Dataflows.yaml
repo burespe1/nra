@@ -9,7 +9,7 @@ elements:
     guid: "{96C4145B-D427-423c-8272-54CE77DBDE7F}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -23,7 +23,7 @@ elements:
     guid: "{1587F034-1363-447d-8BFA-2234BA04649C}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -34,7 +34,7 @@ elements:
     guid: "{1F6F7D4C-BAFE-43db-AF7B-C8043CC6E31F}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -48,7 +48,7 @@ elements:
     guid: "{1DE55835-B3EB-461f-BAF4-61B9F635EDBD}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -61,7 +61,7 @@ elements:
     guid: "{B82B3A07-B464-4905-B517-04B74942E5AA}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -74,7 +74,7 @@ elements:
     guid: "{F785EA75-B3BD-4be6-9374-06DC89A98B73}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -87,7 +87,7 @@ elements:
     guid: "{4FB08435-DE36-46a7-B970-3E2B0A3CD452}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -98,7 +98,7 @@ elements:
     guid: "{8DE1FAAE-FC95-48f3-B1BD-F0F67A00B135}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -109,7 +109,7 @@ elements:
     guid: "{252899F7-3651-40d5-A2A6-1A59A8185657}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -120,7 +120,7 @@ elements:
     guid: "{48F2D92D-8E82-4032-B932-CD8D2CB855B0}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -134,7 +134,7 @@ elements:
     guid: "{A75E9CBB-5B13-4249-B1EE-F51C9EC0BD9D}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     version: "1.0"
     order: 0
@@ -148,7 +148,7 @@ elements:
     guid: "{C25F8BCA-DCD4-4894-956E-40D0218D3ACA}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -161,7 +161,7 @@ elements:
     guid: "{5681386B-AB60-4a6c-B51B-4BD4F745FDD5}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -174,7 +174,7 @@ elements:
     guid: "{0B43348A-F713-49fe-A684-A88D53A58D67}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -187,7 +187,7 @@ elements:
     guid: "{BA985F0C-2C6F-4329-BABC-91890CC23954}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -200,7 +200,7 @@ elements:
     guid: "{C5A68539-7FA7-4245-9B3A-F55B6668B579}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:
@@ -214,7 +214,7 @@ elements:
     guid: "{5C212D22-87C8-423c-A4EE-D4FACC7598C7}"
     type: "Interface"
     stereotype: "FRAME_Physical_Data_Flow"
-    keywords: "Physical Data flow"
+    keywords: "Physical Data Flow"
     status: "Proposed"
     order: 0
     tags:

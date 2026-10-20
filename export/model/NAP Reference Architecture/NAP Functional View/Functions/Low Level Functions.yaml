@@ -9,11 +9,12 @@ elements:
     guid: "{28A2C553-2939-4542-B14B-8A13B25BC494}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -24,6 +25,9 @@ elements:
        (4) The ability to enable Metadata to be created in advance of their publication on the NAP so it could be checked before its publication.
        (5) The ability to carry out its activities in such a way that they do not interfere with one another, and that the integrity of the data being stored and read is preserved.
        (6) This function manages all data mentioned in the mobilityDCAT-AP (https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html) and other relevant information (e.g. quality info, possible data comments etc.)
+      
+      OPTIONAL:
+       (7) The ability to request the NAP Content Providers at least annually to review and update their metadata, and to flag metadata records that have not been updated within the agreed period.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {3DA6F71C-C8DD-4e7c-B1AE-A31B504E01A5} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
       - "Association «OUT» → mt_NAP_metadata_for_data_check_and_store_response"  # {7ECA2926-BE67-40b1-9D4A-1FDB15D3A46A} → {2FD69798-3950-48ea-B7F0-F52F39470F34}
@@ -35,11 +39,12 @@ elements:
     guid: "{D01EFD87-A3E1-4216-81D9-855530ECE1B9}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -52,15 +57,17 @@ elements:
       - "Aggregation → F3.6 Operate National Access Point"  # {89604E47-18E4-452f-A2FB-2C0095013558} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
       - "Association «OUT» → mt_NAP_data_quality_check_result"  # {CA09EDAA-E793-4e7a-9358-D4E6D8EB2333} → {8AE74C5A-125D-4ce5-ABD4-89818AAE054B}
       - "Dependency «trace» → F3.6.10 #1"  # {27FC9150-F635-48bd-BD59-2D7923965F03} → {9916583F-5243-458c-8402-6085B70A329A}
+      - "Dependency «trace» → RequirementLevel and NAP type"  # {DE3A44B7-E133-4812-B9B5-FAF04E160989} → {74D5833B-7B98-47FA-A815-7DADCC1A236A}
   - name: "F3.6.2 Manage Registrations and Provide Authorisation Service"
     guid: "{15D991EA-63BC-40ac-936A-A0B8D3CBC28A}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -80,6 +87,9 @@ elements:
        (13) Ability to provide registered NAP User data upon its successful authorization
        (14) Ability to log in events connected with NAP User Activity to the NAP User data store
       
+      OPTIONAL:
+       (15) The ability to send mass notifications to registered NAP Content Providers and NAP Content Consumers, e.g. about updates of the Terms and Conditions or new requirements for data provision.
+      
       NOTE: one physical user can be part of more NAP Users but under the different electronic identity.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {7FF5F978-8BB0-47b7-A057-68D6794762B0} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
@@ -94,11 +104,12 @@ elements:
     guid: "{E8D1212C-A787-4da1-A4EB-B4E1896ABD19}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -123,11 +134,12 @@ elements:
     guid: "{2F2393E9-9A59-4344-A2C0-207945E7F438}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -139,6 +151,9 @@ elements:
        (5) Ability to provide metadata at the NAP including data created by the NAP, i.e. quality records.
        (6) Ability to provide all or parts of metadata stored in the NAP Metadata store in a machine-readable format for reasons of harvesting the metadata by Metadata Requesting System (machine to machine access).
        (7) The ability to provide all relevant metadata without NAP Content Consumer registration
+      
+      OPTIONAL:
+       (8) The ability to visualise metadata, e.g. numbers and charts derived from metadata records, or metadata shown on a map.
       
       NOTE: It is assumed that NAP Content Provider could perform all the task of the NAP Content Consumer.
     links:
@@ -152,11 +167,12 @@ elements:
     guid: "{E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
       "status": "copy"
     note: |
       This Function shall be capable of providing the following facilities:
@@ -165,6 +181,10 @@ elements:
        (2) The ability to respond to user support requests adequately at least in a form of first-level support.
        (3) The ability to consult other NAP roles for issues which cannot be responded with the own knowledge.
        (4) The ability to manage issues and log the issue resolution for later use by NAP Users or by an Auditing entity
+       (5) The ability to receive reports from NAP Content Consumers about inaccuracies in the data and to forward them without delay to the responsible NAP Content Provider.
+      
+      OPTIONAL:
+       (6) The ability to publish information about the operational procedures of the NAP, e.g. registration of Content Providers and handling of issues.
       
       NOTE: this could be done via a ticketing system
     links:
@@ -176,11 +196,12 @@ elements:
     guid: "{15BFF38A-05D9-4775-84C9-6604B0EEA3C6}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This function shall be capable of providing the following facilities:
       
@@ -191,15 +212,17 @@ elements:
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {8BDB8B77-823D-42b3-B30A-4BDCA0A885C7} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
       - "Association «OUT» → mt_NAP_metadata_quality_check_result"  # {0C3520EB-CA58-4de4-BA7E-A70D2F7DB6D2} → {01233765-5DC4-4cf9-879E-4DC6961C9611}
+      - "Dependency «trace» → F3.6.6 #1"  # {365D5C31-4BEC-424A-A094-33A077E97ACC} → {EEB2C6CB-74EB-4B6E-8A27-F34B12D46F6F}
   - name: "F3.6.7 Manage NAP Data Repository"
     guid: "{57AEF510-D710-4920-9CCE-96BE708F6AAC}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -217,15 +240,17 @@ elements:
       - "Association «OUT» → mt_NAP_data_read_response"  # {7B34DF9B-17B9-4472-A427-E3446096618F} → {3D6B17A5-0D0F-4944-9E8F-FB446B82FF2F}
       - "Association «OUT» → mt_NAP_metadata_for_data_check_and_store_request"  # {88878DB4-7932-4c7f-904A-B7E76439B09D} → {A65597A1-4E9A-40cc-9665-4640823B199F}
       - "Association «OUT» → mt_load_NAP_data"  # {F40EA05D-387F-4607-BF61-932AC84AEE00} → {38D2C47E-7C5D-4d8d-B7B5-05AFC34DF3CA}
+      - "Dependency «trace» → RequirementLevel and NAP type"  # {86BF74AC-C6AF-42D0-A414-9B8B911BDC03} → {74D5833B-7B98-47FA-A815-7DADCC1A236A}
   - name: "F3.6.8 Manage Data Input"
     guid: "{5B4F357F-A164-4a3f-8909-C370F4C0615F}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -242,16 +267,18 @@ elements:
       - "Association «OUT» → mt_NAP_data_mod_request"  # {1FEC81F9-A14A-478f-955F-6431A651FB7A} → {B7FC7C2F-C1AA-4bf8-82D4-0EA2370C6BC9}
       - "Association «OUT» → tnap.cp-data_upload_result_report"  # {D23A0177-082E-4c2f-A119-9278166E477A} → {A6E68B7A-7C94-474f-B168-C2A98537BC37}
       - "Association «OUT» → tnap.dps-data_upload_result_report"  # {FC1EAC08-2188-41a8-96DD-29D765650423} → {FBD65825-894B-415a-AE17-8AD14FDF8F08}
-      - "Association «adheres to» → DATEX II Recommended Reference Profiles"  # {2EFB0378-AB78-477f-8D9A-62977211CCE7} → {0284859D-C83B-423b-909A-05291C3F0B08}
+      - "Association «adheres to» → P1 DATEX II Recommended Reference Profiles"  # {2EFB0378-AB78-477f-8D9A-62977211CCE7} → {0284859D-C83B-423b-909A-05291C3F0B08}
+      - "Dependency «trace» → RequirementLevel and NAP type"  # {2975048C-EE64-4FC0-8E9D-32635ED4B0BB} → {74D5833B-7B98-47FA-A815-7DADCC1A236A}
   - name: "F3.6.9 Manage NAP Data Retrieval"
     guid: "{A3764B72-97E2-400c-81B8-C945964F9E0D}"
     type: "Activity"
     stereotype: "FRAME_Low_Level_Function"
-    keywords: "Low level function"
+    keywords: "Low Level Function"
     status: "Proposed"
     order: 0
     tags:
-      "revised": "2025-07-04"
+      "RequirementLevel": "MANDATORY_PLUS"
+      "revised": "2026-10-20"
     note: |
       This Function shall be capable of providing the following facilities:
       
@@ -262,9 +289,37 @@ elements:
        (5) Ability to provide data retrieved from the NAP Data store to the NAP Content Consumer or Data Requesting System in a way which is requested.
        (6) Ability to record NAP User Activity into the NAP Users data store.
        (7) Requested data are either traffic or travel information or its support information stored in the NAP Data store (e.g. quality information, last update time) or both.
+      
+      OPTIONAL:
+       (8) The ability to visualise data, e.g. numbers and charts derived from data records, data shown on a map, or animations of time series.
     links:
       - "Aggregation → F3.6 Operate National Access Point"  # {E1A416CD-B46B-4a5c-B1E5-EDD4ABA6BC4C} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
       - "Association «OUT» → mt_NAP_data_read_authorisation_request"  # {5A163FB1-29C8-45c4-9EAC-3B8D66CECBBA} → {D487FAFF-4F5B-4520-BC53-427580A77997}
       - "Association «OUT» → mt_NAP_data_read_request"  # {2F48239C-2C35-4844-87C8-2CB3B857B94B} → {50A2D529-AAC6-4908-919C-7838C607386A}
       - "Association «OUT» → tnap.cc-data_response"  # {1299B849-9D9B-486d-AC1D-2DC536C4CBD0} → {F7412343-95F0-4611-8149-58EA48466E80}
       - "Association «OUT» → tnap.drs-data_response"  # {C0117DD4-1105-4057-AD20-458519074FC2} → {53ED8069-70B8-44ac-85D7-ED06B5283424}
+      - "Dependency «trace» → RequirementLevel and NAP type"  # {25448905-8524-4468-90D7-A6AAFE65A168} → {74D5833B-7B98-47FA-A815-7DADCC1A236A}
+  - name: "F3.6.11 Monitor NAP Usage and Performance"
+    guid: "{678C8981-D1F4-47ea-8F47-1E260E07F935}"
+    type: "Activity"
+    stereotype: "FRAME_Low_Level_Function"
+    keywords: "Low Level Function"
+    status: "Proposed"
+    order: 1
+    tags:
+      "RequirementLevel": "OPTIONAL"
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      This Function shall be capable of providing the following facilities:
+      
+       (1) The ability to collect usage statistics of the NAP, e.g. number of accesses, search requests and registered NAP Users, using the NAP User activity recorded by the functions Manage Registrations and Provide Authorisation Service and Manage NAP Data Retrieval.
+       (2) The ability to collect statistics on the consumption of datasets, e.g. downloads, subscriptions and page views, and to track the use of the data available at the NAP based on NAP User feedback or tools.
+       (3) The ability to measure the performance of the NAP, e.g. availability, downtime and response times.
+       (4) The ability to collect and evaluate qualitative feedback on the usefulness of the NAP, e.g. ratings of quality or surveys.
+       (5) The ability to provide the collected statistics to the NAP Operator for reporting to the Member State and to the Competent Authority / National Body, and statistics of data access to the NAP Content Providers.
+      
+      NOTE: The function is optional; it supports the KPIs K.2.2 Related services monitoring and K.2.9 Monitoring and evaluation of the NLKF and the reporting tasks of the NAP Operator.
+    links:
+      - "Aggregation → F3.6 Operate National Access Point"  # {3B39F186-F74C-4846-B69A-545E5BB5A192} → {7ADE914E-925B-4d69-8E2A-6E26A0C42EEE}
+      - "Dependency «trace» → F3.6.11 #1"  # {11DE6B0E-A3EA-48DF-93B5-5901FD55D399} → {A0C4E0B6-0BAC-4615-9A62-64BF9293AD08}

@@ -175,7 +175,6 @@ elements:
       a. Authentication of data providers is double checked, i.e., by the data provider and by the NAP operator (e.g., via checking a state registry of legal bodies)
       b. Usage of two-factor authentication and/or ID certificate (e.g., self-logging with secure national ID)
       
-      
       Source: KPI 1.10 Security – providers verification
     links:
       - "Association «fulfilled by» → User Management Module"  # {895B8C3B-11E0-4187-86ED-F05BE8F625DE} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
@@ -255,7 +254,6 @@ elements:
       f. Authentication by client certificates (private keys, API-keys, certificates, incl. EU-wide common user authentication mechanism)
       g. Authentication by tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0)
       
-      
       Source: KPI 1.14 Authentication and security mechanisms for data upload
     links:
       - "Association «fulfilled by» → Data Management Module"  # {BFFA3A27-6DCB-4514-A5CB-D80062A8758A} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
@@ -282,7 +280,6 @@ elements:
       f. Authentication by client certificates (private keys, API-keys, certificates, incl. EU-wide common user authentication mechanism)
       g. Authentication by tokens (e.g., Bearer token – digitally signed JWT – OAuth 2.0)
       
-      
       Source: KPI 1.14 Authentication and security mechanisms for data upload
     links:
       - "Association «fulfilled by» → Data Management Module"  # {12C11923-F39B-4da5-B381-F90380D5DF3C} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
@@ -297,7 +294,7 @@ elements:
     order: 14
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
       At least one change/modification information about the data shall be provided:
       a. Webserver uses “Last updated date and/or time” information (e.g., the DATEX XML includes the “publication time” which shows when the dataset has been updated)
@@ -306,6 +303,9 @@ elements:
       d. Webserver uses some other method for data modification indication (please specify the method used in the “Suggestions” box)
       
       Source: KPI 1.16 Indication of provided data modification
+    links:
+      - "Association «fulfilled by» → F3.6.9 Manage NAP Data Retrieval"  # {5C6AEB7C-4FE9-4B45-B5A0-A0E424FCDF3D} → {A3764B72-97E2-400c-81B8-C945964F9E0D}
+      - "Association «fulfilled by» → Machine Data Access"  # {571D419E-72C3-49FD-9EA5-A31EA3A35B0E} → {B5381D32-D813-436f-8E09-B87BD10B5F64}
   - name: "K.1.17.1 Data transfer optimization"
     guid: "{025CAF43-3430-4650-B487-6B6AAF7E6C50}"
     type: "Requirement"
@@ -360,11 +360,14 @@ elements:
     order: 17
     tags:
       "Requirement Category": ""
-      "revised": "2025-07-04"
+      "revised": "2026-10-20"
     note: |
-      The load time for (meta)data shall be higher than 1 sec, max. 2 sec.
+      The load time for (meta)data shall not be higher than 2 sec.
       
       Source: KPI 1.19 Web performance - (meta)data load time
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {56A7B2D9-19D8-4EBF-BB6A-FA065584C551} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {67F761C0-5CF0-4FE7-8CA9-E296846849FC} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
   - name: "K.1.21.1 Metadata about data modification"
     guid: "{4456CECE-D82D-45f3-B576-2BE6BAFBE615}"
     type: "Requirement"

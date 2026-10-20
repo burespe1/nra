@@ -49,9 +49,9 @@ elements:
     order: 0
     note: |
       - decide where the credential is passed
-      - NAP User must be specified
-      - IMPORTANT: check what this dataflow should do and what it provides to the function F3.6.2
-      - IMPORTANT: populate datastore with information about users to be stored there (also logs)
+      	- NAP User must be specified
+      	- IMPORTANT: check what this dataflow should do and what it provides to the function F3.6.2
+      	- IMPORTANT: populate datastore with information about users to be stored there (also logs)
   - name: "DF F3.6.2 -> CP"
     guid: "{8BEFD98E-F081-4c85-8AD4-32FB98186FFE}"
     type: "Issue"
@@ -141,6 +141,31 @@ elements:
     order: 0
     note: |
       - check where reporting of the monitoring is done.
+  - name: "F3.6.11 #1"
+    guid: "{A0C4E0B6-0BAC-4615-9A62-64BF9293AD08}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: F3.6.11 Monitor NAP Usage and Performance (OPTIONAL, since 2.2.0) has no data flows and is not performed by any module, so it appears only on the functional tree. The Functional View has no terminator for the NAP Operator or the Competent Authority / National Body, only the generic “NAP Actors”.
+      
+      Proposed data flows:
+      
+      	- IN from F3.6.2 Manage Registrations and Provide Authorisation Service: NAP User activity and registrations.
+      	- IN from F3.6.4 Manage Metadata Retrieval and F3.6.9 Manage NAP Data Retrieval: logs of searches, downloads and subscriptions.
+      	- IN from F3.6.5 Provide NAP User Support: qualitative feedback of NAP Users.
+      	- OUT to NAP Content Provider: statistics of access to its data.
+      	- OUT to “NAP Actors” or to a new terminator NAP Operator: usage and performance reports (for reporting to the MS and the CA/NB).
+      
+      
+      Proposed module: a new optional “Monitoring and Reporting Module” hosted by both the Metadata Directory NAP and the Data Platform NAP, because KPI 2.2 and KPI 2.9 apply to both NAP types. Alternative: assign the function to the User Management Module.
+      
+      To decide: data flows; new module or User Management Module; terminator for the NAP Operator (new or “NAP Actors”); then place F3.6.11 on the module and data flow diagrams. To be discussed in the team.
   - name: "F3.6.2 #1"
     guid: "{D5880A35-90B7-4cb5-B51C-671E3E03E154}"
     type: "Issue"
@@ -173,6 +198,20 @@ elements:
       	- NAP Roles are mentioned in the text of the function, it must be clear who this is.
       	- IMPORTANT: reduce number of dataflows by just addressing all NAP users at once by their higher-level terminator
       	- IMPORTANT: who is the NAP User? Where do we have it specified? Different for NAP Actor?
+  - name: "F3.6.6 #1"
+    guid: "{EEB2C6CB-74EB-4B6E-8A27-F34B12D46F6F}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: Facility (1) says “The checks follow the MQA and InQMS methodology, at minimum it is an availability of the urls provided in metadata.” MQA is a Recommendation (R7 MQA, the worked example of Guideline 01). By Guideline 03 a part derived only from a Recommendation is OPTIONAL, while the function has RequirementLevel = MANDATORY.
+      
+      Proposed solution: Keep the minimum mandatory (link checking, K.4.2.1, through the Metadata Quality Check Module) and mark the methodology as optional: reword facility (1) to “The ability to perform metadata quality checks based on pre specified rules and procedures (including appropriate time frequencies), at minimum the availability of the URLs provided in metadata.”, add “OPTIONAL: metadata quality checks following the MQA and InQMS methodology.” and set RequirementLevel = MANDATORY_PLUS. Alternative: keep the text and close the issue, because the minimum is already distinguished in the sentence.
   - name: "FV: Functionality to be processed into NRA - FROM 2023"
     guid: "{631D9702-F36C-495f-9D8B-8B778A056921}"
     type: "Issue"
@@ -187,7 +226,9 @@ elements:
       ===========
       
       **Should have contact form for NAP operator and data provider**
+      
       Element type: High level function
+      
       Source: KPI2.1 & NAP functionalities survey – Provide NAP User Support FAQ, Questions & Answers – Q2
       *Description*
       This is the ability to provide a contact form specifically designed for NAP operators and data service providers. This can be achieved by incorporating a dedicated contact form feature into the NAP which will serve as a communication channel between the NAP actors. This functionality promotes the efficient and direct interaction as well as operates as a valuable feedback mechanism since data and service providers can provide suggestions, recommendations, or feedback.
@@ -200,6 +241,7 @@ elements:
       
       
       **Provide online platform.**
+      
       Element type: High level function
       *Description*
       The first element of the function view relates to the property of a technical interface to be online accessible by means of a website. This website shall be compatible with the latest and widely used web browsing technologies that are supported by the latest and widely used operating systems. Beyond that, the website shall provide a satisfactory user experience in terms of simplicity & usability, visual hierarchy & navigability, as well as consistency. Simplicity & usability, in the NAP context, can be addressed as the number of actions that shall be performed by a user to access information about an accommodated data resource (i.e., metadata of this data resource). Visual hierarchy and navigability, in general but also in the NAP context, expresses the necessity for the structure of the website to follow a hierarchical pattern as well as the existence of a control page easing user navigation. Lastly, consistency implies the need for the platform’s website to provide menus in the same position, use the same or at least compatible fonts and colours, and provide shortcuts for commonly used functions. Moreover, there are two additional good practices that shall be respected. Firstly, the website shall be responsive irrespective of the device that is utilized for gaining access. Secondly, the content of the website shall be provided in both the national and a universally used language (English) to mitigate any cross-border accessibility barriers.
@@ -207,6 +249,7 @@ elements:
       
       	- WG2.1 - NAP Levels of Service computation using KPI Framework – KPI 1.1
       	- M2.1_Typology of NAPs based on the description of levels of service and assessment of associated costs and benefits 1.4.docx
+      
       
       *List of requirements*
       
@@ -218,7 +261,9 @@ elements:
       
       
       **Provide metadata to consumer.**
+      
       Source: KPI1.13
+      
       Element type: High level function
       *Description*
       The ability to provide information about data to the potential subscriber. i.e. type, name, description, purpose, geographical relevance, format, type of protocol, licence, contact to data provider, etc. With this information the user shall be able to fully assess the relevancy of the data for his/her purpose and prepare the systems for the data consumption.
@@ -238,13 +283,17 @@ elements:
       
       
       **Provide access management for data consumer.**
+      
       Source: KPI1.13
+      
       Element type: High level function
       *Description*
       The ability to provide possibility for the user to log in, create his username and password and to store personal information. Manage access to different resources STORED on the platform based on the user rights. Provide possibility to the platform admin to change this data, provide possibility to communicate with the user through the platform.
       
       **Store Meta Data**
+      
       Element type: High level function
+      
       Source: NAP functionalities survey – Provide storage – Q1
       *Description*
       The ability to store metadata (data descriptions), at least based on the mobility-DCAT-AP (result of SWG 4.4), online in a machine-readable format. This can be achieved by using an appropriate metadata storage system, such as a meta-database. NAP meta-database is fed through a data and service providers’ interface. Meta-data records should comply to certain quality criteria and be accessible and retrievable by querying and searching services. By that means, NAP users can narrow down their search to specific datasets or links that conform to specified criteria. Moreover, NAP content becomes discoverable and accessible in an efficient manner by allowing users to focus on the relevant subset of data, rather than searching through large volumes of unorganized information.
@@ -258,9 +307,11 @@ elements:
       	- Access restrictions: Metadata shall be publicly accessible without a necessary registration.
       	- Editing rights: Only authorized data and service providers should have access to modify metadata.
       
+      
       *References*
       
       	- mobility-DCAT-AP – Standardized and harmonized DCAT Profile for mobility data provided by SWG4.4
+      
       
       *Standards*
       
@@ -269,7 +320,9 @@ elements:
       
       
       **NAPs should have publisher registration**
+      
       Element type: High level function
+      
       Source: NAP functionalities survey – Publisher Management – Q1
       *Description*
       The obligation of data and service providers to register, in order to be able to publish datasets. Data and service providers can register through a dedicated interface. Provided information and active credentials are stored in a database. This functionality facilitates authentication processes and implies a controlled access approach. Through that approach, the trustworthiness of published datasets is safeguarded.
@@ -281,7 +334,9 @@ elements:
       
       
       **Automated basic quality checks**
+      
       Element type: High level function
+      
       Source: NAP functionalities survey – Metadata quality checks – Q1
       *Description*
       The ability to check the completeness of provided metadata. This can be achieved through an automated process by setting as mandatory metadata fields that are defined as such within the mobility-DCAT-AP specification. By that means, inconsistencies affecting the understandability of published datasets can be avoided. It may be beneficial from an accuracy point of view if the metadata provision interface provides where possible prespecified values (e.g., if a metadata field is related to relevant DR, it is preferable to enable service and data providers to choose the relevant DR from a dropdown list).
@@ -290,14 +345,16 @@ elements:
       	- Metadata shall include mandatory fields.
       	- Data and service providers shall not be able to publish a dataset in case that all required metadata fields are populated.
       
+      
       *References*
       
       	- mobility-DCAT-AP – Standardized and harmonized DCAT Profile for mobility data provided by SWG4.4
       
       
-      
       **Should have contact form for NAP operator and data provider**
+      
       Element type: High level function
+      
       Source: KPI2.1 & NAP functionalities survey – Provide NAP User Support FAQ, Questions & Answers – Q2
       *Description*
       This is the ability to provide a contact form specifically designed for NAP operators and data service providers. This can be achieved by incorporating a dedicated contact form feature into the NAP which will serve as a communication channel between the NAP actors. This functionality promotes the efficient and direct interaction as well as operates as a valuable feedback mechanism since data and service providers can provide suggestions, recommendations, or feedback.
@@ -310,7 +367,9 @@ elements:
       
       
       **Provider Registration**
+      
       Element type: High level function
+      
       Source: KPI1.10 & FRAME F3.6.2 – Provide NAP User Support FAQ, Questions & Answers – Q2
       *Description*
       This is the ability to provide a registration form specifically designed for NAP operators and data providers. This can be achieved by incorporating a dedicated contact form feature into the NAP which will serve as a communication channel between the NAP actors. This functionality promotes the efficient and direct interaction as well as operates as a valuable feedback mechanism since data and service providers can provide suggestions, recommendations, or feedback.
@@ -320,7 +379,36 @@ elements:
       	- A provider identify shall be GDPR compliant.
       	- The contact form shall allow data providers to attach files, documents, or supporting materials.
       
+      
       Neither data and service providers nor NAP operators shall not be able to submit a form in case that all required fields are populated
+  - name: "Hosting of User Management and Support modules"
+    guid: "{1028CFCB-DE82-4239-9D3D-556234CC0FFD}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: User Management Module (F3.6.2) and Support (ticket) Module (F3.6.5) are hosted only by the Data Platform NAP. A Metadata Directory NAP also registers and authorises NAP Content Providers (F3.6.3 forwards their credentials to F3.6.2) and supports NAP Users (K.2.1.1), so both functions are effectively missing in the Metadata Directory NAP.
+      
+      Proposed solution: Add «hosted by» links from User Management Module and Support (ticket) Module to Metadata Directory NAP and add both modules to its diagram. Then check the physical data flows of the Metadata Directory NAP to the NAP Content Provider and NAP Content Consumer.
+  - name: "RequirementLevel and NAP type"
+    guid: "{74D5833B-7B98-47FA-A815-7DADCC1A236A}"
+    type: "Issue"
+    stereotype: "Functional"
+    status: "Proposed"
+    version: "2.0"
+    order: 0
+    tags:
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Issue: RequirementLevel does not express the NAP type. F3.6.7, F3.6.8, F3.6.9 and F3.6.10 are performed only by modules hosted by the Data Platform NAP, and their requirements (e.g. K.1.18.1, K.4.5.1) are N/A for a Metadata Directory NAP. MANDATORY is therefore valid only within the NAP type the function belongs to, which neither Guideline 05 nor the model states.
+      
+      Proposed solution: Add to Guideline 05: “RequirementLevel applies within the NAP type the function belongs to. The NAP type follows from the Physical View: the subsystem (Metadata Directory NAP or Data Platform NAP) hosting the module that performs the function.” No new tagged value is needed.
   - name: "Rethink Agreement setup"
     guid: "{42102251-3ABE-4686-B487-890153AF6C69}"
     type: "Issue"

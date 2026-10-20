@@ -18,8 +18,11 @@ elements:
       The generic terminator role Data Provision System represents any interested entity in traffic, travel data storage. The Data Provision System can request storing traffic and travel data in the NAP Data store. Therefore, Function F3.6.8 Manage Data Input offers an access interface for machine-to-machine data upload. Authorisation is necessary, the Data Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.
       
       Key issue: Request to store data at NAP.
+      
       Area of responsibility: Be compliant with the agreement with content provider
+      
       Tasks: Upload content
+      
       Mnemonic: nap.dps
     links:
       - "Association «IN» → fnap.dps-data_&_authorisation_credentials"  # {D3794913-14F7-42bd-A380-0435A43689FD} → {8EC048EF-B06E-497b-A29E-EFB18412560E}
@@ -38,8 +41,11 @@ elements:
       In some cases, especially when the data are pushed to the Content Consumer systems and / or authorisation is necessary the Data Requesting System must use credentials obtained by Content Consumer. When registering the Content Consumer will obtain credentials and / or to set up a machine account to which data are pushed.
       
       Key issue: Request data stored at NAP.
+      
       Area of responsibility: Be compliant with the agreement with content provider
+      
       Tasks: Receive content
+      
       Mnemonic: nap.drs
     links:
       - "Association «IN» → fnap.drs-data_request"  # {9C30B785-03D6-450c-8050-85B0D468ECBE} → {A57EDCA4-5B76-4808-9C68-5DDF06E70C93}
@@ -59,8 +65,11 @@ elements:
       The Metadata Provision System can request storing metadata in the NAP Metadata store. Therefore, Function Metadata Management Module offers an access interface for machine-to-machine data upload. Authorisation is necessary, the Metadata Provision System must use credentials obtained by Content Provider. When registering the Content Provider will obtain credentials and / or to set up a machine account from which data are pushed.
       
       Key issue: Request to store metadata at NAP.
+      
       Area of responsibility: Be compliant with the agreement with content provider
+      
       Tasks: Upload metadata
+      
       Mnemonic: nap.mdps
     links:
       - "Association «IN» → ps_metadata & data source"  # {3DEA5F32-429E-4959-A9D1-4BE9D3BC6E5A} → {36B4BBF5-5B68-4d38-AF28-7669EFF35137}
@@ -78,8 +87,11 @@ elements:
       The generic terminator role Metadata Requesting System represents any interested entity in traffic and transport metadata dissemination. The Metadata Requesting System can request information stored in the NAP Metadata store in a standardized format (mobilityDCAT-AP) to incorporate said data into its information services (i.e. metadata harvesting). Therefore, Function F3.6.4 Manage NAP Metadata Retrieval offers a data distribution interface for machine-to-machine data retrieval.
       
       Key issue: Request metadata stored at NAP.
+      
       Area of responsibility: Be compliant with the agreement with the NAP operator
+      
       Tasks: Receive information about the content in a standardized manner, i.e. metadata
+      
       Mnemonic: nap.mdrs
     links:
       - "Association «IN» → fnap.mdrs-metadata_request"  # {0DE4E9BC-F952-4f2e-BF6D-9800A6BD46B9} → {1F8479D1-6CEC-42fd-8CD2-79F9AD3334A4}
@@ -98,8 +110,11 @@ elements:
       The generic terminator role of the NAP Content Consumer represents any interested entity in traffic and transport data. The Content Consumer can find available data via the NAP. Therefore, Function F3.6.4 Provide Access for NAP Meta-Data Retrieval offers an interface (typically a graphical user interface freely accessible via the Internet) to search the meta-data in D3.15 NAP Meta-Data
       
       Key issue: Request high-quality services; provide feedback about relevant content
+      
       Area of responsibility: Be compliant with the agreement with the NAP content provider
+      
       Tasks: Receive content
+      
       Mnemonic: nap.cc
     links:
       - "Aggregation «component of» → NAP Actors"  # {C315C920-21DC-4a44-99FA-FB029F697E0F} → {E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}
@@ -107,7 +122,6 @@ elements:
       - "Association «IN» → fnap.cc-registration_request"  # {92DA8F6B-1001-48b9-837A-33A0CAAECA83} → {7777AD14-8D53-466c-9949-22CFAB635676}
       - "Association «IN» → fnap.cc-support_request"  # {572D1BA3-8128-476c-AE45-D678F1DA2A1B} → {1309E545-2913-41f6-920A-68A496630817}
       - "Association «OUT» → fnap.cc-data_request"  # {A9C29A51-6961-4d68-9FEE-FF1FDA197CD4} → {AFB3FDE3-5682-463a-A966-CEF77741C6A9}
-      - "Dependency → Privacy agreement (CC to NO) and general terms and conditions"  # {EAF4EAC0-257D-4aa5-BE60-B3D801141DA6} → {AF555DF2-4535-42f6-993A-5BE72947BD12}
       - "Usage → Data to Content Consumer"  # {31AF9124-F69F-4487-9088-36D912DF380D} → {B82B3A07-B464-4905-B517-04B74942E5AA}
       - "Usage → Metadata to Content Consumer"  # {F96A7DCC-CD24-4a8d-BB10-E2BA7E92C2F4} → {C25F8BCA-DCD4-4894-956E-40D0218D3ACA}
       - "Usage → Support of Content Consumer"  # {892D855E-FA9A-490c-9AB5-F1F939885A6C} → {0B43348A-F713-49fe-A684-A88D53A58D67}
@@ -127,8 +141,11 @@ elements:
       Content Providers are public and private road operators, road authorities, service providers, transport authorities, transport operators, infrastructure managers, and transport on-demand service providers. The obligations to make traffic and transport data accessible via the NAP depend on the type of data according to the ITS Directive and its respective delegated regulations (see Content Provider Actor)
       
       Key issue: Provide and publish content (which the content provider has the legal rights to publish); collect content.
+      
       Area of responsibility: Provide timely and accurate traffic and transport data.
+      
       Tasks: Provide content relevant to the ITS domain and according to contracts with the NAP and content consumers
+      
       Mnemonic: nap.cp
     links:
       - "Aggregation «component of» → NAP Actors"  # {76C6E1CB-C2D4-497d-9F52-2528B02B06E6} → {E89EDD6C-D939-4b97-AB60-AAD3FA5FE237}

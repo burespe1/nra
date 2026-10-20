@@ -19,8 +19,7 @@ elements:
     note: |
       Member States shall ensure that public sector bodies take the necessary measures to make their websites and mobile applications more accessible by making them perceivable, operable, understandable and robust.
       
-      Source:
-      L1 Directive (EU) 2016/2102 - Website Accessibility
+      Source: L1 Web Accessibility Directive
     links:
       - "Association «fulfilled by» → EU Legal Framework (EC to MS)"  # {9F09EBBA-E483-40d2-AED6-BFBFB54220DD} → {D91DD8AD-EAF3-4d4d-97EC-2668B2AFB9EC}
   - name: "L.1.2 Platform accessibility"
@@ -37,8 +36,7 @@ elements:
     note: |
       The platform shall comply with conformance level AA of the “Web Content Accessibility Guidelines Web - WCAG 2.1” or with the applicable European standard EN 301 549 V2.1.2 (2018-08).
       
-      Source:
-      L1 Directive (EU) 2016/2102 - Website Accessibility
+      Source: L1 Web Accessibility Directive
     links:
       - "Association «fulfilled by» → Data Platform NAP"  # {1DA4E46A-4FCA-4e99-BA40-E6988E2EEFB5} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
       - "Association «fulfilled by» → Metadata Directory NAP"  # {71375158-E81E-4b46-8D43-1A455D01B517} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
@@ -56,15 +54,11 @@ elements:
     note: |
       The NAP shall fully disclose all received information/evidence to the CA/NB assisting in the assessment process.
       
-      Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      Source: L2 SRTI, L3 SSTP, L4 RTTI, L5 MMTIS
     links:
       - "Association «fulfilled by» → Collaboration Agreement (CA/NB to NO)"  # {2C1D663C-289D-41b0-8F48-72EAC2810BEF} → {0B562BCC-408D-4b46-9039-5A275BDFDD86}
-  - name: "L.2.5 Information provision on NAP"
-    guid: "{01A81D55-8849-4dc4-BCA4-0FC22836D828}"
+  - name: "L.14.1 High-value datasets"
+    guid: "{1DA88A3C-B633-474C-A7E3-CB39364F73FF}"
     type: "Requirement"
     stereotype: "FRAME_Requirement"
     keywords: "Requirement"
@@ -73,15 +67,160 @@ elements:
     order: 3
     tags:
       "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Where the NAP provides high-value datasets held by public sector bodies, the platform shall make them available free of charge, under a licence no more restrictive than CC BY 4.0, in a machine-readable format, through an API and as a bulk download, with metadata that the national open data portal can harvest (DCAT-AP).
+      
+      Source: L14 High-value datasets
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {4D4D0466-00A5-435E-9CD8-E8AF20C6392C} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {99B4F579-E73C-42E7-957F-67D9A9DFEA58} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "L.16.1 Protected data and data intermediation"
+    guid: "{05A41B3C-F2B4-4FC7-BA20-0045E7AA5552}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Where the NAP mediates access to protected public sector data, the reuse conditions of the Data Governance Act shall apply: reuse is non-exclusive and non-discriminatory, and a secure processing environment or anonymisation is provided where required. Where the NAP operator acts as a data intermediation service, it shall notify the competent authority and comply with the neutrality conditions, in particular not using the intermediated data for its own purposes.
+      
+      Source: L16 Data Governance Act
+    links:
+      - "Association «fulfilled by» → Content provision contract/agreement"  # {AED3628C-A7C3-48E3-B692-2E6489D52446} → {F43E1EE6-3E45-4900-9953-330E07D69C15}
+      - "Association «fulfilled by» → Data Platform NAP"  # {0C3B4CF6-52BB-4CBD-908C-8A79A05292E1} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+  - name: "L.2.2 Provide up to date data"
+    guid: "{3A5AE4E8-99D6-446e-9A35-26D9A69357B2}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      Content provider shall provide up-to-date and accurate data with a desired level of quality, in the prescribed format.
+      
+      Source: L2 SRTI, L3 SSTP, L4 RTTI, L5 MMTIS
+      
+      Prescribed formats: DATEX II, NeTEx, SIRI, Transmodel, IATA SSIM, INSPIRE, TN-ITS, TEL TSI and ERA Ontology (linked by Usage).
+    links:
+      - "Association «fulfilled by» → European or national law (MS to CP)"  # {FED17C9C-78D9-4dd4-9282-EF6A6C6B2EC9} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+  - name: "L.5.1 Minimum EU or national profiles"
+    guid: "{D2CE8F6E-7917-45B7-BEDC-E82BF357E700}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      Static, historic and observed travel and traffic data for which NeTEx and DATEX II are applicable shall be represented through minimum EU profiles or national profiles.
+      
+      Source: L5 MMTIS (Delegated Regulation (EU) 2017/1926 as amended by Delegated Regulation (EU) 2024/490)
+    links:
+      - "Association «fulfilled by» → European or national law (MS to CP)"  # {22FC0A7F-0036-44D8-ACBB-6CAB7147703A} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+  - name: "L.8.1 Annex III data via the NAP"
+    guid: "{C8A1CCD5-7AD8-440A-8BD9-CA21354120EA}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      The data types listed in Annex III of Directive 2010/40/EU, as amended by Directive (EU) 2023/2661, shall be made accessible in a digital machine-readable format through the NAP, within the geographical coverage and by the deadlines set out there. The obligation concerns data that the data holder already holds; it does not require new data to be collected.
+      
+      Source: L8 ITS Directive
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {023A6F25-E680-497D-A6EF-928B5239ACB0} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → European or national law (MS to CP)"  # {D683F89B-6336-4789-AF97-238D4AEDA50E} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {C17B7DED-4C64-4B31-AB83-0B62DB756725} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "L.8.2 Reporting by the Member State"
+    guid: "{1A1FB516-70B9-443A-B75B-9F81F5C95DA6}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+      "since": "2.2.0"
+    note: |
+      The Member State shall report to the Commission every three years on the progress of the implementation, including the key performance indicators. The NAP operator shall provide the NAP-related information and statistics for the report.
+      
+      Source: L8 ITS Directive
+    links:
+      - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {B457DD98-16C6-4B03-89D6-08B110D3835F} → {832264BF-9750-421b-9BFF-C77CE32FA053}
+  - name: "L.9.1 Once-only principle and information quality"
+    guid: "{5EBE8828-70DD-4b25-9F5D-8F7E58A529FF}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 3
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      Where the NAP is a public-facing service of a public authority, the platform shall meet the quality requirements of the Single Digital Gateway Regulation: the information is accurate, up to date, clearly structured and available in the national language and in at least one other official language of the Union. In line with the once-only principle, transport datasets published on the NAP shall not be published again on other national portals; those portals reference or harvest the NAP metadata.
+      
+      Source: L9 Single Digital Gateway
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {B74B0693-D4D2-4109-8DD5-BED3265433CC} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {83335B84-420E-4814-8854-469A98C2CE0B} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}
+  - name: "L.2.4 Reporting obligation"
+    guid: "{ED7D9261-5E1A-4278-93F5-1159D460C378}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 4
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall enable Content Consumer to report to the content provider (CP) any inaccuracies related to the data without delay.
+      
+      Source: L2 SRTI, L3 SSTP, L4 RTTI, L5 MMTIS
+    links:
+      - "Association «fulfilled by» → European or national law (MS to CC)"  # {E6C45E92-F6EC-44a4-99E3-3CAB7454E497} → {C7C1A638-F3DE-4b70-9BD0-F24DB573079A}
+      - "Association «fulfilled by» → Support (ticket) Module"  # {C8EC553F-7FA5-4eae-81F0-2CE004DBA1C9} → {02101F2C-788B-49ea-8C0D-AD3B498E1E53}
+  - name: "L.2.5 Information provision on NAP"
+    guid: "{01A81D55-8849-4dc4-BCA4-0FC22836D828}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 5
+    tags:
+      "Requirement Category": ""
       "revised": "2025-07-04"
     note: |
       The platform shall provide functionalities to enable ITS directive relevant data provider to publish relevant information about data/services (e.g., Metadata) and information on the data quality at the NAP.
       
-      Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      Source: L2 SRTI, L3 SSTP, L4 RTTI, L5 MMTIS
     links:
       - "Association «fulfilled by» → European or national law (MS to CP)"  # {CBD79F6E-9DBF-467d-BC25-9B0305543C16} → {E3368E4F-07D4-4e14-9043-DE0ED31E471E}
       - "Association «fulfilled by» → Metadata Management Module"  # {862C0AD5-1654-4f7b-A78F-783AF5E1CA94} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
@@ -92,18 +231,14 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 4
+    order: 6
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
     note: |
       NAPs shall provide appropriate discovery services to NAP users / Content Consumers (CC).
       
-      Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      Source: L2 SRTI, L3 SSTP, L4 RTTI, L5 MMTIS
     links:
       - "Association «fulfilled by» → F3.6.4 Manage Metadata Retrieval"  # {595CF938-ACD3-42a2-8B6C-F5088B948ED5} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
       - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {D08A4199-70C9-4581-A168-27096238D2F5} → {832264BF-9750-421b-9BFF-C77CE32FA053}
@@ -114,18 +249,14 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 5
+    order: 7
     tags:
       "Requirement Category": ""
       "revised": "2026-10-20"
     note: |
       NAPs shall allow the CA/NB to access stored information about the CPs at the NAP and cooperate with CA/NB on the ITS directive implementation.
       
-      Source:
-      L2 Regulation (EU) No 886/2013 - SRTI
-      L3 Regulation (EU) No 885/2013 - SSTP
-      L4 Regulation (EU) 2022/670 - RTTI (recast)
-      L5 Regulation (EU) 2017/1926 - MMTIS
+      Source: L2 SRTI, L3 SSTP, L4 RTTI, L5 MMTIS
     links:
       - "Association → Rethink Agreement setup"  # {39B8C0DC-FE99-4af3-8891-43B8603E40D9} → {42102251-3ABE-4686-B487-890153AF6C69}
       - "Association «fulfilled by» → Data Platform NAP"  # {A110310E-EA5E-445a-8B59-C2044E1CB963} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
@@ -138,14 +269,14 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 6
+    order: 8
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
     note: |
       The platform shall enable the access to AFIR-data via exposing CPO's APIs.
       
-      Source: L6 Regulation (EU) 2023/1804 - AFIR
+      Source: L6 AFIR
     links:
       - "Association «fulfilled by» → Metadata Management Module"  # {044EEB72-D0C4-4bad-941A-CB41AA42DBE7} → {4C1A7740-ADB9-4654-9703-57AC92DD6D54}
   - name: "L.6.3 Aggregated AFIR data maybe provided via API to European access point"
@@ -155,14 +286,14 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 7
+    order: 9
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
     note: |
       If the platform aggregates AFIR-data, it may provide those data to a common European access point by means of an API.
       
-      Source: L6 Regulation (EU) 2023/1804 - AFIR
+      Source: L6 AFIR
     links:
       - "Association «fulfilled by» → Data Management Module"  # {549E39B6-8749-4033-AB7E-6C62373BEB6D} → {919C23BB-5FFF-4300-A416-F084AB9FE538}
   - name: "L.7.1 GDPR compliance"
@@ -172,7 +303,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 8
+    order: 10
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -180,10 +311,27 @@ elements:
       Platforms shall be compliant with any GDPR rules for any personal information used on the platform.
       The Platform shall clearly state the use, data processing and data related methods (e.g. deletion) on the website.
       
-      Source:
-      L7 Regulation (EU) 2016/679 - GDPR
+      Source: L7 GDPR
     links:
       - "Association «fulfilled by» → Metadata provision contract (NO to CP)"  # {A08D3FF7-C720-4dfa-BE95-BD410999FBE5} → {BEED600A-C5D2-4829-9BF5-6E6649CB3D14}
       - "Association «fulfilled by» → National Law or Contract (MS to NO)"  # {A0F99D57-B522-4204-B003-C22C84BC9417} → {832264BF-9750-421b-9BFF-C77CE32FA053}
       - "Association «fulfilled by» → Privacy agreement (CC to NO) and general terms and conditions"  # {1B18C483-110C-420d-859D-6EDDBA2D112A} → {AF555DF2-4535-42f6-993A-5BE72947BD12}
       - "Association «fulfilled by» → User Management Module"  # {A6885AEE-5DB0-4a12-847F-3B9528B85233} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "L.12.1 NAP as critical infrastructure"
+    guid: "{037F8E03-319D-4b87-A355-4744DCC160F7}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 11
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      If the Member State defines the NAP as critical infrastructure according to NIS II, the platform has to fulfill the requirements according to NIS II regulation.
+      
+      Source: L12 NIS2, L17 NIS2 implementing act
+    links:
+      - "Association «fulfilled by» → Data Platform NAP"  # {0AD4A4C9-0D8B-4637-B146-3D8FA9665FB3} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Association «fulfilled by» → Metadata Directory NAP"  # {AB779473-0809-4e31-A981-43F2E94F35DC} → {1B971F1C-E2FC-46e2-97A3-CCB248436727}

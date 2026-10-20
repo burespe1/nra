@@ -3,7 +3,7 @@ guid: "{AC628A41-4BD9-486c-B5B8-7B9ABAF28C40}"
 alias: "Agreements"
 version: "1.0"
 note: |
-  This chapter defines Agreements between Actors in Organizational View, irrespective of the NAP type.
+  This chapter defines Agreements between Actors in Organisational View, irrespective of the NAP type.
 elements:
   - name: "Collaboration Agreement (CA/NB to NO)"
     guid: "{0B562BCC-408D-4b46-9039-5A275BDFDD86}"
@@ -16,14 +16,18 @@ elements:
     tags:
       "revised": "2026-10-20"
     note: |
-      Parties:  Competent Authority / National Body (CA/NB) and NAP Operator (NO).
+      Parties: Competent Authority / National Body (CA/NB) and NAP Operator (NO).
+      
       Objective: To address all possible issues CA/NB might have towards the NO, that are not dealt with by the law.
+      
       Form: National law, Collaboration agreement, memorandum of understanding.
+      
       Obligations:
       > CA/NB to NO:
       
       	- To provide information about the performed audit (assessment) to the NO.
       	- To be compliant with any GDPR rules (as they are stated between NO and CP).
+      
       
       > NO to CA/NB:
       
@@ -54,35 +58,25 @@ elements:
       Form: Contract, terms and conditions.
       
       Obligations:
+      > CP to NO:
       
-      > CP to NO
-      
-      Provide the content to be made available through the NAP, supplying it in accordance with the agreed operational procedures or contractual obligations.
-      
-      Provide, where applicable, the necessary authorization for the NAP operator to publish personal data on the NAP, limited to the scope explicitly agreed between the parties.
+      	- Provide the content to be made available through the NAP, supplying it in accordance with the agreed operational procedures or contractual obligations.
+      	- Provide, where applicable, the necessary authorization for the NAP operator to publish personal data on the NAP, limited to the scope explicitly agreed between the parties.
       
       
+      > NO to CP:
       
-      > NO to CP
-      
-      Make the content accessible to Content Consumers (CCs) immediately after it has been provided by the CP.
-      
-      Provide the necessary support and guidance for the content submission and publication on the NAP.
-      
-      Respect the CP authorization to publish personal data on the NAP and ensure that the applicable data protection legislation is upheld.
-      
-      Communicate clearly and in a timely manner, any detected technical issues with the provision of the data to CCs.
-      
-      Provide the relevant statistics of data access on the NAP to the CP.
-      
-      Ensure that the provided content is not tampered with nor altered in any way, allowing only the technical processing necessary for its publication on the NAP.
-      
+      	- Make the content accessible to Content Consumers (CCs) immediately after it has been provided by the CP.
+      	- Provide the necessary support and guidance for the content submission and publication on the NAP.
+      	- Respect the CP authorization to publish personal data on the NAP and ensure that the applicable data protection legislation is upheld.
+      	- Communicate clearly and in a timely manner, any detected technical issues with the provision of the data to CCs.
+      	- Provide the relevant statistics of data access on the NAP to the CP.
+      	- Ensure that the provided content is not tampered with nor altered in any way, allowing only the technical processing necessary for its publication on the NAP.
       
       
       NOTE: The mandatory obligations of the CP, established by European or National Law (connected to e.g., data provision, information, quality, compliance assessment), are defined in the European or national law (MS to CP) Agreement between MS and CP.
       
-       Reference to the EU law:
-      
+      Reference to the EU law:
       NONE
     links:
       - "Association «adheres to» → NAP Content Provider (CP)"  # {833C8EEC-E31C-47a7-8047-8B3E5D975809} → {0BAD153C-6775-4495-9098-8C8115DD8867}
@@ -99,12 +93,16 @@ elements:
       "revised": "2025-07-04"
     note: |
       Parties: Content Provider (CP) and Content Consumer (CC).
+      
       Objective: To set up terms under which the content can be used, and obligations of the CP in terms of quality and accessibility, that are not dealt with by the law.
+      
       Form: Contract, terms of conditions, license.
+      
       Obligations:
       > CP to CC:
       
       	- To provide up-to-date and accurate data with a desired level of quality, in the prescribed format.
+      
       
       > CC to CP:
       
@@ -124,34 +122,24 @@ elements:
       "revised": "2026-10-20"
     note: |
       Parties: European Commission (EC) and Member State (MS).
+      
       Objective: To set up obligations of the MS towards the EC and of the national stakeholders.
+      
       Form: the ITS Directive and Delegated Regulations
+      
       Obligations:
       > EC to MS: ---
       > MS to EC:
       
       	- To implement of EU Directives into a national law, that reaches the goals set in the ITS Directive, and direct execution of EU Regulations and Delegated Acts including an enforcement process.
-      
-      
       	- To periodically report of the progress on the achievement of the goals established in the ITS Directive (and its delegated regulations).
-      
-      
       	- To establish the NAP Operator (NO), in the national law; either delegate its establishment to a responsible ministry or directly state the party responsible for NAP operation.
-      
-      
       	- To establish the Competent Authority / National Body (CA/NB) in the national law; either delegate its establishment to a responsible ministry or directly state the party responsible for CA/NB operation; create a legal framework for its operation.
-      
-      
       	- To ensure compliance with the obligations laid down in EU and national legislation.
-      
-      
       	- To establish a legal obligation in national law for ITS service providers to use only ITS components that comply with the specifications set out in EU delegated acts and to provide ITS services in a manner consistent with those specifications
-      
-      
       	- To support the EU’s goals under the Alternative Fuels Infrastructure Regulation (AFIR) – European commitment to energy transition and sustainable mobility.
-      
-      
       	- To support of accessibility of AFIR-data by establishing procedures to (a) regularly monitor compliance of the data and information on the APIs (at NAP), (b) facilitate the exchange of information between operators or owners of publicly accessible recharging points and refuelling points and their NAPs and (c) address widespread and persistent data quality issues, including issues affecting the overall automated and uniform data exchange via APIs through their NAPs.
+      
       
       Reference to the EU law:
       The obligations of the MS are related to the following European laws:
@@ -184,8 +172,11 @@ elements:
       "revised": "2026-10-20"
     note: |
       Parties: Member State (MS) and selected Content Consumer (CC); Only digital map producers, service providers, and broadcasters are relevant Content Consumers for this "agreement".
+      
       Objective: To identify CCs and set up obligations of the CCs.
+      
       Form: National law implementing the ITS Directive and direct execution of EU Regulations and Delegated Acts.
+      
       Obligations:
       > MS to CC: ---
       > CC to MS (EC):
@@ -213,9 +204,8 @@ elements:
       	- When service providers present information to end users, they shall ensure that relevant data updates on the state of the network / the real-time use of the network are processed within a timeframe fitting to the reliable and effective use of the data in real-time traffic information services. [2022/670, Art 10, par 5, Art 11, par 3]
       	- The accessibility and regular update of data by road authorities and road operators are essential for enabling the production of up-to-date and accurate digital maps that are a key asset for reliable ITS applications. The digital map producers should be encouraged to integrate relevant data updates into their existing map and map update services in a timely manner. In order to comply with public policies such as road safety, service providers and digital map producers should collaborate with public authorities to correct inaccuracies in their data. [2022/670, preamble, 15]
       	- The information service shall fulfil the following conditions: [2013/886 Art. 8, par 2]
-      
-              (a) it shall be provided in such a way as to ensure the        widest reach of end users concerned by the given event or        condition referred to in Article 3;
-             (b) it shall be made available by public and/or private road        operators and/or service providers and/or broadcasters        dedicated to traffic information, where possible free of        charge to end users.
+      (a) it shall be provided in such a way as to ensure the widest reach of end users concerned by the given event or condition referred to in Article 3;
+      (b) it shall be made available by public and/or private road operators and/or service providers and/or broadcasters dedicated to traffic information, where possible free of charge to end users.
     links:
       - "Association «adheres to» → Member State (MS)"  # {78812407-1D34-408f-A5F5-64A7D44D0184} → {6F6F2869-325C-42f0-BF2D-A1998A4C3C70}
       - "Association «adheres to» → NAP Content Consumer (CC)"  # {1EF25969-71EB-40a8-B349-A9F0E36138C9} → {D6B4B664-6BE7-4041-8FFE-448812935D1D}
@@ -231,8 +221,11 @@ elements:
       "revised": "2026-10-20"
     note: |
       Parties: Member State (MS) and Content Provider (CP).
+      
       Objective: To identify Content Providers (CPs) and establish their legal obligations.
+      
       Form: National Law transposing the ITS Directive and direct execution of EU Regulations including Regulations, Delegated Regulations and Implementing Regulations.
+      
       Obligations:
       > MS to CP: ---
       > CP to MS:
@@ -265,16 +258,12 @@ elements:
       	- Public or private parking operators and service providers shall share, and exchange data referred to in paragraph 1 of art. 4 of DR 885/2013. For these purposes, they shall use DATEX II (CEN/TS 16157) format or any DATEX II compatible international machine-readable format. Data shall be accessible for exchange and reuse by any public or private information service provider and/or parking operator on a non-discriminatory basis and in accordance with access rights and procedures defined in Directive 2003/98/EC [885/2013 art. 5].
       	- Road authorities and road operators, in cooperation with digital map producers and service providers (any public or private provider of a real-time traffic information service, excluding a mere conveyer of information, to users and end-users), shall ensure that they provide the appropriate metadata in order to allow users to discover and use the datasets to which access is provided through the national access points [2022/670 art. 3].
       	- The travel and traffic data listed in the Annex and the corresponding metadata including information on the quality thereof shall be accessible for exchange and reuse within the Union on a non-discriminatory basis, via the national access point set up in accordance with Article 3 and within a timeframe allowing reliable and effective reuse of the data. Such data shall be accurate and up to date and based on minimum data quality requirements [2024/490 art. 8].
-      
-      
       	- The data referred to in paragraph 1 and the corresponding metadata including information on the quality thereof shall be accessible for exchange and re-use by any data user within the Union:
       (a) on a non-discriminatory [2022/670, art. 4, par 2, art. 5, par 2]
       (b) on a non-discriminatory basis when provided by road authorities and road operators; [2022/670, art. 6 par 2, art. 7, par 2]
       (c) following minimum quality requirements that Member States shall agree upon in cooperation with relevant stakeholders;
       (d) within a timeframe fitting to the reliable and effective use of the data to create real-time traffic information;
-      (d) via the national or common access point referred to in Article 3;
-      
-      
+      (e) via the national or common access point referred to in Article 3;
       	- Competent Authority / National Body (CA/NB) may request from the data holders and travel information service providers the following documents: [2024/490 art. 9]
       1 a description of the travel and traffic data accessible via the national access point, the information on the quality thereof and the conditions of reuse of that data;
       2 a description of the travel information services available including connections with other services where applicable;
@@ -295,14 +284,18 @@ elements:
       "revised": "2025-07-04"
     note: |
       Parties: NAP operator (NO) and NAP IT Provider (NIT).
+      
       Objective: To set up terms under which the NIT manages the IT infrastructure (level of service), that are not dealt with by the law.
+      
       Form: Contract, service level agreement.
+      
       Obligations:
       > NO to NIT:
       
       	- To set up maintenance requirements
       
-      > NIT to NO
+      
+      > NIT to NO:
       
       	- To operate the NAP IT infrastructure under specific conditions of availability and security given by the service level agreement.
       	- To respond to an incident in a proper response time given by the service level agreement.
@@ -323,15 +316,19 @@ elements:
       "revised": "2026-10-20"
     note: |
       Parties: NAP operator (NO) and Content Provider (CP).
-      Objective: : To set up terms under which the metadata content provided to the NAP can be used. Set up obligations and responsibilities of the NAP towards the CP, that are not dealt with by the law.
+      
+      Objective: To set up terms under which the metadata content provided to the NAP can be used. Set up obligations and responsibilities of the NAP towards the CP, that are not dealt with by the law.
+      
       Form: Contract, terms of conditions, license.
+      
       Obligations:
-      > CP to NO
+      > CP to NO:
       
       	- To provide the right to reuse the metadata including consensually provided personal information.
       	- To provide accurate, timely, and complete metadata.
       
-      > NO to CP
+      
+      > NO to CP:
       
       	- To assist in publishing (meta)data to the NAP
       	- To communicate to CP any provided metadata insufficiency, that, as a consequence, results in not publishing or removing published datasets.
@@ -357,8 +354,11 @@ elements:
       "revised": "2026-10-20"
     note: |
       Parties: Member State (MS) and Competent Authority / National Body (CA/NB).
+      
       Objective: Setting up the framework and responsibilities of the CA/NB operation.
+      
       Form: National law implementing the ITS Directive and direct execution of EU Regulations and Delegated Acts or a contract for nonessential parts of the CA/NB duty.
+      
       Obligations:
       > MS to CA/NB: ---
       > CA/NB to MS:
@@ -382,8 +382,11 @@ elements:
       "revised": "2026-10-20"
     note: |
       Parties: Member State (MS) and NAP Operator (NO).
+      
       Objective: Setting up the framework and responsibilities of the NAP operation.
+      
       Form: National law implementing the ITS Directive and direct execution of EU Regulations and Delegated Acts or a contract for nonessential parts of the NO duty.
+      
       Obligations:
       > MS to NO: ---
       > NO to MS:
@@ -426,14 +429,18 @@ elements:
       "revised": "2026-10-20"
     note: |
       Parties: NAP operator (NO) and Content Consumer (CC)
+      
       Objective: To set up terms and conditions under which CC could access and reuse the (meta)data published and the obligations of the NO towards the CC, that are not dealt with by the law.
+      
       Form: Terms and conditions, license.
+      
       Obligations:
       > NO to CC:
       
       	- To inform about the best effort to publish up-to-date and accurate (meta)data about content providers (CP) and their data at the NAP.
       	- To reject responsibility for the published data by CPs.
       	- If subscribed: to notify CC about any outages and, optionally, additions to the NAP. NO must ensure that personal data is not misused, General Data Protection Regulation (GDPR) and to whom can it be disclosed. NO must provide the CC the right to delete the account on the NAP.
+      
       
       > CC to NO:
       
@@ -443,4 +450,5 @@ elements:
       Reference to the EU law:
       NONE
     links:
+      - "Association «adheres to» → NAP Content Consumer (CC)"  # {80010DB2-4CD6-42d4-AD69-983E77932321} → {D6B4B664-6BE7-4041-8FFE-448812935D1D}
       - "Association «adheres to» → NAP Operator (NO)"  # {430E1EB7-02B5-4d49-8AF6-C4FD58A23670} → {234C8914-6D8F-43fd-B3A7-34118A92FBA3}

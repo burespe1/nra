@@ -103,6 +103,7 @@ elements:
       This Module handles and allows the processing of requests for support and reported issues by NAP Users, (Content Providers and Content Consumers).
     links:
       - "Association «hosted by» → Data Platform NAP"  # {CF965519-0916-4df5-948C-8BCD019EAAD3} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Dependency «trace» → Hosting of User Management and Support modules"  # {28AF098A-4289-43A6-B142-76BF83522FB7} → {1028CFCB-DE82-4239-9D3D-556234CC0FFD}
       - "Usage → F3.6.5 Provide NAP User Support"  # {ABF8BD93-EFE3-4674-9907-BE858125FB87} → {E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}
       - "Usage → Support of Content Consumer"  # {50697546-2CAF-4c32-8B0E-37180AF7B764} → {0B43348A-F713-49fe-A684-A88D53A58D67}
       - "Usage → Support of Content Provider"  # {C74E00EA-C251-42d2-9DAF-48318F30F244} → {BA985F0C-2C6F-4329-BABC-91890CC23954}
@@ -120,6 +121,7 @@ elements:
       This Module handles user (NAP Content Providers and NAP Content Consumers) registrations and authorizations. It stores all relevant user information along with credentials in NAP Users data store.
     links:
       - "Association «hosted by» → Data Platform NAP"  # {072C83B5-6776-4126-B287-BDDD1C1FF415} → {E5881292-2F25-4bc1-8840-23C9D1CC23A4}
+      - "Dependency «trace» → Hosting of User Management and Support modules"  # {582516AF-1BF8-48BF-A2F1-803ED32CD08F} → {1028CFCB-DE82-4239-9D3D-556234CC0FFD}
       - "Usage → Content Consumer Authorization and Registration"  # {07A5648E-F71C-4f77-9227-766B72AA8E2F} → {96C4145B-D427-423c-8272-54CE77DBDE7F}
       - "Usage → D3.17 NAP Users"  # {ADB46F04-9D19-412c-8A43-0CB064A09F9C} → {6EFCE4AC-8716-4e03-A229-875C0AA05392}
       - "Usage → F3.6.2 Manage Registrations and Provide Authorisation Service"  # {94BDCDE6-EC32-4b30-952C-389CD04322C1} → {15D991EA-63BC-40ac-936A-A0B8D3CBC28A}

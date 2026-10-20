@@ -37,7 +37,9 @@ elements:
     note: |
       7.2 “Terms and conditions for data reuse from data providers” KPI assesses, from the perspective of data provider, whether a data provider provides descriptive/detailed information about the terms and conditions of data advertised by the data provider at the NAP. A value equal to 0 points out an absence of such a provision, a value equal to 1 indicates that there is a descriptive provision, while a value equal to 2 indicates that there is a detailed provision through sample contracts or standardized data licensing frameworks such as CC – (Creative Commons) License. It is assumed that a NAP should at least mandate detailed provision through sample contracts or standardized data licensing frameworks about the terms and conditions for data reuse.
       The difference between 7.1 " Terms and conditions for reuse of metadata and NAP website content " and 7.2 " Terms and conditions for data reuse from data providers " KPIs lies in perspective: 7.1 assesses whether the NAP operator provides clear information on terms and conditions for data reuse, while 7.2 evaluates whether data providers publishing on the NAP offer similar clarity regarding their data reuse terms.
+      
       Note: detailed terms and conditions means e.g. full sample contract conditions and/or standardized licenses framework such as “CC (Creative Commons) License”)
+      
       Values:
       0: No
       1: Descriptive (brief text description)
@@ -68,7 +70,6 @@ elements:
       	- How a potential data provider/consumer becomes accredited,
       	- How the data is provided,
       	- Where to discuss the technical issues
-      
       
       
       Minimum acceptable value for interoperability: 1
@@ -108,7 +109,6 @@ elements:
       0: No
       1: NAP provides self-declaration forms/templates without any additional involvement in process
       2: NAP facilitates the submission of self-declarations, in addition to providing the templates
-      
       
       Minimum acceptable value for interoperability: 1
     links:

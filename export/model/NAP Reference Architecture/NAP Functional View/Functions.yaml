@@ -4,5 +4,6 @@ alias: "Functions"
 version: "1.0"
 note: |
   This chapter defines functions for both NAP types, Metadata Directory and Data Platform.
+  
   Functions are categorized into various levels: High-Level Functions (HLF) and Low-Level Functions (LLF).
 elements: []

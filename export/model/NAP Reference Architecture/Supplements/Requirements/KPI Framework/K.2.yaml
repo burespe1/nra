@@ -28,6 +28,23 @@ elements:
       Source: KPI 2.1 Support to users to register or add data/metadata
     links:
       - "Association «fulfilled by» → F3.6.5 Provide NAP User Support"  # {CCCB809C-E3EB-4f08-91F0-CCDF7B9BD7C6} → {E4E0DD97-20AB-4868-B0DE-C0C3C14EA4BA}
+  - name: "K.2.2.1 Related services monitoring functionality"
+    guid: "{57A18050-B4C1-42f9-881F-A8C6AE3EAF1A}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 1
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall track the use of the data available at the NAP either based on the user feedback or by using a tool.
+      
+      Source: KPI 2.2 Related services monitoring process
+    links:
+      - "Association «fulfilled by» → F3.6.11 Monitor NAP Usage and Performance"  # {F119AE31-A52C-4cdd-9CAD-D3B1C5DEB54A} → {678C8981-D1F4-47ea-8F47-1E260E07F935}
   - name: "K.2.4.1 NAP promotion – number of channels"
     guid: "{1942245D-8D8A-425c-8364-D8364B8407EA}"
     type: "Requirement"
@@ -35,7 +52,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 1
+    order: 2
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -56,7 +73,7 @@ elements:
     keywords: "Requirement"
     status: "Proposed"
     version: "1.0"
-    order: 2
+    order: 3
     tags:
       "Requirement Category": ""
       "revised": "2025-07-04"
@@ -67,3 +84,65 @@ elements:
     links:
       - "Association «fulfilled by» → F3.6.3 Manage Content Providers Metadata"  # {3EF9E3D9-9D4C-4d40-898C-95FA8BA454DC} → {E8D1212C-A787-4da1-A4EB-B4E1896ABD19}
       - "Association «fulfilled by» → F3.6.4 Manage Metadata Retrieval"  # {C33E95FF-3C3A-4f8e-B7D3-9F48FB0280EA} → {2F2393E9-9A59-4344-A2C0-207945E7F438}
+  - name: "K.2.7.1 Mass notifications – data providers"
+    guid: "{1F17B282-6DF7-4368-8BF9-EB565BA7D4D5}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 4
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall provide Mass notifications to registered providers in at least one of the following ways:
+      
+      	- Mass notifications are possible for legal (T&C) updates
+      	- Mass notifications are tailored according to the data provider's needs, e.g. new requirements for data provision like data profile
+      	- Mass notifications are available on the NAP website to the registered data providers, e.g., pop-up information after logging in
+      
+      
+      Source: KPI 2.7 Mass notifications – data providers
+    links:
+      - "Association «fulfilled by» → User Management Module"  # {572E725B-1EFB-4748-ADCE-9AC102B462C5} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "K.2.8.1 Mass notifications – data consumers"
+    guid: "{6069CE61-FD93-4212-A7EC-BA701EBE8A7E}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 5
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall provide mass notifications of the data consumers about at least legal (T&C) updates
+      
+      Source: KPI 2.8 Mass notifications – data consumers
+    links:
+      - "Association «fulfilled by» → User Management Module"  # {2A7F7E7E-9793-4511-8AF1-8EFA807070B6} → {83B61A0E-1086-4216-B72F-38DA9E185D9B}
+  - name: "K.2.9.1 Monitoring and evaluation"
+    guid: "{1B5911BF-D7A2-4e07-A4CE-4DC33E7E5C26}"
+    type: "Requirement"
+    stereotype: "FRAME_Requirement"
+    keywords: "Requirement"
+    status: "Proposed"
+    version: "1.0"
+    order: 6
+    tags:
+      "Requirement Category": ""
+      "revised": "2026-10-20"
+    note: |
+      The platform shall monitor and evaluate the success and impact of the NAP, by using at least one of following options:
+      
+      	- Counting the access to the NAP, the number of search requests and/or the number of registered users
+      	- Collecting statistics on the consumption of datasets (e.g., downloads, subscriptions, page views)
+      	- Measuring performance of the system (e.g., downtime, consequences for other systems, etc.)
+      	- Measuring usefulness of the NAP (e.g., qualitative feedback on re-use, rating of quality, surveys, etc.)
+      
+      
+      Source: KPI 2.9 Monitoring and evaluation
+    links:
+      - "Association «fulfilled by» → F3.6.11 Monitor NAP Usage and Performance"  # {CD524366-79E5-434c-862F-E85CE666957E} → {678C8981-D1F4-47ea-8F47-1E260E07F935}

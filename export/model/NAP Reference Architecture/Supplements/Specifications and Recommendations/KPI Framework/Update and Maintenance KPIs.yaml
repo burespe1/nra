@@ -41,14 +41,12 @@ elements:
       “Link checking frequency” KPI assesses the existence of predetermined processes and responsibilities among NAP operators, data providers for controlling the quality and maintaining the NAP links, inuring that they are functioning correctly. The difference between the possible values relates to the frequency of these checks.
       
       Values:
-      
       0: no established procedures for link checking
       1: Links are checked with publishing (i.e., once)
       2: More than six months of interval
       3: every six months
       4: Monthly
       5: Weekly or more often
-      
       
       Minimum acceptable value for interoperability: 1
     links:
@@ -85,6 +83,7 @@ elements:
       "revised": "2025-07-04"
     note: |
       4.5 “Data (content) maintenance” evaluates the existence of procedures for keeping the data up-to date by systematically assessing data (content) quality. This is a binary KPI that does not check the frequency on which the data quality is checked but only verifies if there are processes established in this regard.
+      
       Note: This KPI is for data platform NAP type only. For metadata directory NAP type, you answer the first option. Technically, the KPI is skipped in an on-line questionnaire after “metadata directory” NAP type selection.
       
       Values:

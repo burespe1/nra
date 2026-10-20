@@ -21,7 +21,6 @@ elements:
       1: The NAP adopts harmonised metadata specifications other than mobilityDCAT-AP (e.g., the EU-EIP specification – the Coordinated Metadata Catalogue) or partially adopts the Mobility DCAT-AP
       2: Full compliance/adoption with the MobilityDCAT-AP specification
       
-      
       Minimum acceptable value for interoperability: 2
     links:
       - "Abstraction → K.6.1.1 Metadata specification"  # {9ECB332E-8F5A-401f-A78B-6A0FE939FA3E} → {808C630F-74B1-46ed-91AF-3A16E94E6616}
