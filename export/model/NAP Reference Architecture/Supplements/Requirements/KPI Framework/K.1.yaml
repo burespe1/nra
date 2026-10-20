@@ -362,7 +362,7 @@ elements:
       "Requirement Category": ""
       "revised": "2026-10-20"
     note: |
-      The load time for (meta)data shall be higher than 1 sec, max. 2 sec.
+      The load time for (meta)data shall not be higher than 2 sec.
       
       Source: KPI 1.19 Web performance - (meta)data load time
     links:
